@@ -4,7 +4,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://vittore.github.io/</id>
 	<title>zen.pn.it - Tecnologia e dintorni</title>
+<<<<<<< HEAD
 	<updated>2018-06-12T22:25:20+02:00</updated>
+=======
+	<updated>2018-06-12T12:16:28+02:00</updated>
+>>>>>>> f4757209619c555a34564c7834b4968194dc5274
 
 	<subtitle>Segnalazioni e riflessioni su &amp;quot;cose di tecnologia&amp;quot; di Vittore Zen</subtitle>
 
@@ -45,6 +49,7 @@
 					
 				</author>
 			
+<<<<<<< HEAD
 			<summary>Le 'buzz word' di questo momento sono GDPR e cookie, possibilmente condite in salsa legale.</summary>
 			<content type="html" xml:base="https://vittore.github.io/2018/06/gdpr-cookie-e-siti-dinamici/">&lt;p&gt;Mi ritengo con malcelato orgoglio uno dei primi sbarcati sul web  &lt;a href=&quot;https://web.archive.org/web/19980202100719/http://www.dimi.uniud.it:80/~zen/&quot;&gt;https://www.dimi.uniud.it/~zen&lt;/a&gt; (15 agosto 1997) che attraverso una discreta conoscenza delle scienze dell’informazione ha costruito un pezzo del web.
 Ho scritto “scienze dell’informazione” da non confondersi con le scienze della comunicazione: su questa distinzione mi prometto un post sicuramente polemico nel prossimo futuro considerate le invasioni di campo che vivo sulla mia pelle quasi quotidianamente.&lt;/p&gt;
@@ -52,6 +57,17 @@ Ho scritto “scienze dell’informazione” da non confondersi con le scienze d
 &lt;p&gt;Come ho scritto in &lt;a href=&quot;/perché-questo-blog/&quot;&gt;/perché-questo-blog/&lt;/a&gt; la nuova versione di &lt;a href=&quot;http://www.zen.pn.it&quot;&gt;www.zen.pn.it&lt;/a&gt; è interamente statica e non utilizza nessun tipo di cookie e non raccoglie nessun tipo di dato personale.&lt;/p&gt;
 
 &lt;p&gt;Ho riflettuto a lungo su prima di questa scelta:&lt;/p&gt;
+=======
+			<summary></summary>
+			<content type="html" xml:base="https://vittore.github.io/2018/06/gdpr-cookie-e-siti-dinamici/">&lt;p&gt;Le “buzz word” di questo momento sono GDPR e cookie, possibilmente condite in salsa legale.&lt;/p&gt;
+
+&lt;p&gt;Mi ritengo con malcelato orgoglio uno dei primi sbarcati sul web  &lt;a href=&quot;https://www.dimi.uniud.it/~zen&quot;&gt;https://web.archive.org/web/19980202100719/http://www.dimi.uniud.it:80/~zen/&lt;/a&gt; (15 agosto 1997) che attraverso una discreta conoscenza delle scienze dell’informazione ha costruito un pezzo del web.
+Ho scritto “scienze dell’informazione” da non confondersi con le scienze della comunicazione: su questa distinzione mi prometto un post polemico nel prossimo futuro considerate le invasioni di campo che vivo sulla mia pelle quasi quotidianamente.&lt;/p&gt;
+
+&lt;p&gt;Come ho scritto in &lt;a href=&quot;/perché-questo-blog/&quot;&gt;/perché-questo-blog/&lt;/a&gt; la nuova versione di &lt;a href=&quot;http://www.zen.pn.it&quot;&gt;www.zen.pn.it&lt;/a&gt; è interamente statica e non utilizza nessun tipo di cookie e non raccoglie nessun tipo di dato personale.&lt;/p&gt;
+
+&lt;p&gt;Ho riflettuto a lungo su questo argomento:&lt;/p&gt;
+>>>>>>> f4757209619c555a34564c7834b4968194dc5274
 
 &lt;ul&gt;
   &lt;li&gt;Il mio bel sito wordpress con la sua miriade di plugin che raccolgono chissà quale tipo di dato non è certo gdpr-compliant.&lt;/li&gt;
@@ -60,7 +76,11 @@ Ho scritto “scienze dell’informazione” da non confondersi con le scienze d
   &lt;li&gt;Soluzioni?&lt;/li&gt;
 &lt;/ul&gt;
 
+<<<<<<< HEAD
 &lt;p&gt;Semplice: un sito che non usa i cookie e non raccoglie dati; cioè un sito completamente HTML+CSS+JS, senza porzioni server side (che hanno bisogno dei cookie), senza possibilità di inviare post (che richiedono un minimo di trattamento dei dati di chi invia), senza statistiche di accesso,… insomma un sito web vecchio stile. Tecnicamente un sito realizzato usando &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
+=======
+&lt;p&gt;Semplice: un sito che non usa i cookie e non raccoglie dati; cioè un sito completamente HTML+CSS+JS, senza porzioni server side (che hanno bisogno dei cookie), senza possibilità di inviare post (che richiedono un minimo di trattamento dei dati di chi invia), senza statistiche di accesso,… insomma un sito web vecchio stile. Tecnicamente un sito realizzato usando &lt;a href=&quot;Jekyll&quot;&gt;https://jekyllrb.com/&lt;/a&gt;.&lt;/p&gt;
+>>>>>>> f4757209619c555a34564c7834b4968194dc5274
 
 &lt;p&gt;Questo ritorno alle origini mi ha costretto a fare delle riflessioni su come sia cambiato il web in questi anni. Da quando nel lontano 1989 usavo metacrawler per le mie ricerche perché google aveva troppe poche pagine indicizzate, per arrivare fino ai giorni nostri dove il mio ufficio confina con un dipartimento di comunicazione sul cui sito web campeggia la “ricerca di un web marketing strategist”.
 Scusate, sto anticipando il prossimo post. Ritorno al tema tecnico.&lt;/p&gt;
@@ -71,12 +91,17 @@ Scusate, sto anticipando il prossimo post. Ritorno al tema tecnico.&lt;/p&gt;
 
 &lt;p&gt;Il server web quindi non ha “memoria” di quanto comunicato precedentemente con un certo client: per questo motivo, per realizzare applicazioni web complesse, sono stati sviluppati meccanismi a livello superiore come i cookies per costruire “sessioni” e permettere al server di recuperare informazioni riguardanti un certo client.&lt;/p&gt;
 
+<<<<<<< HEAD
 &lt;p&gt;Senza cookie non ci può essere web dinamico, e-commerce,… in una parola non c’è &lt;em&gt;web statefull&lt;/em&gt;.&lt;/p&gt;
+=======
+&lt;p&gt;Senza cookie non ci può essere web dinamico, e-commerce,…&lt;/p&gt;
+>>>>>>> f4757209619c555a34564c7834b4968194dc5274
 
 &lt;p&gt;I cookie sono una etichetta che viene messa alla mia navigazione, sul mio computer, sul mio browser.
 Ora questa etichettatura è molto rischiosa non in se stessa ma nel momento in cui la uso. Su questo tema vi invito a leggere due articoli:&lt;/p&gt;
 
 &lt;ul&gt;
+<<<<<<< HEAD
   &lt;li&gt;&lt;a href=&quot;https://www.internazionale.it/notizie/eli-pariser/2011/07/01/internet-nasconde-censura-filter-bubble&quot;&gt;Quello che internet ci nasconde&lt;/a&gt; di E. Pariser da cui poi ha avuto origine il libro “Il filtro”&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.internazionale.it/reportage/hannes-grassegger/2018/03/21/politica-facebook-cambridge-analytica&quot;&gt;La politica ai tempi di facebook&lt;/a&gt; di  Hannes Grassegger, Mikael Krogerus per Internazionale&lt;/li&gt;
 &lt;/ul&gt;
@@ -90,6 +115,19 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 &lt;p&gt;Ecco perché il legislatore ha messo una norma a riguardo: devi avvisare se usi i cookie.&lt;/p&gt;
 
 &lt;p&gt;Giusto. Corretto. Ma… non sarebbe stato saggio scrivere: se usi i cookie funzionali cioè quelli che nascono e muoiono per il funzionamento di un sito dinamico allora non devi avvisare nessuno, nel caso in cui i cookie li usi per identificare e poi usi questi dati allora avvisi il tuo “cliente”?&lt;/p&gt;
+=======
+  &lt;li&gt;&lt;a href=&quot;Quello che internet ci nasconde&quot;&gt;https://www.internazionale.it/notizie/eli-pariser/2011/07/01/internet-nasconde-censura-filter-bubble&lt;/a&gt; di E. Pariser da cui poi ha origine il libro “Il filtro”&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;La politica ai tempi di facebook&quot;&gt;https://www.internazionale.it/reportage/hannes-grassegger/2018/03/21/politica-facebook-cambridge-analytica&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;quote     Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sentito parlare dei big data. Il senso di quest’espressione è che tutto quello che facciamo, sia online sia offline, lascia delle tracce digitali. Ogni acquisto fatto con la carta di credito, ogni ricerca su Google, ogni spostamento che facciamo con il cellulare in tasca, ogni like su Facebook: tutto è conservato da qualche parte.&lt;/p&gt;
+
+&lt;p&gt;Ecco perché il legislatore ha messo una norma a riguardo: devi avvisare se usi i cookie.&lt;/p&gt;
+
+&lt;p&gt;Giusto. Corretto. Ma…&lt;/p&gt;
+
+&lt;p&gt;Non sarebbe stato saggio scrivere: se usi i cookie funzionali cioè quelli che nascono e muoiono per il funzionamento di un sito dinamico allora non devi avvisare nessuno, nel caso in cui i cookie li usi per identificare e poi usi questi dati allora avvisi il tuo “cliente”?&lt;/p&gt;
+>>>>>>> f4757209619c555a34564c7834b4968194dc5274
 
 &lt;p&gt;No. Nell’incertezza devi avvisare sempre.&lt;/p&gt;
 
@@ -103,11 +141,15 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 
 &lt;p&gt;Se hai un modulo in cui i tuoi clienti chiedono informazioni e raccogli il loro indirizzo email per rispondergli…. Devi avvisare il tuo “cliente”.&lt;/p&gt;
 
+<<<<<<< HEAD
 &lt;h2 id=&quot;quindi&quot;&gt;Quindi?&lt;/h2&gt;
 
 &lt;p&gt;Per me questo è troppo. Per questo ho fatto mia la riflessione che trovate in (https://www.bodhilinux.com/2018/06/03/forums-closed-due-to-gdpr/)[https://www.bodhilinux.com/2018/06/03/forums-closed-due-to-gdpr/]  e sono passato a questa versione del mio blog. Niente cookie, niente dati personali.&lt;/p&gt;
 
 &lt;p&gt;E’ chiaro che la mia valutazione è limitata dalla mia visione prettamente tecnica, come scrivevo all’inizio la mia formazione in “scienze dell’informazione” chiede il suo riscatto e non sempre fa i conti con una realtà  dalle tante sfumature.&lt;/p&gt;
+=======
+&lt;p&gt;Per me questo è troppo. Per questo ho fatto mia questa riflessione che trovate in (https://www.bodhilinux.com/2018/06/03/forums-closed-due-to-gdpr/)[https://www.bodhilinux.com/2018/06/03/forums-closed-due-to-gdpr/]  e sono passato a questa versione del mio blog.&lt;/p&gt;
+>>>>>>> f4757209619c555a34564c7834b4968194dc5274
 </content>
 
 			
