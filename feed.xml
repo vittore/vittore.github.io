@@ -1,27 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="http://localhost:4000/assets/xslt/rss.xslt" ?>
-<?xml-stylesheet type="text/css" href="http://localhost:4000/assets/css/rss.css" ?>
+<?xml-stylesheet type="text/xsl" href="https://vittore.github.io/assets/xslt/rss.xslt" ?>
+<?xml-stylesheet type="text/css" href="https://vittore.github.io/assets/css/rss.css" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>zen.pn.it - Tecnologia e dintorni</title>
 		<description>Segnalazioni e riflessioni su &amp;quot;cose di tecnologia&amp;quot; di Vittore Zen</description>
-		<link>http://localhost:4000/</link>
-		<atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+		<link>https://vittore.github.io/</link>
+		<atom:link href="https://vittore.github.io/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>GDPR, cookie e siti dinamici</title>
+				<link>https://vittore.github.io/2018/06/gdpr-cookie-e-siti-dinamici/</link>
+				<pubDate>Mon, 11 Jun 2018 02:00:00 +0200</pubDate>
+				<description>&lt;p&gt;Le “buzz word” di questo momento sono GDPR e cookie, possibilmente condite in salsa legale.&lt;/p&gt;
+
+&lt;p&gt;Mi ritengo con malcelato orgoglio uno dei primi sbarcati sul web  &lt;a href=&quot;https://www.dimi.uniud.it/~zen&quot;&gt;https://web.archive.org/web/19980202100719/http://www.dimi.uniud.it:80/~zen/&lt;/a&gt; (15 agosto 1997) che attraverso una discreta conoscenza delle scienze dell’informazione ha costruito un pezzo del web.
+Ho scritto “scienze dell’informazione” da non confondersi con le scienze della comunicazione: su questa distinzione mi prometto un post polemico nel prossimo futuro considerate le invasioni di campo che vivo sulla mia pelle quasi quotidianamente.&lt;/p&gt;
+
+&lt;p&gt;Come ho scritto in &lt;a href=&quot;/perché-questo-blog/&quot;&gt;/perché-questo-blog/&lt;/a&gt; la nuova versione di &lt;a href=&quot;http://www.zen.pn.it&quot;&gt;www.zen.pn.it&lt;/a&gt; è interamente statica e non utilizza nessun tipo di cookie e non raccoglie nessun tipo di dato personale.&lt;/p&gt;
+
+&lt;p&gt;Ho riflettuto a lungo su questo argomento:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Il mio bel sito wordpress con la sua miriade di plugin che raccolgono chissà quale tipo di dato non è certo gdpr-compliant.&lt;/li&gt;
+  &lt;li&gt;Ho la forza legale ed economica per far fronte ad eventuali divergenze?&lt;/li&gt;
+  &lt;li&gt;No.&lt;/li&gt;
+  &lt;li&gt;Soluzioni?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Semplice: un sito che non usa i cookie e non raccoglie dati; cioè un sito completamente HTML+CSS+JS, senza porzioni server side (che hanno bisogno dei cookie), senza possibilità di inviare post (che richiedono un minimo di trattamento dei dati di chi invia), senza statistiche di accesso,… insomma un sito web vecchio stile. Tecnicamente un sito realizzato usando &lt;a href=&quot;Jekyll&quot;&gt;https://jekyllrb.com/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Questo ritorno alle origini mi ha costretto a fare delle riflessioni su come sia cambiato il web in questi anni. Da quando nel lontano 1989 usavo metacrawler per le mie ricerche perché google aveva troppe poche pagine indicizzate, per arrivare fino ai giorni nostri dove il mio ufficio confina con un dipartimento di comunicazione sul cui sito web campeggia la “ricerca di un web marketing strategist”.
+Scusate, sto anticipando il prossimo post. Ritorno al tema tecnico.&lt;/p&gt;
+
+&lt;h2 id=&quot;cookie&quot;&gt;Cookie&lt;/h2&gt;
+
+&lt;p&gt;Il protocollo &lt;em&gt;http&lt;/em&gt; su cui il web si basa è un protocollo &lt;em&gt;senza memoria&lt;/em&gt; (stateless). Stateless significa che ogni richiesta è indipendente da quelle precedenti e si conclude al momento della chiusura della connessione (quando il server comunica che ha finito di servire il documento o premo “stop” nel browser).&lt;/p&gt;
+
+&lt;p&gt;Il server web quindi non ha “memoria” di quanto comunicato precedentemente con un certo client: per questo motivo, per realizzare applicazioni web complesse, sono stati sviluppati meccanismi a livello superiore come i cookies per costruire “sessioni” e permettere al server di recuperare informazioni riguardanti un certo client.&lt;/p&gt;
+
+&lt;p&gt;Senza cookie non ci può essere web dinamico, e-commerce,…&lt;/p&gt;
+
+&lt;p&gt;I cookie sono una etichetta che viene messa alla mia navigazione, sul mio computer, sul mio browser.
+Ora questa etichettatura è molto rischiosa non in se stessa ma nel momento in cui la uso. Su questo tema vi invito a leggere due articoli:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;Quello che internet ci nasconde&quot;&gt;https://www.internazionale.it/notizie/eli-pariser/2011/07/01/internet-nasconde-censura-filter-bubble&lt;/a&gt; di E. Pariser da cui poi ha origine il libro “Il filtro”&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;La politica ai tempi di facebook&quot;&gt;https://www.internazionale.it/reportage/hannes-grassegger/2018/03/21/politica-facebook-cambridge-analytica&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;quote     Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sentito parlare dei big data. Il senso di quest’espressione è che tutto quello che facciamo, sia online sia offline, lascia delle tracce digitali. Ogni acquisto fatto con la carta di credito, ogni ricerca su Google, ogni spostamento che facciamo con il cellulare in tasca, ogni like su Facebook: tutto è conservato da qualche parte.&lt;/p&gt;
+
+&lt;p&gt;Ecco perché il legislatore ha messo una norma a riguardo: devi avvisare se usi i cookie.&lt;/p&gt;
+
+&lt;p&gt;Giusto. Corretto. Ma…&lt;/p&gt;
+
+&lt;p&gt;Non sarebbe stato saggio scrivere: se usi i cookie funzionali cioè quelli che nascono e muoiono per il funzionamento di un sito dinamico allora non devi avvisare nessuno, nel caso in cui i cookie li usi per identificare e poi usi questi dati allora avvisi il tuo “cliente”?&lt;/p&gt;
+
+&lt;p&gt;No. Nell’incertezza devi avvisare sempre.&lt;/p&gt;
+
+&lt;h2 id=&quot;log-di-sistema&quot;&gt;Log di sistema&lt;/h2&gt;
+
+&lt;p&gt;Idem per i log di sistema. Se ho un sito web ho di sicuro un file di log che mi dice che l’ip tal dei tali ha richiesto quella specifica pagina. Attenzione: per il legislatore l’indirizzo ip è un dato personale e tenere dei log di sistema significa mantenere dei dati personali. Devi avvisare il tuo “cliente”.&lt;/p&gt;
+
+&lt;h2 id=&quot;commenti-e-moduli-di-informazione&quot;&gt;Commenti e moduli di informazione&lt;/h2&gt;
+
+&lt;p&gt;Se hai un blog è certo che darai ai tuoi lettori la possibilità di dibattere in pubblico e per mantenere il rapporto civile chiederai di identificarsi. Quindi… raccogli dati. Devi avvisare il tuo “cliente”.&lt;/p&gt;
+
+&lt;p&gt;Se hai un modulo in cui i tuoi clienti chiedono informazioni e raccogli il loro indirizzo email per rispondergli…. Devi avvisare il tuo “cliente”.&lt;/p&gt;
+
+&lt;p&gt;Per me questo è troppo. Per questo ho fatto mia questa riflessione che trovate in (https://www.bodhilinux.com/2018/06/03/forums-closed-due-to-gdpr/)[https://www.bodhilinux.com/2018/06/03/forums-closed-due-to-gdpr/]  e sono passato a questa versione del mio blog.&lt;/p&gt;
+</description>
+				<guid isPermaLink="true">https://vittore.github.io/2018/06/gdpr-cookie-e-siti-dinamici/</guid>
+			</item>
 		
 			<item>
 				<title>Seconda edizione in lavorazione: idee e/o richieste?</title>
-				<link>http://localhost:4000/2018/05/seconda-edizione-in-lavorazione-idee-e-o-richieste/</link>
+				<link>https://vittore.github.io/2018/05/seconda-edizione-in-lavorazione-idee-e-o-richieste/</link>
 				<pubDate>Wed, 30 May 2018 00:17:12 +0200</pubDate>
 				<description>&lt;p&gt;L’anno scolastico si avvia alla conclusione e l’estate è alle porte. In questo periodo metterò mano al libretto “&lt;a href=&quot;https://www.amazon.it/Teoria-laboratori-esercizi-MikroTik-RouterOS/dp/1973238845/&quot;&gt;Teoria, laboratori ed esercizi per MikroTik RouterOS&lt;/a&gt;” per essere pronto per l’inizio delle attività a settembre.&lt;/p&gt;
 
 &lt;p&gt;Se ci sono suggerimenti, consigli o altre modifiche che ritenete utili contattatemi via email.&lt;/p&gt;
 </description>
-				<guid isPermaLink="true">http://localhost:4000/2018/05/seconda-edizione-in-lavorazione-idee-e-o-richieste/</guid>
+				<guid isPermaLink="true">https://vittore.github.io/2018/05/seconda-edizione-in-lavorazione-idee-e-o-richieste/</guid>
 			</item>
 		
 			<item>
 				<title>Alcune indiscrezioni sulla futura release di posta Gmail</title>
-				<link>http://localhost:4000/2018/04/alcune-indiscrezioni-sulla-futura-release-di-posta-gmail/</link>
+				<link>https://vittore.github.io/2018/04/alcune-indiscrezioni-sulla-futura-release-di-posta-gmail/</link>
 				<pubDate>Sun, 22 Apr 2018 10:42:58 +0200</pubDate>
 				<description>&lt;div id=&quot;js_cbf&quot; class=&quot;_5pbx userContent _3576&quot; data-ft=&quot;{&amp;quot;tn&amp;quot;:&amp;quot;K&amp;quot;}&quot;&gt;
   &lt;p&gt;
@@ -48,12 +114,12 @@
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
-				<guid isPermaLink="true">http://localhost:4000/2018/04/alcune-indiscrezioni-sulla-futura-release-di-posta-gmail/</guid>
+				<guid isPermaLink="true">https://vittore.github.io/2018/04/alcune-indiscrezioni-sulla-futura-release-di-posta-gmail/</guid>
 			</item>
 		
 			<item>
 				<title>Twitter chiude twitter su OSX</title>
-				<link>http://localhost:4000/2018/03/twitter-chiude-twitter-su-osx/</link>
+				<link>https://vittore.github.io/2018/03/twitter-chiude-twitter-su-osx/</link>
 				<pubDate>Fri, 30 Mar 2018 09:24:32 +0200</pubDate>
 				<description>&lt;p&gt;Mi ero perso questa notizia: &lt;a href=&quot;https://techcrunch.com/2018/02/16/twitter-kills-mac-app/&quot;&gt;Twitter is killing its Twitter for Mac desktop client&lt;/a&gt;&lt;/p&gt;
 
@@ -61,12 +127,12 @@
 
 &lt;p&gt;Una interessante alternativa gratuita è  &lt;a href=&quot;http://tweetenapp.com/&quot;&gt;http://tweetenapp.com/&lt;/a&gt;&lt;/p&gt;
 </description>
-				<guid isPermaLink="true">http://localhost:4000/2018/03/twitter-chiude-twitter-su-osx/</guid>
+				<guid isPermaLink="true">https://vittore.github.io/2018/03/twitter-chiude-twitter-su-osx/</guid>
 			</item>
 		
 			<item>
 				<title>Perché il mio sito wordpress è così lento.</title>
-				<link>http://localhost:4000/2018/02/perche-il-mio-sito-wordpress-e-cosi-lento/</link>
+				<link>https://vittore.github.io/2018/02/perche-il-mio-sito-wordpress-e-cosi-lento/</link>
 				<pubDate>Thu, 22 Feb 2018 08:56:33 +0100</pubDate>
 				<description>&lt;p&gt;Finalmente ho trovato un articolo tecnico che tratta questo tema.&lt;/p&gt;
 
@@ -117,12 +183,12 @@
 &lt;div&gt;
 &lt;/div&gt;
 </description>
-				<guid isPermaLink="true">http://localhost:4000/2018/02/perche-il-mio-sito-wordpress-e-cosi-lento/</guid>
+				<guid isPermaLink="true">https://vittore.github.io/2018/02/perche-il-mio-sito-wordpress-e-cosi-lento/</guid>
 			</item>
 		
 			<item>
 				<title>GVFS</title>
-				<link>http://localhost:4000/2018/01/gvfs/</link>
+				<link>https://vittore.github.io/2018/01/gvfs/</link>
 				<pubDate>Fri, 12 Jan 2018 13:50:37 +0100</pubDate>
 				<description>&lt;p&gt;GVFS è l’acronimo di Git Virtual File System. GVFS virtualizza il file system sotto il repository git in modo che git e tutti gli strumenti vedano quello che sembra essere un normale repository, ma GVFS scarica solo gli oggetti quando sono necessari. GVFS gestisce anche la sparse checkout di git per assicurare che le operazioni git come lo stato, il checkout, ecc., siano il più veloce possibile perché considerano solo i file a cui l’utente ha avuto accesso, non tutti i file nel repository.&lt;/p&gt;
 
@@ -206,12 +272,12 @@
   &lt;/tr&gt;
 &lt;/table&gt;
 </description>
-				<guid isPermaLink="true">http://localhost:4000/2018/01/gvfs/</guid>
+				<guid isPermaLink="true">https://vittore.github.io/2018/01/gvfs/</guid>
 			</item>
 		
 			<item>
 				<title>Dietro le quinte del web: gli sviluppatori.</title>
-				<link>http://localhost:4000/2017/12/dietro-le-quinte-del-web-gli-sviluppatori/</link>
+				<link>https://vittore.github.io/2017/12/dietro-le-quinte-del-web-gli-sviluppatori/</link>
 				<pubDate>Thu, 21 Dec 2017 09:18:02 +0100</pubDate>
 				<description>&lt;p&gt;Quella dello sviluppatore è una delle professioni più richieste in assoluto nel settore digital.&lt;/p&gt;
 
@@ -259,12 +325,12 @@
   &lt;li&gt;&lt;a href=&quot;https://www.zerounoweb.it/techtarget/searchdatacenter/programmazione-software-e-l-ora-degli-it-shop-devops/&quot;&gt;Che cosa significa DevOps e perché oggi è un fondamentale della programmazione&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-				<guid isPermaLink="true">http://localhost:4000/2017/12/dietro-le-quinte-del-web-gli-sviluppatori/</guid>
+				<guid isPermaLink="true">https://vittore.github.io/2017/12/dietro-le-quinte-del-web-gli-sviluppatori/</guid>
 			</item>
 		
 			<item>
 				<title>Teoria, laboratori ed esercizi per Mikrotik RouterOS</title>
-				<link>http://localhost:4000/2017/11/teoria-laboratori-ed-esercizi-per-mikrotik-routeros/</link>
+				<link>https://vittore.github.io/2017/11/teoria-laboratori-ed-esercizi-per-mikrotik-routeros/</link>
 				<pubDate>Mon, 13 Nov 2017 08:28:45 +0100</pubDate>
 				<description>&lt;p&gt;Ecco pronta per voi la versione comprensiva della parte teorica:&lt;/p&gt;
 
@@ -274,12 +340,12 @@
 
 &lt;p&gt;&lt;a href=&quot;https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/11/copertina_teoria_bassa_risoluzione.jpg&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-2021&quot; src=&quot;https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/11/copertina_teoria_bassa_risoluzione.jpg?resize=400%2C500&quot; alt=&quot;&quot; width=&quot;400&quot; height=&quot;500&quot; srcset=&quot;https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/11/copertina_teoria_bassa_risoluzione.jpg?w=400 400w, https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/11/copertina_teoria_bassa_risoluzione.jpg?resize=128%2C160 128w, https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/11/copertina_teoria_bassa_risoluzione.jpg?resize=240%2C300 240w&quot; sizes=&quot;(max-width: 400px) 100vw, 400px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
-				<guid isPermaLink="true">http://localhost:4000/2017/11/teoria-laboratori-ed-esercizi-per-mikrotik-routeros/</guid>
+				<guid isPermaLink="true">https://vittore.github.io/2017/11/teoria-laboratori-ed-esercizi-per-mikrotik-routeros/</guid>
 			</item>
 		
 			<item>
 				<title>E&amp;#8217; iniziata la scrittura della parte teorica</title>
-				<link>http://localhost:4000/2017/10/e-iniziata-la-scrittura-della-parte-teorica/</link>
+				<link>https://vittore.github.io/2017/10/e-iniziata-la-scrittura-della-parte-teorica/</link>
 				<pubDate>Mon, 09 Oct 2017 10:23:09 +0200</pubDate>
 				<description>&lt;p&gt;Alcuni amici che hanno avuto modo di prendere tra le mani il mio librettino di laboratori ed esercizi su RouterOS (vedi il post &lt;a href=&quot;https://www.zen.pn.it/2017/08/laboratori-ed-esercizi-per-mikrotik-routeros/&quot;&gt;Laboratori ed esercizi per Mikrotik Router OS&lt;/a&gt;) mi hanno fatto notare come manchi della parte teorica.&lt;/p&gt;
 
@@ -293,12 +359,12 @@
 
 &lt;p&gt; &lt;/p&gt;
 </description>
-				<guid isPermaLink="true">http://localhost:4000/2017/10/e-iniziata-la-scrittura-della-parte-teorica/</guid>
+				<guid isPermaLink="true">https://vittore.github.io/2017/10/e-iniziata-la-scrittura-della-parte-teorica/</guid>
 			</item>
 		
 			<item>
 				<title>Laboratori ed esercizi per MikroTik RouterOS</title>
-				<link>http://localhost:4000/2017/08/laboratori-ed-esercizi-per-mikrotik-routeros/</link>
+				<link>https://vittore.github.io/2017/08/laboratori-ed-esercizi-per-mikrotik-routeros/</link>
 				<pubDate>Fri, 01 Sep 2017 01:17:55 +0200</pubDate>
 				<description>&lt;p&gt;Ecco. Ora ho finito. Ecco il mio libro con gli esercizi sul sistema RouterOS della Mikrotik.&lt;/p&gt;
 
@@ -317,35 +383,7 @@
 
 &lt;p&gt;&lt;a href=&quot;https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/08/coverdaAmazon.png&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-1999&quot; src=&quot;https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/08/coverdaAmazon.png?resize=411%2C510&quot; alt=&quot;&quot; width=&quot;411&quot; height=&quot;510&quot; srcset=&quot;https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/08/coverdaAmazon.png?w=411 411w, https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/08/coverdaAmazon.png?resize=129%2C160 129w, https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/08/coverdaAmazon.png?resize=242%2C300 242w&quot; sizes=&quot;(max-width: 411px) 100vw, 411px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
-				<guid isPermaLink="true">http://localhost:4000/2017/08/laboratori-ed-esercizi-per-mikrotik-routeros/</guid>
-			</item>
-		
-			<item>
-				<title>3d.indire.it</title>
-				<link>http://localhost:4000/2017/08/3d-indire-it/</link>
-				<pubDate>Tue, 08 Aug 2017 19:34:17 +0200</pubDate>
-				<description>&lt;p&gt;È online il nuovo sito di Indire &lt;a href=&quot;http://3d.indire.it&quot;&gt;http://3d.indire.it&lt;/a&gt; con risorse gratuite per il disegno e la stampa 3D.&lt;/p&gt;
-
-&lt;p&gt;3Dindire offre a docenti, studenti e maker una selezione di utili risorse per cimentarsi nel disegno e nella stampa 3D: sono disponibili online software gratuiti per la modellazione e l’ottimizzazione del processo di stampa 3d, oltre ad un apposito programma per per la condivisione di file all’interno di un gruppo di lavoro. In particolare, il gruppo di ricerca dell’area tecnologica Indire ha messo a punto Sugarcad, un programma gratuito per la creazione di modelli tridimensionali in formato digitale, destinati alla stampa, ideato con un’attenzione speciale ai i setting tecnologici e alle esigenze degli ambienti scolastici.&lt;/p&gt;
-
-&lt;p&gt;Per facilitare la configurazione e l’utilizzo dei programmi per la modellazione e la stampa 3D, è stato predisposto in3Dire, un apposito server dedicato, già configurato e installabile su scheda Raspberry Pi3 o Orange Pi Plus 2E.&lt;/p&gt;
-
-&lt;p&gt;Il sistema &lt;strong&gt;in3Dire&lt;/strong&gt; contiene al suo interno i seguenti strumenti, già pronti per essere utilizzati:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Owncloud&lt;/strong&gt;, un software per la condivisione di file all’interno del gruppo di lavoro.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;SugarCAD&lt;/strong&gt;, il nostro software gratuito per la modellazione 3D e per la generazione dei file .stl. Per ulteriori informazioni, puoi consultare la &lt;a href=&quot;http://3d.indire.it/index.php?act=SugarCAD&quot;&gt;pagina dedicata su questo sito&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Octoprint&lt;/strong&gt;, un software open source per la gestione delle stampe e per lo slicing dei modelli generati da SugarCAD o da altri software di modellazione 3D.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;WordPress&lt;/strong&gt;, l’ambiente, simile a un blog, per la documentazione delle esperienze di stampa 3D.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Non è necessaria alcuna configurazione: una volta installato &lt;strong&gt;in3Dire&lt;/strong&gt; nella scheda SBC, sarà sufficiente accendere il server, eseguire la prima registrazione e cominciare a lavorare!&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;Link: &lt;a href=&quot;http://3d.indire.it/index.php?act=in3Dire&quot;&gt;http://3d.indire.it/index.php?act=in3Dire&lt;/a&gt;&lt;/p&gt;
-</description>
-				<guid isPermaLink="true">http://localhost:4000/2017/08/3d-indire-it/</guid>
+				<guid isPermaLink="true">https://vittore.github.io/2017/08/laboratori-ed-esercizi-per-mikrotik-routeros/</guid>
 			</item>
 		
 	</channel>
