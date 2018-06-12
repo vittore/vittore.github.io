@@ -1,0 +1,619 @@
+<!doctype html>
+<html class="no-js" lang="it">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Server di aggiornamenti interno per i prodotti Adobe</title>
+
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/styles_feeling_responsive.css">
+
+  
+
+	<script src="http://localhost:4000/assets/js/modernizr.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+	<script>
+		WebFont.load({
+			google: {
+				families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ]
+			}
+		});
+	</script>
+
+	<noscript>
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic%7CVolkhov' rel='stylesheet' type='text/css'>
+	</noscript>
+
+
+	<!-- Search Engine Optimization -->
+	<meta name="description" content="Con questo post iniziano gli articoli su come inserire in una infrastruttura di rete un server Mac OSX per ottimizzare le prestazioni della rete.
+
+In questo articolo presentiamo come aggiungere il servizio Adobe per fare in modo che ogni client (Apple o Windows) che necessiti di aggiornamenti ai prodotti Adobe non scarichi singolarmente i pacchetti ma faccia riferimento al server interno.
+
+Ringrazio Matteo Cerchier per l’articolo e gli esperimenti.">
+	
+	
+	
+	
+	
+	
+	<link rel="canonical" href="http://localhost:4000/2014/04/server-di-aggiornamenti-interno-per-i-prodotti-adobe/">
+
+
+	<!-- Facebook Open Graph -->
+	<meta property="og:title" content="Server di aggiornamenti interno per i prodotti Adobe">
+	<meta property="og:description" content="Con questo post iniziano gli articoli su come inserire in una infrastruttura di rete un server Mac OSX per ottimizzare le prestazioni della rete.
+
+In questo articolo presentiamo come aggiungere il servizio Adobe per fare in modo che ogni client (Apple o Windows) che necessiti di aggiornamenti ai prodotti Adobe non scarichi singolarmente i pacchetti ma faccia riferimento al server interno.
+
+Ringrazio Matteo Cerchier per l’articolo e gli esperimenti.">
+	<meta property="og:url" content="http://localhost:4000/2014/04/server-di-aggiornamenti-interno-per-i-prodotti-adobe/">
+	<meta property="og:locale" content="en_EN">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="zen.pn.it - Tecnologia e dintorni">
+	
+	<meta property="article:author" content="https://www.facebook.com/vittore.zen">
+
+
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="vittore">
+	<meta name="twitter:creator" content="vittore">
+	<meta name="twitter:title" content="Server di aggiornamenti interno per i prodotti Adobe">
+	<meta name="twitter:description" content="Con questo post iniziano gli articoli su come inserire in una infrastruttura di rete un server Mac OSX per ottimizzare le prestazioni della rete.
+
+In questo articolo presentiamo come aggiungere il servizio Adobe per fare in modo che ogni client (Apple o Windows) che necessiti di aggiornamenti ai prodotti Adobe non scarichi singolarmente i pacchetti ma faccia riferimento al server interno.
+
+Ringrazio Matteo Cerchier per l’articolo e gli esperimenti.">
+	
+	
+
+	<link type="text/plain" rel="author" href="http://localhost:4000/humans.txt">
+
+	
+
+	
+
+	<link rel="icon" sizes="32x32" href="http://localhost:4000/assets/img/favicon-32x32.png">
+
+	<link rel="icon" sizes="192x192" href="http://localhost:4000/assets/img/touch-icon-192x192.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="http://localhost:4000/assets/img/apple-touch-icon-180x180-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://localhost:4000/assets/img/apple-touch-icon-152x152-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/assets/img/apple-touch-icon-144x144-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://localhost:4000/assets/img/apple-touch-icon-120x120-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/assets/img/apple-touch-icon-114x114-precomposed.png">
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://localhost:4000/assets/img/apple-touch-icon-76x76-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/assets/img/apple-touch-icon-72x72-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/assets/img/apple-touch-icon-precomposed.png">	
+
+	<meta name="msapplication-TileImage" content="http://localhost:4000/assets/img/msapplication_tileimage.png">
+
+	<meta name="msapplication-TileColor" content="#fabb00">
+
+
+	
+
+</head>
+<body id="top-of-page" class="post">
+	
+	
+<div id="navigation" class="sticky">
+  <nav class="top-bar" role="navigation" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+      <h1 class="show-for-small-only"><a href="http://localhost:4000" class="icon-tree"> zen.pn.it - Tecnologia e dintorni</a></h1>
+    </li>
+       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Nav</span></a></li>
+    </ul>
+    <section class="top-bar-section">
+
+      <ul class="right">
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+        
+      </ul>
+
+      <ul class="left">
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="http://localhost:4000/">Home</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="http://localhost:4000/chi-sono/">Chi sono</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="http://localhost:4000/perché-questo-blog/">Perché questo blog</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="http://localhost:4000/contatti/">Contatti</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="http://localhost:4000/whishlist/">Whishlist</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+        
+      </ul>
+    </section>
+  </nav>
+</div><!-- /#navigation -->
+
+	
+
+	
+
+<div id="masthead-no-image-header">
+	<div class="row">
+		<div class="small-12 columns">
+			<a id="logo" href="http://localhost:4000/" title="zen.pn.it - Tecnologia e dintorni – Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen">
+				<img src="http://localhost:4000/assets/img/logo.png" alt="zen.pn.it - Tecnologia e dintorni – Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen">
+			</a>
+		</div><!-- /.small-12.columns -->
+	</div><!-- /.row -->
+</div><!-- /#masthead -->
+
+
+
+
+
+
+
+
+
+	<div class="row t30">
+	<div class="medium-8 columns medium-offset-2 end">
+		<article itemscope itemtype="http://schema.org/Article">
+			<header>
+				
+
+				<div itemprop="name">
+					
+					<h1>Server di aggiornamenti interno per i prodotti Adobe</h1>
+				</div>
+			</header>
+
+
+			
+
+			<div itemprop="articleSection">
+			<p>Con questo post iniziano gli articoli su come inserire in una infrastruttura di rete un server Mac OSX per ottimizzare le prestazioni della rete.</p>
+
+<p>In questo articolo presentiamo come aggiungere il servizio Adobe per fare in modo che ogni client (Apple o Windows) che necessiti di aggiornamenti ai prodotti Adobe non scarichi singolarmente i pacchetti ma faccia riferimento al server interno.</p>
+
+<p>Ringrazio <a href="https://www.linkedin.com/pub/matteo-benvenuto-cerchier/46/800/b75">Matteo Cerchier</a> per l’articolo e gli esperimenti. <!--more--></p>
+
+<h1 id="strumenti-utilizzati">Strumenti utilizzati:</h1>
+
+<p>Server App: <a href="https://itunes.apple.com/it/app/os-x-server/id714547929?mt=12">https://itunes.apple.com/it/app/os-x-server/id714547929?mt=12</a></p>
+
+<p>AUSST:  <a href="http://download.macromedia.com/pub/developer/creativesuite/AUSST/AUSST_1_3.dmg">http://download.macromedia.com/pub/developer/creativesuite/AUSST/AUSST_1_3.dmg</a></p>
+
+<h2 id="uso-di-ausst-per-configurare-il-proprio-server-di-aggiornamento">Uso di AUSST per configurare il proprio server di aggiornamento:</h2>
+
+<p>In ambito aziendale, è preferibile ospitare un proprio server di aggiornamento per scaricare e memorizzare gli aggiornamenti da Adobe Update Server.</p>
+
+<p>Adobe Update Server Setup Tool (AUSST) consente di configurare un server di aggiornamento e di scaricarvi gli aggiornamenti di prodotto da Adobe Update Server.</p>
+
+<p>Una volta configurato il server di aggiornamento, potete ridirezionare Adobe Application Manager (tool per aggiornamenti lato client) al proprio server invece che ad Adobe Update Server.</p>
+
+<p>In questo caso, Adobe Application Manager sui computer client controlla se sono disponibili aggiornamenti sul proprio server e, quando richiesto, scarica gli aggiornamenti da tale server. <img class="aligncenter wp-image-1060 size-full" src="https://i1.wp.com/www.zen.pn.it/wp-content/uploads/2014/04/usingAUSST.png?resize=687%2C510" alt="usingAUSST" width="687" height="510" srcset="https://i1.wp.com/www.zen.pn.it/wp-content/uploads/2014/04/usingAUSST.png?w=687 687w, https://i1.wp.com/www.zen.pn.it/wp-content/uploads/2014/04/usingAUSST.png?resize=215%2C160 215w, https://i1.wp.com/www.zen.pn.it/wp-content/uploads/2014/04/usingAUSST.png?resize=300%2C222 300w" sizes="(max-width: 687px) 100vw, 687px" data-recalc-dims="1" /></p>
+
+<h2 id="panoramica">Panoramica:</h2>
+
+<ol>
+  <li>Verificate la disponibilità del server Web</li>
+  <li>Eseguite la singola configurazione usando AUSST</li>
+  <li>Durante la singola configurazione, AUSST effettua le seguenti operazioni:
+    <ul>
+      <li>Esegue la configurazione iniziale</li>
+      <li>Crea una struttura di directory simile a quella in Adobe Update Server</li>
+      <li>Copia gli aggiornamenti da Adobe Update Server al server Web. Vengono scaricati gli aggiornamenti per Windows e Mac OS</li>
+    </ul>
+  </li>
+  <li>Sincronizzate periodicamente gli aggiornamenti più recenti da Adobe Update Server al server Web. Eseguite questo passaggio regolarmente per garantire che il server interno ospiti gli aggiornamenti più recenti.</li>
+</ol>
+
+<p> </p>
+
+<h2 id="preparazione-di-un-server-web-da-usare-come-server-di-aggiornamento">Preparazione di un server Web da usare come server di aggiornamento:</h2>
+
+<p>Potete configurare il server di aggiornamento interno su qualsiasi server HTTP (ad esempio, Apache o IIS) che ospita e fornisce contenuto di file statico. Un server http già configurato e funzionante è un prerequisito per configurare AUSST.</p>
+
+<p>La root del website , in questo esempio /Volumes/Macintosh\ HD2/adobe/, sarà poi utilizzata per ospitare tutti gli aggiornamenti della suite Adobe, quindi è necessario posizionarla in un disco capiente.</p>
+
+<p><img class="aligncenter size-full wp-image-1058" src="https://i1.wp.com/www.zen.pn.it/wp-content/uploads/2014/04/Screen-Shot-2014-04-24-at-14.14.53.png?resize=967%2C627" alt="Screen Shot 2014-04-24 at 14.14.53" width="967" height="627" srcset="https://i1.wp.com/www.zen.pn.it/wp-content/uploads/2014/04/Screen-Shot-2014-04-24-at-14.14.53.png?w=967 967w, https://i1.wp.com/www.zen.pn.it/wp-content/uploads/2014/04/Screen-Shot-2014-04-24-at-14.14.53.png?resize=246%2C160 246w, https://i1.wp.com/www.zen.pn.it/wp-content/uploads/2014/04/Screen-Shot-2014-04-24-at-14.14.53.png?resize=300%2C194 300w" sizes="(max-width: 967px) 100vw, 967px" data-recalc-dims="1" /></p>
+
+<p><img class="aligncenter size-full wp-image-1059" src="https://i0.wp.com/www.zen.pn.it/wp-content/uploads/2014/04/Screen-Shot-2014-04-24-at-14.15.13.png?resize=967%2C626" alt="Screen Shot 2014-04-24 at 14.15.13" width="967" height="626" srcset="https://i0.wp.com/www.zen.pn.it/wp-content/uploads/2014/04/Screen-Shot-2014-04-24-at-14.15.13.png?w=967 967w, https://i0.wp.com/www.zen.pn.it/wp-content/uploads/2014/04/Screen-Shot-2014-04-24-at-14.15.13.png?resize=247%2C160 247w, https://i0.wp.com/www.zen.pn.it/wp-content/uploads/2014/04/Screen-Shot-2014-04-24-at-14.15.13.png?resize=300%2C194 300w" sizes="(max-width: 967px) 100vw, 967px" data-recalc-dims="1" /></p>
+
+<h2 id="esecuzione-della-singola-configurazione">Esecuzione della singola configurazione:</h2>
+
+<p>Per configurare il server di aggiornamento interno per la prima volta, utilizzate lo strumento Adobe Update Server Setup per creare una struttura di directory di aggiornamento nel percorso della cartella principale creato (che è anche la root del nostro website). Se in questo percorso sono presenti eventuali file o cartelle, questi verranno rimossi dallo strumento.</p>
+
+<p>Viene quindi creata,automaticamente, la struttura di cartelle che corrisponde a quella del server di aggiornamento Adobe ed eseguita la sincronizzazione iniziale che scarica tutti gli aggiornamenti disponibili dal server di aggiornamento Adobe al server interno.</p>
+
+<p>Di seguito sono illustrati i passaggi per eseguire lo strumento per la prima configurazione:</p>
+
+<p>Eseguite lo strumento in una shell comandi o terminale, specificando la cartella di aggiornamento principale. Ad esempio:</p>
+
+<pre>sudo AdobeUpdateServerSetupTool --root=/Volumes/Macintosh\ HD2/adobe/ --fresh</pre>
+
+<p>La cartella principale è il percorso nel file system del server di aggiornamento interno dove vengono memorizzati gli aggiornamenti di Adobe Update Server. La cartella principale deve corrispondere a un URL HTTP valido.</p>
+
+<p><strong><em>Nota:</em></strong> <em>assicuratevi che la cartella principale sia creata all’interno del percorso principale accessibile del server, in modo che sia disponibile il contenuto di aggiornamento dal server Web.</em></p>
+
+<p>Verifica della configurazione</p>
+
+<p>Per confermare che la singola configurazione sia stata completata, effettuate le seguenti operazioni:</p>
+
+<ol>
+  <li>Verificate che il server Web funzioni correttamente, ossia verificate che la home page del server Web possa essere visualizzata da un computer client.</li>
+  <li>Confermate che il percorso principale contenga gli aggiornamenti dei prodotti Adobe. In caso contrario, verificate che il percorso principale disponga delle autorizzazioni di scrittura corrette.</li>
+  <li>Confermate la possibilità di visualizzare/scaricare gli aggiornamenti dai computer client tramite un browser.</li>
+  <li>Verificate se i browser dei computer client possono accedere ai file updaterfeed.xml sul server di aggiornamento.</li>
+</ol>
+
+<h2 id="configurazione-dei-computer-client">Configurazione dei computer client:</h2>
+
+<p>Per impostazione predefinita, Adobe Application Manager sui computer client controlla se sono disponibili aggiornamenti su Adobe Update Server.</p>
+
+<p>Se ospitate un vostro server di aggiornamento, dovete configurare Adobe Application Manager su ciascun computer dell’utente per controllare se sono disponibili aggiornamenti sul vostro server.</p>
+
+<p>A questo scopo, dovete creare un file di configurazione XML. Il file di configurazione fornisce le informazioni su dominio, URL e porta per il server di aggiornamento interno; l’URL è diverso per le piattaforme Windows e Mac OS.</p>
+
+<h3 id="generazione-dei-file-di-configurazione-client">Generazione dei file di configurazione client:</h3>
+
+<p>Potete generare automaticamente i file di configurazione client con AUSST. Potete eseguire questa operazione solo dopo aver configurato il server e averlo sincronizzato con Adobe Update Server.</p>
+
+<p>Per generare i file di configurazione, immettete questo comando in una shell comandi o terminale (utilizzando le informazioni server personali):</p>
+
+<pre>sudo AdobeUpdateServerSetupTool --genclientconf=/Volumes/Macintosh\ HD2/adobe/ --root=/Volumes/Macintosh\ HD2/adobe --url=http://osx.iusve.network:8080</pre>
+
+<p>Questo comando crea due file di configurazione client (uno per la piattaforma Windows e uno per quella Mac OS) e li scrive in cartelle specifiche della piattaforma nel percorso fornito in –genclientconf.</p>
+
+<h3 id="distribuzione-dei-file-di-configurazione-client">Distribuzione dei file di configurazione client:</h3>
+
+<p>Per distribuire il file di configurazione client per Adobe Application Manager Updater su ciascun computer client, dovete scrivere la versione corretta del file per la piattaforma nel percorso specifico della piattaforma seguente: <strong>In Windows XP:</strong></p>
+
+<pre>\Documents and Settings\All Users\Application Data\Adobe\AAMUpdater\1.0\AdobeUpdater.Overrides</pre>
+
+<p><strong>In Windows 7/Vista:</strong></p>
+
+<pre>\ProgramData\Adobe\AAMUpdater\1.0\AdobeUpdater.Overrides</pre>
+
+<p><strong>In Mac OS X:</strong></p>
+
+<pre>/Library/Application Support/Adobe/AAMUpdater/1.0/AdobeUpdater.Overrides</pre>
+
+<p> </p>
+
+<p>Per comodità è utile creare uno script che esegua queste operazioni in automatico, in questo caso è stato salvato nella root del website in modo che sia facilmente accessibile all’indirizzo http://osx.iusve.network:8080/AdobeUpdate.scpt.</p>
+
+<p>Il contenuto dello script (per OS X)è il seguente:</p>
+
+<pre>do shell script "curl http://osx.iusve.network:8080/mac/AdobeUpdater.Overrides -o /Library/Application\\ Support/Adobe/AAMUpdater/1.0/AdobeUpdater.Overrides" with administrator privileges</pre>
+
+<pre></pre>
+
+<h3 id="sincronizzazione-con-adobe-update-server">Sincronizzazione con Adobe Update Server:</h3>
+
+<p>Dopo la configurazione iniziale, è necessario sincronizzare periodicamente il server di aggiornamento interno con Adobe Update Server, per essere certi di disporre degli aggiornamenti più recenti.</p>
+
+<p>A tal fine, eseguite il seguente comando:</p>
+
+<pre>sudo AdobeUpdateServerSetupTool --root=/Volumes/Macintosh\ HD2/adobe/ {--incremental | --fresh}</pre>
+
+<h4 id="sincronizzazione-incrementale">Sincronizzazione incrementale:</h4>
+
+<p>Il parametro –incremental scarica solo gli aggiornamenti per i quali e disponibile una versione più recente.</p>
+
+<h4 id="nuova-sincronizzazione">Nuova sincronizzazione:</h4>
+
+<p>Il parametro –fresh scarica tutti gli aggiornamenti presenti in Adobe Update Server.</p>
+
+<p>In entrambi i casi, il risultato è che il server di aggiornamento interno viene aggiornato ed è pronto per aggiornare i computer client.</p>
+
+<hr />
+
+<p>Fonti: <a href="http://helpx.adobe.com/it/creative-cloud/packager/update-server-setup-tool.html">http://helpx.adobe.com/it/creative-cloud/packager/update-server-setup-tool.html</a></p>
+
+			</div>
+
+			
+						<div id="page-meta" class="t30">
+				<p>
+					<!-- Look the author details up from the site config. -->
+					
+					<!-- Output author details if some exist. -->
+					
+
+				
+				<time class="icon-calendar pr20" datetime="2014-04-27T04:00:59+02:00" itemprop="datePublished"> 2014-04-27</time>
+				
+
+				<span class="icon-archive pr20"> ARTICOLI</span>
+				<br />
+				<span class="pr20"><span class="icon-price-tag pr10"> Network</span> <span class="icon-price-tag pr10"> sistemi operativi</span> </span>
+			</p>
+
+			
+			<div id="post-nav" class="row">
+				
+				<div class="small-5 columns"><a class="button small radius prev" href="http://localhost:4000/2014/04/workshop-reti-2014/">&laquo; Workshop: reti 2014</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-2 columns text-center"><a class="radius button small" href="http://localhost:4000/archivio/" title="Blog Archivio">Archivio</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-5 columns text-right"><a class="button small radius next" href="http://localhost:4000/2014/05/ios-human-interface-guidelines/">iOS Human Interface Guidelines &raquo;</a></div><!-- /.small-4.columns -->
+				
+			</div>
+			
+			</div><!--  /.page-meta -->
+
+			
+
+			
+		</article>
+	</div><!-- /.medium-8.columns -->
+
+
+	
+
+
+	
+</div><!-- /.row -->
+
+
+	
+	    <div id="up-to-top" class="row">
+      <div class="small-12 columns" style="text-align: right;">
+        <a class="iconfont" href="#top-of-page">&#xf108;</a>
+      </div><!-- /.small-12.columns -->
+    </div><!-- /.row -->
+
+
+    <footer id="footer-content" class="bg-grau">
+      <div id="footer">
+        <div class="row">
+          <div class="medium-6 large-5 columns">
+            <h5 class="shadow-black">Informazioni su questo sito</h5>
+
+            <p class="shadow-black">
+              Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen
+              <a href="http://localhost:4000/perché-questo-blog/">Altro&nbsp;›</a>
+            </p>
+          </div><!-- /.large-6.columns -->
+
+
+          <div class="small-6 medium-3 large-3 large-offset-1 columns">
+            
+              
+                <h5 class="shadow-black">Servizi</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+
+              <ul class="no-bullet shadow-black">
+              
+                
+                  <li >
+                    <a href="http://localhost:4000"  title=""></a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="http://localhost:4000/contatti/"  title="Contatti">Contatti</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="http://localhost:4000/feed.xml"  title="Subscribe to RSS Feed">RSS</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="http://localhost:4000/atom.xml"  title="Subscribe to Atom Feed">Atom</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="http://localhost:4000/sitemap.xml"  title="Sitemap for Google Webmaster Tools">sitemap.xml</a>
+                  </li>
+              
+              </ul>
+          </div><!-- /.large-4.columns -->
+
+
+          <div class="small-6 medium-3 large-3 columns">
+            
+              
+                <h5 class="shadow-black">Ringraziamenti</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+
+            <ul class="no-bullet shadow-black">
+            
+              
+                <li >
+                  <a href="http://localhost:4000"  title=""></a>
+                </li>
+            
+              
+                <li class="network-entypo" >
+                  <a href="http://entypo.com/" target="_blank"  title="Icons by Daniel Bruce">Icons by Daniel Bruce</a>
+                </li>
+            
+              
+                <li class="services-newsletter" >
+                  <a href="http://foundation.zurb.com/" target="_blank"  title="Built on Foundation">Built on Foundation</a>
+                </li>
+            
+              
+                <li class="rss-link" >
+                  <a href="http://unsplash.com/" target="_blank"  title="Images by Unsplash">Images by Unsplash</a>
+                </li>
+            
+            </ul>
+          </div><!-- /.large-3.columns -->
+        </div><!-- /.row -->
+
+      </div><!-- /#footer -->
+
+
+      <div id="subfooter">
+        <nav class="row">
+          <section id="subfooter-left" class="small-12 medium-6 columns credits">
+            
+          </section>
+
+          <section id="subfooter-right" class="small-12 medium-6 columns">
+            <ul class="inline-list social-icons">
+            
+              <li><a href="mailto:vittore@zen.pn.it" target="_blank" class="icon-mail" title=""></a></li>
+            
+              <li><a href="https://www.linkedin.com/in/vittorezen/" target="_blank" class="icon-linkedin" title=""></a></li>
+            
+              <li><a href="http://twitter.com/vittore" target="_blank" class="icon-twitter" title=""></a></li>
+            
+              <li><a href="http://www.facebook.com/vittore.zen" target="_blank" class="icon-facebook" title=""></a></li>
+            
+              <li><a href="http://github.com/vittore" target="_blank" class="icon-github" title=""></a></li>
+            
+            </ul>
+          </section>
+        </nav>
+      </div><!-- /#subfooter -->
+    </footer>
+
+	
+
+	
+
+
+<script src="http://localhost:4000/assets/js/javascript.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+

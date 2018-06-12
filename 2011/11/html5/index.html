@@ -1,0 +1,655 @@
+<!doctype html>
+<html class="no-js" lang="it">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML5</title>
+
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/styles_feeling_responsive.css">
+
+  
+
+	<script src="http://localhost:4000/assets/js/modernizr.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+	<script>
+		WebFont.load({
+			google: {
+				families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ]
+			}
+		});
+	</script>
+
+	<noscript>
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic%7CVolkhov' rel='stylesheet' type='text/css'>
+	</noscript>
+
+
+	<!-- Search Engine Optimization -->
+	<meta name="description" content="Che cos’è HTML5? Ecco le mie riflessioni su HTML5 partendo da alcuni articoli, grafici e post presenti in rete.">
+	
+	
+	
+	
+	
+	
+	<link rel="canonical" href="http://localhost:4000/2011/11/html5/">
+
+
+	<!-- Facebook Open Graph -->
+	<meta property="og:title" content="HTML5">
+	<meta property="og:description" content="Che cos’è HTML5? Ecco le mie riflessioni su HTML5 partendo da alcuni articoli, grafici e post presenti in rete.">
+	<meta property="og:url" content="http://localhost:4000/2011/11/html5/">
+	<meta property="og:locale" content="en_EN">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="zen.pn.it - Tecnologia e dintorni">
+	
+	<meta property="article:author" content="https://www.facebook.com/vittore.zen">
+
+
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="vittore">
+	<meta name="twitter:creator" content="vittore">
+	<meta name="twitter:title" content="HTML5">
+	<meta name="twitter:description" content="Che cos’è HTML5? Ecco le mie riflessioni su HTML5 partendo da alcuni articoli, grafici e post presenti in rete.">
+	
+	
+
+	<link type="text/plain" rel="author" href="http://localhost:4000/humans.txt">
+
+	
+
+	
+
+	<link rel="icon" sizes="32x32" href="http://localhost:4000/assets/img/favicon-32x32.png">
+
+	<link rel="icon" sizes="192x192" href="http://localhost:4000/assets/img/touch-icon-192x192.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="http://localhost:4000/assets/img/apple-touch-icon-180x180-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://localhost:4000/assets/img/apple-touch-icon-152x152-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/assets/img/apple-touch-icon-144x144-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://localhost:4000/assets/img/apple-touch-icon-120x120-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/assets/img/apple-touch-icon-114x114-precomposed.png">
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://localhost:4000/assets/img/apple-touch-icon-76x76-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/assets/img/apple-touch-icon-72x72-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/assets/img/apple-touch-icon-precomposed.png">	
+
+	<meta name="msapplication-TileImage" content="http://localhost:4000/assets/img/msapplication_tileimage.png">
+
+	<meta name="msapplication-TileColor" content="#fabb00">
+
+
+	
+
+</head>
+<body id="top-of-page" class="post">
+	
+	
+<div id="navigation" class="sticky">
+  <nav class="top-bar" role="navigation" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+      <h1 class="show-for-small-only"><a href="http://localhost:4000" class="icon-tree"> zen.pn.it - Tecnologia e dintorni</a></h1>
+    </li>
+       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Nav</span></a></li>
+    </ul>
+    <section class="top-bar-section">
+
+      <ul class="right">
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+        
+      </ul>
+
+      <ul class="left">
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="http://localhost:4000/">Home</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="http://localhost:4000/chi-sono/">Chi sono</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="http://localhost:4000/perché-questo-blog/">Perché questo blog</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="http://localhost:4000/contatti/">Contatti</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="http://localhost:4000/whishlist/">Whishlist</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+        
+      </ul>
+    </section>
+  </nav>
+</div><!-- /#navigation -->
+
+	
+
+	
+
+<div id="masthead-no-image-header">
+	<div class="row">
+		<div class="small-12 columns">
+			<a id="logo" href="http://localhost:4000/" title="zen.pn.it - Tecnologia e dintorni – Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen">
+				<img src="http://localhost:4000/assets/img/logo.png" alt="zen.pn.it - Tecnologia e dintorni – Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen">
+			</a>
+		</div><!-- /.small-12.columns -->
+	</div><!-- /.row -->
+</div><!-- /#masthead -->
+
+
+
+
+
+
+
+
+
+	<div class="row t30">
+	<div class="medium-8 columns medium-offset-2 end">
+		<article itemscope itemtype="http://schema.org/Article">
+			<header>
+				
+
+				<div itemprop="name">
+					
+					<h1>HTML5</h1>
+				</div>
+			</header>
+
+
+			
+
+			<div itemprop="articleSection">
+			<p><img class="alignleft size-full wp-image-324" title="html5" src="https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2011/11/html5.png?resize=74%2C102" alt="" width="74" height="102" data-recalc-dims="1" />Che cos’è HTML5? Ecco le mie riflessioni su HTML5 partendo da alcuni articoli, grafici e post presenti in rete.</p>
+
+<!--more-->
+
+<p>HTML5 è la nuova moda del momento, innegabilmente. Contrariamente a quanto avviene spesso per vocaboli di moda e di marketing, però, HTML5 è davvero una realtà rivoluzionaria che cambierà sensibilmente il nostro modo di vivere e fruire il web – e dunque un elemento sicuramente presente, probabilmente importante della nostra vita.</p>
+
+<h2 id="un-insieme-di-tecnologie">Un insieme di tecnologie</h2>
+
+<p>Partiamo col dire che HTML5 non è una tecnologia o un linguaggio di markup ma un insieme di tecnologie: sotto il “capello” (e il logo…) HTML5 sono incluse sostanzialmente tutte le più recenti novità relative allo sviluppo web e alla creazione di web applications. Vediamole una ad una per capire ancora meglio di cosa stiamo parlando.</p>
+
+<h3 id="1-semantica-per-le-nostre-pagine-e-un-markup-più-facile">1. Semantica per le nostre pagine e un markup più facile</h3>
+
+<p>Dopo svariati studi (di Opera e di Google) ci si è accorti, qualche anno fa, che i web designers utilizzavano con più frequenza alcuni nomi di classi quali “header”, “footer”, “nav”, “article” per identificare più o meno sempre gli stessi delle proprie pagine (alzi la mano chi non ha usato “header” o “footer” come classi del proprio div di intestazione o di chiusura della pagina). Si è dunque pensato che sarebbe stato utile introdurre dei nuovi tag per identificare questi elementi comuni e ricorrenti, dando così anche un valore semantico a queste parti di una pagina.</p>
+
+<div>
+  <p>
+    Per rendere più facile la fruizione e la creazione di markup, poi, è stata di gran lunga semplificata la parte di &#8220;validazione&#8221;, in particolare rispetto a documenti XML quali XHTML. E&#8217; sufficiente ricordare che il doctype, una volta una pappardella infinita, adesso è un semplice:
+  </p>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <pre>&lt;!DOCTYPE html&gt;</pre>
+  
+  <p>
+    &nbsp;
+  </p>
+  
+  <p>
+    Basta questo per indicare che il nostro documento è una pagina HTML5.
+  </p>
+  
+  <h3>
+    2. Offline e storage
+  </h3>
+  
+  <p>
+    HTML5 è l&#8217;insieme di tecnologie che vuole trasformare Internet da un semplice catalogo di pagine di testo in un immenso archivio di applicazioni web, ovvero strumenti con funzionalità avanzate e interfaccia user-friendly per &#8220;fare cose&#8221;, non solo per consultare documenti.
+  </p>
+  
+  <p>
+    In questo senso, le due tecnologie che rendono possibile la &#8220;magia&#8221; di una vera e propria applicazione scritta in HTML5 sono:
+  </p>
+  
+  <ul>
+    <li>
+      <strong>App Cache:</strong> per dire al browser quali file (HTML, immagini, CSS, JavaScript) salvare in locale così da consentire una navigazione e un utilizzo dell&#8217;applicazione anche quando si è offline
+    </li>
+    <li>
+      <strong>Local Storage:</strong> un&#8217;evoluzione dei cookies, molto più facile da gestire e soprattutto con 5 mega (almeno) di spazio a disposizione per salvare dati direttamente dal browser, senza passare da un database centralizzato (e quindi raggiungibile solo quando connessi)
+    </li>
+  </ul>
+  
+  <h3>
+    3. API di accesso ai device
+  </h3>
+  
+  <p>
+    HTML5 vuole essere la tecnologia di sviluppo del futuro. E il futuro non è solo più il nostro caro desktop o notebook: iPhone, Android, iPad, altri tablet &#8211; questi sono gli strumenti con cui oggi e soprattutto domani si utilizzerà il web.
+  </p>
+  
+  <p>
+    Per sfruttare al massimo le funzionalità di tutti questi device HTML5 prevede l&#8217;utilizzo di una serie di API (ovvero di &#8220;interfacce di programmazione&#8221;) per accedere a caratteristiche e dati specifici dei vari terminali: attualmente è già implementata e funzionante sulla maggior parte dei browser, telefonini e tablet la geolocalizzazione (il device comunica al browser la posizione dell&#8217;utente e dunque il nostro JavaScript può agire di conseguenza) ma sono già in fase avanzata di progettazione altre API per utilizzare ad esempio la fotocamera, la lista dei contatti o i dispositivi audio.
+  </p>
+  
+  <h3>
+    4. Web Sockets
+  </h3>
+  
+  <p>
+    Uno dei problemi più ardui che ogni developer affronta nella sua carriera è far comunicare il il browser con il server senza dover ogni volta ricaricare la pagina, aprendo cioè una connessione diretta e aggiornabile a prescindere dal resto della pagina.
+  </p>
+  
+  <p>
+    Web Sockets risolve proprio questo problema: questa tecnologia (non ancora del tutto diffusa e implementata per problemi legati alla sicurezza ma comunque già abbastanza &#8220;matura&#8221; e funzionante, ad esempio, su iPhone) consente di creare un canale di comunicazione full-duplex tra il browser e il server, dando così la possibilità di &#8220;dialogare&#8221; in maniera semplice e user-friendly per creare, ad esempio, applicazioni di chat in realtime o altre applicazioni che richiedono uno scambio costante di informazioni fra client e server (o fra vari client, passando dal server).
+  </p>
+  
+  <h3>
+    5. Multimedia
+  </h3>
+  
+  <p>
+    In sintesi si tratta del supporto nativo nei browser di audio e video all&#8217;interno del browser. HTML5 ha introdotto i due tag <audio> e <video> per inserire in maniera facile, veloce e senza l&#8217;utilizzo di plugin esterni (tipo Flash o SilverLight) dei file audio o dei file video. La cosa fantastica di tutto ciò è che, contrariamente a quanto avviene ad esempio con Flash, questi elementi sono parte del DOM e dunque possono essere liberamente modificati e gestiti da JavaScript &#8211; ad esempio in combinazione con altri oggetti HTML5 tipo il canvas per <a href="http://people.mozilla.com/%7Eprouget/demos/DynamicContentInjection/play.xhtml" target="_blank">manipolare in tempo reale un video</a> (questo è fantastico, da guardare con Firefox). Provate a farlo con Flash!
+  &lt;/p&gt;
+  
+  <h3>
+    6. Grafica, disegno ed effetti 3D
+  </h3>
+  
+  <p>
+    Oltre al citato canvas, ricordiamo anche SVG: due strumenti per disegnare (il primo in &#8220;bitmap&#8221;, il secondo vettoriale) direttamente sulla nostra pagina web utilizzando semplicemente un tag
+  </p>
+  
+  <pre> <code>&lt;canvas&gt;</code></pre>
+  
+  <p>
+    e un po&#8217; di JavaScript. Il risultato? Beh, sarebbe troppo lunga la lista di esempi e possibilità di utilizzo di canvas e SVG, ma date un&#8217;occhiata a <a href="http://www.benjoffe.com/code/demos/canvascape/textures" target="_blank">questo gioco stile Doom</a> &#8212; tutto in JavaScript!
+  </p>
+  
+  <h3>
+    7. Web Workers
+  </h3>
+  
+  <p>
+    Di fatto JavaScript sta diventando un linguaggio sempre più complesso e potente, richiedendo in alcuni casi una quantità di risorse non indifferente. Purtroppo, questo vuol dire spesso rallentare tutto il browser, rendendo la navigazione nel resto della pagina o l&#8217;utilizzo di altre finestre quasi impossibile.
+  </p>
+  
+  <p>
+    Per risolvere questo problema è stata inventata la tecnologia Web Workers, ovvero un sistema per &#8220;slegare&#8221; un&#8217;attività intensiva dal resto dell&#8217;interfaccia utente: in sostanza, si decide che una funzione deve essere eseguita senza che questa blocchi l&#8217;utilizzo del sito e dunque, mentre si attendono i risultati (ad esempio di un calcolo complesso o di una query su un altro server) è possibile comunque utilizare le altre funzionalità della web app e navigare sulla pagina come se nulla stesse impegnando in maniera intensiva il processore e il browser.
+  </p>
+  
+  <h3>
+    8. CSS3?
+  </h3>
+  
+  <p>
+    Senza voler entrare in una polemica che ha scosso il mondo del web development da quando il W3C ha deciso di includere anche CSS3 nel &#8220;cappello&#8221; di HTML5 (la polemica ruota intorno al il fatto che per i puristi CSS3 riguarda la presentazione di un documento e dunque è una cosa slegata da HTML5 che invece riguarda il contenuto, i dati) ricordiamo solo che, contestualmente alle novità che abbiamo indicato, è nato per l&#8217;appunto CSS3, ovvero un nuovo standard CSS con un sacco di nuove ed esaltanti caratteristiche per rendere a dir poco strabilianti dal punto di vista grafico le nostre pagine web.
+  </p>
+  
+  <h2>
+    Problemi
+  </h2>
+  
+  <p>
+    I problemi principali di HTML5 sono due:
+  </p>
+  
+  <ul>
+    <li>
+      non è ancora una standard definito ma ancora, e per un bel po&#8217;, una specifica in fase definizione. Tutte le tecnologie che vi abbiamo indicato in questo tutorial sono abbastanza &#8220;chiuse&#8221; e dunque possono essere utilizzate con tranquillità ma è bene ricordare che lo standard finale, a quanto pare, non sarà finito entro il 2014
+    </li>
+    <li>
+      il problema principale è che il supporto di queste funzionalità non è ancora total fra i vari browser e (soprattutto in ambito CSS3) sussistono ancora delle soluzioni &#8220;proprietarie&#8221; ad esempio per alcuni tag e classi. E&#8217; bene dunque utilizzare sempre sia delle librerie tipo Modernizr che ci avvertono su quali funzionalità sono supportate dal browser che sta visualizzando le nostre pagine e soprattutto progettare la nostra web app per avere delle soluzioni di fallback (pensiamo ad esempio ad una soluzione Flash per i browser che non accettano il tag.
+    </li>
+  </ul>
+  
+  <p>
+    &nbsp;
+  </p>
+&lt;/div&gt;
+
+## Browser
+
+A questo punto sorge una domanda: quale è il reale supporto degli attuali browser ad uno standard in continuo divenire?
+
+Vi consiglio questo sito: &lt;http://html5readiness.com/&gt;
+
+<p style="text-align: center;">
+  <img style="width: 500px; height: 236px;" src="https://i2.wp.com/farm4.static.flickr.com/3339/4606359098_94d2d93b44.jpg" alt="" data-recalc-dims="1" />
+</p>
+
+Rappresenta graficamente lo stato di avanzamento del supporto ai singoli elementi HTML5 per ogni browser.
+
+Inoltre il link &lt;http://beta.html5test.com/&gt;  vi permette di testare e dare un punteggio al vostro browser attuale. Semplicemente visitate la pagina e vedete il vostro voto.
+
+&nbsp;
+
+Buon HTML5!
+
+&nbsp;
+
+&nbsp;
+
+Questo articolo proviene dalla rielaborazione di una serie di articoli trovati in rete, come ad esempio:
+
+  * &lt;http://www.whatwg.org/specs/web-apps/current-work/multipage/&gt;
+  * <a href="http://www.html5rocks.com/en/mobile/mobifying.html#toc-meta-viewport" target="_blank">http://www.html5rocks.com/en/<wbr />mobile/mobifying.html&lt;/wbr&gt;</a>
+  * &lt;http://www.html5today.it/tutorial/che-cos-html5&gt;
+  * &lt;http://code.google.com/intl/it/speed/articles/mobile.html&gt;
+  * &lt;http://www.h5td.me/117&gt;
+  * [http://people.mozilla.com/~prouget/ie9/ie9\_vs\_fx4.html](http://people.mozilla.com/~prouget/ie9/ie9_vs_fx4.html)
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+</video></audio></p></div>
+
+			</div>
+
+			
+						<div id="page-meta" class="t30">
+				<p>
+					<!-- Look the author details up from the site config. -->
+					
+					<!-- Output author details if some exist. -->
+					
+
+				
+				<time class="icon-calendar pr20" datetime="2011-11-22T09:04:23+01:00" itemprop="datePublished"> 2011-11-22</time>
+				
+
+				<span class="icon-archive pr20"> ARTICOLI</span>
+				<br />
+				<span class="pr20"><span class="icon-price-tag pr10"> mobile</span> <span class="icon-price-tag pr10"> sviluppo</span> <span class="icon-price-tag pr10"> tecnologia</span> <span class="icon-price-tag pr10"> web</span> </span>
+			</p>
+
+			
+			<div id="post-nav" class="row">
+				
+				<div class="small-5 columns"><a class="button small radius prev" href="http://localhost:4000/2011/11/198-euro-ogni-cambio-password/">&laquo; 1,98 euro ogni cambio password?</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-2 columns text-center"><a class="radius button small" href="http://localhost:4000/archivio/" title="Blog Archivio">Archivio</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-5 columns text-right"><a class="button small radius next" href="http://localhost:4000/2011/11/prenotazione-aule/">Prenotazione aule &raquo;</a></div><!-- /.small-4.columns -->
+				
+			</div>
+			
+			</div><!--  /.page-meta -->
+
+			
+
+			
+		</article>
+	</div><!-- /.medium-8.columns -->
+
+
+	
+
+
+	
+</div><!-- /.row -->
+
+
+	
+	    <div id="up-to-top" class="row">
+      <div class="small-12 columns" style="text-align: right;">
+        <a class="iconfont" href="#top-of-page">&#xf108;</a>
+      </div><!-- /.small-12.columns -->
+    </div><!-- /.row -->
+
+
+    <footer id="footer-content" class="bg-grau">
+      <div id="footer">
+        <div class="row">
+          <div class="medium-6 large-5 columns">
+            <h5 class="shadow-black">Informazioni su questo sito</h5>
+
+            <p class="shadow-black">
+              Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen
+              <a href="http://localhost:4000/perché-questo-blog/">Altro&nbsp;›</a>
+            </p>
+          </div><!-- /.large-6.columns -->
+
+
+          <div class="small-6 medium-3 large-3 large-offset-1 columns">
+            
+              
+                <h5 class="shadow-black">Servizi</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+
+              <ul class="no-bullet shadow-black">
+              
+                
+                  <li >
+                    <a href="http://localhost:4000"  title=""></a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="http://localhost:4000/contatti/"  title="Contatti">Contatti</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="http://localhost:4000/feed.xml"  title="Subscribe to RSS Feed">RSS</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="http://localhost:4000/atom.xml"  title="Subscribe to Atom Feed">Atom</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="http://localhost:4000/sitemap.xml"  title="Sitemap for Google Webmaster Tools">sitemap.xml</a>
+                  </li>
+              
+              </ul>
+          </div><!-- /.large-4.columns -->
+
+
+          <div class="small-6 medium-3 large-3 columns">
+            
+              
+                <h5 class="shadow-black">Ringraziamenti</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+
+            <ul class="no-bullet shadow-black">
+            
+              
+                <li >
+                  <a href="http://localhost:4000"  title=""></a>
+                </li>
+            
+              
+                <li class="network-entypo" >
+                  <a href="http://entypo.com/" target="_blank"  title="Icons by Daniel Bruce">Icons by Daniel Bruce</a>
+                </li>
+            
+              
+                <li class="services-newsletter" >
+                  <a href="http://foundation.zurb.com/" target="_blank"  title="Built on Foundation">Built on Foundation</a>
+                </li>
+            
+              
+                <li class="rss-link" >
+                  <a href="http://unsplash.com/" target="_blank"  title="Images by Unsplash">Images by Unsplash</a>
+                </li>
+            
+            </ul>
+          </div><!-- /.large-3.columns -->
+        </div><!-- /.row -->
+
+      </div><!-- /#footer -->
+
+
+      <div id="subfooter">
+        <nav class="row">
+          <section id="subfooter-left" class="small-12 medium-6 columns credits">
+            
+          </section>
+
+          <section id="subfooter-right" class="small-12 medium-6 columns">
+            <ul class="inline-list social-icons">
+            
+              <li><a href="mailto:vittore@zen.pn.it" target="_blank" class="icon-mail" title=""></a></li>
+            
+              <li><a href="https://www.linkedin.com/in/vittorezen/" target="_blank" class="icon-linkedin" title=""></a></li>
+            
+              <li><a href="http://twitter.com/vittore" target="_blank" class="icon-twitter" title=""></a></li>
+            
+              <li><a href="http://www.facebook.com/vittore.zen" target="_blank" class="icon-facebook" title=""></a></li>
+            
+              <li><a href="http://github.com/vittore" target="_blank" class="icon-github" title=""></a></li>
+            
+            </ul>
+          </section>
+        </nav>
+      </div><!-- /#subfooter -->
+    </footer>
+
+	
+
+	
+
+
+<script src="http://localhost:4000/assets/js/javascript.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,755 @@
+<!doctype html>
+<html class="no-js" lang="it">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ho la casella Pec piena, cancello le email vecchie?</title>
+
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/styles_feeling_responsive.css">
+
+  
+
+	<script src="http://localhost:4000/assets/js/modernizr.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+	<script>
+		WebFont.load({
+			google: {
+				families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ]
+			}
+		});
+	</script>
+
+	<noscript>
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic%7CVolkhov' rel='stylesheet' type='text/css'>
+	</noscript>
+
+
+	<!-- Search Engine Optimization -->
+	<meta name="description" content="Una delle caratteristiche delle caselle di Posta Elettronica Certificata è che hanno uno spazio limitato e l’archiviazione dei messaggi viene garantita solo per un periodo determinato. Anche a prescindere dal fattore temporale, sta di fatto che l’incremento delle attività telematiche e spesso l’uso non ottimale delle risorse informatiche nella predisposizione dei documenti informatici, porta in brevissimo tempo alla saturazione della casella di posta elettronica certificata.
+
+
+
+  L&amp;#8217;art. 2214 c.c. prevede l&amp;#8217;obbligo di conservazione delle scritture contabili e della corrispondenza aziendale. La corrispondenza aziendale include anche la Pec, alla cui conservazione va posta particolare attenzione per lo specifico valore di prova legale attribuitole dalla legge, che può diventare determinante per l&amp;#8217;azienda in caso di contenzioso, accertamenti tributari, procedure concorsuali, e così via. Ma a differenza della carta, non è solo una questione di spazio.
+
+
+ LA CONSERVAZIONE È ELETTRONICA {.normal}
+
+
+  Contrariamente a quanto qualcuno potrebbe pensare, tale obbligo non viene adempiuto per nostro conto dal gestore di Pec, i quali non sono obbligati ad archiviare il contenuto dei messaggi, ma semplicemente i dati relativi ai messaggi inviati e ricevuti, e ciò per soli trenta mesi (cfr. D.P.R. n. 68/2005).  Anche se il provider ci concede uno spazio più o meno capiente per la nostra casella di posta, limitarsi a conservare lì i messaggi non è sufficiente: la normativa vigente infatti prevede specifiche modalità di conservazione “a parte” su supporti idonei a garantire nel tempo la conformità dei documenti agli originali. Inoltre, la norma applicabile ai documenti che “nascono” informatici sin dall&amp;#8217;origine (cioè che non sono scansioni di documenti cartacei) prevede che la conservazione debba avvenire necessariamente in formato elettronico e solo eventualmente, per meri fini pratici, anche in formato cartaceo (art. 43, comma 3, del D.Lgs. n. 82/2005, anche noto come “CAD”).
+
+
+
+  Tuttavia per quanto riguarda la Pec, anche se non vi fossero tali norme, la conservazione in forma elettronica su supporti durevoli sarebbe comunque una strada obbligata, ed è importante capire perché, dato che sul punto molte aziende hanno ancora le idee confuse.
+
+
+
+  Contrariamente a quanto credono ancora in troppi, la stampa di un messaggio di Pec con le relative ricevute di accettazione e consegna non vale come prova legale di avere inviato determinate comunicazioni o di averle inviate entro una certa scadenza. Allo stesso modo, la stampa di un messaggio di Pec ricevuto non vale come prova legale che lo stesso provenga dal mittente.
+
+
+
+  La prova legale è data solo ed esclusivamente dalla firma elettronica del gestore di Pec, che viene apposta come “sigillo” elettronico sia sui messaggi ricevuti, sia sulle ricevute di accettazione e consegna dei messaggi inviati. Usando un qualsiasi programma di posta elettronica potete agevolmente verificare la presenza di tale “sigillo” e quindi l&amp;#8217;integrità del messaggio o della ricevuta (in Thunderbird, per esempio, basta cliccare sull&amp;#8217;icona con la busta sigillata presente nell&amp;#8217;intestazione dei messaggi di Pec). Non è possibile qui entrare nei dettagli tecnici, ma ai più è sufficiente sapere che si tratta di un “sigillo” non riproducibile (né tantomeno verificabile) tramite una mera stampa del messaggio così come mostrato su schermo  (neanche se si tratta di una “stampa” in pdf, come ho visto fare da qualcuno) – è indispensabile avere il file “originale” del messaggio in forma elettronica. Tenere solo le stampe senza conservare i file originali dei messaggi equivale a tenere le fotocopie delle raccomandate senza conservare le ricevute di ritorno: a che serve a quel punto aver usato la posta certificata invece della posta ordinaria?
+
+
+ È NECESSARIO UNO SPECIFICO FORMATO STANDARD {.normal}
+
+
+  Quanto allo specifico formato in cui salvare i messaggi da conservare, pare fuori discussione che vada utilizzato lo standard di settore denominato Multipurpose Internet Mail Extensions o MIME (che equivale a salvare il messaggio e le relative ricevute in formato “.eml” – o in aggregato come file mbox).
+
+
+
+  Va segnalato che, mentre tutti i programmi di posta elettronica open source (come Thunderbird) supportano nativamente il formato MIME (in quanto salvano internamente i messaggi in tale formato), alcuni dei programmi proprietari più diffusi no, dal momento che salvano la posta elettronica in un loro formato proprietario, diverso da quello standard. Per avere i messaggi come MIME/.eml, occorre installare programmi e plugin di terze parti.
+
+
+
+  Per tale motivo molti pongono il problema a livello pratico: ma è davvero necessario utilizzare lo standard MIME, o è solo consigliabile?
+
+
+
+  È vero che tale standard è previsto espressamente come obbligatorio solo dal D.P.C.M. 3 dicembre 2013 (che entrerà in vigore l&amp;#8217;11 aprile 2017), e che le regole tecniche attualmente in vigore (delibera Cnipa n. 11/2004) non prevedono nulla di specifico a proposito. Tuttavia l&amp;#8217;opportunità (se non la necessità) di utilizzare già oggi tale standard discende dalla natura dello standard stesso e dalle regole tecniche di funzionamento del servizio di Pec previste dal D.M. 2 novembre 2005 (come peraltro indicato nei documenti ufficiali dell&amp;#8217;Agenzia per l&amp;#8217;Italia Digitale della Presidenza del Consiglio). Infatti, MIME non è uno dei tanti formati possibili, ma è lo standard internazionale di fatto per la posta elettronica, attraverso il quale non solo il sistema di Pec ma i server di posta di tutto il mondo trasmettono e inviano i messaggi email; è uno standard aperto, ampiamente documentato, non vincolato da diritti di privativa industriale; è previsto espressamente dall&amp;#8217;art. 6.1 delle regole tecniche di cui al citato D.M. 2 novembre 2005 (“il sistema di Pec genera i messaggi (ricevute, avvisi e buste) in formato MIME”).
+
+
+
+  Salvare i messaggi in altri formati non standard (specie se proprietari) potrebbe pregiudicarne la leggibilità in futuro (si pensi alla rapidità dell&amp;#8217;evoluzione tecnologica e alla possibile difficoltà di reperire, magari fra dieci anni, software in grado di aprire formati datati e fuori standard) e possibilmente anche l&amp;#8217;integrità, in contrasto con quanto richiesto dall&amp;#8217;art. 44, comma 1, lett. b-c del CAD.
+
+
+ SERVE LA MARCA TEMPORALE {.normal}
+
+
+  Un&amp;#8217;ultima nota va fatta sulle modalità concrete di conservazione elettronica dei messaggi Pec.
+
+
+
+  La delibera n. 11/2004 del CNIPA prevede precise modalità tecniche e operative per i documenti informatici in generale, tra cui l&amp;#8217;apposizione di una marca temporale e della firma digitale del responsabile della conservazione.
+
+
+
+  Si potrebbe pensare che tali misure siano superflue per i messaggi di Pec, in quanto il “sigillo” del gestore è già idoneo a fornire prova legale dell&amp;#8217;identificazione del mittente e del destinatario, della conformità del contenuto del messaggio e della data e ora di invio e di consegna. Tuttavia i certificati di firma scadono e occorre provare che la sottoscrizione del gestore sia stata apposta prima della scadenza del certificato utilizzato: a questo serve la marca temporale. In caso contrario, non essendovi la certezza, ciò che è nato come documento digitale con valore legale può perdere la sua efficacia di prova “assoluta”.
+
+
+
+  E infatti la delibera non prevede eccezioni, per cui è necessario seguirne le indicazioni anche per le Pec: o provvedendo “a mano” a generare gli hash dei file da archiviare e ad apporvi marca temporale e firma digitale (altamente sconsigliato ai non “smanettoni”), o dotandosi di un software apposito, oppure affidandosi – come espressamente consentito dalla legge – a un servizio esterno di conservazione sostitutiva, fornito da “soggetti, pubblici o privati, che offrono idonee garanzie organizzative e tecnologiche” (art. 44, comma 1-ter del CAD). Anche se è prevedibile che quest’ultima sarà la soluzione adottata da molte imprese, è comunque opportuno essere a conoscenza delle questioni tecniche e legali sopra illustrate, per non delegare “alla cieca” obblighi di cui non si conosce il preciso contenuto, ed essere quindi in grado di selezionare adeguatamente i fornitori.
+
+
+L’ Avv. Fabio SALOMONE del Foro di Matera ha preparato una interessante guida su come ottemperare a questa esigenza con degli semplici strumenti. Qui trovare la guida in formato PDF.
+
+Appunti tratti e rielaborati da diverse fonti. In particolare:
+
+
+  Ho la casella Pec piena, che cosa faccio?
+  LE SCHEDE TECNICHE DEL CENTRO STUDI">
+	
+	
+	
+	
+	
+	
+	<link rel="canonical" href="http://localhost:4000/2017/02/ho-la-casella-pec-piena-cancello-le-email-vecchie/">
+
+
+	<!-- Facebook Open Graph -->
+	<meta property="og:title" content="Ho la casella Pec piena, cancello le email vecchie?">
+	<meta property="og:description" content="Una delle caratteristiche delle caselle di Posta Elettronica Certificata è che hanno uno spazio limitato e l’archiviazione dei messaggi viene garantita solo per un periodo determinato. Anche a prescindere dal fattore temporale, sta di fatto che l’incremento delle attività telematiche e spesso l’uso non ottimale delle risorse informatiche nella predisposizione dei documenti informatici, porta in brevissimo tempo alla saturazione della casella di posta elettronica certificata.
+
+
+
+  L&amp;#8217;art. 2214 c.c. prevede l&amp;#8217;obbligo di conservazione delle scritture contabili e della corrispondenza aziendale. La corrispondenza aziendale include anche la Pec, alla cui conservazione va posta particolare attenzione per lo specifico valore di prova legale attribuitole dalla legge, che può diventare determinante per l&amp;#8217;azienda in caso di contenzioso, accertamenti tributari, procedure concorsuali, e così via. Ma a differenza della carta, non è solo una questione di spazio.
+
+
+ LA CONSERVAZIONE È ELETTRONICA {.normal}
+
+
+  Contrariamente a quanto qualcuno potrebbe pensare, tale obbligo non viene adempiuto per nostro conto dal gestore di Pec, i quali non sono obbligati ad archiviare il contenuto dei messaggi, ma semplicemente i dati relativi ai messaggi inviati e ricevuti, e ciò per soli trenta mesi (cfr. D.P.R. n. 68/2005).  Anche se il provider ci concede uno spazio più o meno capiente per la nostra casella di posta, limitarsi a conservare lì i messaggi non è sufficiente: la normativa vigente infatti prevede specifiche modalità di conservazione “a parte” su supporti idonei a garantire nel tempo la conformità dei documenti agli originali. Inoltre, la norma applicabile ai documenti che “nascono” informatici sin dall&amp;#8217;origine (cioè che non sono scansioni di documenti cartacei) prevede che la conservazione debba avvenire necessariamente in formato elettronico e solo eventualmente, per meri fini pratici, anche in formato cartaceo (art. 43, comma 3, del D.Lgs. n. 82/2005, anche noto come “CAD”).
+
+
+
+  Tuttavia per quanto riguarda la Pec, anche se non vi fossero tali norme, la conservazione in forma elettronica su supporti durevoli sarebbe comunque una strada obbligata, ed è importante capire perché, dato che sul punto molte aziende hanno ancora le idee confuse.
+
+
+
+  Contrariamente a quanto credono ancora in troppi, la stampa di un messaggio di Pec con le relative ricevute di accettazione e consegna non vale come prova legale di avere inviato determinate comunicazioni o di averle inviate entro una certa scadenza. Allo stesso modo, la stampa di un messaggio di Pec ricevuto non vale come prova legale che lo stesso provenga dal mittente.
+
+
+
+  La prova legale è data solo ed esclusivamente dalla firma elettronica del gestore di Pec, che viene apposta come “sigillo” elettronico sia sui messaggi ricevuti, sia sulle ricevute di accettazione e consegna dei messaggi inviati. Usando un qualsiasi programma di posta elettronica potete agevolmente verificare la presenza di tale “sigillo” e quindi l&amp;#8217;integrità del messaggio o della ricevuta (in Thunderbird, per esempio, basta cliccare sull&amp;#8217;icona con la busta sigillata presente nell&amp;#8217;intestazione dei messaggi di Pec). Non è possibile qui entrare nei dettagli tecnici, ma ai più è sufficiente sapere che si tratta di un “sigillo” non riproducibile (né tantomeno verificabile) tramite una mera stampa del messaggio così come mostrato su schermo  (neanche se si tratta di una “stampa” in pdf, come ho visto fare da qualcuno) – è indispensabile avere il file “originale” del messaggio in forma elettronica. Tenere solo le stampe senza conservare i file originali dei messaggi equivale a tenere le fotocopie delle raccomandate senza conservare le ricevute di ritorno: a che serve a quel punto aver usato la posta certificata invece della posta ordinaria?
+
+
+ È NECESSARIO UNO SPECIFICO FORMATO STANDARD {.normal}
+
+
+  Quanto allo specifico formato in cui salvare i messaggi da conservare, pare fuori discussione che vada utilizzato lo standard di settore denominato Multipurpose Internet Mail Extensions o MIME (che equivale a salvare il messaggio e le relative ricevute in formato “.eml” – o in aggregato come file mbox).
+
+
+
+  Va segnalato che, mentre tutti i programmi di posta elettronica open source (come Thunderbird) supportano nativamente il formato MIME (in quanto salvano internamente i messaggi in tale formato), alcuni dei programmi proprietari più diffusi no, dal momento che salvano la posta elettronica in un loro formato proprietario, diverso da quello standard. Per avere i messaggi come MIME/.eml, occorre installare programmi e plugin di terze parti.
+
+
+
+  Per tale motivo molti pongono il problema a livello pratico: ma è davvero necessario utilizzare lo standard MIME, o è solo consigliabile?
+
+
+
+  È vero che tale standard è previsto espressamente come obbligatorio solo dal D.P.C.M. 3 dicembre 2013 (che entrerà in vigore l&amp;#8217;11 aprile 2017), e che le regole tecniche attualmente in vigore (delibera Cnipa n. 11/2004) non prevedono nulla di specifico a proposito. Tuttavia l&amp;#8217;opportunità (se non la necessità) di utilizzare già oggi tale standard discende dalla natura dello standard stesso e dalle regole tecniche di funzionamento del servizio di Pec previste dal D.M. 2 novembre 2005 (come peraltro indicato nei documenti ufficiali dell&amp;#8217;Agenzia per l&amp;#8217;Italia Digitale della Presidenza del Consiglio). Infatti, MIME non è uno dei tanti formati possibili, ma è lo standard internazionale di fatto per la posta elettronica, attraverso il quale non solo il sistema di Pec ma i server di posta di tutto il mondo trasmettono e inviano i messaggi email; è uno standard aperto, ampiamente documentato, non vincolato da diritti di privativa industriale; è previsto espressamente dall&amp;#8217;art. 6.1 delle regole tecniche di cui al citato D.M. 2 novembre 2005 (“il sistema di Pec genera i messaggi (ricevute, avvisi e buste) in formato MIME”).
+
+
+
+  Salvare i messaggi in altri formati non standard (specie se proprietari) potrebbe pregiudicarne la leggibilità in futuro (si pensi alla rapidità dell&amp;#8217;evoluzione tecnologica e alla possibile difficoltà di reperire, magari fra dieci anni, software in grado di aprire formati datati e fuori standard) e possibilmente anche l&amp;#8217;integrità, in contrasto con quanto richiesto dall&amp;#8217;art. 44, comma 1, lett. b-c del CAD.
+
+
+ SERVE LA MARCA TEMPORALE {.normal}
+
+
+  Un&amp;#8217;ultima nota va fatta sulle modalità concrete di conservazione elettronica dei messaggi Pec.
+
+
+
+  La delibera n. 11/2004 del CNIPA prevede precise modalità tecniche e operative per i documenti informatici in generale, tra cui l&amp;#8217;apposizione di una marca temporale e della firma digitale del responsabile della conservazione.
+
+
+
+  Si potrebbe pensare che tali misure siano superflue per i messaggi di Pec, in quanto il “sigillo” del gestore è già idoneo a fornire prova legale dell&amp;#8217;identificazione del mittente e del destinatario, della conformità del contenuto del messaggio e della data e ora di invio e di consegna. Tuttavia i certificati di firma scadono e occorre provare che la sottoscrizione del gestore sia stata apposta prima della scadenza del certificato utilizzato: a questo serve la marca temporale. In caso contrario, non essendovi la certezza, ciò che è nato come documento digitale con valore legale può perdere la sua efficacia di prova “assoluta”.
+
+
+
+  E infatti la delibera non prevede eccezioni, per cui è necessario seguirne le indicazioni anche per le Pec: o provvedendo “a mano” a generare gli hash dei file da archiviare e ad apporvi marca temporale e firma digitale (altamente sconsigliato ai non “smanettoni”), o dotandosi di un software apposito, oppure affidandosi – come espressamente consentito dalla legge – a un servizio esterno di conservazione sostitutiva, fornito da “soggetti, pubblici o privati, che offrono idonee garanzie organizzative e tecnologiche” (art. 44, comma 1-ter del CAD). Anche se è prevedibile che quest’ultima sarà la soluzione adottata da molte imprese, è comunque opportuno essere a conoscenza delle questioni tecniche e legali sopra illustrate, per non delegare “alla cieca” obblighi di cui non si conosce il preciso contenuto, ed essere quindi in grado di selezionare adeguatamente i fornitori.
+
+
+L’ Avv. Fabio SALOMONE del Foro di Matera ha preparato una interessante guida su come ottemperare a questa esigenza con degli semplici strumenti. Qui trovare la guida in formato PDF.
+
+Appunti tratti e rielaborati da diverse fonti. In particolare:
+
+
+  Ho la casella Pec piena, che cosa faccio?
+  LE SCHEDE TECNICHE DEL CENTRO STUDI">
+	<meta property="og:url" content="http://localhost:4000/2017/02/ho-la-casella-pec-piena-cancello-le-email-vecchie/">
+	<meta property="og:locale" content="en_EN">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="zen.pn.it - Tecnologia e dintorni">
+	
+	<meta property="article:author" content="https://www.facebook.com/vittore.zen">
+
+
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="vittore">
+	<meta name="twitter:creator" content="vittore">
+	<meta name="twitter:title" content="Ho la casella Pec piena, cancello le email vecchie?">
+	<meta name="twitter:description" content="Una delle caratteristiche delle caselle di Posta Elettronica Certificata è che hanno uno spazio limitato e l’archiviazione dei messaggi viene garantita solo per un periodo determinato. Anche a prescindere dal fattore temporale, sta di fatto che l’incremento delle attività telematiche e spesso l’uso non ottimale delle risorse informatiche nella predisposizione dei documenti informatici, porta in brevissimo tempo alla saturazione della casella di posta elettronica certificata.
+
+
+
+  L&amp;#8217;art. 2214 c.c. prevede l&amp;#8217;obbligo di conservazione delle scritture contabili e della corrispondenza aziendale. La corrispondenza aziendale include anche la Pec, alla cui conservazione va posta particolare attenzione per lo specifico valore di prova legale attribuitole dalla legge, che può diventare determinante per l&amp;#8217;azienda in caso di contenzioso, accertamenti tributari, procedure concorsuali, e così via. Ma a differenza della carta, non è solo una questione di spazio.
+
+
+ LA CONSERVAZIONE È ELETTRONICA {.normal}
+
+
+  Contrariamente a quanto qualcuno potrebbe pensare, tale obbligo non viene adempiuto per nostro conto dal gestore di Pec, i quali non sono obbligati ad archiviare il contenuto dei messaggi, ma semplicemente i dati relativi ai messaggi inviati e ricevuti, e ciò per soli trenta mesi (cfr. D.P.R. n. 68/2005).  Anche se il provider ci concede uno spazio più o meno capiente per la nostra casella di posta, limitarsi a conservare lì i messaggi non è sufficiente: la normativa vigente infatti prevede specifiche modalità di conservazione “a parte” su supporti idonei a garantire nel tempo la conformità dei documenti agli originali. Inoltre, la norma applicabile ai documenti che “nascono” informatici sin dall&amp;#8217;origine (cioè che non sono scansioni di documenti cartacei) prevede che la conservazione debba avvenire necessariamente in formato elettronico e solo eventualmente, per meri fini pratici, anche in formato cartaceo (art. 43, comma 3, del D.Lgs. n. 82/2005, anche noto come “CAD”).
+
+
+
+  Tuttavia per quanto riguarda la Pec, anche se non vi fossero tali norme, la conservazione in forma elettronica su supporti durevoli sarebbe comunque una strada obbligata, ed è importante capire perché, dato che sul punto molte aziende hanno ancora le idee confuse.
+
+
+
+  Contrariamente a quanto credono ancora in troppi, la stampa di un messaggio di Pec con le relative ricevute di accettazione e consegna non vale come prova legale di avere inviato determinate comunicazioni o di averle inviate entro una certa scadenza. Allo stesso modo, la stampa di un messaggio di Pec ricevuto non vale come prova legale che lo stesso provenga dal mittente.
+
+
+
+  La prova legale è data solo ed esclusivamente dalla firma elettronica del gestore di Pec, che viene apposta come “sigillo” elettronico sia sui messaggi ricevuti, sia sulle ricevute di accettazione e consegna dei messaggi inviati. Usando un qualsiasi programma di posta elettronica potete agevolmente verificare la presenza di tale “sigillo” e quindi l&amp;#8217;integrità del messaggio o della ricevuta (in Thunderbird, per esempio, basta cliccare sull&amp;#8217;icona con la busta sigillata presente nell&amp;#8217;intestazione dei messaggi di Pec). Non è possibile qui entrare nei dettagli tecnici, ma ai più è sufficiente sapere che si tratta di un “sigillo” non riproducibile (né tantomeno verificabile) tramite una mera stampa del messaggio così come mostrato su schermo  (neanche se si tratta di una “stampa” in pdf, come ho visto fare da qualcuno) – è indispensabile avere il file “originale” del messaggio in forma elettronica. Tenere solo le stampe senza conservare i file originali dei messaggi equivale a tenere le fotocopie delle raccomandate senza conservare le ricevute di ritorno: a che serve a quel punto aver usato la posta certificata invece della posta ordinaria?
+
+
+ È NECESSARIO UNO SPECIFICO FORMATO STANDARD {.normal}
+
+
+  Quanto allo specifico formato in cui salvare i messaggi da conservare, pare fuori discussione che vada utilizzato lo standard di settore denominato Multipurpose Internet Mail Extensions o MIME (che equivale a salvare il messaggio e le relative ricevute in formato “.eml” – o in aggregato come file mbox).
+
+
+
+  Va segnalato che, mentre tutti i programmi di posta elettronica open source (come Thunderbird) supportano nativamente il formato MIME (in quanto salvano internamente i messaggi in tale formato), alcuni dei programmi proprietari più diffusi no, dal momento che salvano la posta elettronica in un loro formato proprietario, diverso da quello standard. Per avere i messaggi come MIME/.eml, occorre installare programmi e plugin di terze parti.
+
+
+
+  Per tale motivo molti pongono il problema a livello pratico: ma è davvero necessario utilizzare lo standard MIME, o è solo consigliabile?
+
+
+
+  È vero che tale standard è previsto espressamente come obbligatorio solo dal D.P.C.M. 3 dicembre 2013 (che entrerà in vigore l&amp;#8217;11 aprile 2017), e che le regole tecniche attualmente in vigore (delibera Cnipa n. 11/2004) non prevedono nulla di specifico a proposito. Tuttavia l&amp;#8217;opportunità (se non la necessità) di utilizzare già oggi tale standard discende dalla natura dello standard stesso e dalle regole tecniche di funzionamento del servizio di Pec previste dal D.M. 2 novembre 2005 (come peraltro indicato nei documenti ufficiali dell&amp;#8217;Agenzia per l&amp;#8217;Italia Digitale della Presidenza del Consiglio). Infatti, MIME non è uno dei tanti formati possibili, ma è lo standard internazionale di fatto per la posta elettronica, attraverso il quale non solo il sistema di Pec ma i server di posta di tutto il mondo trasmettono e inviano i messaggi email; è uno standard aperto, ampiamente documentato, non vincolato da diritti di privativa industriale; è previsto espressamente dall&amp;#8217;art. 6.1 delle regole tecniche di cui al citato D.M. 2 novembre 2005 (“il sistema di Pec genera i messaggi (ricevute, avvisi e buste) in formato MIME”).
+
+
+
+  Salvare i messaggi in altri formati non standard (specie se proprietari) potrebbe pregiudicarne la leggibilità in futuro (si pensi alla rapidità dell&amp;#8217;evoluzione tecnologica e alla possibile difficoltà di reperire, magari fra dieci anni, software in grado di aprire formati datati e fuori standard) e possibilmente anche l&amp;#8217;integrità, in contrasto con quanto richiesto dall&amp;#8217;art. 44, comma 1, lett. b-c del CAD.
+
+
+ SERVE LA MARCA TEMPORALE {.normal}
+
+
+  Un&amp;#8217;ultima nota va fatta sulle modalità concrete di conservazione elettronica dei messaggi Pec.
+
+
+
+  La delibera n. 11/2004 del CNIPA prevede precise modalità tecniche e operative per i documenti informatici in generale, tra cui l&amp;#8217;apposizione di una marca temporale e della firma digitale del responsabile della conservazione.
+
+
+
+  Si potrebbe pensare che tali misure siano superflue per i messaggi di Pec, in quanto il “sigillo” del gestore è già idoneo a fornire prova legale dell&amp;#8217;identificazione del mittente e del destinatario, della conformità del contenuto del messaggio e della data e ora di invio e di consegna. Tuttavia i certificati di firma scadono e occorre provare che la sottoscrizione del gestore sia stata apposta prima della scadenza del certificato utilizzato: a questo serve la marca temporale. In caso contrario, non essendovi la certezza, ciò che è nato come documento digitale con valore legale può perdere la sua efficacia di prova “assoluta”.
+
+
+
+  E infatti la delibera non prevede eccezioni, per cui è necessario seguirne le indicazioni anche per le Pec: o provvedendo “a mano” a generare gli hash dei file da archiviare e ad apporvi marca temporale e firma digitale (altamente sconsigliato ai non “smanettoni”), o dotandosi di un software apposito, oppure affidandosi – come espressamente consentito dalla legge – a un servizio esterno di conservazione sostitutiva, fornito da “soggetti, pubblici o privati, che offrono idonee garanzie organizzative e tecnologiche” (art. 44, comma 1-ter del CAD). Anche se è prevedibile che quest’ultima sarà la soluzione adottata da molte imprese, è comunque opportuno essere a conoscenza delle questioni tecniche e legali sopra illustrate, per non delegare “alla cieca” obblighi di cui non si conosce il preciso contenuto, ed essere quindi in grado di selezionare adeguatamente i fornitori.
+
+
+L’ Avv. Fabio SALOMONE del Foro di Matera ha preparato una interessante guida su come ottemperare a questa esigenza con degli semplici strumenti. Qui trovare la guida in formato PDF.
+
+Appunti tratti e rielaborati da diverse fonti. In particolare:
+
+
+  Ho la casella Pec piena, che cosa faccio?
+  LE SCHEDE TECNICHE DEL CENTRO STUDI">
+	
+	
+
+	<link type="text/plain" rel="author" href="http://localhost:4000/humans.txt">
+
+	
+
+	
+
+	<link rel="icon" sizes="32x32" href="http://localhost:4000/assets/img/favicon-32x32.png">
+
+	<link rel="icon" sizes="192x192" href="http://localhost:4000/assets/img/touch-icon-192x192.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="http://localhost:4000/assets/img/apple-touch-icon-180x180-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://localhost:4000/assets/img/apple-touch-icon-152x152-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/assets/img/apple-touch-icon-144x144-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://localhost:4000/assets/img/apple-touch-icon-120x120-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/assets/img/apple-touch-icon-114x114-precomposed.png">
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://localhost:4000/assets/img/apple-touch-icon-76x76-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/assets/img/apple-touch-icon-72x72-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/assets/img/apple-touch-icon-precomposed.png">	
+
+	<meta name="msapplication-TileImage" content="http://localhost:4000/assets/img/msapplication_tileimage.png">
+
+	<meta name="msapplication-TileColor" content="#fabb00">
+
+
+	
+
+</head>
+<body id="top-of-page" class="post">
+	
+	
+<div id="navigation" class="sticky">
+  <nav class="top-bar" role="navigation" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+      <h1 class="show-for-small-only"><a href="http://localhost:4000" class="icon-tree"> zen.pn.it - Tecnologia e dintorni</a></h1>
+    </li>
+       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Nav</span></a></li>
+    </ul>
+    <section class="top-bar-section">
+
+      <ul class="right">
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+        
+      </ul>
+
+      <ul class="left">
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="http://localhost:4000/">Home</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="http://localhost:4000/chi-sono/">Chi sono</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="http://localhost:4000/perché-questo-blog/">Perché questo blog</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="http://localhost:4000/contatti/">Contatti</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="http://localhost:4000/whishlist/">Whishlist</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+        
+      </ul>
+    </section>
+  </nav>
+</div><!-- /#navigation -->
+
+	
+
+	
+
+<div id="masthead-no-image-header">
+	<div class="row">
+		<div class="small-12 columns">
+			<a id="logo" href="http://localhost:4000/" title="zen.pn.it - Tecnologia e dintorni – Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen">
+				<img src="http://localhost:4000/assets/img/logo.png" alt="zen.pn.it - Tecnologia e dintorni – Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen">
+			</a>
+		</div><!-- /.small-12.columns -->
+	</div><!-- /.row -->
+</div><!-- /#masthead -->
+
+
+
+
+
+
+
+
+
+	<div class="row t30">
+	<div class="medium-8 columns medium-offset-2 end">
+		<article itemscope itemtype="http://schema.org/Article">
+			<header>
+				
+
+				<div itemprop="name">
+					
+					<h1>Ho la casella Pec piena, cancello le email vecchie?</h1>
+				</div>
+			</header>
+
+
+			
+
+			<div itemprop="articleSection">
+			<p class="normal">
+  Una delle caratteristiche delle caselle di Posta Elettronica Certificata è che hanno uno spazio limitato e l’archiviazione dei messaggi viene garantita solo per un periodo determinato. Anche a prescindere dal fattore temporale, sta di fatto che l’incremento delle attività telematiche e spesso l’uso non ottimale delle risorse informatiche nella predisposizione dei documenti informatici, porta in brevissimo tempo alla saturazione della casella di posta elettronica certificata.
+</p>
+
+<p class="normal">
+  L&#8217;art. 2214 c.c. prevede l&#8217;<b>obbligo di conservazione delle scritture contabili </b>e della corrispondenza aziendale. La corrispondenza aziendale include anche la Pec, alla cui conservazione va posta particolare attenzione per lo specifico valore di prova legale attribuitole dalla legge, che può diventare determinante per l&#8217;azienda in caso di contenzioso, accertamenti tributari, procedure concorsuali, e così via. Ma a differenza della carta, non è solo una questione di spazio.
+</p>
+
+<h2 id="la-conservazione-È-elettronica-normal"> LA CONSERVAZIONE È ELETTRONICA {.normal}</h2>
+
+<p class="normal">
+  Contrariamente a quanto qualcuno potrebbe pensare, tale obbligo non viene adempiuto per nostro conto dal gestore di Pec, i quali non sono obbligati ad archiviare il contenuto dei messaggi, ma semplicemente i dati relativi ai messaggi inviati e ricevuti, e ciò per soli trenta mesi (cfr. D.P.R. n. 68/2005).  Anche se il provider ci concede uno spazio più o meno capiente per la nostra casella di posta, limitarsi a conservare lì i messaggi<b> non è sufficiente</b>: la normativa vigente infatti prevede<i> specifiche</i> modalità di conservazione “a parte” su supporti idonei a garantire nel tempo la conformità dei documenti agli originali. Inoltre, la norma applicabile ai documenti che “nascono” informatici sin dall&#8217;origine (cioè che non sono scansioni di documenti cartacei)<b> prevede che la conservazione debba avvenire necessariamente in formato elettronico</b> e solo eventualmente, per meri fini pratici,<i> anche</i> in formato cartaceo (art. 43, comma 3, del D.Lgs. n. 82/2005, anche noto come “<b>CAD</b>”).
+</p>
+
+<p class="normal">
+  Tuttavia per quanto riguarda la Pec,<b> anche se non vi fossero tali norme, la conservazione in forma<i> elettronica</i> su supporti durevoli sarebbe comunque una strada obbligata,</b> ed è importante capire perché, dato che sul punto molte aziende hanno ancora le idee confuse.
+</p>
+
+<p class="normal">
+  Contrariamente a quanto credono ancora in troppi, la stampa di un messaggio di Pec con le relative ricevute di accettazione e consegna non vale come prova legale di avere inviato determinate comunicazioni o di averle inviate entro una certa scadenza. Allo stesso modo, la stampa di un messaggio di Pec ricevuto non vale come prova legale che lo stesso provenga dal mittente.
+</p>
+
+<p class="normal">
+  La prova legale è data solo ed esclusivamente dalla <b>firma elettronica del gestore di Pec</b>, che viene apposta come “sigillo” elettronico sia sui messaggi ricevuti, sia sulle ricevute di accettazione e consegna dei messaggi inviati. Usando un qualsiasi programma di posta elettronica potete agevolmente verificare la presenza di tale “sigillo” e quindi l&#8217;integrità del messaggio o della ricevuta (in Thunderbird, per esempio, basta cliccare sull&#8217;icona con la busta sigillata presente nell&#8217;intestazione dei messaggi di Pec). Non è possibile qui entrare nei dettagli tecnici, ma ai più è sufficiente sapere che si tratta di un <b>“sigillo” non riproducibile</b> (né tantomeno verificabile) tramite una mera stampa del messaggio così come mostrato su schermo  (neanche se si tratta di una “stampa” in pdf, come ho visto fare da qualcuno) – è <b>indispensabile avere il file “originale” del messaggio in forma elettronica</b>. Tenere solo le stampe senza conservare i file originali dei messaggi equivale a tenere le fotocopie delle raccomandate senza conservare le ricevute di ritorno: a che serve a quel punto aver usato la posta certificata invece della posta ordinaria?
+</p>
+
+<h2 id="È-necessario-uno-specifico-formato-standard-normal"> È NECESSARIO UNO SPECIFICO FORMATO STANDARD {.normal}</h2>
+
+<p class="normal">
+  Quanto allo<b> specifico formato</b> in cui salvare i messaggi da conservare, pare fuori discussione che vada utilizzato lo standard di settore denominato<i> Multipurpose Internet Mail Extensions</i> o<i> MIME</i> (che equivale a<b> salvare il messaggio e le relative ricevute in formato “.eml” – o in aggregato come file<i> mbox</i></b>).
+</p>
+
+<p class="normal">
+  Va segnalato che, mentre tutti i programmi di posta elettronica<i> open source</i> (come Thunderbird) supportano nativamente il formato MIME (in quanto salvano internamente i messaggi in tale formato), alcuni dei programmi proprietari più diffusi no, dal momento che salvano la posta elettronica in un loro formato proprietario, diverso da quello standard. Per avere i messaggi come MIME/.eml, occorre installare programmi e plugin di terze parti.
+</p>
+
+<p class="normal">
+  Per tale motivo molti pongono il problema a livello pratico: ma è davvero necessario utilizzare lo standard MIME, o è solo<i> consigliabile</i>?
+</p>
+
+<p class="normal">
+  È vero che <b>tale standard è previsto espressamente come obbligatorio</b> solo dal D.P.C.M. 3 dicembre 2013 (che entrerà in vigore l&#8217;11 aprile 2017), e che le regole tecniche attualmente in vigore (delibera Cnipa n. 11/2004) non prevedono nulla di specifico a proposito. Tuttavia l&#8217;opportunità (se non la necessità) di utilizzare già<i> oggi</i> tale standard discende dalla natura dello standard stesso e dalle regole tecniche di funzionamento del servizio di Pec previste dal D.M. 2 novembre 2005 (come peraltro indicato nei <a href="http://www.interpares.org/display_file.cfm?doc=ip3_italy_gs05a_final_report.pdf">documenti ufficiali</a> dell&#8217;Agenzia per l&#8217;Italia Digitale della Presidenza del Consiglio). Infatti,<i> MIME</i> non è uno dei tanti formati possibili<i>,</i> ma è<i> </i>lo <b>standard internazionale di fatto per la posta elettronica</b>, attraverso il quale non solo il sistema di Pec ma i server di posta di tutto il mondo trasmettono e inviano i messaggi email; è uno standard aperto, ampiamente documentato, non vincolato da diritti di privativa industriale; è previsto espressamente dall&#8217;art. 6.1 delle regole tecniche di cui al citato D.M. 2 novembre 2005 (<i>“il sistema di Pec genera i messaggi (ricevute, avvisi e buste) in formato MIME”</i>).
+</p>
+
+<p class="normal">
+  <b>Salvare i messaggi in altri formati non standard (specie se proprietari) potrebbe pregiudicarne la leggibilità in futuro</b> (si pensi alla rapidità dell&#8217;evoluzione tecnologica e alla possibile difficoltà di reperire, magari fra dieci anni, software in grado di aprire formati datati e fuori standard)<b> e possibilmente anche l&#8217;integrità, in contrasto con quanto richiesto dall&#8217;art. 44, comma 1, lett. b-c del CAD.</b>
+</p>
+
+<h2 id="serve-la-marca-temporale-normal"> SERVE LA MARCA TEMPORALE {.normal}</h2>
+
+<p class="normal">
+  Un&#8217;ultima nota va fatta sulle modalità concrete di conservazione elettronica dei messaggi Pec.
+</p>
+
+<p class="normal">
+  La delibera n. 11/2004 del CNIPA prevede precise modalità tecniche e operative per i documenti informatici in generale, tra cui<b> l&#8217;apposizione di una marca temporale e della firma digitale del responsabile della conservazione</b>.
+</p>
+
+<p class="normal">
+  Si potrebbe pensare che tali misure siano superflue per i messaggi di Pec, in quanto il “sigillo” del gestore è già idoneo a fornire prova legale dell&#8217;identificazione del mittente e del destinatario, della conformità del contenuto del messaggio e della data e ora di invio e di consegna. Tuttavia <b>i certificati di firma scadono</b> e occorre provare che la sottoscrizione del gestore sia stata apposta prima della scadenza del certificato utilizzato: a questo serve la marca temporale. In caso contrario, non essendovi la certezza, ciò che è nato come documento digitale con valore legale può perdere la sua efficacia di prova “assoluta”.
+</p>
+
+<p class="normal">
+  E infatti <b>la delibera non prevede eccezioni</b>, per cui è necessario seguirne le indicazioni anche per le Pec: o provvedendo “a mano” a generare gli<i> hash</i> dei file da archiviare e ad apporvi marca temporale e firma digitale (altamente sconsigliato ai non “smanettoni”), o dotandosi di un software apposito, oppure affidandosi – come espressamente consentito dalla legge – a un <b>servizio esterno di conservazione sostitutiva</b>, fornito da<i> “soggetti, pubblici o privati, che offrono idonee garanzie organizzative e tecnologiche”</i> (art. 44, comma 1-ter del CAD). Anche se è prevedibile che quest’ultima sarà la soluzione adottata da molte imprese, è comunque opportuno essere a conoscenza delle questioni tecniche e legali sopra illustrate, per non delegare “alla cieca” obblighi di cui non si conosce il preciso contenuto, ed essere quindi in grado di <b>selezionare adeguatamente i fornitori</b>.
+</p>
+
+<p>L’ Avv. Fabio SALOMONE del Foro di Matera ha preparato una interessante guida su come ottemperare a questa esigenza con degli semplici strumenti. Qui trovare <a href="http://www.foromaterano.it/wordpress/wp-content/uploads/2015/05/LE-SCHEDE-TECNICHE-DEL-CENTRO-STUDI.pdf">la guida in formato PDF</a>.</p>
+
+<p>Appunti tratti e rielaborati da diverse fonti. In particolare:</p>
+
+<ul>
+  <li><a href="http://www.mysolutionpost.it/blogs/it-law/piana/2014/10/pec-piena.aspx">Ho la casella Pec piena, che cosa faccio?</a></li>
+  <li><a href="http://www.foromaterano.it/wordpress/wp-content/uploads/2015/05/LE-SCHEDE-TECNICHE-DEL-CENTRO-STUDI.pdf">LE SCHEDE TECNICHE DEL CENTRO STUDI</a></li>
+</ul>
+
+			</div>
+
+			
+						<div id="page-meta" class="t30">
+				<p>
+					<!-- Look the author details up from the site config. -->
+					
+					<!-- Output author details if some exist. -->
+					
+
+				
+				<time class="icon-calendar pr20" datetime="2017-02-28T10:38:28+01:00" itemprop="datePublished"> 2017-02-28</time>
+				
+
+				<span class="icon-archive pr20"> ARTICOLI</span>
+				<br />
+				<span class="pr20"><span class="icon-price-tag pr10"> organizzazione</span> <span class="icon-price-tag pr10"> ufficio</span> </span>
+			</p>
+
+			
+			<div id="post-nav" class="row">
+				
+				<div class="small-5 columns"><a class="button small radius prev" href="http://localhost:4000/2017/02/parole-o_stili/">&laquo; Parole O_Stili</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-2 columns text-center"><a class="radius button small" href="http://localhost:4000/archivio/" title="Blog Archivio">Archivio</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-5 columns text-right"><a class="button small radius next" href="http://localhost:4000/2017/03/dati-banche-e-api-di-integrazione/">Dati, banche e API di integrazione. &raquo;</a></div><!-- /.small-4.columns -->
+				
+			</div>
+			
+			</div><!--  /.page-meta -->
+
+			
+
+			
+		</article>
+	</div><!-- /.medium-8.columns -->
+
+
+	
+
+
+	
+</div><!-- /.row -->
+
+
+	
+	    <div id="up-to-top" class="row">
+      <div class="small-12 columns" style="text-align: right;">
+        <a class="iconfont" href="#top-of-page">&#xf108;</a>
+      </div><!-- /.small-12.columns -->
+    </div><!-- /.row -->
+
+
+    <footer id="footer-content" class="bg-grau">
+      <div id="footer">
+        <div class="row">
+          <div class="medium-6 large-5 columns">
+            <h5 class="shadow-black">Informazioni su questo sito</h5>
+
+            <p class="shadow-black">
+              Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen
+              <a href="http://localhost:4000/perché-questo-blog/">Altro&nbsp;›</a>
+            </p>
+          </div><!-- /.large-6.columns -->
+
+
+          <div class="small-6 medium-3 large-3 large-offset-1 columns">
+            
+              
+                <h5 class="shadow-black">Servizi</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+
+              <ul class="no-bullet shadow-black">
+              
+                
+                  <li >
+                    <a href="http://localhost:4000"  title=""></a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="http://localhost:4000/contatti/"  title="Contatti">Contatti</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="http://localhost:4000/feed.xml"  title="Subscribe to RSS Feed">RSS</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="http://localhost:4000/atom.xml"  title="Subscribe to Atom Feed">Atom</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="http://localhost:4000/sitemap.xml"  title="Sitemap for Google Webmaster Tools">sitemap.xml</a>
+                  </li>
+              
+              </ul>
+          </div><!-- /.large-4.columns -->
+
+
+          <div class="small-6 medium-3 large-3 columns">
+            
+              
+                <h5 class="shadow-black">Ringraziamenti</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+
+            <ul class="no-bullet shadow-black">
+            
+              
+                <li >
+                  <a href="http://localhost:4000"  title=""></a>
+                </li>
+            
+              
+                <li class="network-entypo" >
+                  <a href="http://entypo.com/" target="_blank"  title="Icons by Daniel Bruce">Icons by Daniel Bruce</a>
+                </li>
+            
+              
+                <li class="services-newsletter" >
+                  <a href="http://foundation.zurb.com/" target="_blank"  title="Built on Foundation">Built on Foundation</a>
+                </li>
+            
+              
+                <li class="rss-link" >
+                  <a href="http://unsplash.com/" target="_blank"  title="Images by Unsplash">Images by Unsplash</a>
+                </li>
+            
+            </ul>
+          </div><!-- /.large-3.columns -->
+        </div><!-- /.row -->
+
+      </div><!-- /#footer -->
+
+
+      <div id="subfooter">
+        <nav class="row">
+          <section id="subfooter-left" class="small-12 medium-6 columns credits">
+            
+          </section>
+
+          <section id="subfooter-right" class="small-12 medium-6 columns">
+            <ul class="inline-list social-icons">
+            
+              <li><a href="mailto:vittore@zen.pn.it" target="_blank" class="icon-mail" title=""></a></li>
+            
+              <li><a href="https://www.linkedin.com/in/vittorezen/" target="_blank" class="icon-linkedin" title=""></a></li>
+            
+              <li><a href="http://twitter.com/vittore" target="_blank" class="icon-twitter" title=""></a></li>
+            
+              <li><a href="http://www.facebook.com/vittore.zen" target="_blank" class="icon-facebook" title=""></a></li>
+            
+              <li><a href="http://github.com/vittore" target="_blank" class="icon-github" title=""></a></li>
+            
+            </ul>
+          </section>
+        </nav>
+      </div><!-- /#subfooter -->
+    </footer>
+
+	
+
+	
+
+
+<script src="http://localhost:4000/assets/js/javascript.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+

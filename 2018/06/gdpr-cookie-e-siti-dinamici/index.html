@@ -1,0 +1,679 @@
+<!doctype html>
+<html class="no-js" lang="it">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GDPR, cookie e siti dinamici</title>
+
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/styles_feeling_responsive.css">
+
+  
+
+	<script src="http://localhost:4000/assets/js/modernizr.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+	<script>
+		WebFont.load({
+			google: {
+				families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ]
+			}
+		});
+	</script>
+
+	<noscript>
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic%7CVolkhov' rel='stylesheet' type='text/css'>
+	</noscript>
+
+
+	<!-- Search Engine Optimization -->
+	<meta name="description" content="Le “buzz word” di questo momento sono GDPR e cookie, possibilmente condite in salsa legale.
+
+Mi ritengo con malcelato orgoglio uno dei primi sbarcati sul web  https://web.archive.org/web/19980202100719/http://www.dimi.uniud.it:80/~zen/ (15 agosto 1997) che attraverso una discreta conoscenza delle scienze dell’informazione ha costruito un pezzo del web.
+Ho scritto “scienze dell’informazione” da non confondersi con le scienze della comunicazione: su questa distinzione mi prometto un post polemico nel prossimo futuro considerate le invasioni di campo che vivo sulla mia pelle quasi quotidianamente.
+
+Come ho scritto in /perché-questo-blog/ la nuova versione di www.zen.pn.it è interamente statica e non utilizza nessun tipo di cookie e non raccoglie nessun tipo di dato personale.
+
+Ho riflettuto a lungo su questo argomento:
+
+
+  Il mio bel sito wordpress con la sua miriade di plugin che raccolgono chissà quale tipo di dato non è certo gdpr-compliant.
+  Ho la forza legale ed economica per far fronte ad eventuali divergenze?
+  No.
+  Soluzioni?
+
+
+Semplice: un sito che non usa i cookie e non raccoglie dati; cioè un sito completamente HTML+CSS+JS, senza porzioni server side (che hanno bisogno dei cookie), senza possibilità di inviare post (che richiedono un minimo di trattamento dei dati di chi invia), senza statistiche di accesso,… insomma un sito web vecchio stile. Tecnicamente un sito realizzato usando https://jekyllrb.com/.
+
+Questo ritorno alle origini mi ha costretto a fare delle riflessioni su come sia cambiato il web in questi anni. Da quando nel lontano 1989 usavo metacrawler per le mie ricerche perché google aveva troppe poche pagine indicizzate, per arrivare fino ai giorni nostri dove il mio ufficio confina con un dipartimento di comunicazione sul cui sito web campeggia la “ricerca di un web marketing strategist”.
+Scusate, sto anticipando il prossimo post. Ritorno al tema tecnico.
+
+Cookie
+
+Il protocollo http su cui il web si basa è un protocollo senza memoria (stateless). Stateless significa che ogni richiesta è indipendente da quelle precedenti e si conclude al momento della chiusura della connessione (quando il server comunica che ha finito di servire il documento o premo “stop” nel browser).
+
+Il server web quindi non ha “memoria” di quanto comunicato precedentemente con un certo client: per questo motivo, per realizzare applicazioni web complesse, sono stati sviluppati meccanismi a livello superiore come i cookies per costruire “sessioni” e permettere al server di recuperare informazioni riguardanti un certo client.
+
+Senza cookie non ci può essere web dinamico, e-commerce,…
+
+I cookie sono una etichetta che viene messa alla mia navigazione, sul mio computer, sul mio browser.
+Ora questa etichettatura è molto rischiosa non in se stessa ma nel momento in cui la uso. Su questo tema vi invito a leggere due articoli:
+
+
+  https://www.internazionale.it/notizie/eli-pariser/2011/07/01/internet-nasconde-censura-filter-bubble di E. Pariser da cui poi ha origine il libro “Il filtro”
+  https://www.internazionale.it/reportage/hannes-grassegger/2018/03/21/politica-facebook-cambridge-analytica
+
+
+quote     Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sentito parlare dei big data. Il senso di quest’espressione è che tutto quello che facciamo, sia online sia offline, lascia delle tracce digitali. Ogni acquisto fatto con la carta di credito, ogni ricerca su Google, ogni spostamento che facciamo con il cellulare in tasca, ogni like su Facebook: tutto è conservato da qualche parte.
+
+Ecco perché il legislatore ha messo una norma a riguardo: devi avvisare se usi i cookie.
+
+Giusto. Corretto. Ma…
+
+Non sarebbe stato saggio scrivere: se usi i cookie funzionali cioè quelli che nascono e muoiono per il funzionamento di un sito dinamico allora non devi avvisare nessuno, nel caso in cui i cookie li usi per identificare e poi usi questi dati allora avvisi il tuo “cliente”?
+
+No. Nell’incertezza devi avvisare sempre.
+
+Log di sistema
+
+Idem per i log di sistema. Se ho un sito web ho di sicuro un file di log che mi dice che l’ip tal dei tali ha richiesto quella specifica pagina. Attenzione: per il legislatore l’indirizzo ip è un dato personale e tenere dei log di sistema significa mantenere dei dati personali. Devi avvisare il tuo “cliente”.
+
+Commenti e moduli di informazione
+
+Se hai un blog è certo che darai ai tuoi lettori la possibilità di dibattere in pubblico e per mantenere il rapporto civile chiederai di identificarsi. Quindi… raccogli dati. Devi avvisare il tuo “cliente”.
+
+Se hai un modulo in cui i tuoi clienti chiedono informazioni e raccogli il loro indirizzo email per rispondergli…. Devi avvisare il tuo “cliente”.
+
+Per me questo è troppo. Per questo ho fatto mia questa riflessione che trovate in (https://www.bodhilinux.com/2018/06/03/forums-closed-due-to-gdpr/)[https://www.bodhilinux.com/2018/06/03/forums-closed-due-to-gdpr/]  e sono passato a questa versione del mio blog.">
+	
+	
+	
+	
+	
+	
+	<link rel="canonical" href="http://localhost:4000/2018/06/gdpr-cookie-e-siti-dinamici/">
+
+
+	<!-- Facebook Open Graph -->
+	<meta property="og:title" content="GDPR, cookie e siti dinamici">
+	<meta property="og:description" content="Le “buzz word” di questo momento sono GDPR e cookie, possibilmente condite in salsa legale.
+
+Mi ritengo con malcelato orgoglio uno dei primi sbarcati sul web  https://web.archive.org/web/19980202100719/http://www.dimi.uniud.it:80/~zen/ (15 agosto 1997) che attraverso una discreta conoscenza delle scienze dell’informazione ha costruito un pezzo del web.
+Ho scritto “scienze dell’informazione” da non confondersi con le scienze della comunicazione: su questa distinzione mi prometto un post polemico nel prossimo futuro considerate le invasioni di campo che vivo sulla mia pelle quasi quotidianamente.
+
+Come ho scritto in /perché-questo-blog/ la nuova versione di www.zen.pn.it è interamente statica e non utilizza nessun tipo di cookie e non raccoglie nessun tipo di dato personale.
+
+Ho riflettuto a lungo su questo argomento:
+
+
+  Il mio bel sito wordpress con la sua miriade di plugin che raccolgono chissà quale tipo di dato non è certo gdpr-compliant.
+  Ho la forza legale ed economica per far fronte ad eventuali divergenze?
+  No.
+  Soluzioni?
+
+
+Semplice: un sito che non usa i cookie e non raccoglie dati; cioè un sito completamente HTML+CSS+JS, senza porzioni server side (che hanno bisogno dei cookie), senza possibilità di inviare post (che richiedono un minimo di trattamento dei dati di chi invia), senza statistiche di accesso,… insomma un sito web vecchio stile. Tecnicamente un sito realizzato usando https://jekyllrb.com/.
+
+Questo ritorno alle origini mi ha costretto a fare delle riflessioni su come sia cambiato il web in questi anni. Da quando nel lontano 1989 usavo metacrawler per le mie ricerche perché google aveva troppe poche pagine indicizzate, per arrivare fino ai giorni nostri dove il mio ufficio confina con un dipartimento di comunicazione sul cui sito web campeggia la “ricerca di un web marketing strategist”.
+Scusate, sto anticipando il prossimo post. Ritorno al tema tecnico.
+
+Cookie
+
+Il protocollo http su cui il web si basa è un protocollo senza memoria (stateless). Stateless significa che ogni richiesta è indipendente da quelle precedenti e si conclude al momento della chiusura della connessione (quando il server comunica che ha finito di servire il documento o premo “stop” nel browser).
+
+Il server web quindi non ha “memoria” di quanto comunicato precedentemente con un certo client: per questo motivo, per realizzare applicazioni web complesse, sono stati sviluppati meccanismi a livello superiore come i cookies per costruire “sessioni” e permettere al server di recuperare informazioni riguardanti un certo client.
+
+Senza cookie non ci può essere web dinamico, e-commerce,…
+
+I cookie sono una etichetta che viene messa alla mia navigazione, sul mio computer, sul mio browser.
+Ora questa etichettatura è molto rischiosa non in se stessa ma nel momento in cui la uso. Su questo tema vi invito a leggere due articoli:
+
+
+  https://www.internazionale.it/notizie/eli-pariser/2011/07/01/internet-nasconde-censura-filter-bubble di E. Pariser da cui poi ha origine il libro “Il filtro”
+  https://www.internazionale.it/reportage/hannes-grassegger/2018/03/21/politica-facebook-cambridge-analytica
+
+
+quote     Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sentito parlare dei big data. Il senso di quest’espressione è che tutto quello che facciamo, sia online sia offline, lascia delle tracce digitali. Ogni acquisto fatto con la carta di credito, ogni ricerca su Google, ogni spostamento che facciamo con il cellulare in tasca, ogni like su Facebook: tutto è conservato da qualche parte.
+
+Ecco perché il legislatore ha messo una norma a riguardo: devi avvisare se usi i cookie.
+
+Giusto. Corretto. Ma…
+
+Non sarebbe stato saggio scrivere: se usi i cookie funzionali cioè quelli che nascono e muoiono per il funzionamento di un sito dinamico allora non devi avvisare nessuno, nel caso in cui i cookie li usi per identificare e poi usi questi dati allora avvisi il tuo “cliente”?
+
+No. Nell’incertezza devi avvisare sempre.
+
+Log di sistema
+
+Idem per i log di sistema. Se ho un sito web ho di sicuro un file di log che mi dice che l’ip tal dei tali ha richiesto quella specifica pagina. Attenzione: per il legislatore l’indirizzo ip è un dato personale e tenere dei log di sistema significa mantenere dei dati personali. Devi avvisare il tuo “cliente”.
+
+Commenti e moduli di informazione
+
+Se hai un blog è certo che darai ai tuoi lettori la possibilità di dibattere in pubblico e per mantenere il rapporto civile chiederai di identificarsi. Quindi… raccogli dati. Devi avvisare il tuo “cliente”.
+
+Se hai un modulo in cui i tuoi clienti chiedono informazioni e raccogli il loro indirizzo email per rispondergli…. Devi avvisare il tuo “cliente”.
+
+Per me questo è troppo. Per questo ho fatto mia questa riflessione che trovate in (https://www.bodhilinux.com/2018/06/03/forums-closed-due-to-gdpr/)[https://www.bodhilinux.com/2018/06/03/forums-closed-due-to-gdpr/]  e sono passato a questa versione del mio blog.">
+	<meta property="og:url" content="http://localhost:4000/2018/06/gdpr-cookie-e-siti-dinamici/">
+	<meta property="og:locale" content="en_EN">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="zen.pn.it - Tecnologia e dintorni">
+	
+	<meta property="article:author" content="https://www.facebook.com/vittore.zen">
+
+
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="vittore">
+	<meta name="twitter:creator" content="vittore">
+	<meta name="twitter:title" content="GDPR, cookie e siti dinamici">
+	<meta name="twitter:description" content="Le “buzz word” di questo momento sono GDPR e cookie, possibilmente condite in salsa legale.
+
+Mi ritengo con malcelato orgoglio uno dei primi sbarcati sul web  https://web.archive.org/web/19980202100719/http://www.dimi.uniud.it:80/~zen/ (15 agosto 1997) che attraverso una discreta conoscenza delle scienze dell’informazione ha costruito un pezzo del web.
+Ho scritto “scienze dell’informazione” da non confondersi con le scienze della comunicazione: su questa distinzione mi prometto un post polemico nel prossimo futuro considerate le invasioni di campo che vivo sulla mia pelle quasi quotidianamente.
+
+Come ho scritto in /perché-questo-blog/ la nuova versione di www.zen.pn.it è interamente statica e non utilizza nessun tipo di cookie e non raccoglie nessun tipo di dato personale.
+
+Ho riflettuto a lungo su questo argomento:
+
+
+  Il mio bel sito wordpress con la sua miriade di plugin che raccolgono chissà quale tipo di dato non è certo gdpr-compliant.
+  Ho la forza legale ed economica per far fronte ad eventuali divergenze?
+  No.
+  Soluzioni?
+
+
+Semplice: un sito che non usa i cookie e non raccoglie dati; cioè un sito completamente HTML+CSS+JS, senza porzioni server side (che hanno bisogno dei cookie), senza possibilità di inviare post (che richiedono un minimo di trattamento dei dati di chi invia), senza statistiche di accesso,… insomma un sito web vecchio stile. Tecnicamente un sito realizzato usando https://jekyllrb.com/.
+
+Questo ritorno alle origini mi ha costretto a fare delle riflessioni su come sia cambiato il web in questi anni. Da quando nel lontano 1989 usavo metacrawler per le mie ricerche perché google aveva troppe poche pagine indicizzate, per arrivare fino ai giorni nostri dove il mio ufficio confina con un dipartimento di comunicazione sul cui sito web campeggia la “ricerca di un web marketing strategist”.
+Scusate, sto anticipando il prossimo post. Ritorno al tema tecnico.
+
+Cookie
+
+Il protocollo http su cui il web si basa è un protocollo senza memoria (stateless). Stateless significa che ogni richiesta è indipendente da quelle precedenti e si conclude al momento della chiusura della connessione (quando il server comunica che ha finito di servire il documento o premo “stop” nel browser).
+
+Il server web quindi non ha “memoria” di quanto comunicato precedentemente con un certo client: per questo motivo, per realizzare applicazioni web complesse, sono stati sviluppati meccanismi a livello superiore come i cookies per costruire “sessioni” e permettere al server di recuperare informazioni riguardanti un certo client.
+
+Senza cookie non ci può essere web dinamico, e-commerce,…
+
+I cookie sono una etichetta che viene messa alla mia navigazione, sul mio computer, sul mio browser.
+Ora questa etichettatura è molto rischiosa non in se stessa ma nel momento in cui la uso. Su questo tema vi invito a leggere due articoli:
+
+
+  https://www.internazionale.it/notizie/eli-pariser/2011/07/01/internet-nasconde-censura-filter-bubble di E. Pariser da cui poi ha origine il libro “Il filtro”
+  https://www.internazionale.it/reportage/hannes-grassegger/2018/03/21/politica-facebook-cambridge-analytica
+
+
+quote     Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sentito parlare dei big data. Il senso di quest’espressione è che tutto quello che facciamo, sia online sia offline, lascia delle tracce digitali. Ogni acquisto fatto con la carta di credito, ogni ricerca su Google, ogni spostamento che facciamo con il cellulare in tasca, ogni like su Facebook: tutto è conservato da qualche parte.
+
+Ecco perché il legislatore ha messo una norma a riguardo: devi avvisare se usi i cookie.
+
+Giusto. Corretto. Ma…
+
+Non sarebbe stato saggio scrivere: se usi i cookie funzionali cioè quelli che nascono e muoiono per il funzionamento di un sito dinamico allora non devi avvisare nessuno, nel caso in cui i cookie li usi per identificare e poi usi questi dati allora avvisi il tuo “cliente”?
+
+No. Nell’incertezza devi avvisare sempre.
+
+Log di sistema
+
+Idem per i log di sistema. Se ho un sito web ho di sicuro un file di log che mi dice che l’ip tal dei tali ha richiesto quella specifica pagina. Attenzione: per il legislatore l’indirizzo ip è un dato personale e tenere dei log di sistema significa mantenere dei dati personali. Devi avvisare il tuo “cliente”.
+
+Commenti e moduli di informazione
+
+Se hai un blog è certo che darai ai tuoi lettori la possibilità di dibattere in pubblico e per mantenere il rapporto civile chiederai di identificarsi. Quindi… raccogli dati. Devi avvisare il tuo “cliente”.
+
+Se hai un modulo in cui i tuoi clienti chiedono informazioni e raccogli il loro indirizzo email per rispondergli…. Devi avvisare il tuo “cliente”.
+
+Per me questo è troppo. Per questo ho fatto mia questa riflessione che trovate in (https://www.bodhilinux.com/2018/06/03/forums-closed-due-to-gdpr/)[https://www.bodhilinux.com/2018/06/03/forums-closed-due-to-gdpr/]  e sono passato a questa versione del mio blog.">
+	
+	
+
+	<link type="text/plain" rel="author" href="http://localhost:4000/humans.txt">
+
+	
+
+	
+
+	<link rel="icon" sizes="32x32" href="http://localhost:4000/assets/img/favicon-32x32.png">
+
+	<link rel="icon" sizes="192x192" href="http://localhost:4000/assets/img/touch-icon-192x192.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="http://localhost:4000/assets/img/apple-touch-icon-180x180-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://localhost:4000/assets/img/apple-touch-icon-152x152-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/assets/img/apple-touch-icon-144x144-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://localhost:4000/assets/img/apple-touch-icon-120x120-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/assets/img/apple-touch-icon-114x114-precomposed.png">
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://localhost:4000/assets/img/apple-touch-icon-76x76-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/assets/img/apple-touch-icon-72x72-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/assets/img/apple-touch-icon-precomposed.png">	
+
+	<meta name="msapplication-TileImage" content="http://localhost:4000/assets/img/msapplication_tileimage.png">
+
+	<meta name="msapplication-TileColor" content="#fabb00">
+
+
+	
+
+</head>
+<body id="top-of-page" class="post">
+	
+	
+<div id="navigation" class="sticky">
+  <nav class="top-bar" role="navigation" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+      <h1 class="show-for-small-only"><a href="http://localhost:4000" class="icon-tree"> zen.pn.it - Tecnologia e dintorni</a></h1>
+    </li>
+       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Nav</span></a></li>
+    </ul>
+    <section class="top-bar-section">
+
+      <ul class="right">
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+        
+      </ul>
+
+      <ul class="left">
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="http://localhost:4000/">Home</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="http://localhost:4000/chi-sono/">Chi sono</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="http://localhost:4000/perché-questo-blog/">Perché questo blog</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="http://localhost:4000/contatti/">Contatti</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="http://localhost:4000/whishlist/">Whishlist</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+        
+      </ul>
+    </section>
+  </nav>
+</div><!-- /#navigation -->
+
+	
+
+	
+
+	<div class="row t30">
+	<div class="medium-8 columns medium-offset-2 end">
+		<article itemscope itemtype="http://schema.org/Article">
+			<header>
+				
+
+				<div itemprop="name">
+					
+					<h1>GDPR, cookie e siti dinamici</h1>
+				</div>
+			</header>
+
+
+			
+
+			<div itemprop="articleSection">
+			<p>Le “buzz word” di questo momento sono GDPR e cookie, possibilmente condite in salsa legale.</p>
+
+<p>Mi ritengo con malcelato orgoglio uno dei primi sbarcati sul web  <a href="https://www.dimi.uniud.it/~zen">https://web.archive.org/web/19980202100719/http://www.dimi.uniud.it:80/~zen/</a> (15 agosto 1997) che attraverso una discreta conoscenza delle scienze dell’informazione ha costruito un pezzo del web.
+Ho scritto “scienze dell’informazione” da non confondersi con le scienze della comunicazione: su questa distinzione mi prometto un post polemico nel prossimo futuro considerate le invasioni di campo che vivo sulla mia pelle quasi quotidianamente.</p>
+
+<p>Come ho scritto in <a href="/perché-questo-blog/">/perché-questo-blog/</a> la nuova versione di <a href="http://www.zen.pn.it">www.zen.pn.it</a> è interamente statica e non utilizza nessun tipo di cookie e non raccoglie nessun tipo di dato personale.</p>
+
+<p>Ho riflettuto a lungo su questo argomento:</p>
+
+<ul>
+  <li>Il mio bel sito wordpress con la sua miriade di plugin che raccolgono chissà quale tipo di dato non è certo gdpr-compliant.</li>
+  <li>Ho la forza legale ed economica per far fronte ad eventuali divergenze?</li>
+  <li>No.</li>
+  <li>Soluzioni?</li>
+</ul>
+
+<p>Semplice: un sito che non usa i cookie e non raccoglie dati; cioè un sito completamente HTML+CSS+JS, senza porzioni server side (che hanno bisogno dei cookie), senza possibilità di inviare post (che richiedono un minimo di trattamento dei dati di chi invia), senza statistiche di accesso,… insomma un sito web vecchio stile. Tecnicamente un sito realizzato usando <a href="Jekyll">https://jekyllrb.com/</a>.</p>
+
+<p>Questo ritorno alle origini mi ha costretto a fare delle riflessioni su come sia cambiato il web in questi anni. Da quando nel lontano 1989 usavo metacrawler per le mie ricerche perché google aveva troppe poche pagine indicizzate, per arrivare fino ai giorni nostri dove il mio ufficio confina con un dipartimento di comunicazione sul cui sito web campeggia la “ricerca di un web marketing strategist”.
+Scusate, sto anticipando il prossimo post. Ritorno al tema tecnico.</p>
+
+<h2 id="cookie">Cookie</h2>
+
+<p>Il protocollo <em>http</em> su cui il web si basa è un protocollo <em>senza memoria</em> (stateless). Stateless significa che ogni richiesta è indipendente da quelle precedenti e si conclude al momento della chiusura della connessione (quando il server comunica che ha finito di servire il documento o premo “stop” nel browser).</p>
+
+<p>Il server web quindi non ha “memoria” di quanto comunicato precedentemente con un certo client: per questo motivo, per realizzare applicazioni web complesse, sono stati sviluppati meccanismi a livello superiore come i cookies per costruire “sessioni” e permettere al server di recuperare informazioni riguardanti un certo client.</p>
+
+<p>Senza cookie non ci può essere web dinamico, e-commerce,…</p>
+
+<p>I cookie sono una etichetta che viene messa alla mia navigazione, sul mio computer, sul mio browser.
+Ora questa etichettatura è molto rischiosa non in se stessa ma nel momento in cui la uso. Su questo tema vi invito a leggere due articoli:</p>
+
+<ul>
+  <li><a href="Quello che internet ci nasconde">https://www.internazionale.it/notizie/eli-pariser/2011/07/01/internet-nasconde-censura-filter-bubble</a> di E. Pariser da cui poi ha origine il libro “Il filtro”</li>
+  <li><a href="La politica ai tempi di facebook">https://www.internazionale.it/reportage/hannes-grassegger/2018/03/21/politica-facebook-cambridge-analytica</a></li>
+</ul>
+
+<p>quote     Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sentito parlare dei big data. Il senso di quest’espressione è che tutto quello che facciamo, sia online sia offline, lascia delle tracce digitali. Ogni acquisto fatto con la carta di credito, ogni ricerca su Google, ogni spostamento che facciamo con il cellulare in tasca, ogni like su Facebook: tutto è conservato da qualche parte.</p>
+
+<p>Ecco perché il legislatore ha messo una norma a riguardo: devi avvisare se usi i cookie.</p>
+
+<p>Giusto. Corretto. Ma…</p>
+
+<p>Non sarebbe stato saggio scrivere: se usi i cookie funzionali cioè quelli che nascono e muoiono per il funzionamento di un sito dinamico allora non devi avvisare nessuno, nel caso in cui i cookie li usi per identificare e poi usi questi dati allora avvisi il tuo “cliente”?</p>
+
+<p>No. Nell’incertezza devi avvisare sempre.</p>
+
+<h2 id="log-di-sistema">Log di sistema</h2>
+
+<p>Idem per i log di sistema. Se ho un sito web ho di sicuro un file di log che mi dice che l’ip tal dei tali ha richiesto quella specifica pagina. Attenzione: per il legislatore l’indirizzo ip è un dato personale e tenere dei log di sistema significa mantenere dei dati personali. Devi avvisare il tuo “cliente”.</p>
+
+<h2 id="commenti-e-moduli-di-informazione">Commenti e moduli di informazione</h2>
+
+<p>Se hai un blog è certo che darai ai tuoi lettori la possibilità di dibattere in pubblico e per mantenere il rapporto civile chiederai di identificarsi. Quindi… raccogli dati. Devi avvisare il tuo “cliente”.</p>
+
+<p>Se hai un modulo in cui i tuoi clienti chiedono informazioni e raccogli il loro indirizzo email per rispondergli…. Devi avvisare il tuo “cliente”.</p>
+
+<p>Per me questo è troppo. Per questo ho fatto mia questa riflessione che trovate in (https://www.bodhilinux.com/2018/06/03/forums-closed-due-to-gdpr/)[https://www.bodhilinux.com/2018/06/03/forums-closed-due-to-gdpr/]  e sono passato a questa versione del mio blog.</p>
+
+			</div>
+
+			
+						<div id="page-meta" class="t30">
+				<p>
+					<!-- Look the author details up from the site config. -->
+					
+					<!-- Output author details if some exist. -->
+					
+
+				
+				<time class="icon-calendar pr20" datetime="2018-06-11T02:00:00+02:00" itemprop="datePublished"> 2018-06-11</time>
+				
+
+				<span class="icon-archive pr20"> ARTICOLI</span>
+				<br />
+				<span class="pr20"><span class="icon-price-tag pr10"> web</span> </span>
+			</p>
+
+			
+			<div id="post-nav" class="row">
+				
+				<div class="small-5 columns"><a class="button small radius prev" href="http://localhost:4000/2018/05/seconda-edizione-in-lavorazione-idee-e-o-richieste/">&laquo; Seconda edizione in lavorazione: idee e/o richieste?</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-2 columns text-center"><a class="radius button small" href="http://localhost:4000/archivio/" title="Blog Archivio">Archivio</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-5 columns text-right"></div><!-- /.small-4.columns -->
+				
+			</div>
+			
+			</div><!--  /.page-meta -->
+
+			
+
+			
+		</article>
+	</div><!-- /.medium-8.columns -->
+
+
+	
+
+
+	
+</div><!-- /.row -->
+
+
+	
+	    <div id="up-to-top" class="row">
+      <div class="small-12 columns" style="text-align: right;">
+        <a class="iconfont" href="#top-of-page">&#xf108;</a>
+      </div><!-- /.small-12.columns -->
+    </div><!-- /.row -->
+
+
+    <footer id="footer-content" class="bg-grau">
+      <div id="footer">
+        <div class="row">
+          <div class="medium-6 large-5 columns">
+            <h5 class="shadow-black">Informazioni su questo sito</h5>
+
+            <p class="shadow-black">
+              Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen
+              <a href="http://localhost:4000/perché-questo-blog/">Altro&nbsp;›</a>
+            </p>
+          </div><!-- /.large-6.columns -->
+
+
+          <div class="small-6 medium-3 large-3 large-offset-1 columns">
+            
+              
+                <h5 class="shadow-black">Servizi</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+
+              <ul class="no-bullet shadow-black">
+              
+                
+                  <li >
+                    <a href="http://localhost:4000"  title=""></a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="http://localhost:4000/contatti/"  title="Contatti">Contatti</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="http://localhost:4000/feed.xml"  title="Subscribe to RSS Feed">RSS</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="http://localhost:4000/atom.xml"  title="Subscribe to Atom Feed">Atom</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="http://localhost:4000/sitemap.xml"  title="Sitemap for Google Webmaster Tools">sitemap.xml</a>
+                  </li>
+              
+              </ul>
+          </div><!-- /.large-4.columns -->
+
+
+          <div class="small-6 medium-3 large-3 columns">
+            
+              
+                <h5 class="shadow-black">Ringraziamenti</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+
+            <ul class="no-bullet shadow-black">
+            
+              
+                <li >
+                  <a href="http://localhost:4000"  title=""></a>
+                </li>
+            
+              
+                <li class="network-entypo" >
+                  <a href="http://entypo.com/" target="_blank"  title="Icons by Daniel Bruce">Icons by Daniel Bruce</a>
+                </li>
+            
+              
+                <li class="services-newsletter" >
+                  <a href="http://foundation.zurb.com/" target="_blank"  title="Built on Foundation">Built on Foundation</a>
+                </li>
+            
+              
+                <li class="rss-link" >
+                  <a href="http://unsplash.com/" target="_blank"  title="Images by Unsplash">Images by Unsplash</a>
+                </li>
+            
+            </ul>
+          </div><!-- /.large-3.columns -->
+        </div><!-- /.row -->
+
+      </div><!-- /#footer -->
+
+
+      <div id="subfooter">
+        <nav class="row">
+          <section id="subfooter-left" class="small-12 medium-6 columns credits">
+            
+          </section>
+
+          <section id="subfooter-right" class="small-12 medium-6 columns">
+            <ul class="inline-list social-icons">
+            
+              <li><a href="mailto:vittore@zen.pn.it" target="_blank" class="icon-mail" title=""></a></li>
+            
+              <li><a href="https://www.linkedin.com/in/vittorezen/" target="_blank" class="icon-linkedin" title=""></a></li>
+            
+              <li><a href="http://twitter.com/vittore" target="_blank" class="icon-twitter" title=""></a></li>
+            
+              <li><a href="http://www.facebook.com/vittore.zen" target="_blank" class="icon-facebook" title=""></a></li>
+            
+              <li><a href="http://github.com/vittore" target="_blank" class="icon-github" title=""></a></li>
+            
+            </ul>
+          </section>
+        </nav>
+      </div><!-- /#subfooter -->
+    </footer>
+
+	
+
+	
+
+
+<script src="http://localhost:4000/assets/js/javascript.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+

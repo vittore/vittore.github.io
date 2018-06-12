@@ -1,0 +1,491 @@
+<!doctype html>
+<html class="no-js" lang="it">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Scovato KeRanger, il primo virus che blocca un Mac e poi chiede il riscatto. Ecco come comportarsi.</title>
+
+    <link rel="stylesheet" type="text/css" href="http://localhost:4000/assets/css/styles_feeling_responsive.css">
+
+  
+
+	<script src="http://localhost:4000/assets/js/modernizr.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+	<script>
+		WebFont.load({
+			google: {
+				families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ]
+			}
+		});
+	</script>
+
+	<noscript>
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic%7CVolkhov' rel='stylesheet' type='text/css'>
+	</noscript>
+
+
+	<!-- Search Engine Optimization -->
+	<meta name="description" content="Sono finiti i tempi in cui un computer Apple tiene al riparo dai malware? Forse. Secondo alcune notizie diffuse qualche ora fa sui media di settore, infatti, è stato riscontrato il primo ransomware completo per sistemi Mac OS X. Si chiama KeRanger e pare abbia già colpito con “successo” alcune macchine made in Cupertino, lasciando agli utenti un’unica schermata con le modalità di pagamento per sbloccare il computer. A scoprirlo sono stati ricercatori dell’azienda di sicurezza Palo Alto Networks.">
+	
+	
+	
+	
+	
+	
+	<link rel="canonical" href="http://localhost:4000/2016/03/scovato-keranger-il-primo-virus-che-blocca-un-mac-e-poi-chiede-il-riscatto-ecco-come-comportarsi/">
+
+
+	<!-- Facebook Open Graph -->
+	<meta property="og:title" content="Scovato KeRanger, il primo virus che blocca un Mac e poi chiede il riscatto. Ecco come comportarsi.">
+	<meta property="og:description" content="Sono finiti i tempi in cui un computer Apple tiene al riparo dai malware? Forse. Secondo alcune notizie diffuse qualche ora fa sui media di settore, infatti, è stato riscontrato il primo ransomware completo per sistemi Mac OS X. Si chiama KeRanger e pare abbia già colpito con “successo” alcune macchine made in Cupertino, lasciando agli utenti un’unica schermata con le modalità di pagamento per sbloccare il computer. A scoprirlo sono stati ricercatori dell’azienda di sicurezza Palo Alto Networks.">
+	<meta property="og:url" content="http://localhost:4000/2016/03/scovato-keranger-il-primo-virus-che-blocca-un-mac-e-poi-chiede-il-riscatto-ecco-come-comportarsi/">
+	<meta property="og:locale" content="en_EN">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="zen.pn.it - Tecnologia e dintorni">
+	
+	<meta property="article:author" content="https://www.facebook.com/vittore.zen">
+
+
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="vittore">
+	<meta name="twitter:creator" content="vittore">
+	<meta name="twitter:title" content="Scovato KeRanger, il primo virus che blocca un Mac e poi chiede il riscatto. Ecco come comportarsi.">
+	<meta name="twitter:description" content="Sono finiti i tempi in cui un computer Apple tiene al riparo dai malware? Forse. Secondo alcune notizie diffuse qualche ora fa sui media di settore, infatti, è stato riscontrato il primo ransomware completo per sistemi Mac OS X. Si chiama KeRanger e pare abbia già colpito con “successo” alcune macchine made in Cupertino, lasciando agli utenti un’unica schermata con le modalità di pagamento per sbloccare il computer. A scoprirlo sono stati ricercatori dell’azienda di sicurezza Palo Alto Networks.">
+	
+	
+
+	<link type="text/plain" rel="author" href="http://localhost:4000/humans.txt">
+
+	
+
+	
+
+	<link rel="icon" sizes="32x32" href="http://localhost:4000/assets/img/favicon-32x32.png">
+
+	<link rel="icon" sizes="192x192" href="http://localhost:4000/assets/img/touch-icon-192x192.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="http://localhost:4000/assets/img/apple-touch-icon-180x180-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://localhost:4000/assets/img/apple-touch-icon-152x152-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://localhost:4000/assets/img/apple-touch-icon-144x144-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://localhost:4000/assets/img/apple-touch-icon-120x120-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://localhost:4000/assets/img/apple-touch-icon-114x114-precomposed.png">
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://localhost:4000/assets/img/apple-touch-icon-76x76-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://localhost:4000/assets/img/apple-touch-icon-72x72-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" href="http://localhost:4000/assets/img/apple-touch-icon-precomposed.png">	
+
+	<meta name="msapplication-TileImage" content="http://localhost:4000/assets/img/msapplication_tileimage.png">
+
+	<meta name="msapplication-TileColor" content="#fabb00">
+
+
+	
+
+</head>
+<body id="top-of-page" class="post">
+	
+	
+<div id="navigation" class="sticky">
+  <nav class="top-bar" role="navigation" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+      <h1 class="show-for-small-only"><a href="http://localhost:4000" class="icon-tree"> zen.pn.it - Tecnologia e dintorni</a></h1>
+    </li>
+       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Nav</span></a></li>
+    </ul>
+    <section class="top-bar-section">
+
+      <ul class="right">
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+        
+      </ul>
+
+      <ul class="left">
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="http://localhost:4000/">Home</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="http://localhost:4000/chi-sono/">Chi sono</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="http://localhost:4000/perché-questo-blog/">Perché questo blog</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="http://localhost:4000/contatti/">Contatti</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="http://localhost:4000/whishlist/">Whishlist</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+        
+      </ul>
+    </section>
+  </nav>
+</div><!-- /#navigation -->
+
+	
+
+	
+
+<div id="masthead-no-image-header">
+	<div class="row">
+		<div class="small-12 columns">
+			<a id="logo" href="http://localhost:4000/" title="zen.pn.it - Tecnologia e dintorni – Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen">
+				<img src="http://localhost:4000/assets/img/logo.png" alt="zen.pn.it - Tecnologia e dintorni – Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen">
+			</a>
+		</div><!-- /.small-12.columns -->
+	</div><!-- /.row -->
+</div><!-- /#masthead -->
+
+
+
+
+
+
+
+
+
+	<div class="row t30">
+	<div class="medium-8 columns medium-offset-2 end">
+		<article itemscope itemtype="http://schema.org/Article">
+			<header>
+				
+
+				<div itemprop="name">
+					
+					<h1>Scovato KeRanger, il primo virus che blocca un Mac e poi chiede il riscatto. Ecco come comportarsi.</h1>
+				</div>
+			</header>
+
+
+			
+
+			<div itemprop="articleSection">
+			<p>Sono finiti i tempi in cui un computer Apple tiene al riparo dai malware? Forse. Secondo alcune notizie diffuse qualche ora fa sui media di settore, infatti, è stato riscontrato il primo ransomware completo per sistemi Mac OS X. Si chiama KeRanger e pare abbia già colpito con “successo” alcune macchine made in Cupertino, lasciando agli utenti un’unica schermata con le modalità di pagamento per sbloccare il computer. A scoprirlo sono stati ricercatori dell’azienda di sicurezza Palo Alto Networks.</p>
+
+<!--more-->
+
+<p>Una storia che in orbita Microsoft è consolidata da anni e che invece aveva risparmiato, finora, la galassia Apple. Qui le scuole di pensiero sono almeno due. La prima è che Apple sia rimasta all’ombra dagli attacchi informatici perché i suoi sistemi così chiusi sono molto più difficili da bucare. La seconda è che, essendo quello dei malware un vero e proprio business, gli attacchi si siano concentrati sempre sugli ambienti Windows per un fatto di numeri e diffusione (più macchine uguale più utenti potenzialmente infettati). Potrebbero essere vere entrambe, anche perché a sostegno della seconda ipotesi c’è la forte diffusione di device Apple negli ultimi anni.</p>
+
+<h2 id="come-si-è-diffuso-keranger">Come si è diffuso KeRanger</h2>
+
+<p>Il ransomware che ha colpito i Mac si è diffuso, come trojan, attraverso un client torrent: il Trasmission. Si tratta di uno di quei software che servono per scaricare contenuti dalla Rete con protocollo p2p. Più precisamente, il malware era presente nell’installer della versione 2,90. E non è ancora chiaro in che modo i cyber criminali siano riusciti a bucare l’applicazione. Si sa con certezza, invece, che l’infezione ha avuto luogo il 4 marzo scorso, data di rilascio della versione 2,90. Mentre meno di 24 ore più tardi Apple era già al corrente dell’accaduto. Chiariamo subito che sia l’azienda di Cupertino che la stessa società produttrice di Trasmission hanno risolto il caso quasi subito. Gli ingegneri di Apple hanno ritirato il certificato digitale del programma (rendendolo dunque non più installabile), mentre di Trasmission è già stata diffusa la versione 2,92 debellata dal virus.</p>
+
+<h2 id="cosa-possono-fare-gli-utenti-mac">Cosa possono fare gli utenti Mac</h2>
+
+<p>I possessori di un Mac, comunque, possono controllare se il loro sistema è infetto attraverso qualche rapido passaggio, riportato dai diversi siti settoriali. Innanzitutto è bene cercare se esiste un file su General.rtf, scandagliando nelle cartelle /Applications/Transmission.app/Contents/Resources/ e /Volumes/Transmission/Transmission.app/Contents/Resources/. Questo file utilizza un’icona che assomiglia a un file RTF normale, ma in realtà è un file eseguibile Mach-O compresso con UPX 3.91. È inoltre noto che la prima volta che lo si esegue, KeRanger crea tre file “.kernel_pid”, “.kernel_time” e “.kernel_complete” nella directory / Library. Il malware sarà poi dormiente per tre giorni prima di attaccare il sistema.</p>
+
+<p> </p>
+
+<p>Per una analisi tecnica si veda l’<a href="http://tinyurl.com/zybzhqz">articolo di Palo Alto Networks</a> comprensivo anche dei domini da bloccare.</p>
+
+<p> </p>
+
+<p><em>[Fonte: <a href="http://tinyurl.com/ju4y53f">http://tinyurl.com/ju4y53f</a>]</em></p>
+
+<p> </p>
+
+			</div>
+
+			
+						<div id="page-meta" class="t30">
+				<p>
+					<!-- Look the author details up from the site config. -->
+					
+					<!-- Output author details if some exist. -->
+					
+
+				
+				<time class="icon-calendar pr20" datetime="2016-03-07T21:56:58+01:00" itemprop="datePublished"> 2016-03-07</time>
+				
+
+				<span class="icon-archive pr20"> ARTICOLI</span>
+				<br />
+				<span class="pr20"><span class="icon-price-tag pr10"> mondo apple</span> <span class="icon-price-tag pr10"> sistemi operativi</span> </span>
+			</p>
+
+			
+			<div id="post-nav" class="row">
+				
+				<div class="small-5 columns"><a class="button small radius prev" href="http://localhost:4000/2016/02/un-motore-di-ricerca-per-liot/">&laquo; Un motore di ricerca per l&#8217;IoT</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-2 columns text-center"><a class="radius button small" href="http://localhost:4000/archivio/" title="Blog Archivio">Archivio</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-5 columns text-right"><a class="button small radius next" href="http://localhost:4000/2016/03/basta-ciclofobia/">Basta ciclofobia! &raquo;</a></div><!-- /.small-4.columns -->
+				
+			</div>
+			
+			</div><!--  /.page-meta -->
+
+			
+
+			
+		</article>
+	</div><!-- /.medium-8.columns -->
+
+
+	
+
+
+	
+</div><!-- /.row -->
+
+
+	
+	    <div id="up-to-top" class="row">
+      <div class="small-12 columns" style="text-align: right;">
+        <a class="iconfont" href="#top-of-page">&#xf108;</a>
+      </div><!-- /.small-12.columns -->
+    </div><!-- /.row -->
+
+
+    <footer id="footer-content" class="bg-grau">
+      <div id="footer">
+        <div class="row">
+          <div class="medium-6 large-5 columns">
+            <h5 class="shadow-black">Informazioni su questo sito</h5>
+
+            <p class="shadow-black">
+              Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen
+              <a href="http://localhost:4000/perché-questo-blog/">Altro&nbsp;›</a>
+            </p>
+          </div><!-- /.large-6.columns -->
+
+
+          <div class="small-6 medium-3 large-3 large-offset-1 columns">
+            
+              
+                <h5 class="shadow-black">Servizi</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+
+              <ul class="no-bullet shadow-black">
+              
+                
+                  <li >
+                    <a href="http://localhost:4000"  title=""></a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="http://localhost:4000/contatti/"  title="Contatti">Contatti</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="http://localhost:4000/feed.xml"  title="Subscribe to RSS Feed">RSS</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="http://localhost:4000/atom.xml"  title="Subscribe to Atom Feed">Atom</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="http://localhost:4000/sitemap.xml"  title="Sitemap for Google Webmaster Tools">sitemap.xml</a>
+                  </li>
+              
+              </ul>
+          </div><!-- /.large-4.columns -->
+
+
+          <div class="small-6 medium-3 large-3 columns">
+            
+              
+                <h5 class="shadow-black">Ringraziamenti</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+
+            <ul class="no-bullet shadow-black">
+            
+              
+                <li >
+                  <a href="http://localhost:4000"  title=""></a>
+                </li>
+            
+              
+                <li class="network-entypo" >
+                  <a href="http://entypo.com/" target="_blank"  title="Icons by Daniel Bruce">Icons by Daniel Bruce</a>
+                </li>
+            
+              
+                <li class="services-newsletter" >
+                  <a href="http://foundation.zurb.com/" target="_blank"  title="Built on Foundation">Built on Foundation</a>
+                </li>
+            
+              
+                <li class="rss-link" >
+                  <a href="http://unsplash.com/" target="_blank"  title="Images by Unsplash">Images by Unsplash</a>
+                </li>
+            
+            </ul>
+          </div><!-- /.large-3.columns -->
+        </div><!-- /.row -->
+
+      </div><!-- /#footer -->
+
+
+      <div id="subfooter">
+        <nav class="row">
+          <section id="subfooter-left" class="small-12 medium-6 columns credits">
+            
+          </section>
+
+          <section id="subfooter-right" class="small-12 medium-6 columns">
+            <ul class="inline-list social-icons">
+            
+              <li><a href="mailto:vittore@zen.pn.it" target="_blank" class="icon-mail" title=""></a></li>
+            
+              <li><a href="https://www.linkedin.com/in/vittorezen/" target="_blank" class="icon-linkedin" title=""></a></li>
+            
+              <li><a href="http://twitter.com/vittore" target="_blank" class="icon-twitter" title=""></a></li>
+            
+              <li><a href="http://www.facebook.com/vittore.zen" target="_blank" class="icon-facebook" title=""></a></li>
+            
+              <li><a href="http://github.com/vittore" target="_blank" class="icon-github" title=""></a></li>
+            
+            </ul>
+          </section>
+        </nav>
+      </div><!-- /#subfooter -->
+    </footer>
+
+	
+
+	
+
+
+<script src="http://localhost:4000/assets/js/javascript.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
