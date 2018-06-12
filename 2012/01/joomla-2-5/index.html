@@ -1,0 +1,673 @@
+<!doctype html>
+<html class="no-js" lang="it">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Joomla! 2.5</title>
+
+    <link rel="stylesheet" type="text/css" href="https://vittore.github.io/assets/css/styles_feeling_responsive.css">
+
+  
+
+	<script src="https://vittore.github.io/assets/js/modernizr.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+	<script>
+		WebFont.load({
+			google: {
+				families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ]
+			}
+		});
+	</script>
+
+	<noscript>
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic%7CVolkhov' rel='stylesheet' type='text/css'>
+	</noscript>
+
+
+	<!-- Search Engine Optimization -->
+	<meta name="description" content="Lo sviluppo del progetto Joomla! continua seguendo le tempistiche stabilite. Disponibile al download per i test la versione Beta della nuova 2.5.
+
+Interessanti le novità nel lato amministratore che migliorano ed aggiornano quanto è stato introdotto nella precedente 1.7
+
+Questa è una versione destinata ai soli test, rilasciata per agevolare i team di traduzione o gli sviluppatori di estensioni a capire quali sono le nuove caratteristiche introdotte. Inoltre è molto utile per iniziare a testare la procedura di aggiornamento dalle serie precedenti.
+
+Non è consigliato utilizzare questa versione su siti di produzione.
+
+La versione stabile della 2.5 è prevista per metà gennaio 2012.
+
+Non fatevi ingannare dalla distanza delle due cifre (fra 1.7 e 2.5), la 2.5 è un aggiornamento della 1.7  (Poteva benissimo essere numerata come 1.7.5 )
+
+La procedura di aggiornamento prevista è molto semplice, sarà reso disponibile un pacchetto di aggiornamento dalla 1.7 da installare direttamente dalla “Gestione estensioni”.
+
+Mentre per passare dalla versione 1.5 alla futura 2.5 sarà necessaria la procedura di migrazione.
+
+ 
+
+Quindi cosa c’è di nuovo?…
+
+
+  La Joomla Platform versione 11.3 (con nuove librerie come “JImage Class” per l’elaborazione delle immagini, JImage Class, Mootools 1.4 ed il supporto ad altre piattaforme database).
+  Possibilità di inserire delle note ad ogni utente, è stato integrata l’estensione “Art of User” di Andrew Eddie.
+  JXtended Finder è il nuovo componente di ricerca interna, molto potenziato rispetto al metodo precedente.
+  Il template Beez supporta ora anche la navigazione da dispositivi mobili.
+  Sistema di notifiche che direttamente all’accesso nel pannello di controllo ci avverte se la versione di Joomla deve essere aggiornata e stesso sistema per le estensioni esterne.
+  Integrazione della verifica nell’invio dei form con CAPTCHA (come per la registrazione utenti o nel modulo di contatti), utilizzando la piattaforma reCAPTCHA.
+  Gestione da pannello di controllo per effettuare gli override della lingua.
+  Gestione dell’immagine di “Sito offline”.
+  Nuova gestione delle immagini degli articoli, è ora possibile associare dai parametri di ogni singolo articolo una immagine da mostrare solo nel testo introduttivo e quella relativa alla visuale estesa.
+  Nuovi campi “link” negli articoli, è ora possibile dai parametri di ogni singolo articolo associare più link (max 3) ad ogni articolo, questi link vengono visualizzati nel layout dell’articolo (es. per citare la fonte).
+  Il campo “Nota” delle singole voci di menu può essere utilizzato anche nel layout del modulo menu.
+  Opzione per decidere di impostare direttamente “Offline” il sito al termine della procedura di installazione.
+
+
+ 
+
+Joomla 2.5 è un aggiornamento diretto della versione 1.7
+
+La versione 1.7 vedrà così terminato il suo sviluppo ed il supporto ufficiale un mese dopo il rilascio della versione stabile di Joomla 2.5
+
+Joomla 2.5 sarà classificata come versione LTS (long-term-support) e sarà cosi supportata ufficialmente per 18 mesi dal rilascio della versione stabile.
+
+Il Team di Joomla.it già da alcuni giorni è all’opera sui file di lingua italiana dedicati a questa nuova versione, presto ne rilasceremo una prima versione di test.
+
+ 
+
+ 
+
+ 
+
+[Tratto da joomla.it]">
+	
+	
+	
+	
+	
+	
+	<link rel="canonical" href="https://vittore.github.io/2012/01/joomla-2-5/">
+
+
+	<!-- Facebook Open Graph -->
+	<meta property="og:title" content="Joomla! 2.5">
+	<meta property="og:description" content="Lo sviluppo del progetto Joomla! continua seguendo le tempistiche stabilite. Disponibile al download per i test la versione Beta della nuova 2.5.
+
+Interessanti le novità nel lato amministratore che migliorano ed aggiornano quanto è stato introdotto nella precedente 1.7
+
+Questa è una versione destinata ai soli test, rilasciata per agevolare i team di traduzione o gli sviluppatori di estensioni a capire quali sono le nuove caratteristiche introdotte. Inoltre è molto utile per iniziare a testare la procedura di aggiornamento dalle serie precedenti.
+
+Non è consigliato utilizzare questa versione su siti di produzione.
+
+La versione stabile della 2.5 è prevista per metà gennaio 2012.
+
+Non fatevi ingannare dalla distanza delle due cifre (fra 1.7 e 2.5), la 2.5 è un aggiornamento della 1.7  (Poteva benissimo essere numerata come 1.7.5 )
+
+La procedura di aggiornamento prevista è molto semplice, sarà reso disponibile un pacchetto di aggiornamento dalla 1.7 da installare direttamente dalla “Gestione estensioni”.
+
+Mentre per passare dalla versione 1.5 alla futura 2.5 sarà necessaria la procedura di migrazione.
+
+ 
+
+Quindi cosa c’è di nuovo?…
+
+
+  La Joomla Platform versione 11.3 (con nuove librerie come “JImage Class” per l’elaborazione delle immagini, JImage Class, Mootools 1.4 ed il supporto ad altre piattaforme database).
+  Possibilità di inserire delle note ad ogni utente, è stato integrata l’estensione “Art of User” di Andrew Eddie.
+  JXtended Finder è il nuovo componente di ricerca interna, molto potenziato rispetto al metodo precedente.
+  Il template Beez supporta ora anche la navigazione da dispositivi mobili.
+  Sistema di notifiche che direttamente all’accesso nel pannello di controllo ci avverte se la versione di Joomla deve essere aggiornata e stesso sistema per le estensioni esterne.
+  Integrazione della verifica nell’invio dei form con CAPTCHA (come per la registrazione utenti o nel modulo di contatti), utilizzando la piattaforma reCAPTCHA.
+  Gestione da pannello di controllo per effettuare gli override della lingua.
+  Gestione dell’immagine di “Sito offline”.
+  Nuova gestione delle immagini degli articoli, è ora possibile associare dai parametri di ogni singolo articolo una immagine da mostrare solo nel testo introduttivo e quella relativa alla visuale estesa.
+  Nuovi campi “link” negli articoli, è ora possibile dai parametri di ogni singolo articolo associare più link (max 3) ad ogni articolo, questi link vengono visualizzati nel layout dell’articolo (es. per citare la fonte).
+  Il campo “Nota” delle singole voci di menu può essere utilizzato anche nel layout del modulo menu.
+  Opzione per decidere di impostare direttamente “Offline” il sito al termine della procedura di installazione.
+
+
+ 
+
+Joomla 2.5 è un aggiornamento diretto della versione 1.7
+
+La versione 1.7 vedrà così terminato il suo sviluppo ed il supporto ufficiale un mese dopo il rilascio della versione stabile di Joomla 2.5
+
+Joomla 2.5 sarà classificata come versione LTS (long-term-support) e sarà cosi supportata ufficialmente per 18 mesi dal rilascio della versione stabile.
+
+Il Team di Joomla.it già da alcuni giorni è all’opera sui file di lingua italiana dedicati a questa nuova versione, presto ne rilasceremo una prima versione di test.
+
+ 
+
+ 
+
+ 
+
+[Tratto da joomla.it]">
+	<meta property="og:url" content="https://vittore.github.io/2012/01/joomla-2-5/">
+	<meta property="og:locale" content="en_EN">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="zen.pn.it - Tecnologia e dintorni">
+	
+	<meta property="article:author" content="https://www.facebook.com/vittore.zen">
+
+
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="vittore">
+	<meta name="twitter:creator" content="vittore">
+	<meta name="twitter:title" content="Joomla! 2.5">
+	<meta name="twitter:description" content="Lo sviluppo del progetto Joomla! continua seguendo le tempistiche stabilite. Disponibile al download per i test la versione Beta della nuova 2.5.
+
+Interessanti le novità nel lato amministratore che migliorano ed aggiornano quanto è stato introdotto nella precedente 1.7
+
+Questa è una versione destinata ai soli test, rilasciata per agevolare i team di traduzione o gli sviluppatori di estensioni a capire quali sono le nuove caratteristiche introdotte. Inoltre è molto utile per iniziare a testare la procedura di aggiornamento dalle serie precedenti.
+
+Non è consigliato utilizzare questa versione su siti di produzione.
+
+La versione stabile della 2.5 è prevista per metà gennaio 2012.
+
+Non fatevi ingannare dalla distanza delle due cifre (fra 1.7 e 2.5), la 2.5 è un aggiornamento della 1.7  (Poteva benissimo essere numerata come 1.7.5 )
+
+La procedura di aggiornamento prevista è molto semplice, sarà reso disponibile un pacchetto di aggiornamento dalla 1.7 da installare direttamente dalla “Gestione estensioni”.
+
+Mentre per passare dalla versione 1.5 alla futura 2.5 sarà necessaria la procedura di migrazione.
+
+ 
+
+Quindi cosa c’è di nuovo?…
+
+
+  La Joomla Platform versione 11.3 (con nuove librerie come “JImage Class” per l’elaborazione delle immagini, JImage Class, Mootools 1.4 ed il supporto ad altre piattaforme database).
+  Possibilità di inserire delle note ad ogni utente, è stato integrata l’estensione “Art of User” di Andrew Eddie.
+  JXtended Finder è il nuovo componente di ricerca interna, molto potenziato rispetto al metodo precedente.
+  Il template Beez supporta ora anche la navigazione da dispositivi mobili.
+  Sistema di notifiche che direttamente all’accesso nel pannello di controllo ci avverte se la versione di Joomla deve essere aggiornata e stesso sistema per le estensioni esterne.
+  Integrazione della verifica nell’invio dei form con CAPTCHA (come per la registrazione utenti o nel modulo di contatti), utilizzando la piattaforma reCAPTCHA.
+  Gestione da pannello di controllo per effettuare gli override della lingua.
+  Gestione dell’immagine di “Sito offline”.
+  Nuova gestione delle immagini degli articoli, è ora possibile associare dai parametri di ogni singolo articolo una immagine da mostrare solo nel testo introduttivo e quella relativa alla visuale estesa.
+  Nuovi campi “link” negli articoli, è ora possibile dai parametri di ogni singolo articolo associare più link (max 3) ad ogni articolo, questi link vengono visualizzati nel layout dell’articolo (es. per citare la fonte).
+  Il campo “Nota” delle singole voci di menu può essere utilizzato anche nel layout del modulo menu.
+  Opzione per decidere di impostare direttamente “Offline” il sito al termine della procedura di installazione.
+
+
+ 
+
+Joomla 2.5 è un aggiornamento diretto della versione 1.7
+
+La versione 1.7 vedrà così terminato il suo sviluppo ed il supporto ufficiale un mese dopo il rilascio della versione stabile di Joomla 2.5
+
+Joomla 2.5 sarà classificata come versione LTS (long-term-support) e sarà cosi supportata ufficialmente per 18 mesi dal rilascio della versione stabile.
+
+Il Team di Joomla.it già da alcuni giorni è all’opera sui file di lingua italiana dedicati a questa nuova versione, presto ne rilasceremo una prima versione di test.
+
+ 
+
+ 
+
+ 
+
+[Tratto da joomla.it]">
+	
+	
+
+	<link type="text/plain" rel="author" href="https://vittore.github.io/humans.txt">
+
+	
+
+	
+
+	<link rel="icon" sizes="32x32" href="https://vittore.github.io/assets/img/favicon-32x32.png">
+
+	<link rel="icon" sizes="192x192" href="https://vittore.github.io/assets/img/touch-icon-192x192.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://vittore.github.io/assets/img/apple-touch-icon-180x180-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://vittore.github.io/assets/img/apple-touch-icon-152x152-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://vittore.github.io/assets/img/apple-touch-icon-144x144-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://vittore.github.io/assets/img/apple-touch-icon-120x120-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://vittore.github.io/assets/img/apple-touch-icon-114x114-precomposed.png">
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://vittore.github.io/assets/img/apple-touch-icon-76x76-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://vittore.github.io/assets/img/apple-touch-icon-72x72-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" href="https://vittore.github.io/assets/img/apple-touch-icon-precomposed.png">	
+
+	<meta name="msapplication-TileImage" content="https://vittore.github.io/assets/img/msapplication_tileimage.png">
+
+	<meta name="msapplication-TileColor" content="#fabb00">
+
+
+	
+
+</head>
+<body id="top-of-page" class="post">
+	
+	
+<div id="navigation" class="sticky">
+  <nav class="top-bar" role="navigation" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+      <h1 class="show-for-small-only"><a href="https://vittore.github.io" class="icon-tree"> zen.pn.it - Tecnologia e dintorni</a></h1>
+    </li>
+       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Nav</span></a></li>
+    </ul>
+    <section class="top-bar-section">
+
+      <ul class="right">
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+        
+      </ul>
+
+      <ul class="left">
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/">Home</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/chi-sono/">Chi sono</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/perché-questo-blog/">Perché questo blog</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/contatti/">Contatti</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/whishlist/">Whishlist</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+        
+      </ul>
+    </section>
+  </nav>
+</div><!-- /#navigation -->
+
+	
+
+	
+
+<div id="masthead-no-image-header">
+	<div class="row">
+		<div class="small-12 columns">
+			<a id="logo" href="https://vittore.github.io/" title="zen.pn.it - Tecnologia e dintorni – Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen">
+				<img src="https://vittore.github.io/assets/img/logo.png" alt="zen.pn.it - Tecnologia e dintorni – Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen">
+			</a>
+		</div><!-- /.small-12.columns -->
+	</div><!-- /.row -->
+</div><!-- /#masthead -->
+
+
+
+
+
+
+
+
+
+	<div class="row t30">
+	<div class="medium-8 columns medium-offset-2 end">
+		<article itemscope itemtype="http://schema.org/Article">
+			<header>
+				
+
+				<div itemprop="name">
+					
+					<h1>Joomla! 2.5</h1>
+				</div>
+			</header>
+
+
+			
+
+			<div itemprop="articleSection">
+			<p><a href="https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2012/01/Joomla_251.jpg"><img class="alignleft size-full wp-image-368" title="Joomla_25[1]" src="https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2012/01/Joomla_251.jpg?w=200" alt="" srcset="https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2012/01/Joomla_251.jpg?w=500 500w, https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2012/01/Joomla_251.jpg?resize=300%2C205 300w" sizes="(max-width: 500px) 100vw, 500px" data-recalc-dims="1" /></a>Lo sviluppo del progetto Joomla! continua seguendo le tempistiche stabilite. Disponibile al download per i test la versione <strong>Beta</strong> della nuova 2.5.</p>
+
+<p>Interessanti le novità nel lato amministratore che migliorano ed aggiornano quanto è stato introdotto nella precedente 1.7</p>
+
+<p>Questa è una versione destinata ai soli test, rilasciata per agevolare i team di traduzione o gli sviluppatori di estensioni a capire quali sono le nuove caratteristiche introdotte. Inoltre è molto utile per iniziare a testare la procedura di aggiornamento dalle serie precedenti.</p>
+
+<p>Non è consigliato utilizzare questa versione su siti di produzione.</p>
+
+<p>La versione stabile della 2.5 è prevista per metà gennaio 2012.</p>
+
+<p>Non fatevi ingannare dalla distanza delle due cifre (<em>fra 1.7 e 2.5</em>), la 2.5 è un aggiornamento della 1.7  (<em>Poteva benissimo essere numerata come 1.7.5</em> <img title="Sorridente" src="https://i2.wp.com/www.joomla.it/plugins/editors/tinymce/jscripts/tiny_mce/plugins/emotions/img/smiley-smile.gif" alt="Sorridente" border="0" data-recalc-dims="1" />)</p>
+
+<p>La procedura di aggiornamento prevista è molto semplice, sarà reso disponibile un pacchetto di aggiornamento dalla 1.7 da installare direttamente dalla “Gestione estensioni”.</p>
+
+<p>Mentre per passare dalla versione 1.5 alla futura 2.5 sarà necessaria la procedura di migrazione.</p>
+
+<p> </p>
+
+<p>Quindi cosa c’è di nuovo?…</p>
+
+<ul>
+  <li>La Joomla<strong> Platform </strong>versione 11.3 (con nuove librerie come “JImage Class” per l’elaborazione delle immagini, JImage Class, Mootools 1.4 ed il supporto ad altre piattaforme database).</li>
+  <li>Possibilità di inserire delle note ad ogni utente, è stato integrata l’estensione “Art of User” di Andrew Eddie.</li>
+  <li>JXtended Finder è il nuovo componente di ricerca interna, molto potenziato rispetto al metodo precedente.</li>
+  <li>Il template Beez supporta ora anche la navigazione da dispositivi mobili.</li>
+  <li>Sistema di notifiche che direttamente all’accesso nel pannello di controllo ci avverte se la versione di Joomla deve essere aggiornata e stesso sistema per le estensioni esterne.</li>
+  <li>Integrazione della verifica nell’invio dei form con CAPTCHA (come per la registrazione utenti o nel modulo di contatti), utilizzando la piattaforma reCAPTCHA.</li>
+  <li>Gestione da pannello di controllo per effettuare gli override della lingua.</li>
+  <li>Gestione dell’immagine di “Sito offline”.</li>
+  <li>Nuova gestione delle immagini degli articoli, è ora possibile associare dai parametri di ogni singolo articolo una immagine da mostrare solo nel testo introduttivo e quella relativa alla visuale estesa.</li>
+  <li>Nuovi campi “link” negli articoli, è ora possibile dai parametri di ogni singolo articolo associare più link (max 3) ad ogni articolo, questi link vengono visualizzati nel layout dell’articolo (es. per citare la fonte).</li>
+  <li>Il campo “Nota” delle singole voci di menu può essere utilizzato anche nel layout del modulo menu.</li>
+  <li>Opzione per decidere di impostare direttamente “Offline” il sito al termine della procedura di installazione.</li>
+</ul>
+
+<p> </p>
+
+<p>Joomla 2.5 è un aggiornamento diretto della versione 1.7</p>
+
+<p>La versione 1.7 vedrà così terminato il suo sviluppo ed il supporto ufficiale un mese dopo il rilascio della versione stabile di Joomla 2.5</p>
+
+<p>Joomla 2.5 sarà classificata come versione LTS (long-term-support) e sarà cosi supportata ufficialmente per 18 mesi dal rilascio della versione stabile.</p>
+
+<p>Il Team di Joomla.it già da alcuni giorni è all’opera sui file di lingua italiana dedicati a questa nuova versione, presto ne rilasceremo una prima versione di test.</p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<p><em>[Tratto da joomla.it]</em></p>
+
+			</div>
+
+			
+						<div id="page-meta" class="t30">
+				<p>
+					<!-- Look the author details up from the site config. -->
+					
+					<!-- Output author details if some exist. -->
+					
+
+				
+				<time class="icon-calendar pr20" datetime="2012-01-03T17:00:25+01:00" itemprop="datePublished"> 2012-01-03</time>
+				
+
+				<span class="icon-archive pr20"> ARTICOLI</span>
+				<br />
+				<span class="pr20"><span class="icon-price-tag pr10"> sviluppo</span> <span class="icon-price-tag pr10"> tecnologia</span> <span class="icon-price-tag pr10"> web</span> </span>
+			</p>
+
+			
+			<div id="post-nav" class="row">
+				
+				<div class="small-5 columns"><a class="button small radius prev" href="https://vittore.github.io/2011/12/2012-grafica-web-2-0/">&laquo; 2012: grafica web 2.0</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-2 columns text-center"><a class="radius button small" href="https://vittore.github.io/archivio/" title="Blog Archivio">Archivio</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-5 columns text-right"><a class="button small radius next" href="https://vittore.github.io/2012/01/un-click-per-sapere-cosa-sa-google-su-di-noi/">Un click per sapere cosa sa Google su di noi &raquo;</a></div><!-- /.small-4.columns -->
+				
+			</div>
+			
+			</div><!--  /.page-meta -->
+
+			
+
+			
+		</article>
+	</div><!-- /.medium-8.columns -->
+
+
+	
+
+
+	
+</div><!-- /.row -->
+
+
+	
+	    <div id="up-to-top" class="row">
+      <div class="small-12 columns" style="text-align: right;">
+        <a class="iconfont" href="#top-of-page">&#xf108;</a>
+      </div><!-- /.small-12.columns -->
+    </div><!-- /.row -->
+
+
+    <footer id="footer-content" class="bg-grau">
+      <div id="footer">
+        <div class="row">
+          <div class="medium-6 large-5 columns">
+            <h5 class="shadow-black">Informazioni su questo sito</h5>
+
+            <p class="shadow-black">
+              Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen
+              <a href="https://vittore.github.io/perché-questo-blog/">Altro&nbsp;›</a>
+            </p>
+          </div><!-- /.large-6.columns -->
+
+
+          <div class="small-6 medium-3 large-3 large-offset-1 columns">
+            
+              
+                <h5 class="shadow-black">Servizi</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+
+              <ul class="no-bullet shadow-black">
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io"  title=""></a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io/contatti/"  title="Contatti">Contatti</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io/feed.xml"  title="Subscribe to RSS Feed">RSS</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io/atom.xml"  title="Subscribe to Atom Feed">Atom</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io/sitemap.xml"  title="Sitemap for Google Webmaster Tools">sitemap.xml</a>
+                  </li>
+              
+              </ul>
+          </div><!-- /.large-4.columns -->
+
+
+          <div class="small-6 medium-3 large-3 columns">
+            
+              
+                <h5 class="shadow-black">Ringraziamenti</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+
+            <ul class="no-bullet shadow-black">
+            
+              
+                <li >
+                  <a href="https://vittore.github.io"  title=""></a>
+                </li>
+            
+              
+                <li class="network-entypo" >
+                  <a href="http://entypo.com/" target="_blank"  title="Icons by Daniel Bruce">Icons by Daniel Bruce</a>
+                </li>
+            
+              
+                <li class="services-newsletter" >
+                  <a href="http://foundation.zurb.com/" target="_blank"  title="Built on Foundation">Built on Foundation</a>
+                </li>
+            
+              
+                <li class="rss-link" >
+                  <a href="http://unsplash.com/" target="_blank"  title="Images by Unsplash">Images by Unsplash</a>
+                </li>
+            
+            </ul>
+          </div><!-- /.large-3.columns -->
+        </div><!-- /.row -->
+
+      </div><!-- /#footer -->
+
+
+      <div id="subfooter">
+        <nav class="row">
+          <section id="subfooter-left" class="small-12 medium-6 columns credits">
+            
+          </section>
+
+          <section id="subfooter-right" class="small-12 medium-6 columns">
+            <ul class="inline-list social-icons">
+            
+              <li><a href="mailto:vittore@zen.pn.it" target="_blank" class="icon-mail" title=""></a></li>
+            
+              <li><a href="https://www.linkedin.com/in/vittorezen/" target="_blank" class="icon-linkedin" title=""></a></li>
+            
+              <li><a href="http://twitter.com/vittore" target="_blank" class="icon-twitter" title=""></a></li>
+            
+              <li><a href="http://www.facebook.com/vittore.zen" target="_blank" class="icon-facebook" title=""></a></li>
+            
+              <li><a href="http://github.com/vittore" target="_blank" class="icon-github" title=""></a></li>
+            
+            </ul>
+          </section>
+        </nav>
+      </div><!-- /#subfooter -->
+    </footer>
+
+	
+
+	
+
+
+<script src="https://vittore.github.io/assets/js/javascript.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+

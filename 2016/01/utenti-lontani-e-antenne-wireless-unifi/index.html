@@ -1,0 +1,581 @@
+<!doctype html>
+<html class="no-js" lang="it">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Utenti lontani e antenne wireless Unifi</title>
+
+    <link rel="stylesheet" type="text/css" href="https://vittore.github.io/assets/css/styles_feeling_responsive.css">
+
+  
+
+	<script src="https://vittore.github.io/assets/js/modernizr.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+	<script>
+		WebFont.load({
+			google: {
+				families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ]
+			}
+		});
+	</script>
+
+	<noscript>
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic%7CVolkhov' rel='stylesheet' type='text/css'>
+	</noscript>
+
+
+	<!-- Search Engine Optimization -->
+	<meta name="description" content="Il segnale minimo che una antenna gestisce (RSSI) verso i client che si connettono è una parte fondamentale nella realizzazione di una rete wireless. Spesso un singolo client con un segnale debole può degradare l’intera rete wireless aziendale.
+
+Attualmente le antenne UniFi della Ubiquiti permettono di impostare il valore RSSI per ogni singola antenna e per ogni banda di frequenza.">
+	
+	
+	
+	
+	
+	
+	<link rel="canonical" href="https://vittore.github.io/2016/01/utenti-lontani-e-antenne-wireless-unifi/">
+
+
+	<!-- Facebook Open Graph -->
+	<meta property="og:title" content="Utenti lontani e antenne wireless Unifi">
+	<meta property="og:description" content="Il segnale minimo che una antenna gestisce (RSSI) verso i client che si connettono è una parte fondamentale nella realizzazione di una rete wireless. Spesso un singolo client con un segnale debole può degradare l’intera rete wireless aziendale.
+
+Attualmente le antenne UniFi della Ubiquiti permettono di impostare il valore RSSI per ogni singola antenna e per ogni banda di frequenza.">
+	<meta property="og:url" content="https://vittore.github.io/2016/01/utenti-lontani-e-antenne-wireless-unifi/">
+	<meta property="og:locale" content="en_EN">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="zen.pn.it - Tecnologia e dintorni">
+	
+	<meta property="article:author" content="https://www.facebook.com/vittore.zen">
+
+
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="vittore">
+	<meta name="twitter:creator" content="vittore">
+	<meta name="twitter:title" content="Utenti lontani e antenne wireless Unifi">
+	<meta name="twitter:description" content="Il segnale minimo che una antenna gestisce (RSSI) verso i client che si connettono è una parte fondamentale nella realizzazione di una rete wireless. Spesso un singolo client con un segnale debole può degradare l’intera rete wireless aziendale.
+
+Attualmente le antenne UniFi della Ubiquiti permettono di impostare il valore RSSI per ogni singola antenna e per ogni banda di frequenza.">
+	
+	
+
+	<link type="text/plain" rel="author" href="https://vittore.github.io/humans.txt">
+
+	
+
+	
+
+	<link rel="icon" sizes="32x32" href="https://vittore.github.io/assets/img/favicon-32x32.png">
+
+	<link rel="icon" sizes="192x192" href="https://vittore.github.io/assets/img/touch-icon-192x192.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://vittore.github.io/assets/img/apple-touch-icon-180x180-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://vittore.github.io/assets/img/apple-touch-icon-152x152-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://vittore.github.io/assets/img/apple-touch-icon-144x144-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://vittore.github.io/assets/img/apple-touch-icon-120x120-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://vittore.github.io/assets/img/apple-touch-icon-114x114-precomposed.png">
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://vittore.github.io/assets/img/apple-touch-icon-76x76-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://vittore.github.io/assets/img/apple-touch-icon-72x72-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" href="https://vittore.github.io/assets/img/apple-touch-icon-precomposed.png">	
+
+	<meta name="msapplication-TileImage" content="https://vittore.github.io/assets/img/msapplication_tileimage.png">
+
+	<meta name="msapplication-TileColor" content="#fabb00">
+
+
+	
+
+</head>
+<body id="top-of-page" class="post">
+	
+	
+<div id="navigation" class="sticky">
+  <nav class="top-bar" role="navigation" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+      <h1 class="show-for-small-only"><a href="https://vittore.github.io" class="icon-tree"> zen.pn.it - Tecnologia e dintorni</a></h1>
+    </li>
+       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Nav</span></a></li>
+    </ul>
+    <section class="top-bar-section">
+
+      <ul class="right">
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+        
+      </ul>
+
+      <ul class="left">
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/">Home</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/chi-sono/">Chi sono</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/perché-questo-blog/">Perché questo blog</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/contatti/">Contatti</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/whishlist/">Whishlist</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+        
+      </ul>
+    </section>
+  </nav>
+</div><!-- /#navigation -->
+
+	
+
+	
+
+<div id="masthead-no-image-header">
+	<div class="row">
+		<div class="small-12 columns">
+			<a id="logo" href="https://vittore.github.io/" title="zen.pn.it - Tecnologia e dintorni – Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen">
+				<img src="https://vittore.github.io/assets/img/logo.png" alt="zen.pn.it - Tecnologia e dintorni – Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen">
+			</a>
+		</div><!-- /.small-12.columns -->
+	</div><!-- /.row -->
+</div><!-- /#masthead -->
+
+
+
+
+
+
+
+
+
+	<div class="row t30">
+	<div class="medium-8 columns medium-offset-2 end">
+		<article itemscope itemtype="http://schema.org/Article">
+			<header>
+				
+
+				<div itemprop="name">
+					
+					<h1>Utenti lontani e antenne wireless Unifi</h1>
+				</div>
+			</header>
+
+
+			
+
+			<div itemprop="articleSection">
+			<p>Il segnale minimo che una antenna gestisce (RSSI) verso i client che si connettono è una parte fondamentale nella realizzazione di una rete wireless. Spesso un singolo client con un segnale debole può degradare l’intera rete wireless aziendale.</p>
+
+<p>Attualmente le antenne UniFi della Ubiquiti permettono di impostare il valore RSSI per ogni singola antenna e per ogni banda di frequenza.</p>
+
+<!--more-->
+
+<p>Prima di vedere dove impostare questo valore ripassiamo un po’ di teoria.</p>
+
+<p>Il minimo RSSI funziona calciando fuori dall’access point i client che non soddisfano i requisiti minimi di segnale. RSSI è un valore che dipende dal brand del nostro access point. Si può trovare, come nel caso di Ubiquiti, come sinonimo del termine SNR. Finchè un utente rimane sopra la soglia di RSSI non viene calciato fuori. Ad esempio se il valore di minimo RSSI è di 20dB i client con 19dB, 18dB,… saranno calciati fuori permettendo di trovare un miglior access point.</p>
+
+<p>Nell’interfaccia di controllo delle antenne UniFi si può raggiungere lo stesso effetto facendo click sul bottone “Reconnect”.</p>
+
+<p>Cosa succede dietro le quinte? L’access point invia un pacchetto di de-autenticazione al client per forzare correttament lo sgancio. A questo punto è la specifica implementazione del client a cercare un miglior access point (diversamenta da ZH dove è l’access point a decidere di quali client farsi carico). Se nonostante il pacchetto di de-autenticazione il client decide di stare sullo stesso access point questo non gli viene negato e non viene forzato nessun spostamento fino al prossimo invio di un pacchetto di de-autenticazione. Si tratta di un approccio molto delicato.</p>
+
+<p>Ad essere precisi RSSI e SNR sono diversi.</p>
+
+<p>SNR (rapporto segnale-rumore) è un valore basato sul rapporto che valuta il segnale in base al rumore. Quindi SNR è composto da 2 valori e viene misurato come un valore positivo compreso tra 0 dB e 120 dB e più vicino è a 120dB meglio è la connessione.</p>
+
+<p>Il segnale (anche chiamato RSSI) è misurato in decibel da 0 (zero) a -120 (meno 120). Quando questo valore il più vicino a 0 (zero) più forte è il segnale il che significa che è meglio, tipicamente una rete di dati deve avere -80dB o migliore. Range di normalità in una rete dovrebbe essere tra -45dB e -87dB.</p>
+
+<p>Passiamo ora alla componente del rumore di questa equazione. Il rumore è un segnale (interferenza) che non è il traffico Wi-Fi, come i telefoni cordless, forni a microonde, radar, etc. Questo valore è misurato in decibel da 0 (zero) a -120 (meno 120) ora quando questo valore è vicino a -120 (meno 120) è meglio, perché questo significa che c’è poco o nessuna interferenza. Ambienti tipici variano tra -90dB e -98dB.</p>
+
+<p>Quindi, per calcolare il valore SNR si aggiunge il valore del segnale per il valore di rumore e si ottiene un numero -che si spera- positivo che si esprime in decibel (dB).</p>
+
+<p>Per esempio se il valore del segnale è -55dB e il valore rumore è -95db:</p>
+
+<p style="text-align: center;">
+  -55dB + -95dB = 40dB
+</p>
+
+<p>(ricordatevi che i dB sono logaritmi, quindi… il logaritmo del rapporto è la differenza dei logaritmi)</p>
+
+<p>Questo significa avere un SNR di 40dB.</p>
+
+<p>La mia regola generale è che ogni SNR superiori a 20dB è buono.</p>
+
+<p> </p>
+
+<p>Ricordate anche la relazione che intercorre tra SNR e velocità della rete.</p>
+
+<p><img class=" size-full wp-image-1403 aligncenter" src="https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2016/01/original.jpeg?resize=601%2C527" alt="original" width="601" height="527" srcset="https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2016/01/original.jpeg?w=601 601w, https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2016/01/original.jpeg?resize=182%2C160 182w, https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2016/01/original.jpeg?resize=300%2C263 300w" sizes="(max-width: 601px) 100vw, 601px" data-recalc-dims="1" /></p>
+
+<p> </p>
+
+<h2 id="ma-torniamo-alle-antenne-unifi-">Ma torniamo alle antenne UniFi… 🙂</h2>
+
+<p>Come scrivevo all’inizio UniFi scrive nella documentazione RSSI ma intende SNR, quindi un valore positivo.</p>
+
+<p>Ecco i passi per impostare questo valore nelle antenne UniFi</p>
+
+<p>Si tratta di compilare un file di testo (<strong>config.properties</strong>) che si trova nella vostra installazione di UniFi controller.</p>
+
+<p>La prima difficoltà sta nel trovare la corretta ubicazione del file. Il metodo più semplice è aprire l’interfaccia web (ad esempio https://127.0.0.1:8443) e navigare fino a vedere la dashboard delle antenne che ci interessano (ad esempio https://127.0.0.1:8443/manage/s/ceb1m27d/dashboard oppure https://127.0.0.1:8443/manage/s/default/dashboard).</p>
+
+<p>Ora memorizzate la stringa che codifica il vostro siteId, si trova nell’URL:</p>
+
+<pre>https://&lt;indirizzoIp&gt;:8443/manage/s/&lt;siteId&gt;/dashboard</pre>
+
+<p>ad esempio: ceb1m27d, default,…</p>
+
+<p>Bene. La vostra configurazione si trova nella cartella :</p>
+
+<pre>/usr/lib/unifi/data/sites/&lt;siteId&gt;</pre>
+
+<p>ad esempio /usr/lib/unifi/data/sites/default.</p>
+
+<p>Ora create (o modificate se era gia presente) il file config.properties.</p>
+
+<p>Ad esempio con il comando:</p>
+
+<pre>vim /usr/lib/unifi/data/sites/default/config.properties</pre>
+
+<p>Aggiungete le righe delle antenne di cui vi interessa impostare il RSSI seguendo la seguente sintassi:</p>
+
+<pre>config.minrssi.[AP MAC addr].[ng|na]=[Minimo RSSI]</pre>
+
+<p>Ad esempio:</p>
+
+<pre>config.minrssi.002712345678.ng=20
+config.minrssi.dc9f22345678.ng=20
+config.minrssi.002732345678.na=20
+config.minrssi.002742345678.ng=20</pre>
+
+<p>A questo punto salvate il file e forzate il provisioning. Non serve riavviare il servizio. Bisogna forzare il provisioning ad esempio cambiando la potenza di emissione in una antenna oppure abilitando e disabilitando il guest portal.</p>
+
+<p>Per verificare che il minomo RSSI funzioni basta fare un accesso ssh all’antenna e date il comando ‘ps’. Se funziona avrete una riga del tipo:</p>
+
+<pre>5134 admin 1568 S /bin/stamgr -i 1 -b ng -r 20 -n 0,</pre>
+
+<p>dove -b è la banda e -r è il valore RSSI impostato.</p>
+
+<p> </p>
+
+<p>Fonti:</p>
+
+<ul>
+  <li><a href="http://www.metageek.com/training/resources/understanding-rssi.html">Understanding RSSI</a></li>
+  <li><a href="http://community.arubanetworks.com/t5/Controller-Based-WLANs/What-is-the-relationship-between-data-rate-SNR-and-RSSI/ta-p/178312">What is the relationship between data rate, SNR, and RSSI?</a></li>
+  <li><a href="https://help.ubnt.com/hc/en-us/articles/205146050-OD-UniFi-How-does-minimum-RSSI-work-">OD UniFi – How does minimum RSSI work?</a></li>
+  <li><a href="https://help.ubnt.com/hc/en-us/articles/205144650-UniFi-Set-minimum-RSSI-for-clients">UniFi – Set minimum RSSI for clients</a></li>
+</ul>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+			</div>
+
+			
+						<div id="page-meta" class="t30">
+				<p>
+					<!-- Look the author details up from the site config. -->
+					
+					<!-- Output author details if some exist. -->
+					
+
+				
+				<time class="icon-calendar pr20" datetime="2016-01-12T06:05:09+01:00" itemprop="datePublished"> 2016-01-12</time>
+				
+
+				<span class="icon-archive pr20"> ARTICOLI</span>
+				<br />
+				<span class="pr20"><span class="icon-price-tag pr10"> Network</span> </span>
+			</p>
+
+			
+			<div id="post-nav" class="row">
+				
+				<div class="small-5 columns"><a class="button small radius prev" href="https://vittore.github.io/2016/01/forensic-acquisition-of-google-accounts/">&laquo; Forensic acquisition of google accounts</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-2 columns text-center"><a class="radius button small" href="https://vittore.github.io/archivio/" title="Blog Archivio">Archivio</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-5 columns text-right"><a class="button small radius next" href="https://vittore.github.io/2016/01/apple-education/">Apple education preview &raquo;</a></div><!-- /.small-4.columns -->
+				
+			</div>
+			
+			</div><!--  /.page-meta -->
+
+			
+
+			
+		</article>
+	</div><!-- /.medium-8.columns -->
+
+
+	
+
+
+	
+</div><!-- /.row -->
+
+
+	
+	    <div id="up-to-top" class="row">
+      <div class="small-12 columns" style="text-align: right;">
+        <a class="iconfont" href="#top-of-page">&#xf108;</a>
+      </div><!-- /.small-12.columns -->
+    </div><!-- /.row -->
+
+
+    <footer id="footer-content" class="bg-grau">
+      <div id="footer">
+        <div class="row">
+          <div class="medium-6 large-5 columns">
+            <h5 class="shadow-black">Informazioni su questo sito</h5>
+
+            <p class="shadow-black">
+              Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen
+              <a href="https://vittore.github.io/perché-questo-blog/">Altro&nbsp;›</a>
+            </p>
+          </div><!-- /.large-6.columns -->
+
+
+          <div class="small-6 medium-3 large-3 large-offset-1 columns">
+            
+              
+                <h5 class="shadow-black">Servizi</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+
+              <ul class="no-bullet shadow-black">
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io"  title=""></a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io/contatti/"  title="Contatti">Contatti</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io/feed.xml"  title="Subscribe to RSS Feed">RSS</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io/atom.xml"  title="Subscribe to Atom Feed">Atom</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io/sitemap.xml"  title="Sitemap for Google Webmaster Tools">sitemap.xml</a>
+                  </li>
+              
+              </ul>
+          </div><!-- /.large-4.columns -->
+
+
+          <div class="small-6 medium-3 large-3 columns">
+            
+              
+                <h5 class="shadow-black">Ringraziamenti</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+
+            <ul class="no-bullet shadow-black">
+            
+              
+                <li >
+                  <a href="https://vittore.github.io"  title=""></a>
+                </li>
+            
+              
+                <li class="network-entypo" >
+                  <a href="http://entypo.com/" target="_blank"  title="Icons by Daniel Bruce">Icons by Daniel Bruce</a>
+                </li>
+            
+              
+                <li class="services-newsletter" >
+                  <a href="http://foundation.zurb.com/" target="_blank"  title="Built on Foundation">Built on Foundation</a>
+                </li>
+            
+              
+                <li class="rss-link" >
+                  <a href="http://unsplash.com/" target="_blank"  title="Images by Unsplash">Images by Unsplash</a>
+                </li>
+            
+            </ul>
+          </div><!-- /.large-3.columns -->
+        </div><!-- /.row -->
+
+      </div><!-- /#footer -->
+
+
+      <div id="subfooter">
+        <nav class="row">
+          <section id="subfooter-left" class="small-12 medium-6 columns credits">
+            
+          </section>
+
+          <section id="subfooter-right" class="small-12 medium-6 columns">
+            <ul class="inline-list social-icons">
+            
+              <li><a href="mailto:vittore@zen.pn.it" target="_blank" class="icon-mail" title=""></a></li>
+            
+              <li><a href="https://www.linkedin.com/in/vittorezen/" target="_blank" class="icon-linkedin" title=""></a></li>
+            
+              <li><a href="http://twitter.com/vittore" target="_blank" class="icon-twitter" title=""></a></li>
+            
+              <li><a href="http://www.facebook.com/vittore.zen" target="_blank" class="icon-facebook" title=""></a></li>
+            
+              <li><a href="http://github.com/vittore" target="_blank" class="icon-github" title=""></a></li>
+            
+            </ul>
+          </section>
+        </nav>
+      </div><!-- /#subfooter -->
+    </footer>
+
+	
+
+	
+
+
+<script src="https://vittore.github.io/assets/js/javascript.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+

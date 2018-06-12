@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/xslt/atom.xslt" ?>
+<?xml-stylesheet type="text/css" href="/assets/css/atom.css" ?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<id>https://vittore.github.io/</id>
+	<title>zen.pn.it - Tecnologia e dintorni</title>
+	<updated>2018-06-12T22:20:53+02:00</updated>
+
+	<subtitle>Segnalazioni e riflessioni su &amp;quot;cose di tecnologia&amp;quot; di Vittore Zen</subtitle>
+
+	
+		
+		<author>
+			
+				<name>Vittore Zen</name>
+			
+			
+				<email>vittore@zen.pn.it</email>
+			
+			
+				<uri>http://www.zen.pn.it/</uri>
+			
+		</author>
+	
+
+	<link href="https://vittore.github.io/atom.xml" rel="self" type="application/rss+xml" />
+	<link href="https://vittore.github.io/" rel="alternate" type="text/html" />
+
+	<generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator>
+
+	
+		<entry>
+			<id>https://vittore.github.io/2018/06/gdpr-cookie-e-siti-dinamici/</id>
+			<title>GDPR, cookie e siti dinamici</title>
+			<link href="https://vittore.github.io/2018/06/gdpr-cookie-e-siti-dinamici/" rel="alternate" type="text/html" title="GDPR, cookie e siti dinamici" />
+			<updated>2018-06-11T02:00:00+02:00</updated>
+
+			
+				
+				<author>
+					
+						<name>Vittore Zen</name>
+					
+					
+					
+				</author>
+			
+			<summary>Le 'buzz word' di questo momento sono GDPR e cookie, possibilmente condite in salsa legale.</summary>
+			<content type="html" xml:base="https://vittore.github.io/2018/06/gdpr-cookie-e-siti-dinamici/">&lt;p&gt;Mi ritengo con malcelato orgoglio uno dei primi sbarcati sul web  &lt;a href=&quot;https://web.archive.org/web/19980202100719/http://www.dimi.uniud.it:80/~zen/&quot;&gt;https://www.dimi.uniud.it/~zen&lt;/a&gt; (15 agosto 1997) che attraverso una discreta conoscenza delle scienze dell’informazione ha costruito un pezzo del web.
+Ho scritto “scienze dell’informazione” da non confondersi con le scienze della comunicazione: su questa distinzione mi prometto un post sicuramente polemico nel prossimo futuro considerate le invasioni di campo che vivo sulla mia pelle quasi quotidianamente.&lt;/p&gt;
+
+&lt;p&gt;Come ho scritto in &lt;a href=&quot;/perché-questo-blog/&quot;&gt;/perché-questo-blog/&lt;/a&gt; la nuova versione di &lt;a href=&quot;http://www.zen.pn.it&quot;&gt;www.zen.pn.it&lt;/a&gt; è interamente statica e non utilizza nessun tipo di cookie e non raccoglie nessun tipo di dato personale.&lt;/p&gt;
+
+&lt;p&gt;Ho riflettuto a lungo su prima di questa scelta:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Il mio bel sito wordpress con la sua miriade di plugin che raccolgono chissà quale tipo di dato non è certo gdpr-compliant.&lt;/li&gt;
+  &lt;li&gt;Ho la forza legale ed economica per far fronte ad eventuali divergenze?&lt;/li&gt;
+  &lt;li&gt;No.&lt;/li&gt;
+  &lt;li&gt;Soluzioni?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Semplice: un sito che non usa i cookie e non raccoglie dati; cioè un sito completamente HTML+CSS+JS, senza porzioni server side (che hanno bisogno dei cookie), senza possibilità di inviare post (che richiedono un minimo di trattamento dei dati di chi invia), senza statistiche di accesso,… insomma un sito web vecchio stile. Tecnicamente un sito realizzato usando &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Questo ritorno alle origini mi ha costretto a fare delle riflessioni su come sia cambiato il web in questi anni. Da quando nel lontano 1989 usavo metacrawler per le mie ricerche perché google aveva troppe poche pagine indicizzate, per arrivare fino ai giorni nostri dove il mio ufficio confina con un dipartimento di comunicazione sul cui sito web campeggia la “ricerca di un web marketing strategist”.
+Scusate, sto anticipando il prossimo post. Ritorno al tema tecnico.&lt;/p&gt;
+
+&lt;h2 id=&quot;cookie&quot;&gt;Cookie&lt;/h2&gt;
+
+&lt;p&gt;Il protocollo &lt;em&gt;http&lt;/em&gt; su cui il web si basa è un protocollo &lt;em&gt;senza memoria&lt;/em&gt; (stateless). Stateless significa che ogni richiesta è indipendente da quelle precedenti e si conclude al momento della chiusura della connessione (quando il server comunica che ha finito di servire il documento o premo “stop” nel browser).&lt;/p&gt;
+
+&lt;p&gt;Il server web quindi non ha “memoria” di quanto comunicato precedentemente con un certo client: per questo motivo, per realizzare applicazioni web complesse, sono stati sviluppati meccanismi a livello superiore come i cookies per costruire “sessioni” e permettere al server di recuperare informazioni riguardanti un certo client.&lt;/p&gt;
+
+&lt;p&gt;Senza cookie non ci può essere web dinamico, e-commerce,… in una parola non c’è &lt;em&gt;web statefull&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;I cookie sono una etichetta che viene messa alla mia navigazione, sul mio computer, sul mio browser.
+Ora questa etichettatura è molto rischiosa non in se stessa ma nel momento in cui la uso. Su questo tema vi invito a leggere due articoli:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.internazionale.it/notizie/eli-pariser/2011/07/01/internet-nasconde-censura-filter-bubble&quot;&gt;Quello che internet ci nasconde&lt;/a&gt; di E. Pariser da cui poi ha avuto origine il libro “Il filtro”&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.internazionale.it/reportage/hannes-grassegger/2018/03/21/politica-facebook-cambridge-analytica&quot;&gt;La politica ai tempi di facebook&lt;/a&gt; di  Hannes Grassegger, Mikael Krogerus per Internazionale&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sentito parlare dei big data. Il senso di quest’espressione è che tutto quello che facciamo, sia online sia offline, lascia delle tracce digitali. Ogni acquisto fatto con la carta di credito, ogni ricerca su Google, ogni spostamento che facciamo con il cellulare in tasca, ogni like su Facebook: tutto è conservato da qualche parte.
+
+&lt;cite&gt;La politica ai tempi di Facebook&lt;/cite&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ecco perché il legislatore ha messo una norma a riguardo: devi avvisare se usi i cookie.&lt;/p&gt;
+
+&lt;p&gt;Giusto. Corretto. Ma… non sarebbe stato saggio scrivere: se usi i cookie funzionali cioè quelli che nascono e muoiono per il funzionamento di un sito dinamico allora non devi avvisare nessuno, nel caso in cui i cookie li usi per identificare e poi usi questi dati allora avvisi il tuo “cliente”?&lt;/p&gt;
+
+&lt;p&gt;No. Nell’incertezza devi avvisare sempre.&lt;/p&gt;
+
+&lt;h2 id=&quot;log-di-sistema&quot;&gt;Log di sistema&lt;/h2&gt;
+
+&lt;p&gt;Idem per i log di sistema. Se ho un sito web ho di sicuro un file di log che mi dice che l’ip tal dei tali ha richiesto quella specifica pagina. Attenzione: per il legislatore l’indirizzo ip è un dato personale e tenere dei log di sistema significa mantenere dei dati personali. Devi avvisare il tuo “cliente”.&lt;/p&gt;
+
+&lt;h2 id=&quot;commenti-e-moduli-di-informazione&quot;&gt;Commenti e moduli di informazione&lt;/h2&gt;
+
+&lt;p&gt;Se hai un blog è certo che darai ai tuoi lettori la possibilità di dibattere in pubblico e per mantenere il rapporto civile chiederai di identificarsi. Quindi… raccogli dati. Devi avvisare il tuo “cliente”.&lt;/p&gt;
+
+&lt;p&gt;Se hai un modulo in cui i tuoi clienti chiedono informazioni e raccogli il loro indirizzo email per rispondergli…. Devi avvisare il tuo “cliente”.&lt;/p&gt;
+
+&lt;h2 id=&quot;quindi&quot;&gt;Quindi?&lt;/h2&gt;
+
+&lt;p&gt;Per me questo è troppo. Per questo ho fatto mia la riflessione che trovate in (https://www.bodhilinux.com/2018/06/03/forums-closed-due-to-gdpr/)[https://www.bodhilinux.com/2018/06/03/forums-closed-due-to-gdpr/]  e sono passato a questa versione del mio blog. Niente cookie, niente dati personali.&lt;/p&gt;
+
+&lt;p&gt;E’ chiaro che la mia valutazione è limitata dalla mia visione prettamente tecnica, come scrivevo all’inizio la mia formazione in “scienze dell’informazione” chiede il suo riscatto e non sempre fa i conti con una realtà  dalle tante sfumature.&lt;/p&gt;
+</content>
+
+			
+				<category term="Articoli" />
+			
+			
+				<category term="web" />
+			
+
+			<published>2018-06-11T02:00:00+02:00</published>
+		</entry>
+	
+		<entry>
+			<id>https://vittore.github.io/2018/05/seconda-edizione-in-lavorazione-idee-e-o-richieste/</id>
+			<title>Seconda edizione in lavorazione: idee e/o richieste?</title>
+			<link href="https://vittore.github.io/2018/05/seconda-edizione-in-lavorazione-idee-e-o-richieste/" rel="alternate" type="text/html" title="Seconda edizione in lavorazione: idee e/o richieste?" />
+			<updated>2018-05-30T00:17:12+02:00</updated>
+
+			
+				
+				<author>
+					
+						<name>Vittore Zen</name>
+					
+					
+					
+				</author>
+			
+			<summary></summary>
+			<content type="html" xml:base="https://vittore.github.io/2018/05/seconda-edizione-in-lavorazione-idee-e-o-richieste/">&lt;p&gt;L’anno scolastico si avvia alla conclusione e l’estate è alle porte. In questo periodo metterò mano al libretto “&lt;a href=&quot;https://www.amazon.it/Teoria-laboratori-esercizi-MikroTik-RouterOS/dp/1973238845/&quot;&gt;Teoria, laboratori ed esercizi per MikroTik RouterOS&lt;/a&gt;” per essere pronto per l’inizio delle attività a settembre.&lt;/p&gt;
+
+&lt;p&gt;Se ci sono suggerimenti, consigli o altre modifiche che ritenete utili contattatemi via email.&lt;/p&gt;
+</content>
+
+			
+				<category term="Articoli" />
+			
+			
+				<category term="Network" />
+			
+
+			<published>2018-05-30T00:17:12+02:00</published>
+		</entry>
+	
+		<entry>
+			<id>https://vittore.github.io/2018/04/alcune-indiscrezioni-sulla-futura-release-di-posta-gmail/</id>
+			<title>Alcune indiscrezioni sulla futura release di posta Gmail</title>
+			<link href="https://vittore.github.io/2018/04/alcune-indiscrezioni-sulla-futura-release-di-posta-gmail/" rel="alternate" type="text/html" title="Alcune indiscrezioni sulla futura release di posta Gmail" />
+			<updated>2018-04-22T10:42:58+02:00</updated>
+
+			
+				
+				<author>
+					
+						<name>Vittore Zen</name>
+					
+					
+					
+				</author>
+			
+			<summary></summary>
+			<content type="html" xml:base="https://vittore.github.io/2018/04/alcune-indiscrezioni-sulla-futura-release-di-posta-gmail/">&lt;div id=&quot;js_cbf&quot; class=&quot;_5pbx userContent _3576&quot; data-ft=&quot;{&amp;quot;tn&amp;quot;:&amp;quot;K&amp;quot;}&quot;&gt;
+  &lt;p&gt;
+    Alcune indiscrezioni sulla futura release di posta Gmail sembrano interessanti ed opportuno conoscerle.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    Una, definita “modalità privata”, consentirebbe al mittente di limitare le azioni del destinatario rispetto alla mail ricevuta che potrebbe essere non stampabile o scaricabile.
+  &lt;/p&gt;
+
+  &lt;p&gt;
+    L’altra nuova funzione, ipotizzata, riguarda la possibilità di inviare mail che si autodistruggono alla stregua di alcune app di messaggistica istantanea. Solo il tempo ci darà conferma di queste opzioni. &lt;a class=&quot;_58cn&quot; href=&quot;https://www.facebook.com/hashtag/essercisempre?source=feed_text&quot; data-ft=&quot;{&amp;quot;tn&amp;quot;:&amp;quot;*N&amp;quot;,&amp;quot;type&amp;quot;:104}&quot;&gt;&lt;span class=&quot;_5afx&quot;&gt;&lt;span class=&quot;_58cl _5afz&quot; aria-label=&quot;hashtag&quot;&gt;#&lt;/span&gt;&lt;span class=&quot;_58cm&quot;&gt;essercisempre&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;_3x-2&quot; data-ft=&quot;{&amp;quot;tn&amp;quot;:&amp;quot;H&amp;quot;}&quot;&gt;
+  &lt;div data-ft=&quot;{&amp;quot;tn&amp;quot;:&amp;quot;H&amp;quot;}&quot;&gt;
+    &lt;div class=&quot;mtm&quot;&gt;
+      &lt;div&gt;
+        &lt;div class=&quot;_5cq3&quot; data-ft=&quot;{&amp;quot;tn&amp;quot;:&amp;quot;E&amp;quot;}&quot;&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</content>
+
+			
+				<category term="Articoli" />
+			
+			
+
+			<published>2018-04-22T10:42:58+02:00</published>
+		</entry>
+	
+		<entry>
+			<id>https://vittore.github.io/2018/03/twitter-chiude-twitter-su-osx/</id>
+			<title>Twitter chiude twitter su OSX</title>
+			<link href="https://vittore.github.io/2018/03/twitter-chiude-twitter-su-osx/" rel="alternate" type="text/html" title="Twitter chiude twitter su OSX" />
+			<updated>2018-03-30T09:24:32+02:00</updated>
+
+			
+				
+				<author>
+					
+						<name>Vittore Zen</name>
+					
+					
+					
+				</author>
+			
+			<summary></summary>
+			<content type="html" xml:base="https://vittore.github.io/2018/03/twitter-chiude-twitter-su-osx/">&lt;p&gt;Mi ero perso questa notizia: &lt;a href=&quot;https://techcrunch.com/2018/02/16/twitter-kills-mac-app/&quot;&gt;Twitter is killing its Twitter for Mac desktop client&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;In sintesi: il client twitter nativo per OSX verrà dismesso. Anzi è già dismesso.&lt;/p&gt;
+
+&lt;p&gt;Una interessante alternativa gratuita è  &lt;a href=&quot;http://tweetenapp.com/&quot;&gt;http://tweetenapp.com/&lt;/a&gt;&lt;/p&gt;
+</content>
+
+			
+				<category term="Articoli" />
+			
+			
+				<category term="mondo apple" />
+			
+				<category term="web" />
+			
+
+			<published>2018-03-30T09:24:32+02:00</published>
+		</entry>
+	
+		<entry>
+			<id>https://vittore.github.io/2018/02/perche-il-mio-sito-wordpress-e-cosi-lento/</id>
+			<title>Perché il mio sito wordpress è così lento.</title>
+			<link href="https://vittore.github.io/2018/02/perche-il-mio-sito-wordpress-e-cosi-lento/" rel="alternate" type="text/html" title="Perché il mio sito wordpress è così lento." />
+			<updated>2018-02-22T08:56:33+01:00</updated>
+
+			
+				
+				<author>
+					
+						<name>Vittore Zen</name>
+					
+					
+					
+				</author>
+			
+			<summary></summary>
+			<content type="html" xml:base="https://vittore.github.io/2018/02/perche-il-mio-sito-wordpress-e-cosi-lento/">&lt;p&gt;Finalmente ho trovato un articolo tecnico che tratta questo tema.&lt;/p&gt;
+
+&lt;p&gt;Link: &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow&quot;&gt;http://www.onlinemediamasters.com/why-is-wordpress-so-slow&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;larticolo-analizza-in-40-punti-gli-aspetti-cruciali&quot;&gt;L’articolo analizza in 40 punti gli aspetti cruciali:&lt;/h2&gt;
+
+&lt;div class=&quot;one-half first&quot;&gt;
+  1. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#pingdom-gtmetrix-page-speed-insights&quot;&gt;Pingdom vs. GTmetrix vs. Page Speed&lt;/a&gt;&lt;br /&gt; 2. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#hosting&quot;&gt;How To Tell If Your Hosting Is Slow&lt;/a&gt;&lt;br /&gt; 3. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#siteground&quot;&gt;200ms Load Time On SiteGround&lt;/a&gt;&lt;br /&gt; 4. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#php7&quot;&gt;PHP7&lt;/a&gt;&lt;br /&gt; 5. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#cache-plugin&quot;&gt;Cache Plugin (WP Rocket)&lt;/a&gt;&lt;br /&gt; 6. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#database-cleanup&quot;&gt;Database Cleanup&lt;/a&gt;&lt;br /&gt; 7. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#cloudflare&quot;&gt;Cloudflare Setup&lt;/a&gt;&lt;br /&gt; 8. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#cloudflare-speed-settings&quot;&gt;Cloudflare Speed Settings&lt;/a&gt;&lt;br /&gt; 9. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#hotlink-protection&quot;&gt;Cloudflare Hotlink Protection&lt;/a&gt;&lt;br /&gt; 10. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#page-rules&quot;&gt;Cloudflare WP-Admin Page Rules&lt;/a&gt;&lt;br /&gt; 11. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#maxcdn&quot;&gt;MaxCDN&lt;/a&gt;&lt;br /&gt; 12. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#whitelist-ips&quot;&gt;Whitelist IPs&lt;/a&gt;&lt;br /&gt; 13. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#lazyload&quot;&gt;Lazyload Videos/Iframes&lt;/a&gt;&lt;br /&gt; 14. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#serve-scaled-images&quot;&gt;Serve Scaled Images&lt;/a&gt;&lt;br /&gt; 15. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#specify-image-dimensions&quot;&gt;Specify Image Dimensions&lt;/a&gt;&lt;br /&gt; 16. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#lossless-image-compression&quot;&gt;Losslessly Compress Images&lt;/a&gt;&lt;br /&gt; 17. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#image-format&quot;&gt;Save Images In Correct Format&lt;/a&gt;&lt;br /&gt; 18. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#wp-disable&quot;&gt;WP Disable&lt;/a&gt;&lt;br /&gt; 19. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#host-google-analytics-locally&quot;&gt;Host Google Analytics Locally&lt;/a&gt;&lt;br /&gt; 20. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#minimize-plugins&quot;&gt;Minimize Plugins&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;one-half&quot;&gt;
+  21. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#high-cpu-plugins&quot;&gt;Avoid High CPU Plugins&lt;/a&gt;&lt;br /&gt; 22. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#plugin-settings&quot;&gt;Disable Unused Plugin Settings&lt;/a&gt;&lt;br /&gt; 23. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#slider-plugin&quot;&gt;Use A Fast Slider Plugin&lt;/a&gt;&lt;br /&gt; 24. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#gallery-plugin&quot;&gt;Use A Fast Gallery Plugin&lt;/a&gt;&lt;br /&gt; 25. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#social-sharing-plugin&quot;&gt;Use A Fast Social Sharing Plugin&lt;/a&gt;&lt;br /&gt; 26. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#accelerated-mobile-pages&quot;&gt;AMP Pages&lt;/a&gt;&lt;br /&gt; 27. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#gravatars&quot;&gt;Optimize Gravatars&lt;/a&gt;&lt;br /&gt; 28. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#google-maps&quot;&gt;Avoid Google Maps&lt;/a&gt;&lt;br /&gt; 29. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#advertisements&quot;&gt;Avoid Advertisements&lt;/a&gt;&lt;br /&gt; 30. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#awstats&quot;&gt;Check AWStats For High CPU&lt;/a&gt;&lt;br /&gt; 31. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#limit-crawlers&quot;&gt;Limit Crawlers/Spiders&lt;/a&gt;&lt;br /&gt; 32. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#defer-parsing-of-javascript&quot;&gt;Defer Parsing Of Javascript&lt;/a&gt;&lt;br /&gt; 33. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#add-expires-headers&quot;&gt;Add Expires Headers&lt;/a&gt;&lt;br /&gt; 34. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#remove-query-strings&quot;&gt;Remove Query Strings&lt;/a&gt;&lt;br /&gt; 35. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#minimize-redirects&quot;&gt;Minimize Redirects&lt;/a&gt;&lt;br /&gt; 36. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#lightweight-theme&quot;&gt;Use A Lightweight Theme&lt;/a&gt;&lt;br /&gt; 37. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#hosting-account&quot;&gt;1 Website Per Hosting Account&lt;/a&gt;&lt;br /&gt; 38. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#update-wordpress&quot;&gt;Keep WordPress Updated&lt;/a&gt;&lt;br /&gt; 39. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#slow-pages&quot;&gt;Find Your Slowest Loading Pages&lt;/a&gt;&lt;br /&gt; 40. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#hire-a-developer&quot;&gt;Hire My WordPress Speed Optimizer&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;h2 id=&quot;di-particolare-interesse&quot;&gt;Di particolare interesse:&lt;/h2&gt;
+
+&lt;div&gt;
+  2. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#hosting&quot;&gt;How To Tell If Your Hosting Is Slow&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  6. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#database-cleanup&quot;&gt;Database Cleanup&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  19. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#host-google-analytics-locally&quot;&gt;Host Google Analytics Locally&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  32. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#defer-parsing-of-javascript&quot;&gt;Defer Parsing Of Javascript&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;h2 id=&quot;devo-capire-meglio-come-agire&quot;&gt;Devo capire meglio come agire:&lt;/h2&gt;
+
+&lt;div&gt;
+  7. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#cloudflare&quot;&gt;Cloudflare Setup&lt;/a&gt;&lt;br /&gt; 8. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#cloudflare-speed-settings&quot;&gt;Cloudflare Speed Settings&lt;/a&gt;&lt;br /&gt; 9. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#hotlink-protection&quot;&gt;Cloudflare Hotlink Protection&lt;/a&gt;&lt;br /&gt; 10. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#page-rules&quot;&gt;Cloudflare WP-Admin Page Rules&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+  34. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#remove-query-strings&quot;&gt;Remove Query Strings&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div&gt;
+&lt;/div&gt;
+</content>
+
+			
+				<category term="Articoli" />
+			
+			
+				<category term="web" />
+			
+
+			<published>2018-02-22T08:56:33+01:00</published>
+		</entry>
+	
+		<entry>
+			<id>https://vittore.github.io/2018/01/gvfs/</id>
+			<title>GVFS</title>
+			<link href="https://vittore.github.io/2018/01/gvfs/" rel="alternate" type="text/html" title="GVFS" />
+			<updated>2018-01-12T13:50:37+01:00</updated>
+
+			
+				
+				<author>
+					
+						<name>Vittore Zen</name>
+					
+					
+					
+				</author>
+			
+			<summary></summary>
+			<content type="html" xml:base="https://vittore.github.io/2018/01/gvfs/">&lt;p&gt;GVFS è l’acronimo di Git Virtual File System. GVFS virtualizza il file system sotto il repository git in modo che git e tutti gli strumenti vedano quello che sembra essere un normale repository, ma GVFS scarica solo gli oggetti quando sono necessari. GVFS gestisce anche la sparse checkout di git per assicurare che le operazioni git come lo stato, il checkout, ecc., siano il più veloce possibile perché considerano solo i file a cui l’utente ha avuto accesso, non tutti i file nel repository.&lt;/p&gt;
+
+&lt;p&gt;Incredibile ma vero: creato da Microsoft.&lt;/p&gt;
+
+&lt;p&gt;Pagina ufficiale: &lt;a href=&quot;http://www.gvfs.io/&quot;&gt;http://www.gvfs.io/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Repository github: &lt;a href=&quot;https://github.com/Microsoft/GVFS&quot;&gt;https://github.com/Microsoft/GVFS&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I tempi di risposta parlano da soli&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th colspan=&quot;1&quot; scope=&quot;col&quot;&gt;
+      Azione
+    &lt;/th&gt;
+    
+    &lt;th colspan=&quot;1&quot; scope=&quot;col&quot;&gt;
+      Senza GVFS
+    &lt;/th&gt;
+    
+    &lt;th class=&quot;gvfs-tableHighlight&quot; colspan=&quot;1&quot; scope=&quot;col&quot;&gt;
+      Con GVFS
+    &lt;/th&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt;
+      &lt;span class=&quot;gvfs-monospace&quot;&gt;Clone&lt;/span&gt; (Bare)
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      12+ hours
+    &lt;/td&gt;
+    
+    &lt;td class=&quot;gvfs-tableHighlight&quot;&gt;
+      4-5 minutes
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt;
+      &lt;span class=&quot;gvfs-monospace&quot;&gt;Checkout&lt;/span&gt;
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      3 hours
+    &lt;/td&gt;
+    
+    &lt;td class=&quot;gvfs-tableHighlight&quot;&gt;
+      30 seconds
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt;
+      &lt;span class=&quot;gvfs-monospace&quot;&gt;Status&lt;/span&gt;
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      10 minutes
+    &lt;/td&gt;
+    
+    &lt;td class=&quot;gvfs-tableHighlight&quot;&gt;
+      3 seconds
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  
+  &lt;tr&gt;
+    &lt;td&gt;
+      &lt;span class=&quot;gvfs-monospace&quot;&gt;Commit&lt;/span&gt;
+    &lt;/td&gt;
+    
+    &lt;td&gt;
+      30 minutes
+    &lt;/td&gt;
+    
+    &lt;td class=&quot;gvfs-tableHighlight&quot;&gt;
+      6 seconds
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</content>
+
+			
+				<category term="Articoli" />
+			
+			
+
+			<published>2018-01-12T13:50:37+01:00</published>
+		</entry>
+	
+		<entry>
+			<id>https://vittore.github.io/2017/12/dietro-le-quinte-del-web-gli-sviluppatori/</id>
+			<title>Dietro le quinte del web: gli sviluppatori.</title>
+			<link href="https://vittore.github.io/2017/12/dietro-le-quinte-del-web-gli-sviluppatori/" rel="alternate" type="text/html" title="Dietro le quinte del web: gli sviluppatori." />
+			<updated>2017-12-21T09:18:02+01:00</updated>
+
+			
+				
+				<author>
+					
+						<name>Vittore Zen</name>
+					
+					
+					
+				</author>
+			
+			<summary></summary>
+			<content type="html" xml:base="https://vittore.github.io/2017/12/dietro-le-quinte-del-web-gli-sviluppatori/">&lt;p&gt;Quella dello sviluppatore è una delle professioni più richieste in assoluto nel settore digital.&lt;/p&gt;
+
+&lt;p&gt;Il termine “sviluppatore”, tuttavia, è ormai diventato molto generico, in quanto sotto questa dicitura coesistono in realtà compiti e funzioni ben diverse. I developer, infatti, solitamente si specializzano in determinati linguaggi di programmazione e attività, che hanno lo scopo di creare e gestire differenti aspetti di una piattaforma web.&lt;/p&gt;
+
+&lt;p&gt;Si possono identificare in particolare tre tipologie di sviluppatori: Front-end developer, Back-end developer e Full-stack developer. Che cosa differenzia queste tre figure? Vediamo di scoprirne di più.&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;h2 id=&quot;front-end-developer-competenze-e-compiti&quot;&gt;Front-end developer: competenze e compiti&lt;/h2&gt;
+
+&lt;p&gt;Questo professionista si occupa della parte front-end di un sito Internet, ossia la parte visibile dagli utenti e quella con cui essi interagiscono. Per creare le pagine web, un Front-end developer utilizza essenzialmente tre linguaggi di programmazione: HTML (per creare la struttura e il contenuto), CSS (per dotare la pagina di colori, stile, font e immagini di sfondo) e JavaScript per dare alla pagina maggiore dinamicità e possibilità d’interazione. Di solito un Front-end developer ha competenze anche di user experience, fondamentale per fornire all’utente un’esperienza d’uso del sito semplice e intuitiva.&lt;/p&gt;
+
+&lt;h2 id=&quot;cosa-fa-un-back-end-developer&quot;&gt;Cosa fa un back-end developer?&lt;/h2&gt;
+
+&lt;p&gt;Back-end developer: sono gli uomini e le donne dietro le quinte, quelli che fanno il lavoro sporco. In una squadra di rugby giocherebbero sicuramente in mischia, sotto a prender (e a tirare) botte e a macinare metri. Ma sono anche quelli con le mani buone. Perché ci vuole una certa eleganza, una certa tecnica per scrivere bene, soprattutto quando si tratta di una prosa composta da stringhe di codice e non da semplici parole.&lt;/p&gt;
+
+&lt;p&gt;Jacopo: “Il mio lavoro come sviluppatore back-end coinvolge diverse aree dell’informatica. Non è solo sviluppo puro ma anche attenzione all’architettura, utilizzo di database e di sistemi operativi. Mi occupo poi del deployment (dell’installazione e messa in servizio) delle applicazioni e del loro monitoraggio. È un lavoro abbastanza poliedrico dal punto di vista tecnico.”&lt;/p&gt;
+
+&lt;p&gt;Marco: “Sono uno sviluppatore software, in particolare mi occupo del back-end, quindi di tutto quello che c’è dietro le quinte del software e che non ha un impatto visivo diretto con l’utente finale. Si tratta di integrare servizi di terze parti, di elaborare dati, immagazzinarli, impacchettarli e poi fornirli nel miglior modo possibile al front-end, lo sviluppatore che si occuperà in seguito di presentarli all’utente sotto forma di interfacce grafiche intuitive e funzionali.”&lt;/p&gt;
+
+&lt;p&gt;Jacopo: “Ciò che conta è l’esperienza: più software si scrive, più tipi di strumenti si utilizzano e più si diventa bravi ed efficienti e si evitano gli errori più comuni. Studiando – nel mio caso all’università, che forse è la strada più semplice, più diretta, ma certamente non l’unico percorso formativo che si può intraprendere– ho anche una base teorica che mi permette di andare quasi a colpo sicuro sui problemi già noti e affrontati dall’ingegneria. Questo però, lo ripeto, lo considero un valore aggiunto, non una condizione necessaria, men che meno sufficiente.”&lt;/p&gt;
+
+&lt;p&gt;Marco: “È un lavoro creativo, perché trovare una soluzione a un problema, sempre nuovo, sempre diverso, implica creatività. Alla fine si tratta di scrivere una storia, un racconto utilizzando un particolare tipo di linguaggio: che ha la sua sintassi, il suo lessico, la sua grammatica. E se scrivere è una professione creativa, allora non vedo perché non possa esserlo anche programmare. Loro (gli scrittori) scrivono libri, noi scriviamo codici.”&lt;/p&gt;
+
+&lt;h2 id=&quot;full-stack-developer-di-che-cosa-si-occupa&quot;&gt;Full-stack developer: di che cosa si occupa&lt;/h2&gt;
+
+&lt;p&gt;Veniamo infine alla figura del Full-stack developer, che può essere inteso come uno sviluppatore con competenze sia lato front-end, sia lato back-end. Solitamente uno sviluppatore full-stack ha infatti familiarità sia con i linguaggi HTML, CSS e JavaScript, sia con PHP, Python e gli altri linguaggi di scripting utilizzati per progettare e far funzionare un software, fatto che lo rende in grado di intervenire su diversi aspetti di un sito. È difficile, comunque, che questo professionista si trovi a sviluppare e gestire un sito web completamente da solo: spesso, invece, collabora con Front-end e Back-end developer e tende a concentrarsi su un solo aspetto; anzi, è piuttosto raro trovare figure di full stack “pure”, perché è molto difficile che un solo profilo sia esperto sia di front che di back-end.&lt;/p&gt;
+
+&lt;h2 id=&quot;e-i-devops&quot;&gt;E i DevOps?&lt;/h2&gt;
+
+&lt;p&gt;Innanzitutto la parola è il risultato della fusione tramite contrazione di due termini, development e operations, ed è nata più o meno tre anni fa. Questo può in parte aiutarci a capire il significato di questo approccio, che riguarda sia la figura professionale dello sviluppatore che quella del sistemista, e precisamente tenta di creare dei legami tra queste due personalità, proponendo forme di collaborazione più avanzata e metodologie di sviluppo che evitino il più possibile frizioni tra i due ruoli.&lt;/p&gt;
+
+&lt;p&gt;Uno dei modelli di riferimento del DevOPS è il cosiddetto CALMSS, acronimo di Culture, Automation, Lean, Management and Measurement, Sharing and Sourcing. Ed è proprio questo a definire cosa è il DevOps. Il DevOps, infatti, è un set di pratiche e di cambiamenti culturali supportati da strumenti automatici e processi di Lean Management, che consente di automatizzare il rilascio del software rispetto alla sua catena di produzione, permettendo alle organizzazioni di poter contare su un software e applicazioni di qualità superiore e sicura in modo estremamente più rapido, per accontentare i clienti nel modo migliore e più rapidamente.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;Fonti e approfondimenti:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.spindox.it/it/blog/digital-jobs-back-end-developer&quot;&gt;Digital Jobs: back-end developer, dietro le quinte&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://medium.com/coderbyte/a-guide-to-becoming-a-full-stack-developer-in-2017-5c3c08a1600c&quot;&gt;A Guide to Becoming a Full-Stack Developer in 2017&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.randstad.it/candidato/career-lab/archives/professione-sviluppatore-ecco-svelate-le-differenze-tra-front-end-back-end-e-full-stack-developer_777/&quot;&gt;professione sviluppatore: ecco svelate le differenze tra front-end, back-end e full-stack developer&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.zerounoweb.it/software/sviluppo-software/che-cose-la-metodologia-devops-come-applicarla-e-livelli-di-adozione-in-italia-e-nel-mondo/&quot;&gt;Che cos’è la metodologia DevOps: come applicarla e livelli di adozione in Italia e nel mondo&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.zerounoweb.it/techtarget/searchdatacenter/programmazione-software-e-l-ora-degli-it-shop-devops/&quot;&gt;Che cosa significa DevOps e perché oggi è un fondamentale della programmazione&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+
+			
+				<category term="Articoli" />
+			
+			
+
+			<published>2017-12-21T09:18:02+01:00</published>
+		</entry>
+	
+		<entry>
+			<id>https://vittore.github.io/2017/11/teoria-laboratori-ed-esercizi-per-mikrotik-routeros/</id>
+			<title>Teoria, laboratori ed esercizi per Mikrotik RouterOS</title>
+			<link href="https://vittore.github.io/2017/11/teoria-laboratori-ed-esercizi-per-mikrotik-routeros/" rel="alternate" type="text/html" title="Teoria, laboratori ed esercizi per Mikrotik RouterOS" />
+			<updated>2017-11-13T08:28:45+01:00</updated>
+
+			
+				
+				<author>
+					
+						<name>Vittore Zen</name>
+					
+					
+					
+				</author>
+			
+			<summary></summary>
+			<content type="html" xml:base="https://vittore.github.io/2017/11/teoria-laboratori-ed-esercizi-per-mikrotik-routeros/">&lt;p&gt;Ecco pronta per voi la versione comprensiva della parte teorica:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://amzn.eu/9Oh3fpn&quot;&gt;http://amzn.eu/9Oh3fpn&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/11/copertina_teoria_bassa_risoluzione.jpg&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-2021&quot; src=&quot;https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/11/copertina_teoria_bassa_risoluzione.jpg?resize=400%2C500&quot; alt=&quot;&quot; width=&quot;400&quot; height=&quot;500&quot; srcset=&quot;https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/11/copertina_teoria_bassa_risoluzione.jpg?w=400 400w, https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/11/copertina_teoria_bassa_risoluzione.jpg?resize=128%2C160 128w, https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/11/copertina_teoria_bassa_risoluzione.jpg?resize=240%2C300 240w&quot; sizes=&quot;(max-width: 400px) 100vw, 400px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+
+			
+				<category term="Articoli" />
+			
+			
+
+			<published>2017-11-13T08:28:45+01:00</published>
+		</entry>
+	
+		<entry>
+			<id>https://vittore.github.io/2017/10/e-iniziata-la-scrittura-della-parte-teorica/</id>
+			<title>E&amp;#8217; iniziata la scrittura della parte teorica</title>
+			<link href="https://vittore.github.io/2017/10/e-iniziata-la-scrittura-della-parte-teorica/" rel="alternate" type="text/html" title="E&amp;#8217; iniziata la scrittura della parte teorica" />
+			<updated>2017-10-09T10:23:09+02:00</updated>
+
+			
+				
+				<author>
+					
+						<name>Vittore Zen</name>
+					
+					
+					
+				</author>
+			
+			<summary></summary>
+			<content type="html" xml:base="https://vittore.github.io/2017/10/e-iniziata-la-scrittura-della-parte-teorica/">&lt;p&gt;Alcuni amici che hanno avuto modo di prendere tra le mani il mio librettino di laboratori ed esercizi su RouterOS (vedi il post &lt;a href=&quot;https://www.zen.pn.it/2017/08/laboratori-ed-esercizi-per-mikrotik-routeros/&quot;&gt;Laboratori ed esercizi per Mikrotik Router OS&lt;/a&gt;) mi hanno fatto notare come manchi della parte teorica.&lt;/p&gt;
+
+&lt;p&gt;Mi sembra un buon suggerimento. E’ vero che c’è moltissima documentazione in rete e ci sono degli ottimi libri su questo tema ma manca un testo interamente in lingua italiana e pensato per chi è alle prime armi con RouterOS.&lt;/p&gt;
+
+&lt;p&gt;Mi sto dando da fare per questa parte.&lt;/p&gt;
+
+&lt;p&gt;Ecco un estratto della parte teorica: &lt;a href=&quot;http://www.zen.pn.it/wp-content/uploads/2017/10/libroEsempioTeoria.pdf&quot;&gt;DHCP server – estratto&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+</content>
+
+			
+				<category term="Articoli" />
+			
+			
+
+			<published>2017-10-09T10:23:09+02:00</published>
+		</entry>
+	
+		<entry>
+			<id>https://vittore.github.io/2017/08/laboratori-ed-esercizi-per-mikrotik-routeros/</id>
+			<title>Laboratori ed esercizi per MikroTik RouterOS</title>
+			<link href="https://vittore.github.io/2017/08/laboratori-ed-esercizi-per-mikrotik-routeros/" rel="alternate" type="text/html" title="Laboratori ed esercizi per MikroTik RouterOS" />
+			<updated>2017-09-01T01:17:55+02:00</updated>
+
+			
+				
+				<author>
+					
+						<name>Vittore Zen</name>
+					
+					
+					
+				</author>
+			
+			<summary></summary>
+			<content type="html" xml:base="https://vittore.github.io/2017/08/laboratori-ed-esercizi-per-mikrotik-routeros/">&lt;p&gt;Ecco. Ora ho finito. Ecco il mio libro con gli esercizi sul sistema RouterOS della Mikrotik.&lt;/p&gt;
+
+&lt;p&gt;Questo libro raccoglie i laboratori e le domande per un corso base su MikroTik RouterOS. L’ordine dei capitoli segue la documentazione proposta nel sito Mikrotik. Ogni laboratorio è focalizzato su uno specifico obiettivo e non mescola concetti non ancora acquisiti. E’ possibile eseguire i laboratori in aula ma anche a casa, in autonomia. In questo caso basta una semplice connessione residenziale ad internet per portare a termine tutti gli esercizi. Le domande che si trovano a fine capitolo spingono lo studente verso gli argomenti più ostici e lo stimola alla consultazione della documentazione ufficiale. Il problema che si trova alla fine di ogni capitolo propone un caso reale con la sua soluzione.&lt;/p&gt;
+
+&lt;p&gt;Link su Amazon:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.it/dp/1521899525/ref=sr_1_1?ie=UTF8&amp;amp;qid=1504185567&amp;amp;sr=8-1&quot;&gt;Laboratori ed esercizi per MikroTik RouterOS (versione cartacea)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.it/dp/B075J3XTSL&quot;&gt;Laboratori ed esercizi per MikroTik RouterOS (versione kindle)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Estratto del capitolo 4 sul routing: &lt;a href=&quot;http://www.zen.pn.it/wp-content/uploads/2017/08/estrattoCapitolo4Routing.pdf&quot;&gt;estratto del capitolo 4 – routing&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/08/coverdaAmazon.png&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-1999&quot; src=&quot;https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/08/coverdaAmazon.png?resize=411%2C510&quot; alt=&quot;&quot; width=&quot;411&quot; height=&quot;510&quot; srcset=&quot;https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/08/coverdaAmazon.png?w=411 411w, https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/08/coverdaAmazon.png?resize=129%2C160 129w, https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/08/coverdaAmazon.png?resize=242%2C300 242w&quot; sizes=&quot;(max-width: 411px) 100vw, 411px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+</content>
+
+			
+				<category term="Articoli" />
+			
+			
+				<category term="Network" />
+			
+
+			<published>2017-09-01T01:17:55+02:00</published>
+		</entry>
+	
+</feed>

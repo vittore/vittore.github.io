@@ -1,0 +1,519 @@
+<!doctype html>
+<html class="no-js" lang="it">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dopo Heartbleed arriva Shellshock: indicazioni per osX</title>
+
+    <link rel="stylesheet" type="text/css" href="https://vittore.github.io/assets/css/styles_feeling_responsive.css">
+
+  
+
+	<script src="https://vittore.github.io/assets/js/modernizr.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+	<script>
+		WebFont.load({
+			google: {
+				families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ]
+			}
+		});
+	</script>
+
+	<noscript>
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic%7CVolkhov' rel='stylesheet' type='text/css'>
+	</noscript>
+
+
+	<!-- Search Engine Optimization -->
+	<meta name="description" content="Trovata una falla nei sistemi che fanno uso di Bash, la shell di comando più diffusa in ambiente Unix e Linux: a rischio anche il sistema operativo OS X di Apple e molti dispositivi connessi, come router, NAS o telecamere IP. Per i computer desktop il pericolo c’è, ma è basso. E per una volta Windows è al sicuro.
+
+E’ già stato rinominato Shellshock bug, con un gioco di parole che richiama il trauma da bombardamento dei soldati durante la Prima Guerra Mondiale o, a scelta, l’omonima serie di videogiochi di guerra. La portata distruttiva del bug della shell Bash su server e macchine connesse e vulnerabili, del resto, potrebbe essere l’equivalente informatico di un raid aereo su vasta scala: milioni di dispositivi su cui girano sistemi basati su UNIX sono potenzialmente a rischio.">
+	
+	
+	
+	
+	
+	
+	<link rel="canonical" href="https://vittore.github.io/2014/09/dopo-heartbleed-arriva-shellshock-indicazioni-per-osx/">
+
+
+	<!-- Facebook Open Graph -->
+	<meta property="og:title" content="Dopo Heartbleed arriva Shellshock: indicazioni per osX">
+	<meta property="og:description" content="Trovata una falla nei sistemi che fanno uso di Bash, la shell di comando più diffusa in ambiente Unix e Linux: a rischio anche il sistema operativo OS X di Apple e molti dispositivi connessi, come router, NAS o telecamere IP. Per i computer desktop il pericolo c’è, ma è basso. E per una volta Windows è al sicuro.
+
+E’ già stato rinominato Shellshock bug, con un gioco di parole che richiama il trauma da bombardamento dei soldati durante la Prima Guerra Mondiale o, a scelta, l’omonima serie di videogiochi di guerra. La portata distruttiva del bug della shell Bash su server e macchine connesse e vulnerabili, del resto, potrebbe essere l’equivalente informatico di un raid aereo su vasta scala: milioni di dispositivi su cui girano sistemi basati su UNIX sono potenzialmente a rischio.">
+	<meta property="og:url" content="https://vittore.github.io/2014/09/dopo-heartbleed-arriva-shellshock-indicazioni-per-osx/">
+	<meta property="og:locale" content="en_EN">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="zen.pn.it - Tecnologia e dintorni">
+	
+	<meta property="article:author" content="https://www.facebook.com/vittore.zen">
+
+
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="vittore">
+	<meta name="twitter:creator" content="vittore">
+	<meta name="twitter:title" content="Dopo Heartbleed arriva Shellshock: indicazioni per osX">
+	<meta name="twitter:description" content="Trovata una falla nei sistemi che fanno uso di Bash, la shell di comando più diffusa in ambiente Unix e Linux: a rischio anche il sistema operativo OS X di Apple e molti dispositivi connessi, come router, NAS o telecamere IP. Per i computer desktop il pericolo c’è, ma è basso. E per una volta Windows è al sicuro.
+
+E’ già stato rinominato Shellshock bug, con un gioco di parole che richiama il trauma da bombardamento dei soldati durante la Prima Guerra Mondiale o, a scelta, l’omonima serie di videogiochi di guerra. La portata distruttiva del bug della shell Bash su server e macchine connesse e vulnerabili, del resto, potrebbe essere l’equivalente informatico di un raid aereo su vasta scala: milioni di dispositivi su cui girano sistemi basati su UNIX sono potenzialmente a rischio.">
+	
+	
+
+	<link type="text/plain" rel="author" href="https://vittore.github.io/humans.txt">
+
+	
+
+	
+
+	<link rel="icon" sizes="32x32" href="https://vittore.github.io/assets/img/favicon-32x32.png">
+
+	<link rel="icon" sizes="192x192" href="https://vittore.github.io/assets/img/touch-icon-192x192.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://vittore.github.io/assets/img/apple-touch-icon-180x180-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://vittore.github.io/assets/img/apple-touch-icon-152x152-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://vittore.github.io/assets/img/apple-touch-icon-144x144-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://vittore.github.io/assets/img/apple-touch-icon-120x120-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://vittore.github.io/assets/img/apple-touch-icon-114x114-precomposed.png">
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://vittore.github.io/assets/img/apple-touch-icon-76x76-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://vittore.github.io/assets/img/apple-touch-icon-72x72-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" href="https://vittore.github.io/assets/img/apple-touch-icon-precomposed.png">	
+
+	<meta name="msapplication-TileImage" content="https://vittore.github.io/assets/img/msapplication_tileimage.png">
+
+	<meta name="msapplication-TileColor" content="#fabb00">
+
+
+	
+
+</head>
+<body id="top-of-page" class="post">
+	
+	
+<div id="navigation" class="sticky">
+  <nav class="top-bar" role="navigation" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+      <h1 class="show-for-small-only"><a href="https://vittore.github.io" class="icon-tree"> zen.pn.it - Tecnologia e dintorni</a></h1>
+    </li>
+       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Nav</span></a></li>
+    </ul>
+    <section class="top-bar-section">
+
+      <ul class="right">
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+        
+      </ul>
+
+      <ul class="left">
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/">Home</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/chi-sono/">Chi sono</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/perché-questo-blog/">Perché questo blog</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/contatti/">Contatti</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/whishlist/">Whishlist</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+        
+      </ul>
+    </section>
+  </nav>
+</div><!-- /#navigation -->
+
+	
+
+	
+
+<div id="masthead-no-image-header">
+	<div class="row">
+		<div class="small-12 columns">
+			<a id="logo" href="https://vittore.github.io/" title="zen.pn.it - Tecnologia e dintorni – Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen">
+				<img src="https://vittore.github.io/assets/img/logo.png" alt="zen.pn.it - Tecnologia e dintorni – Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen">
+			</a>
+		</div><!-- /.small-12.columns -->
+	</div><!-- /.row -->
+</div><!-- /#masthead -->
+
+
+
+
+
+
+
+
+
+	<div class="row t30">
+	<div class="medium-8 columns medium-offset-2 end">
+		<article itemscope itemtype="http://schema.org/Article">
+			<header>
+				
+
+				<div itemprop="name">
+					
+					<h1>Dopo Heartbleed arriva Shellshock: indicazioni per osX</h1>
+				</div>
+			</header>
+
+
+			
+
+			<div itemprop="articleSection">
+			<p>Trovata una falla nei sistemi che fanno uso di Bash, la shell di comando più diffusa in ambiente Unix e Linux: a rischio anche il sistema operativo OS X di Apple e molti dispositivi connessi, come router, NAS o telecamere IP. Per i computer desktop il pericolo c’è, ma è basso. E per una volta Windows è al sicuro.</p>
+
+<p>E’ già stato rinominato Shellshock bug, con un gioco di parole che richiama il trauma da bombardamento dei soldati durante la Prima Guerra Mondiale o, a scelta, l’omonima serie di videogiochi di guerra. La portata distruttiva del bug della shell Bash su server e macchine connesse e vulnerabili, del resto, potrebbe essere l’equivalente informatico di un raid aereo su vasta scala: milioni di dispositivi su cui girano sistemi basati su UNIX sono potenzialmente a rischio.</p>
+
+<!--more-->
+
+<h2 id="peggio-di-heartbleed">Peggio di Heartbleed</h2>
+
+<p>La falla scoperta dai ricercatori di Red Hat , casa di sviluppo di una delle più famose distribuzioni di Linux, riguarda la Bourne Again Shell (nota come Bash), storica interfaccia di comando testuale utilizzata da Linux e OS X. Il bug nasce dalle modalità di processamento delle cosiddette variabili d’ambiente da parte della shell e permette a chi conduce un attacco di eseguire codice potenzialmente malevolo all’interno della riga di comando del sistema attaccato, al fine di ottenere un accesso privilegiato o di rubare informazioni private.</p>
+
+<p>Gli addetti ai lavori non hanno dubbi: Shellshock è un bug peggiore di Heartbleed, la grave vulnerabilità della diffusa libreria crittografica OpenSSL scoperta nella primavera dello scorso anno. Il motivo è che, a differenza di OpenSSL, la shell Bash interagisce con altri software in maniera non sempre prevedibile e moltissimi software fanno uso della shell per impartire comandi al sistema. “Per questo motivo,” scrive l’esperto di sicurezza Robert Graham sul suo blog , “non saremo mai davvero in grado di catalogare tutto il software vulnerabile al bug di Bash”.</p>
+
+<p>La natura del bug e il fatto che sia diffuso anche su versioni molto vecchie di Bash lo rendono inoltre particolarmente adatto allo sviluppo e alla diffusione di un worm, vale a dire un malware che può sfruttare la shell per auto-replicarsi e infettare in automatico altre macchine vulnerabili.</p>
+
+<h2 id="quali-sistemi-sono-a-rischio">Quali sistemi sono a rischio</h2>
+
+<p>Il pericolo reale e imminente riguarda soprattutto i server Linux e le versioni server di OS X. Sistemisti e tecnici che gestiscono le macchine di network più o meno grandi devono agire velocemente per assicurarsi che la falla non sia presente sui propri server o, in caso contrario, procedere a chiuderla tramite l’installazione di una più recente versione della shell Bash.</p>
+
+<p>Nel caso dei router, dei sistemi di archiviazione di rete (NAS), delle telecamere IP o di altri dispositivi sempre connessi che utilizzino Bash, il problema si complica. Il bug è saltato fuori solo adesso ma è presente su versioni molto vecchie della shell. Per i dispositivi più recenti i produttori forniranno probabilmente un aggiornamento del firmware che chiuderà la falla, mentre dispositivi più datati ma ancora funzionanti, comunque vulnerabili, difficilmente riceveranno un aggiornamento perché fuori produzione e privi di supporto tecnico.</p>
+
+<p>Per i PC Linux e i Mac dell’utente medio il rischio reale di un attacco rimane basso, soprattutto se sul computer non sono attivi server web raggiungibili pubblicamente o altri servizi avanzati che si interfacciano con il mondo esterno.</p>
+
+<p>L’unico modo per mettere al sicuro in maniera definitiva il proprio Mac o il proprio PC Linux, però, è installare un aggiornamento della shell o del sistema operativo che provveda a chiudere la falla, non ancora disponibile nel momento in cui scriviamo.</p>
+
+<p>A meno di operazioni avanzate di aggiornamento di Bash condotte in autonomia dall’utente, i Mac su cui gira la versione più aggiornata di OS X Mavericks, la 10.9.5, risultano vulnerabili. Apple non ha ancora risposto ad una richiesta di commento sulle tempistiche per la distribuzione di un aggiornamento di sicurezza.</p>
+
+<h2 id="se-avete-un-sistema-apple-ecco-come-verificare-la-vulnerabilità">Se avete un sistema Apple ecco come verificare la vulnerabilità</h2>
+
+<p>Aprite il terminale e copia&amp;incolla il seguente codice:</p>
+
+<pre>env x='() { :;}; echo sistemaVulnerabile' bash -c 'echo unSistemaProtettoNonDeveFarVedereQuestaStringaMaUnErrore'</pre>
+
+<p>Se usare brew la soluzione è semplice:</p>
+
+<pre>brew update;brew upgrade</pre>
+
+<p>Maggiori informazioni al link: <a href="http://apple.stackexchange.com/questions/146849/how-do-i-recompile-bash-to-avoid-shellshock-the-remote-exploit-cve-2014-6271-an/146851#146851">http://apple.stackexchange.com/questions/146849/how-do-i-recompile-bash-to-avoid-shellshock-the-remote-exploit-cve-2014-6271-an/146851#146851</a></p>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+<p>[Da varie fonti. In particolare <a href="http://www.lastampa.it/2014/09/26/tecnologia/dopo-heartbleed-arriva-shellshock-un-nuovo-bug-minaccia-la-sicurezza-in-rete-3FdUxVwgSU0ncTNTwsL6uI/pagina.html">La Stampa</a>]</p>
+
+			</div>
+
+			
+						<div id="page-meta" class="t30">
+				<p>
+					<!-- Look the author details up from the site config. -->
+					
+					<!-- Output author details if some exist. -->
+					
+
+				
+				<time class="icon-calendar pr20" datetime="2014-09-26T10:30:40+02:00" itemprop="datePublished"> 2014-09-26</time>
+				
+
+				<span class="icon-archive pr20"> ARTICOLI</span>
+				<br />
+				<span class="pr20"><span class="icon-price-tag pr10"> mondo apple</span> <span class="icon-price-tag pr10"> Network</span> <span class="icon-price-tag pr10"> sistemi operativi</span> </span>
+			</p>
+
+			
+			<div id="post-nav" class="row">
+				
+				<div class="small-5 columns"><a class="button small radius prev" href="https://vittore.github.io/2014/09/non-solo-photoshop/">&laquo; Non solo Photoshop.</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-2 columns text-center"><a class="radius button small" href="https://vittore.github.io/archivio/" title="Blog Archivio">Archivio</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-5 columns text-right"><a class="button small radius next" href="https://vittore.github.io/2014/10/le-nostre-foto-nei-social-network-vengono-scansionate-a-caccia-di-marchi-e-loghi/">Le nostre foto nei social network vengono scansionate a caccia di marchi e loghi. &raquo;</a></div><!-- /.small-4.columns -->
+				
+			</div>
+			
+			</div><!--  /.page-meta -->
+
+			
+
+			
+		</article>
+	</div><!-- /.medium-8.columns -->
+
+
+	
+
+
+	
+</div><!-- /.row -->
+
+
+	
+	    <div id="up-to-top" class="row">
+      <div class="small-12 columns" style="text-align: right;">
+        <a class="iconfont" href="#top-of-page">&#xf108;</a>
+      </div><!-- /.small-12.columns -->
+    </div><!-- /.row -->
+
+
+    <footer id="footer-content" class="bg-grau">
+      <div id="footer">
+        <div class="row">
+          <div class="medium-6 large-5 columns">
+            <h5 class="shadow-black">Informazioni su questo sito</h5>
+
+            <p class="shadow-black">
+              Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen
+              <a href="https://vittore.github.io/perché-questo-blog/">Altro&nbsp;›</a>
+            </p>
+          </div><!-- /.large-6.columns -->
+
+
+          <div class="small-6 medium-3 large-3 large-offset-1 columns">
+            
+              
+                <h5 class="shadow-black">Servizi</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+
+              <ul class="no-bullet shadow-black">
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io"  title=""></a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io/contatti/"  title="Contatti">Contatti</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io/feed.xml"  title="Subscribe to RSS Feed">RSS</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io/atom.xml"  title="Subscribe to Atom Feed">Atom</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io/sitemap.xml"  title="Sitemap for Google Webmaster Tools">sitemap.xml</a>
+                  </li>
+              
+              </ul>
+          </div><!-- /.large-4.columns -->
+
+
+          <div class="small-6 medium-3 large-3 columns">
+            
+              
+                <h5 class="shadow-black">Ringraziamenti</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+
+            <ul class="no-bullet shadow-black">
+            
+              
+                <li >
+                  <a href="https://vittore.github.io"  title=""></a>
+                </li>
+            
+              
+                <li class="network-entypo" >
+                  <a href="http://entypo.com/" target="_blank"  title="Icons by Daniel Bruce">Icons by Daniel Bruce</a>
+                </li>
+            
+              
+                <li class="services-newsletter" >
+                  <a href="http://foundation.zurb.com/" target="_blank"  title="Built on Foundation">Built on Foundation</a>
+                </li>
+            
+              
+                <li class="rss-link" >
+                  <a href="http://unsplash.com/" target="_blank"  title="Images by Unsplash">Images by Unsplash</a>
+                </li>
+            
+            </ul>
+          </div><!-- /.large-3.columns -->
+        </div><!-- /.row -->
+
+      </div><!-- /#footer -->
+
+
+      <div id="subfooter">
+        <nav class="row">
+          <section id="subfooter-left" class="small-12 medium-6 columns credits">
+            
+          </section>
+
+          <section id="subfooter-right" class="small-12 medium-6 columns">
+            <ul class="inline-list social-icons">
+            
+              <li><a href="mailto:vittore@zen.pn.it" target="_blank" class="icon-mail" title=""></a></li>
+            
+              <li><a href="https://www.linkedin.com/in/vittorezen/" target="_blank" class="icon-linkedin" title=""></a></li>
+            
+              <li><a href="http://twitter.com/vittore" target="_blank" class="icon-twitter" title=""></a></li>
+            
+              <li><a href="http://www.facebook.com/vittore.zen" target="_blank" class="icon-facebook" title=""></a></li>
+            
+              <li><a href="http://github.com/vittore" target="_blank" class="icon-github" title=""></a></li>
+            
+            </ul>
+          </section>
+        </nav>
+      </div><!-- /#subfooter -->
+    </footer>
+
+	
+
+	
+
+
+<script src="https://vittore.github.io/assets/js/javascript.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+

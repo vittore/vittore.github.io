@@ -1,0 +1,925 @@
+<!doctype html>
+<html class="no-js" lang="it">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Comparazione tra Cassandra vs MongoDB vs CouchDB vs Redis vs Riak vs HBase vs Membase vs Neo4j</title>
+
+    <link rel="stylesheet" type="text/css" href="https://vittore.github.io/assets/css/styles_feeling_responsive.css">
+
+  
+
+	<script src="https://vittore.github.io/assets/js/modernizr.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+	<script>
+		WebFont.load({
+			google: {
+				families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ]
+			}
+		});
+	</script>
+
+	<noscript>
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic%7CVolkhov' rel='stylesheet' type='text/css'>
+	</noscript>
+
+
+	<!-- Search Engine Optimization -->
+	<meta name="description" content="I database SQL sono strumenti infinitamente utili ma, dopo circa 15 anni, il loro monopolio è alla fine. Non riesco a pensare a quante cose sono state forzate dentro un database relazionale ma che non ci stavano proprio. Le differenze tra database NoSQL sono molto più grandi di quanto non ci siano tra un database SQL e l’altro. Ciò significa che fin dall’inizio c’è una maggiore responsabilità  affidata ai progettisti software nello scegliere la tecnologia appropriata per un progetto. Di seguito trovate una breve comparazione tra Cassandra, Mongodb, CouchDB, Redis, Riak, Membase, Neo4j e HBase.">
+	
+	
+	
+	
+	
+	
+	<link rel="canonical" href="https://vittore.github.io/2012/03/comparazione-tra-cassandra-vs-mongodb-vs-couchdb-vs-redis-vs-riak-vs-hbase-vs-membase-vs-neo4j/">
+
+
+	<!-- Facebook Open Graph -->
+	<meta property="og:title" content="Comparazione tra Cassandra vs MongoDB vs CouchDB vs Redis vs Riak vs HBase vs Membase vs Neo4j">
+	<meta property="og:description" content="I database SQL sono strumenti infinitamente utili ma, dopo circa 15 anni, il loro monopolio è alla fine. Non riesco a pensare a quante cose sono state forzate dentro un database relazionale ma che non ci stavano proprio. Le differenze tra database NoSQL sono molto più grandi di quanto non ci siano tra un database SQL e l’altro. Ciò significa che fin dall’inizio c’è una maggiore responsabilità  affidata ai progettisti software nello scegliere la tecnologia appropriata per un progetto. Di seguito trovate una breve comparazione tra Cassandra, Mongodb, CouchDB, Redis, Riak, Membase, Neo4j e HBase.">
+	<meta property="og:url" content="https://vittore.github.io/2012/03/comparazione-tra-cassandra-vs-mongodb-vs-couchdb-vs-redis-vs-riak-vs-hbase-vs-membase-vs-neo4j/">
+	<meta property="og:locale" content="en_EN">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="zen.pn.it - Tecnologia e dintorni">
+	
+	<meta property="article:author" content="https://www.facebook.com/vittore.zen">
+
+
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="vittore">
+	<meta name="twitter:creator" content="vittore">
+	<meta name="twitter:title" content="Comparazione tra Cassandra vs MongoDB vs CouchDB vs Redis vs Riak vs HBase vs Membase vs Neo4j">
+	<meta name="twitter:description" content="I database SQL sono strumenti infinitamente utili ma, dopo circa 15 anni, il loro monopolio è alla fine. Non riesco a pensare a quante cose sono state forzate dentro un database relazionale ma che non ci stavano proprio. Le differenze tra database NoSQL sono molto più grandi di quanto non ci siano tra un database SQL e l’altro. Ciò significa che fin dall’inizio c’è una maggiore responsabilità  affidata ai progettisti software nello scegliere la tecnologia appropriata per un progetto. Di seguito trovate una breve comparazione tra Cassandra, Mongodb, CouchDB, Redis, Riak, Membase, Neo4j e HBase.">
+	
+	
+
+	<link type="text/plain" rel="author" href="https://vittore.github.io/humans.txt">
+
+	
+
+	
+
+	<link rel="icon" sizes="32x32" href="https://vittore.github.io/assets/img/favicon-32x32.png">
+
+	<link rel="icon" sizes="192x192" href="https://vittore.github.io/assets/img/touch-icon-192x192.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://vittore.github.io/assets/img/apple-touch-icon-180x180-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://vittore.github.io/assets/img/apple-touch-icon-152x152-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://vittore.github.io/assets/img/apple-touch-icon-144x144-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://vittore.github.io/assets/img/apple-touch-icon-120x120-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://vittore.github.io/assets/img/apple-touch-icon-114x114-precomposed.png">
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://vittore.github.io/assets/img/apple-touch-icon-76x76-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://vittore.github.io/assets/img/apple-touch-icon-72x72-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" href="https://vittore.github.io/assets/img/apple-touch-icon-precomposed.png">	
+
+	<meta name="msapplication-TileImage" content="https://vittore.github.io/assets/img/msapplication_tileimage.png">
+
+	<meta name="msapplication-TileColor" content="#fabb00">
+
+
+	
+
+</head>
+<body id="top-of-page" class="post">
+	
+	
+<div id="navigation" class="sticky">
+  <nav class="top-bar" role="navigation" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+      <h1 class="show-for-small-only"><a href="https://vittore.github.io" class="icon-tree"> zen.pn.it - Tecnologia e dintorni</a></h1>
+    </li>
+       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Nav</span></a></li>
+    </ul>
+    <section class="top-bar-section">
+
+      <ul class="right">
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+        
+      </ul>
+
+      <ul class="left">
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/">Home</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/chi-sono/">Chi sono</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/perché-questo-blog/">Perché questo blog</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/contatti/">Contatti</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/whishlist/">Whishlist</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+        
+      </ul>
+    </section>
+  </nav>
+</div><!-- /#navigation -->
+
+	
+
+	
+
+<div id="masthead-no-image-header">
+	<div class="row">
+		<div class="small-12 columns">
+			<a id="logo" href="https://vittore.github.io/" title="zen.pn.it - Tecnologia e dintorni – Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen">
+				<img src="https://vittore.github.io/assets/img/logo.png" alt="zen.pn.it - Tecnologia e dintorni – Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen">
+			</a>
+		</div><!-- /.small-12.columns -->
+	</div><!-- /.row -->
+</div><!-- /#masthead -->
+
+
+
+
+
+
+
+
+
+	<div class="row t30">
+	<div class="medium-8 columns medium-offset-2 end">
+		<article itemscope itemtype="http://schema.org/Article">
+			<header>
+				
+
+				<div itemprop="name">
+					
+					<h1>Comparazione tra Cassandra vs MongoDB vs CouchDB vs Redis vs Riak vs HBase vs Membase vs Neo4j</h1>
+				</div>
+			</header>
+
+
+			
+
+			<div itemprop="articleSection">
+			<p><strong id="internal-source-marker_0.975916633149609" style="font-family: 'Times New Roman'; line-height: normal; font-size: medium;"><span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;"><img class="alignleft size-full wp-image-405" title="nosql-logos" src="https://i0.wp.com/www.zen.pn.it/wp-content/uploads/2012/03/nosql-logos.png?resize=195%2C150" alt="" width="195" height="150" data-recalc-dims="1" />I database SQL sono strumenti infinitamente utili ma, dopo circa 15 anni, il loro monopolio è alla fine. Non riesco a pensare a quante cose sono state forzate dentro un database relazionale ma che non ci stavano proprio.</span><br /> <span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;">Le differenze tra database NoSQL sono molto più grandi di quanto non ci siano tra un database SQL e l’altro. Ciò significa che fin dall’inizio c’è una maggiore responsabilità  affidata ai progettisti software nello scegliere la tecnologia appropriata per un progetto.</span><br /> <span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;">Di seguito trovate una breve comparazione tra </span><a href="http://cassandra.apache.org/"><span style="font-size: 15px; font-family: Georgia; color: #1155cc; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;">Cassandra</span></a><span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;">, </span><a href="http://www.mongodb.org/"><span style="font-size: 15px; font-family: Georgia; color: #1155cc; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;">Mongodb</span></a><span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;">, </span><a href="http://couchdb.apache.org/"><span style="font-size: 15px; font-family: Georgia; color: #1155cc; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;">CouchDB</span></a><span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;">, </span><a href="http://redis.io/"><span style="font-size: 15px; font-family: Georgia; color: #1155cc; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;">Redis</span></a><span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;">, </span><a href="http://www.basho.com/Riak.html"><span style="font-size: 15px; font-family: Georgia; color: #1155cc; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;">Riak</span></a><span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;">, </span><a href="http://www.couchbase.org/membase"><span style="font-size: 15px; font-family: Georgia; color: #1155cc; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;">Membase</span></a><span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;">, </span><a href="http://neo4j.org/"><span style="font-size: 15px; font-family: Georgia; color: #1155cc; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;">Neo4j</span></a><span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;"> e </span><span style="font-size: 15px; font-family: Georgia; color: #1155cc; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;"><a href="http://hbase.apache.org/">HBase</a>.</span></strong></p>
+
+<!--more-->
+
+<h2 dir="ltr">
+</h2>
+
+<h2 dir="ltr">
+  <span style="font-family: Georgia; font-size: 48px; white-space: pre-wrap;">CouchDB (V1.1.1)</span>
+</h2>
+
+<ul style="margin-top: 0pt; margin-bottom: 0pt;">
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Scritto in:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> Erlang</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Punto principale:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> Consistenza DB consistency, facilità d&#8217;uso</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Licenza:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> Apache</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Protocolli:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> HTTP/REST</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Replicazione bidirezionale continua o ad-hoc con individuazione dei conflitti, replicazione master-master</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">MVCC &#8211; le operazioni di scrittura non bloccano le letture</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Sono disponibili le versioni precedenti dei documenti</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Progettazione crash-only (reliable)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Necessità di compattazioni nel tempo</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Viste: embedded map/reduce</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Viste formattate: lists &amp; shows</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Possibilità di validazione server-side dei documenti</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Possibile autenticazione</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Aggiornamenti real-time attraverso _changes (!)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Gestione degli allegati e, </span><a href="http://couchapp.org/"><span style="color: #1155cc; vertical-align: baseline; white-space: pre-wrap;">CouchApps</span></a><span style="vertical-align: baseline; white-space: pre-wrap;"> (standalone js apps)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">libreria jQuery inclusa</span>
+  </li>
+</ul>
+
+<p><strong style="font-family: 'Times New Roman'; line-height: normal; font-size: medium;"><span style="font-size: 15px; font-family: Georgia; vertical-align: baseline; white-space: pre-wrap;">Utilizzo ideale:</span><span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;"> Per accumulazione dei dati con cambi occasionali sui quali vengono eseguite query predefinite. Situazioni in cui la gestione delle versioni è importante.</span><br /> <span style="font-size: 15px; font-family: Georgia; vertical-align: baseline; white-space: pre-wrap;">Per esempio:</span><span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;"> CRM, sistemi CMS. Situazioni in cui la replicazione master-master è una caratteristica interessante (ad esempio multisito).</span></strong></p>
+
+<p> </p>
+
+<p><span style="font-family: Georgia; font-size: 48px; white-space: pre-wrap;">Redis (V2.4)</span></p>
+
+<ul style="margin-top: 0pt; margin-bottom: 0pt;">
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Scritto in:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> C/C++</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Punto principale:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> Velocità</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Licenza:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> BSD</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Protocolli:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> Telnet-like</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Disk-backed in-memory database,</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">In questo momento non include il disk-swap (VM e Diskstore sono stati abbandonati)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Replicazione master-slave</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Recupero di valori semplici o intere tables a partire da una chiave</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">suppporto ad </span><a href="http://redis.io/commands"><span style="color: #1155cc; vertical-align: baseline; white-space: pre-wrap;">operazioni complesse</span></a><span style="vertical-align: baseline; white-space: pre-wrap;"> come ZREVRANGEBYSCORE.</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">INCR (incremento) e  simili (molto utili per gestire limitazioni di valore e statistiche)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">permette l’uso di insiemi (sets) e operazioni su essi (unione/differenza/intersezione)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">permette l’uso di liste (lists) e  operazioni su esse (queue; blocking pop)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">permette l’uso di hashes (oggetti dotati di campi)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">permette l’uso di insiemi ordinati (utili per classifiche, e ricerche su range di valori)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Redis implementa correttamente le transazioni (!)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">I valori memorizzati possono avere una scadenza temporale (sistemi di cache)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Implementa facilmente il messaging Publisher/Subscriber (!)</span>
+  </li>
+</ul>
+
+<p><strong style="font-family: 'Times New Roman'; line-height: normal; font-size: medium;"><span style="font-size: 15px; font-family: Georgia; vertical-align: baseline; white-space: pre-wrap;">Utilizzo ideale:</span><span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;"> Adatto a moli di dati (residenti in memoria) di dimensione nota che cambiano frequentemente .</span><br /> <span style="font-size: 15px; font-family: Georgia; vertical-align: baseline; white-space: pre-wrap;">Per esempio:</span><span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;"> Quotazioni azionistiche. Analisi. Gestione dati in Real-time. Comunicazioni in Real-time.</span></strong></p>
+
+<p> </p>
+
+<h2 dir="ltr">
+  <span style="font-size: 48px; font-family: Georgia; vertical-align: baseline; white-space: pre-wrap;">MongoDB</span>
+</h2>
+
+<ul style="margin-top: 0pt; margin-bottom: 0pt;">
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Scritto in:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> C++</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Punto principale:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> Mantiene alcune proprietà utili del modello SQL (Query, index) molto facili da usare.</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Licenza:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> AGPL (Drivers: Apache)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Protocollo:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> Specifico, binario (BSON)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Replica Master/slave (munita di  failover quando si usano i  “replica sets”)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Lo Sharding è parte integrante del sistema</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Le intterrogazioni a db (queries) sono espressioni javascript</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Permette l’uso di funzion i javascript lato server</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Update-in-place migliore rispetto a CouchDB</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Usa “memory mapped files” per la persistenza dei dati</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Favorisce la velocità rispetto alle funzionalità implementate</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Journaling (opzione &#8211;journal) fortemente consigliato</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Sui sistemi a 32bit risente di una  limitazione sulla quantità di dati a circa 2.5Gb</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Un database vuoto occupa comunque 192Mb</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">GridFS per la memorizzazione di “big data + metadata” (effettivamente non è un  FS)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Indicizzazione geospaziale Geospatial indexing</span>
+  </li>
+</ul>
+
+<p><strong style="font-family: 'Times New Roman'; line-height: normal; font-size: medium;"><span style="font-size: 15px; font-family: Georgia; vertical-align: baseline; white-space: pre-wrap;">Utilizzo ideale:</span><span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;"> se si necessita di query dinamiche. Se si preferisce lavorare con gli indici rispetto ad usare algoritmi map/reduce. Buono se si ha bisogno di velocità quando si lavora con grandi moli di dati.  Adatto a tutti gli scenari in cui si usa CouchDB e non si può scegliere quest’ultimo perchè i dati cambiano troppo riempiendo la memoria fisica.</span><br /> <span style="font-size: 15px; font-family: Georgia; vertical-align: baseline; white-space: pre-wrap;">Per esempio:</span><span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;"> tutte le situazioni in cui si vorrebbe usare MySQL o PostgreSQL senza avere colonne definite a priori.</span></strong></p>
+
+<p><strong style="font-family: 'Times New Roman'; line-height: normal; font-size: medium;"><br /> </strong></p>
+
+<h2 dir="ltr">
+  <span style="font-size: 48px; font-family: Georgia; vertical-align: baseline; white-space: pre-wrap;">Riak (V1.0)</span>
+</h2>
+
+<ul style="margin-top: 0pt; margin-bottom: 0pt;">
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Scritto in:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> Erlang &amp; C, some Javascript</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Punto principale:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> Fault tolerance</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Licenza:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> Apache</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Protocollo:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> HTTP/REST o custom binary</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Trade-offs modulabili per replica e distribuzione (N, R, W)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Hooks di pre- e post-commit in JavaScript o Erlang, per la validazione e la sicurezza.</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Map/reduce in JavaScript o Erlang</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Links &amp; link walking per utilizzarlo come database a grafi</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Indici secondari: ricerca nei metadati</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Supporto per oggetti di grandi dimensioni (Luwak)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Edizioni sia &#8220;open source&#8221; che &#8220;enterprise&#8221;</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Ricerca full-text, indexing e querying con il Riak Search server (beta)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Sta migrando lo storing di backend da &#8220;Bitcask&#8221; al &#8220;LevelDB&#8221; di Google</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">La multi-site replication replication senza alcun master e il monitoring SNMP necessitano di una licenza commerciale</span>
+  </li>
+</ul>
+
+<p><strong style="font-family: 'Times New Roman'; line-height: normal; font-size: medium;"><span style="font-size: 15px; font-family: Georgia; vertical-align: baseline; white-space: pre-wrap;">Utilizzo ideale:</span><span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;"> se si vuole qualcosa di simile a Cassandra (Dynamo), ma non si ha nessuna intenzione di avere a che fare con la realtiva inerente complessità. Se si ha bisogno di un’ottima scalabilità, disponibilità e fault-tolerance per un solo sito ma si è disposti a pagare per la replica multi-sito.</span><br /> <span style="font-size: 15px; font-family: Georgia; vertical-align: baseline; white-space: pre-wrap;">Per esempio:</span><span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;"> Raccolta dei dati di point-of-sales. Sistemi di controllo aziendali. Situazioni in cui anche il downtime di alcuni secondi può essere rilevante. Potrebbe essere anche utilizzato come un web server estremamente aggiornabile.</span></strong></p>
+
+<p> </p>
+
+<h2 dir="ltr">
+  <span style="font-size: 48px; font-family: Georgia; vertical-align: baseline; white-space: pre-wrap;">Membase</span>
+</h2>
+
+<ul style="margin-top: 0pt; margin-bottom: 0pt;">
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Scritto in:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> Erlang &amp; C</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Punto principale:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> Compatibile con memcache ma con persistenza e clustering</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Licenza:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> Apache 2.0</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Protocollo:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> memcached con estensioni</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Accesso molto veloce ai dati mediante chiave (200k+/sec) </span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Persistenza su disco</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Tutti i nodi sono identici (replicazione master-master)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Fornisce un sistema a buckets simile a memcached</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">De-duplicazione delle scritture per ridurre IO</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Interfaccia GUI per la gestione dei cluster molto interessante</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Aggiornamento software senza mettere offline il database</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Proxy di connessione per il pooling e il multiplexing (Moxi)</span>
+  </li>
+</ul>
+
+<p><strong style="font-family: 'Times New Roman'; line-height: normal; font-size: medium;"><span style="font-size: 15px; font-family: Georgia; vertical-align: baseline; white-space: pre-wrap;">Utilizzo ideale:</span><span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;"> Qualsiasi applicazione dove un bassa latenza dell’accesso ai dati, un’alta concorrenzialità e un’alta disponibilità degli stessi sono requisiti chiave.</span><br /> <span style="font-size: 15px; font-family: Georgia; vertical-align: baseline; white-space: pre-wrap;">Per esempio:</span><span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;"> Casi in cui c’è necessità di bassa latenza come l’erogazione di servizi di pubblicità mirata (ad targeting)  o alta concorrenza come il giochi online (per esempio Zynga).</span></strong></p>
+
+<p><strong style="font-family: 'Times New Roman'; line-height: normal; font-size: medium;"><br /> </strong></p>
+
+<h2 dir="ltr">
+  <span style="font-size: 48px; font-family: Georgia; vertical-align: baseline; white-space: pre-wrap;">Neo4j (V1.5M02)</span>
+</h2>
+
+<ul style="margin-top: 0pt; margin-bottom: 0pt;">
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Scritto in:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> Java</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Punto principale:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> Database a grafi o dati connessi</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Licenza:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> GPL, salcune caratterstiche con AGPL/commerciale</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Protocollo:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> HTTP/REST (o incluso in  Java)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Standalone, o includibile nelle applicazioni Java</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Piena conformità ACID (incluso i dati durable)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Sia i nodi che le releazioni possono avere dei metadati</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Linquaggio di query basato su pattern-matching (&#8220;Cypher&#8221;)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Può anche essere usato il linguaggio di attraversamento dei gravi &#8220;Gremlin&#8221;</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Indicizzazione dei nodi, delle chiavi e delle relazioni</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Piacevole interfaccia di amministrazione web</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Sono disponibili diversi algoritmi di ricerca dei percorsi</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Ottimizzato per le letture</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Ha le transazioni (nelle API Java)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Si può usare il linguaggio di scripting Groovy</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Backup online, monitoraggio avanzato e alta disponibilità con licenza AGPL/commerciale</span>
+  </li>
+</ul>
+
+<p><strong style="font-family: 'Times New Roman'; line-height: normal; font-size: medium;"><span style="font-size: 15px; font-family: Georgia; vertical-align: baseline; white-space: pre-wrap;">Utilizzo ideale:</span><span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;"> Per dati interconnessi, semplici o complessi, con struttura a grafo. In questo senso Neo4j is è un po’ diverso dagli altri database noSQL.</span><br /> <span style="font-size: 15px; font-family: Georgia; vertical-align: baseline; white-space: pre-wrap;">Per esempio:</span><span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;"> Relazioni sociali, collegamenti nei trasposti pubblici, mappe di strade, topologie di rete.</span></strong></p>
+
+<p><strong style="font-family: 'Times New Roman'; line-height: normal; font-size: medium;"><br /> </strong></p>
+
+<h2 dir="ltr">
+  <span style="font-size: 48px; font-family: Georgia; vertical-align: baseline; white-space: pre-wrap;">Cassandra</span>
+</h2>
+
+<ul style="margin-top: 0pt; margin-bottom: 0pt;">
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Scritto in:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> Java</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Punto principale:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> Migliore di BigTable e Dynamo</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Licenza:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> Apache</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Protocollo:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> Proprietario, binario (Thrift)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Distribuzione e replicazione attivabile (N, R, W)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Query possibili mediante colonne e insiemi di chiavi</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Carattersitiche simili a BigTable: colonne, famiglie di colonne</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Indici secondati</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">La scrittura è molto più veloce della lettura(!)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Mappatura e riduzione possibile mediante Apache Hadoop</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">I admit being a bit biased against it, because of the bloat and complexity it has partly because of Java (configuration, seeing exceptions, etc)</span>
+  </li>
+</ul>
+
+<p><strong style="font-family: 'Times New Roman'; line-height: normal; font-size: medium;"><span style="font-size: 15px; font-family: Georgia; vertical-align: baseline; white-space: pre-wrap;">Utilizzo ideale:</span><span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;"> Quando si scrive più che leggere (logging). Se ogni componente del sistema deve essere in Java.</span><br /> <span style="font-size: 15px; font-family: Georgia; vertical-align: baseline; white-space: pre-wrap;">Per esempio:</span><span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;"> Sistemi bancari e industria finanziaria.</span><br /> <span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;">Inoltre, siccome le scritture sono più veloci delle letture, una nicchia naturale è l’analisi dei dati in tempo reale.</span></strong></p>
+
+<p><strong style="font-family: 'Times New Roman'; line-height: normal; font-size: medium;"><br /> </strong></p>
+
+<h2 dir="ltr">
+  <span style="font-size: 48px; font-family: Georgia; vertical-align: baseline; white-space: pre-wrap;">HBase</span>
+</h2>
+
+<ul style="margin-top: 0pt; margin-bottom: 0pt;">
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Scritto in:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> Java</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Punto principale:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> miliardi di righe con milioni di colonne</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Licenza:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> Apache</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Protocollo:</span><span style="vertical-align: baseline; white-space: pre-wrap;"> HTTP/REST (anche Thrift)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Modellato dopo BigTable</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Mappatura e riduzione con Hadoop</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Costrutti query push down attraverso scansione lato server e con filtri per il get</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">ottimizzazione per le query in tempo reale</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">E’ un gateway Thrift con alte performance</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">HTTP supports XML, Protobuf, and binary</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Cascading, hive, and pig source and sink modules</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Shell basata su Jruby (JIRB)</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Punti di ripristino multipli</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">Rolling restart for configuration changes and minor upgrades</span>
+  </li>
+  <li style="list-style-type: disc; font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline;">
+    <span style="vertical-align: baseline; white-space: pre-wrap;">L’accesso random ai dati è paragonabile a quello di MySQL</span>
+  </li>
+</ul>
+
+<p><strong id="internal-source-marker_0.975916633149609" style="font-family: 'Times New Roman'; line-height: normal; font-size: medium;"><span style="font-size: 15px; font-family: Georgia; vertical-align: baseline; white-space: pre-wrap;">Utilizzo ideale:</span><span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;"> Se siete innamorati di BigTable. 🙂 e quando c’è la necessità di un accesso in lettura e scrittura, random e in tempo reale alla grande quantità di dati.</span><br /> <span style="font-size: 15px; font-family: Georgia; vertical-align: baseline; white-space: pre-wrap;">Per esempio:</span><span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;"> il database dei messaggi in Facebook.</span></strong></p>
+
+<p> </p>
+
+<p> </p>
+
+<p><span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;">Tutti i sistemi menzionati hanno altre caratteristiche non discusse in questo articolo. Mi sono limitato ad elencare solo le funzioni più importanti sulle quali ho basato le mie decisioni. Va detto che tutti i progetti sono in una fase di sviluppo molto attiva e per questo quanto elencato è soggetto a cambiamento. </span></p>
+
+<p> </p>
+
+<p><span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;">Testo tratto dall’articolo </span><a href="http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis"><span style="font-size: 15px; font-family: Georgia; color: #1155cc; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;">http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis</span></a></p>
+
+<p><span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;">Si ringrazia per l’aiuto nella traduzione ragionata: </span><a href="http://microspino.com/"><span style="font-size: 15px; font-family: Georgia; color: #1155cc; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;">Daniele</span></a> <span style="font-size: 15px; font-family: Georgia; font-weight: normal; vertical-align: baseline; white-space: pre-wrap;">e Tommaso.</span></p>
+
+<p> </p>
+
+<p><span style="font-family: Georgia;"><span style="font-size: 15px; line-height: normal; white-space: pre-wrap;"><br /> </span></span></p>
+
+			</div>
+
+			
+						<div id="page-meta" class="t30">
+				<p>
+					<!-- Look the author details up from the site config. -->
+					
+					<!-- Output author details if some exist. -->
+					
+
+				
+				<time class="icon-calendar pr20" datetime="2012-03-19T12:53:58+01:00" itemprop="datePublished"> 2012-03-19</time>
+				
+
+				<span class="icon-archive pr20"> ARTICOLI</span>
+				<br />
+				<span class="pr20"><span class="icon-price-tag pr10"> sviluppo</span> <span class="icon-price-tag pr10"> tecnologia</span> <span class="icon-price-tag pr10"> web</span> </span>
+			</p>
+
+			
+			<div id="post-nav" class="row">
+				
+				<div class="small-5 columns"><a class="button small radius prev" href="https://vittore.github.io/2012/03/tutta-la-documentazione-di-symfony2-in-un-unico-file-pdf/">&laquo; Tutta la documentazione di Symfony2 in un unico file PDF</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-2 columns text-center"><a class="radius button small" href="https://vittore.github.io/archivio/" title="Blog Archivio">Archivio</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-5 columns text-right"><a class="button small radius next" href="https://vittore.github.io/2012/03/info-grafica-blogging-vs-facebook/">Info grafica: blogging vs facebook &raquo;</a></div><!-- /.small-4.columns -->
+				
+			</div>
+			
+			</div><!--  /.page-meta -->
+
+			
+
+			
+		</article>
+	</div><!-- /.medium-8.columns -->
+
+
+	
+
+
+	
+</div><!-- /.row -->
+
+
+	
+	    <div id="up-to-top" class="row">
+      <div class="small-12 columns" style="text-align: right;">
+        <a class="iconfont" href="#top-of-page">&#xf108;</a>
+      </div><!-- /.small-12.columns -->
+    </div><!-- /.row -->
+
+
+    <footer id="footer-content" class="bg-grau">
+      <div id="footer">
+        <div class="row">
+          <div class="medium-6 large-5 columns">
+            <h5 class="shadow-black">Informazioni su questo sito</h5>
+
+            <p class="shadow-black">
+              Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen
+              <a href="https://vittore.github.io/perché-questo-blog/">Altro&nbsp;›</a>
+            </p>
+          </div><!-- /.large-6.columns -->
+
+
+          <div class="small-6 medium-3 large-3 large-offset-1 columns">
+            
+              
+                <h5 class="shadow-black">Servizi</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+
+              <ul class="no-bullet shadow-black">
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io"  title=""></a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io/contatti/"  title="Contatti">Contatti</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io/feed.xml"  title="Subscribe to RSS Feed">RSS</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io/atom.xml"  title="Subscribe to Atom Feed">Atom</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io/sitemap.xml"  title="Sitemap for Google Webmaster Tools">sitemap.xml</a>
+                  </li>
+              
+              </ul>
+          </div><!-- /.large-4.columns -->
+
+
+          <div class="small-6 medium-3 large-3 columns">
+            
+              
+                <h5 class="shadow-black">Ringraziamenti</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+
+            <ul class="no-bullet shadow-black">
+            
+              
+                <li >
+                  <a href="https://vittore.github.io"  title=""></a>
+                </li>
+            
+              
+                <li class="network-entypo" >
+                  <a href="http://entypo.com/" target="_blank"  title="Icons by Daniel Bruce">Icons by Daniel Bruce</a>
+                </li>
+            
+              
+                <li class="services-newsletter" >
+                  <a href="http://foundation.zurb.com/" target="_blank"  title="Built on Foundation">Built on Foundation</a>
+                </li>
+            
+              
+                <li class="rss-link" >
+                  <a href="http://unsplash.com/" target="_blank"  title="Images by Unsplash">Images by Unsplash</a>
+                </li>
+            
+            </ul>
+          </div><!-- /.large-3.columns -->
+        </div><!-- /.row -->
+
+      </div><!-- /#footer -->
+
+
+      <div id="subfooter">
+        <nav class="row">
+          <section id="subfooter-left" class="small-12 medium-6 columns credits">
+            
+          </section>
+
+          <section id="subfooter-right" class="small-12 medium-6 columns">
+            <ul class="inline-list social-icons">
+            
+              <li><a href="mailto:vittore@zen.pn.it" target="_blank" class="icon-mail" title=""></a></li>
+            
+              <li><a href="https://www.linkedin.com/in/vittorezen/" target="_blank" class="icon-linkedin" title=""></a></li>
+            
+              <li><a href="http://twitter.com/vittore" target="_blank" class="icon-twitter" title=""></a></li>
+            
+              <li><a href="http://www.facebook.com/vittore.zen" target="_blank" class="icon-facebook" title=""></a></li>
+            
+              <li><a href="http://github.com/vittore" target="_blank" class="icon-github" title=""></a></li>
+            
+            </ul>
+          </section>
+        </nav>
+      </div><!-- /#subfooter -->
+    </footer>
+
+	
+
+	
+
+
+<script src="https://vittore.github.io/assets/js/javascript.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+

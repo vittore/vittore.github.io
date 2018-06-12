@@ -1,0 +1,769 @@
+<!doctype html>
+<html class="no-js" lang="it">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Network monitor</title>
+
+    <link rel="stylesheet" type="text/css" href="https://vittore.github.io/assets/css/styles_feeling_responsive.css">
+
+  
+
+	<script src="https://vittore.github.io/assets/js/modernizr.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+	<script>
+		WebFont.load({
+			google: {
+				families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ]
+			}
+		});
+	</script>
+
+	<noscript>
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic%7CVolkhov' rel='stylesheet' type='text/css'>
+	</noscript>
+
+
+	<!-- Search Engine Optimization -->
+	<meta name="description" content="Con alcuni pezzi di riciclo ho messo a regime questo monitor di rete. Utilizza sono software e hardware opensource.
+
+In sintesi si tratta di un vecchio portatile il cui pannello LCD era guasto, una manciata di componenti elettronici e una buona dose di software.
+
+L’effetto finale è un frame in plexigas con un monitor che visualizza lo stato dei componenti critici della mia rete e due vecchi vu-meter analogici che indicano lo stato di consumo dell’accesso ad internet.
+
+
+
+ 
+
+Questo hardware è solo la parte finale di un percorso che ha portato alla realizzazione di un sistema di monitoraggio della rete. Quindi prima di tutto:
+
+
+  procuratevi un server
+  installate e fate funzionare NAGIOS e centron (vedi: http://en.doc.centreon.com/Setup)
+  realizzate con un software il disegno della vostra rete
+  installate nagvis (vedi http://www.nagvis.org/doc)
+
+
+
+  Siete a buon punto! Ora lasciate la parte noisa.
+
+
+
+  Prendete un portatile. Installateci una bella debian e fate un live internet kiosk!
+
+
+
+  Trovate tutte le indicazioni in dettaglio a questo link: http://jadoba.net/kiosks/firefox/
+
+
+
+  Ricordatevi di impostare la homepage di firefox alla mappa nagvis che avete precedentemente realizzato.
+
+
+
+  Avete il vostro visualizzatore di rete da appendere in ufficio ma manca del dettaglio che lo rende impareggiabile.
+
+
+
+  Andate a questo link: http://www.waitingforfriday.com/index.php/USB_Performance_Monitor e date uno sguardo a questo interessante progetto: si tratta di una piccola periferica USB che pilota due vu-meter e un led multicolore.
+
+
+
+  Realizzate il circuito indicato e caricate il firmware (lo trovate al link: )
+
+
+
+  A questo punto vi servono alcuni file. In sintesi dovrete scrivere un driver Linux per la vostra periferica USB 🙂
+
+
+
+  Ho già fatto questo lavoro&amp;#8230;  nel file trovate perfcheck da compilare (o compilati per debian se siete pigri).
+
+
+
+  Vi suggerisco di vedere i post di drzen nel seguente forum. Troverete informazioni interessanti.
+
+
+
+  A questo punto modificate i file di configurazione indicando gli ip e le password del vostro router (ovviamente dovete mettere la stringa MIB SNMP corretta nel caso abbiate un router diverso dal mio).
+
+
+
+  Ora non vi resta che mettere il tutto dentro una bella scatola a vista.
+
+
+
+  Vi lascio con il &amp;#8220;servizio fotografico&amp;#8221; fatto dal gentile Matteo C.: http://www.flickr.com/photos/71041672@N04/sets/72157628206362735/
+
+
+ 
+
+ 
+
+ ">
+	
+	
+	
+	
+	
+	
+	<link rel="canonical" href="https://vittore.github.io/2011/11/network-monitor/">
+
+
+	<!-- Facebook Open Graph -->
+	<meta property="og:title" content="Network monitor">
+	<meta property="og:description" content="Con alcuni pezzi di riciclo ho messo a regime questo monitor di rete. Utilizza sono software e hardware opensource.
+
+In sintesi si tratta di un vecchio portatile il cui pannello LCD era guasto, una manciata di componenti elettronici e una buona dose di software.
+
+L’effetto finale è un frame in plexigas con un monitor che visualizza lo stato dei componenti critici della mia rete e due vecchi vu-meter analogici che indicano lo stato di consumo dell’accesso ad internet.
+
+
+
+ 
+
+Questo hardware è solo la parte finale di un percorso che ha portato alla realizzazione di un sistema di monitoraggio della rete. Quindi prima di tutto:
+
+
+  procuratevi un server
+  installate e fate funzionare NAGIOS e centron (vedi: http://en.doc.centreon.com/Setup)
+  realizzate con un software il disegno della vostra rete
+  installate nagvis (vedi http://www.nagvis.org/doc)
+
+
+
+  Siete a buon punto! Ora lasciate la parte noisa.
+
+
+
+  Prendete un portatile. Installateci una bella debian e fate un live internet kiosk!
+
+
+
+  Trovate tutte le indicazioni in dettaglio a questo link: http://jadoba.net/kiosks/firefox/
+
+
+
+  Ricordatevi di impostare la homepage di firefox alla mappa nagvis che avete precedentemente realizzato.
+
+
+
+  Avete il vostro visualizzatore di rete da appendere in ufficio ma manca del dettaglio che lo rende impareggiabile.
+
+
+
+  Andate a questo link: http://www.waitingforfriday.com/index.php/USB_Performance_Monitor e date uno sguardo a questo interessante progetto: si tratta di una piccola periferica USB che pilota due vu-meter e un led multicolore.
+
+
+
+  Realizzate il circuito indicato e caricate il firmware (lo trovate al link: )
+
+
+
+  A questo punto vi servono alcuni file. In sintesi dovrete scrivere un driver Linux per la vostra periferica USB 🙂
+
+
+
+  Ho già fatto questo lavoro&amp;#8230;  nel file trovate perfcheck da compilare (o compilati per debian se siete pigri).
+
+
+
+  Vi suggerisco di vedere i post di drzen nel seguente forum. Troverete informazioni interessanti.
+
+
+
+  A questo punto modificate i file di configurazione indicando gli ip e le password del vostro router (ovviamente dovete mettere la stringa MIB SNMP corretta nel caso abbiate un router diverso dal mio).
+
+
+
+  Ora non vi resta che mettere il tutto dentro una bella scatola a vista.
+
+
+
+  Vi lascio con il &amp;#8220;servizio fotografico&amp;#8221; fatto dal gentile Matteo C.: http://www.flickr.com/photos/71041672@N04/sets/72157628206362735/
+
+
+ 
+
+ 
+
+ ">
+	<meta property="og:url" content="https://vittore.github.io/2011/11/network-monitor/">
+	<meta property="og:locale" content="en_EN">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="zen.pn.it - Tecnologia e dintorni">
+	
+	<meta property="article:author" content="https://www.facebook.com/vittore.zen">
+
+
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="vittore">
+	<meta name="twitter:creator" content="vittore">
+	<meta name="twitter:title" content="Network monitor">
+	<meta name="twitter:description" content="Con alcuni pezzi di riciclo ho messo a regime questo monitor di rete. Utilizza sono software e hardware opensource.
+
+In sintesi si tratta di un vecchio portatile il cui pannello LCD era guasto, una manciata di componenti elettronici e una buona dose di software.
+
+L’effetto finale è un frame in plexigas con un monitor che visualizza lo stato dei componenti critici della mia rete e due vecchi vu-meter analogici che indicano lo stato di consumo dell’accesso ad internet.
+
+
+
+ 
+
+Questo hardware è solo la parte finale di un percorso che ha portato alla realizzazione di un sistema di monitoraggio della rete. Quindi prima di tutto:
+
+
+  procuratevi un server
+  installate e fate funzionare NAGIOS e centron (vedi: http://en.doc.centreon.com/Setup)
+  realizzate con un software il disegno della vostra rete
+  installate nagvis (vedi http://www.nagvis.org/doc)
+
+
+
+  Siete a buon punto! Ora lasciate la parte noisa.
+
+
+
+  Prendete un portatile. Installateci una bella debian e fate un live internet kiosk!
+
+
+
+  Trovate tutte le indicazioni in dettaglio a questo link: http://jadoba.net/kiosks/firefox/
+
+
+
+  Ricordatevi di impostare la homepage di firefox alla mappa nagvis che avete precedentemente realizzato.
+
+
+
+  Avete il vostro visualizzatore di rete da appendere in ufficio ma manca del dettaglio che lo rende impareggiabile.
+
+
+
+  Andate a questo link: http://www.waitingforfriday.com/index.php/USB_Performance_Monitor e date uno sguardo a questo interessante progetto: si tratta di una piccola periferica USB che pilota due vu-meter e un led multicolore.
+
+
+
+  Realizzate il circuito indicato e caricate il firmware (lo trovate al link: )
+
+
+
+  A questo punto vi servono alcuni file. In sintesi dovrete scrivere un driver Linux per la vostra periferica USB 🙂
+
+
+
+  Ho già fatto questo lavoro&amp;#8230;  nel file trovate perfcheck da compilare (o compilati per debian se siete pigri).
+
+
+
+  Vi suggerisco di vedere i post di drzen nel seguente forum. Troverete informazioni interessanti.
+
+
+
+  A questo punto modificate i file di configurazione indicando gli ip e le password del vostro router (ovviamente dovete mettere la stringa MIB SNMP corretta nel caso abbiate un router diverso dal mio).
+
+
+
+  Ora non vi resta che mettere il tutto dentro una bella scatola a vista.
+
+
+
+  Vi lascio con il &amp;#8220;servizio fotografico&amp;#8221; fatto dal gentile Matteo C.: http://www.flickr.com/photos/71041672@N04/sets/72157628206362735/
+
+
+ 
+
+ 
+
+ ">
+	
+	
+
+	<link type="text/plain" rel="author" href="https://vittore.github.io/humans.txt">
+
+	
+
+	
+
+	<link rel="icon" sizes="32x32" href="https://vittore.github.io/assets/img/favicon-32x32.png">
+
+	<link rel="icon" sizes="192x192" href="https://vittore.github.io/assets/img/touch-icon-192x192.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://vittore.github.io/assets/img/apple-touch-icon-180x180-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://vittore.github.io/assets/img/apple-touch-icon-152x152-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://vittore.github.io/assets/img/apple-touch-icon-144x144-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://vittore.github.io/assets/img/apple-touch-icon-120x120-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://vittore.github.io/assets/img/apple-touch-icon-114x114-precomposed.png">
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://vittore.github.io/assets/img/apple-touch-icon-76x76-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://vittore.github.io/assets/img/apple-touch-icon-72x72-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" href="https://vittore.github.io/assets/img/apple-touch-icon-precomposed.png">	
+
+	<meta name="msapplication-TileImage" content="https://vittore.github.io/assets/img/msapplication_tileimage.png">
+
+	<meta name="msapplication-TileColor" content="#fabb00">
+
+
+	
+
+</head>
+<body id="top-of-page" class="post">
+	
+	
+<div id="navigation" class="sticky">
+  <nav class="top-bar" role="navigation" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+      <h1 class="show-for-small-only"><a href="https://vittore.github.io" class="icon-tree"> zen.pn.it - Tecnologia e dintorni</a></h1>
+    </li>
+       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Nav</span></a></li>
+    </ul>
+    <section class="top-bar-section">
+
+      <ul class="right">
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+        
+      </ul>
+
+      <ul class="left">
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/">Home</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/chi-sono/">Chi sono</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/perché-questo-blog/">Perché questo blog</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/contatti/">Contatti</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/whishlist/">Whishlist</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+        
+      </ul>
+    </section>
+  </nav>
+</div><!-- /#navigation -->
+
+	
+
+	
+
+<div id="masthead-no-image-header">
+	<div class="row">
+		<div class="small-12 columns">
+			<a id="logo" href="https://vittore.github.io/" title="zen.pn.it - Tecnologia e dintorni – Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen">
+				<img src="https://vittore.github.io/assets/img/logo.png" alt="zen.pn.it - Tecnologia e dintorni – Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen">
+			</a>
+		</div><!-- /.small-12.columns -->
+	</div><!-- /.row -->
+</div><!-- /#masthead -->
+
+
+
+
+
+
+
+
+
+	<div class="row t30">
+	<div class="medium-8 columns medium-offset-2 end">
+		<article itemscope itemtype="http://schema.org/Article">
+			<header>
+				
+
+				<div itemprop="name">
+					
+					<h1>Network monitor</h1>
+				</div>
+			</header>
+
+
+			
+
+			<div itemprop="articleSection">
+			<p>Con alcuni pezzi di riciclo ho messo a regime questo monitor di rete. Utilizza sono software e hardware opensource.</p>
+
+<p>In sintesi si tratta di un vecchio portatile il cui pannello LCD era guasto, una manciata di componenti elettronici e una buona dose di software.</p>
+
+<p>L’effetto finale è un frame in plexigas con un monitor che visualizza lo stato dei componenti critici della mia rete e due vecchi vu-meter analogici che indicano lo stato di consumo dell’accesso ad internet.</p>
+
+<p><img class="aligncenter size-full wp-image-339" title="sentinella1" src="https://i0.wp.com/www.zen.pn.it/wp-content/uploads/2011/11/sentinella1.png?resize=600%2C784" alt="" width="600" height="784" srcset="https://i0.wp.com/www.zen.pn.it/wp-content/uploads/2011/11/sentinella1.png?w=600 600w, https://i0.wp.com/www.zen.pn.it/wp-content/uploads/2011/11/sentinella1.png?resize=229%2C300 229w" sizes="(max-width: 600px) 100vw, 600px" data-recalc-dims="1" /></p>
+
+<p> </p>
+
+<p>Questo hardware è solo la parte finale di un percorso che ha portato alla realizzazione di un sistema di monitoraggio della rete. Quindi prima di tutto:</p>
+
+<ol>
+  <li>procuratevi un server</li>
+  <li>installate e fate funzionare NAGIOS e centron (vedi: <a href="http://en.doc.centreon.com/Setup">http://en.doc.centreon.com/Setup</a>)</li>
+  <li>realizzate con un software il disegno della vostra rete</li>
+  <li>installate nagvis (vedi <a href="http://www.nagvis.org/doc">http://www.nagvis.org/doc</a>)</li>
+</ol>
+
+<div>
+  Siete a buon punto! Ora lasciate la parte noisa.
+</div>
+
+<div>
+  Prendete un portatile. Installateci una bella debian e fate un live internet kiosk!
+</div>
+
+<div>
+  Trovate tutte le indicazioni in dettaglio a questo link: <a href="http://jadoba.net/kiosks/firefox/">http://jadoba.net/kiosks/firefox/</a>
+</div>
+
+<div>
+  Ricordatevi di impostare la homepage di firefox alla mappa nagvis che avete precedentemente realizzato.
+</div>
+
+<div>
+  Avete il vostro visualizzatore di rete da appendere in ufficio ma manca del dettaglio che lo rende impareggiabile.
+</div>
+
+<div>
+  Andate a questo link: <a href="http://www.waitingforfriday.com/index.php/USB_Performance_Monitor">http://www.waitingforfriday.com/index.php/USB_Performance_Monitor</a> e date uno sguardo a questo interessante progetto: si tratta di una piccola periferica USB che pilota due vu-meter e un led multicolore.
+</div>
+
+<div>
+  Realizzate il circuito indicato e caricate il firmware (lo trovate al link: )
+</div>
+
+<div>
+  A questo punto vi servono alcuni file. In sintesi dovrete scrivere un driver Linux per la vostra periferica USB 🙂
+</div>
+
+<div>
+  Ho già fatto questo lavoro&#8230;  nel file trovate <a href="http://www.zen.pn.it/wp-content/uploads/2011/11/perfcheck.zip">perfcheck</a> da compilare (o compilati per debian se siete pigri).
+</div>
+
+<div>
+  Vi suggerisco di vedere i post di drzen nel <a href="http://www.waitingforfriday.com/forum/search.php?keywords=&amp;terms=all&amp;author=drzen&amp;sc=1&amp;sf=all&amp;sk=t&amp;sd=d&amp;sr=posts&amp;st=0&amp;ch=300&amp;t=0&amp;submit=Search" target="_blank">seguente forum</a>. Troverete informazioni interessanti.
+</div>
+
+<div>
+  A questo punto modificate i file di configurazione indicando gli ip e le password del vostro router (ovviamente dovete mettere la stringa MIB SNMP corretta nel caso abbiate un router diverso dal mio).
+</div>
+
+<div>
+  Ora non vi resta che mettere il tutto dentro una bella scatola a vista.
+</div>
+
+<div>
+  Vi lascio con il &#8220;servizio fotografico&#8221; fatto dal gentile Matteo C.: <a href="http://www.flickr.com/photos/71041672@N04/sets/72157628206362735/">http://www.flickr.com/photos/71041672@N04/sets/72157628206362735/</a>
+</div>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+			</div>
+
+			
+						<div id="page-meta" class="t30">
+				<p>
+					<!-- Look the author details up from the site config. -->
+					
+					<!-- Output author details if some exist. -->
+					
+
+				
+				<time class="icon-calendar pr20" datetime="2011-11-29T17:45:45+01:00" itemprop="datePublished"> 2011-11-29</time>
+				
+
+				<span class="icon-archive pr20"> ARTICOLI</span>
+				<br />
+				<span class="pr20"><span class="icon-price-tag pr10"> sistemi operativi</span> <span class="icon-price-tag pr10"> sviluppo</span> <span class="icon-price-tag pr10"> tecnologia</span> <span class="icon-price-tag pr10"> ufficio</span> </span>
+			</p>
+
+			
+			<div id="post-nav" class="row">
+				
+				<div class="small-5 columns"><a class="button small radius prev" href="https://vittore.github.io/2011/11/prenotazione-aule/">&laquo; Prenotazione aule</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-2 columns text-center"><a class="radius button small" href="https://vittore.github.io/archivio/" title="Blog Archivio">Archivio</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-5 columns text-right"><a class="button small radius next" href="https://vittore.github.io/2011/12/realizzare-fori-quadrati-con-un-trapano/">Realizzare fori quadrati con un trapano &raquo;</a></div><!-- /.small-4.columns -->
+				
+			</div>
+			
+			</div><!--  /.page-meta -->
+
+			
+
+			
+		</article>
+	</div><!-- /.medium-8.columns -->
+
+
+	
+
+
+	
+</div><!-- /.row -->
+
+
+	
+	    <div id="up-to-top" class="row">
+      <div class="small-12 columns" style="text-align: right;">
+        <a class="iconfont" href="#top-of-page">&#xf108;</a>
+      </div><!-- /.small-12.columns -->
+    </div><!-- /.row -->
+
+
+    <footer id="footer-content" class="bg-grau">
+      <div id="footer">
+        <div class="row">
+          <div class="medium-6 large-5 columns">
+            <h5 class="shadow-black">Informazioni su questo sito</h5>
+
+            <p class="shadow-black">
+              Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen
+              <a href="https://vittore.github.io/perché-questo-blog/">Altro&nbsp;›</a>
+            </p>
+          </div><!-- /.large-6.columns -->
+
+
+          <div class="small-6 medium-3 large-3 large-offset-1 columns">
+            
+              
+                <h5 class="shadow-black">Servizi</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+
+              <ul class="no-bullet shadow-black">
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io"  title=""></a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io/contatti/"  title="Contatti">Contatti</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io/feed.xml"  title="Subscribe to RSS Feed">RSS</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io/atom.xml"  title="Subscribe to Atom Feed">Atom</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io/sitemap.xml"  title="Sitemap for Google Webmaster Tools">sitemap.xml</a>
+                  </li>
+              
+              </ul>
+          </div><!-- /.large-4.columns -->
+
+
+          <div class="small-6 medium-3 large-3 columns">
+            
+              
+                <h5 class="shadow-black">Ringraziamenti</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+
+            <ul class="no-bullet shadow-black">
+            
+              
+                <li >
+                  <a href="https://vittore.github.io"  title=""></a>
+                </li>
+            
+              
+                <li class="network-entypo" >
+                  <a href="http://entypo.com/" target="_blank"  title="Icons by Daniel Bruce">Icons by Daniel Bruce</a>
+                </li>
+            
+              
+                <li class="services-newsletter" >
+                  <a href="http://foundation.zurb.com/" target="_blank"  title="Built on Foundation">Built on Foundation</a>
+                </li>
+            
+              
+                <li class="rss-link" >
+                  <a href="http://unsplash.com/" target="_blank"  title="Images by Unsplash">Images by Unsplash</a>
+                </li>
+            
+            </ul>
+          </div><!-- /.large-3.columns -->
+        </div><!-- /.row -->
+
+      </div><!-- /#footer -->
+
+
+      <div id="subfooter">
+        <nav class="row">
+          <section id="subfooter-left" class="small-12 medium-6 columns credits">
+            
+          </section>
+
+          <section id="subfooter-right" class="small-12 medium-6 columns">
+            <ul class="inline-list social-icons">
+            
+              <li><a href="mailto:vittore@zen.pn.it" target="_blank" class="icon-mail" title=""></a></li>
+            
+              <li><a href="https://www.linkedin.com/in/vittorezen/" target="_blank" class="icon-linkedin" title=""></a></li>
+            
+              <li><a href="http://twitter.com/vittore" target="_blank" class="icon-twitter" title=""></a></li>
+            
+              <li><a href="http://www.facebook.com/vittore.zen" target="_blank" class="icon-facebook" title=""></a></li>
+            
+              <li><a href="http://github.com/vittore" target="_blank" class="icon-github" title=""></a></li>
+            
+            </ul>
+          </section>
+        </nav>
+      </div><!-- /#subfooter -->
+    </footer>
+
+	
+
+	
+
+
+<script src="https://vittore.github.io/assets/js/javascript.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+

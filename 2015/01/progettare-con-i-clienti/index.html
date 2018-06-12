@@ -1,0 +1,694 @@
+<!doctype html>
+<html class="no-js" lang="it">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Progettare con i clienti</title>
+
+    <link rel="stylesheet" type="text/css" href="https://vittore.github.io/assets/css/styles_feeling_responsive.css">
+
+  
+
+	<script src="https://vittore.github.io/assets/js/modernizr.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+	<script>
+		WebFont.load({
+			google: {
+				families: [ 'Lato:400,700,400italic:latin', 'Volkhov::latin' ]
+			}
+		});
+	</script>
+
+	<noscript>
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic%7CVolkhov' rel='stylesheet' type='text/css'>
+	</noscript>
+
+
+	<!-- Search Engine Optimization -->
+	<meta name="description" content="Ho tradotto l’articolo “Designing with your clients” di Paul Boag. Un grazie a Sandro R. per l’aiuto.
+
+L’articolo riassume in modo ordinato tante idee che cerchiamo di applicare. Buona lettura.">
+	
+	
+	
+	
+	
+	
+	<link rel="canonical" href="https://vittore.github.io/2015/01/progettare-con-i-clienti/">
+
+
+	<!-- Facebook Open Graph -->
+	<meta property="og:title" content="Progettare con i clienti">
+	<meta property="og:description" content="Ho tradotto l’articolo “Designing with your clients” di Paul Boag. Un grazie a Sandro R. per l’aiuto.
+
+L’articolo riassume in modo ordinato tante idee che cerchiamo di applicare. Buona lettura.">
+	<meta property="og:url" content="https://vittore.github.io/2015/01/progettare-con-i-clienti/">
+	<meta property="og:locale" content="en_EN">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="zen.pn.it - Tecnologia e dintorni">
+	
+	<meta property="article:author" content="https://www.facebook.com/vittore.zen">
+
+
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="vittore">
+	<meta name="twitter:creator" content="vittore">
+	<meta name="twitter:title" content="Progettare con i clienti">
+	<meta name="twitter:description" content="Ho tradotto l’articolo “Designing with your clients” di Paul Boag. Un grazie a Sandro R. per l’aiuto.
+
+L’articolo riassume in modo ordinato tante idee che cerchiamo di applicare. Buona lettura.">
+	
+	
+
+	<link type="text/plain" rel="author" href="https://vittore.github.io/humans.txt">
+
+	
+
+	
+
+	<link rel="icon" sizes="32x32" href="https://vittore.github.io/assets/img/favicon-32x32.png">
+
+	<link rel="icon" sizes="192x192" href="https://vittore.github.io/assets/img/touch-icon-192x192.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://vittore.github.io/assets/img/apple-touch-icon-180x180-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://vittore.github.io/assets/img/apple-touch-icon-152x152-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://vittore.github.io/assets/img/apple-touch-icon-144x144-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://vittore.github.io/assets/img/apple-touch-icon-120x120-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://vittore.github.io/assets/img/apple-touch-icon-114x114-precomposed.png">
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://vittore.github.io/assets/img/apple-touch-icon-76x76-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://vittore.github.io/assets/img/apple-touch-icon-72x72-precomposed.png">
+
+	<link rel="apple-touch-icon-precomposed" href="https://vittore.github.io/assets/img/apple-touch-icon-precomposed.png">	
+
+	<meta name="msapplication-TileImage" content="https://vittore.github.io/assets/img/msapplication_tileimage.png">
+
+	<meta name="msapplication-TileColor" content="#fabb00">
+
+
+	
+
+</head>
+<body id="top-of-page" class="post">
+	
+	
+<div id="navigation" class="sticky">
+  <nav class="top-bar" role="navigation" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+      <h1 class="show-for-small-only"><a href="https://vittore.github.io" class="icon-tree"> zen.pn.it - Tecnologia e dintorni</a></h1>
+    </li>
+       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Nav</span></a></li>
+    </ul>
+    <section class="top-bar-section">
+
+      <ul class="right">
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+
+              
+
+          
+          
+        
+        
+      </ul>
+
+      <ul class="left">
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/">Home</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/chi-sono/">Chi sono</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/perché-questo-blog/">Perché questo blog</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/contatti/">Contatti</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+
+              
+
+          
+          
+
+            
+            
+              <li><a  href="https://vittore.github.io/whishlist/">Whishlist</a></li>
+              <li class="divider"></li>
+
+            
+            
+          
+        
+        
+      </ul>
+    </section>
+  </nav>
+</div><!-- /#navigation -->
+
+	
+
+	
+
+<div id="masthead-no-image-header">
+	<div class="row">
+		<div class="small-12 columns">
+			<a id="logo" href="https://vittore.github.io/" title="zen.pn.it - Tecnologia e dintorni – Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen">
+				<img src="https://vittore.github.io/assets/img/logo.png" alt="zen.pn.it - Tecnologia e dintorni – Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen">
+			</a>
+		</div><!-- /.small-12.columns -->
+	</div><!-- /.row -->
+</div><!-- /#masthead -->
+
+
+
+
+
+
+
+
+
+	<div class="row t30">
+	<div class="medium-8 columns medium-offset-2 end">
+		<article itemscope itemtype="http://schema.org/Article">
+			<header>
+				
+
+				<div itemprop="name">
+					
+					<h1>Progettare con i clienti</h1>
+				</div>
+			</header>
+
+
+			
+
+			<div itemprop="articleSection">
+			<p>Ho tradotto l’articolo “<a href="http://www.smashingmagazine.com/2014/12/30/designing-with-your-clients/">Designing with your clients</a>” di Paul Boag. Un grazie a Sandro R. per l’aiuto.</p>
+
+<p>L’articolo riassume in modo ordinato tante idee che cerchiamo di applicare. Buona lettura.</p>
+
+<!--more-->
+
+<hr />
+
+<p> </p>
+
+<p>Noi tutti abbiamo conosciuto la sofferenza di quando un cliente interferisce nel processo di progettazione. Frasi come “Fai il logo più grande” e “Metti quello più in alto” sono diventate una barzelletta nella comunità dei web design.</p>
+
+<p>Non è insolito per i progettisti di siti internet perdere soldi su un progetto quale risultato delle interazioni infinite con il cliente durante la progettazione. Dopo un paio di esperienze negative, cominciamo a escludere il cliente dal processo. Limitiamo il numero di iterazioni ed evitiamo di consultarli.</p>
+
+<p>Purtroppo, questo spesso peggiora l’interazione con il cliente. Ogni interazione diventa quindi più importante nella testa del cliente, ed iniziano ad interferire ancora più pesantemente, creando così un circolo vizioso.</p>
+
+<p style="text-align: center;">
+  <a href="https://i0.wp.com/www.zen.pn.it/wp-content/uploads/2015/01/sketch-large-opt.jpg"><img class="aligncenter size-medium wp-image-1150" src="https://i0.wp.com/www.zen.pn.it/wp-content/uploads/2015/01/sketch-large-opt.jpg?resize=300%2C211" alt="sketch-large-opt" width="300" height="211" srcset="https://i0.wp.com/www.zen.pn.it/wp-content/uploads/2015/01/sketch-large-opt.jpg?resize=300%2C211 300w, https://i0.wp.com/www.zen.pn.it/wp-content/uploads/2015/01/sketch-large-opt.jpg?resize=226%2C160 226w, https://i0.wp.com/www.zen.pn.it/wp-content/uploads/2015/01/sketch-large-opt.jpg?resize=1024%2C722 1024w, https://i0.wp.com/www.zen.pn.it/wp-content/uploads/2015/01/sketch-large-opt.jpg?w=1034 1034w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a>Tutti abbiamo avuto clienti che hanno lacerato i nostri progetti.
+</p>
+
+<p>Ci deve essere un modo migliore – una via che ci consenta di produrre design eccezionali e mantenere il proprio margine di profitto.</p>
+
+<p>La risposta sta nel coinvolgere il cliente nel processo invece di escluderlo. Richiede di collaborare con il cliente per produrre un design.</p>
+
+<h1 id="perché-si-dovrebbe-collaborare-nella-progettazione">Perché si dovrebbe collaborare nella progettazione?</h1>
+
+<p>L’idea di consentire al cliente un maggiore coinvolgimento nel processo di progettazione sembrerebbe terrificante. Tutti questi suggerimenti da ignoranti! Tutti questi aggiustamenti senza fine! Come potrebbe portare a una migliore progettazione, per non parlare di un qualsiasi profitto per voi?</p>
+
+<p>Una buona parte della motivo è riconducibile alla psicologia.</p>
+
+<h2 id="la-psicologia-comportamentale-del-cliente">La psicologia comportamentale del cliente</h2>
+
+<p>Perché i clienti interferiscono nel processo di progettazione? Perché non si fidano del vostro giudizio?</p>
+
+<p>Gran parte delle volte è perché hanno paura dell’ignoto. Essi non sono esperti in questioni legate al design o al web. Si sentono fuori posto nella progettazione e tentano di ottenere qualche forma di controllo. Quanto più noi li escludiamo o resistiamo ai loro suggerimenti più si preoccupano e più cercano di estendere il loro controllo.</p>
+
+<p>Dopo tutto, voi volete che loro approvino il progetto. Ciò significa che saranno responsabili se lo stesso fallisce. Sono in gioco il loro lavoro e la loro reputazione in azienda.</p>
+
+<p>Per di più dovranno vivere con le conseguenze del vostro progetto. Voi potrete prenderne le distanze ma loro dovranno convivere con questo progetto per anni. Non sorprende, quindi, che vogliano che sia fatto bene, che siano preoccupati dell’andamento dell’intero processo.</p>
+
+<p>Collaborando con loro sulla progettazione otterrete due cose: si dà loro un senso di controllo e li istruirete sul processo di progettazione. Questo allevierà i loro timori perché il processo non sarà più a loro sconosciuto.</p>
+
+<p><img class="aligncenter size-full wp-image-1152" src="https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2015/01/tweet-clients-opt.jpg?resize=500%2C195" alt="tweet-clients-opt" width="500" height="195" srcset="https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2015/01/tweet-clients-opt.jpg?w=500 500w, https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2015/01/tweet-clients-opt.jpg?resize=380%2C148 380w, https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2015/01/tweet-clients-opt.jpg?resize=300%2C117 300w" sizes="(max-width: 500px) 100vw, 500px" data-recalc-dims="1" /></p>
+
+<p style="text-align: center;">
+  Se il cliente non è sicuro di un progetto farà richiesta di inserire infinite modifiche.
+</p>
+
+<p>Se il cliente ha contribuito a creare il design non solo si preoccuperà di meno ma ne avrà un maggiore senso di possesso e sarà meno propenso a rigettare il prodotto finale. Sarà anche più propenso a difenderlo quando sarà mostrato ai colleghi. Il cliente passerà dall’essere un critico del progetto ad un difensore .</p>
+
+<p>E’ renderà anche più facile il vostro lavoro.</p>
+
+<h1 id="la-collaborazione-è-meglio-per-il-progettista">La collaborazione è meglio per il progettista</h1>
+
+<p>Come progettisti abbiamo a cuore due cose: la produzione di un lavoro di alta qualità e la realizzazione di un profitto. Lavorare con il cliente su un progetto ci permette di realizzare entrambi.</p>
+
+<p>Se coinvolgiamo i clienti questi saranno in grado di rilevare presto i problemi. Tutti abbiamo lavorato su progetti in cui il cliente sposta gli obiettivi finali all’ultimo minuto. Non stanno cercando di essere un fastidio. Stanno solo imparando sul campo e, qualche volte, gli vengono delle nuove idee in ritardo perchè non hanno passato così tanto tempo nella progettazione.</p>
+
+<p style="text-align: center;">
+  <img class="aligncenter size-full wp-image-1153" src="https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2015/01/tweet-saz-opt.jpg?resize=500%2C179" alt="tweet-saz-opt" width="500" height="179" srcset="https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2015/01/tweet-saz-opt.jpg?w=500 500w, https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2015/01/tweet-saz-opt.jpg?resize=380%2C136 380w, https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2015/01/tweet-saz-opt.jpg?resize=300%2C107 300w" sizes="(max-width: 500px) 100vw, 500px" data-recalc-dims="1" />I clienti a volte cambiano il progetto all&#8217;ultimo minuto perchè gli vengono delle idee alla fine della progettazione.
+</p>
+
+<p>Se sono coinvolti nella progettazione, le presteranno più attenzione e, di conseguenza, rileveranno prima i problemi. Ciò implica che saranno necessarie un minor numero di interazioni.</p>
+
+<p>Le interazioni si verificano per alcune ragioni: perchè il cliente ha una visione differente ma non è riuscito a rendervi partecipi, perchè ha paura di sbagliare o perchè vogliono lasciare il proprio segno sul progetto. Tutti questi problemi non si verificheranno se lavorerete gomito a gomito con il cliente.</p>
+
+<p>Spero di avervi convinto che la collaborazione è utile. Ma come è possibile ottenerla?</p>
+
+<h1 id="come-collaborare">Come collaborare</h1>
+
+<p>Cerchiamo di essere chiari. Collaborazione non significa avere il cliente seduto accanto mentre lavorate sull’applicazione scelta per il progetto. Non si tratta di ridurvi a “uomini-dito”.</p>
+
+<p>In un mondo ideale, ciò comporta sedervi allo stesso tavolo del cliente, mostrargli come procede il lavoro, ottenere il feeback sulla “struttura/griglia”, il layout di navigazione o la scelta dei colori.</p>
+
+<p>E’ come il dialogo costante che avete con i membri del vostro “tuo team.” Dovreste trattare il cliente come parte di quella squadra.</p>
+
+<p>Purtroppo il lavorare con il cliente nel suo ufficio non è sempre un’opzione disponibile. Quindi, cos’altro si può fare?</p>
+
+<p>Probabilmente avete tenuto una riunione iniziale con il cliente, in cui avete discusso di aspetti come gli obiettivi di business, target di utenza, ecc. Ma la discussione sulla progettazione spesso si limita a “Quali altri siti web le piaciono?” Tutto ciò è troppo superficiale. E’ se utilizzassimo questo tempo per un paio di workshop?</p>
+
+<p>Possiamo ridurre la progettazione a due aree: <strong>estetica e struttura</strong>. Vediamo cosa potete fare nella riunione iniziale per coinvolgere il cliente in questi due aspetti.</p>
+
+<h1 id="collaborare-nellestetica">Collaborare nell’estetica</h1>
+
+<p>L’estetica è soggettiva. Persone ripiegano sul proprio parere personale se non viene fornito nessun altro metro di valutazione con cui giudicare un progetto. Un workshop sull’estetica dà l’opportunità di fornire tale metro di valutazione. Dà anche al cliente un senso di possesso sull’estetica.</p>
+
+<p>Insegnate al cliente a giudicare l’estetica secondo due criteri:</p>
+
+<ul>
+  <li>Piacerà all’utente finale?</li>
+  <li>È in linea con l’immagine che l’azienda desidera avere?</li>
+</ul>
+
+<p>Possiamo utilizzare tre esercizi.</p>
+
+<h2 id="largomento-celebrità">L’argomento “celebrità”</h2>
+
+<p>Fate al vostro cliente e tutti gli altri soggetti interessati presenti una semplice domanda: “Se l’organizzazione fosse una persona famosa, chi sarebbe e perché?”</p>
+
+<p>Immancabilmente questa domanda porta sempre ad accese discussioni. Dai suggerimenti emergerà un insieme di parole chiave che rappresentano le persone in oggetto. È quindi possibile utilizzare questi termini per modellare l’estetica del sito. Potrete farvi riferimento quanto in seguito richiederete un feedback sul design.</p>
+
+<p>Avere una personalità concreta su cui lavorare vi aiuterà anche nella progettazione. Progettare un sito web che rappresenti qualcuno come Barack Obama è più semplice rispetto alla progettazione tratta da un elenco di vaghi valori di un brand.</p>
+
+<h2 id="progettare-una-area-di-ingresso">Progettare una area di ingresso</h2>
+
+<p>Un altro modo per capire come un’organizzazione voglia proiettarsi in rete è chiedere alle parti interessate di immaginare l’area di ingresso (la reception) aziendale perfetta. Alcune domande che potreste fare sono:</p>
+
+<ul>
+  <li>Quanto grande dovrebbe essere?</li>
+  <li>Cosa vorreste alle pareti?</li>
+  <li>Che segnaletica vorreste avere?</li>
+  <li>Che arredamento ci vorreste?</li>
+  <li>Che sottofondo musicale vorreste?</li>
+  <li>Cosa vorreste sul tavolino?</li>
+  <li>Ci vorreste un addetto?</li>
+</ul>
+
+<p>In questo modo il cliente penserà alla progettazione senza dettare le specifiche del sito web. Come per quello precedente, potrebbe far riferimento anche a questo esercizio per la creazione del design e richiederne l’approvazione.</p>
+
+<p>Il cliente è meno propenso a rigettare un progetto che contenga gli elementi di questo progetto – elementi che hanno scelto, elementi a cui si sentono legati.</p>
+
+<h2 id="mood-board-user-oriented">Mood board user-oriented</h2>
+
+<p>L’esercizio finale sull’estetica il è moodboarding collaborativo. L’idea è di far focalizzare il cliente sui gusti estetitici del suo pubblico finale.</p>
+
+<p>Chiedegli di creare un moodboard (n.d.T vedi https://it.wikipedia.org/wiki/Moodboard) di cose che vorrebbe il loro target di riferimento. Per iniziare li farete concentrare su:</p>
+
+<ul>
+  <li>colore (utilizzando uno strumento come <a href="https://color.adobe.com/">Kuler</a>);</li>
+  <li>caratteri tipografici (usando <a href="http://www.google.com/fonts">Google Fonts</a>);</li>
+  <li>stile (esplorando un sito web come <a href="http://www.designmeltdown.com/">Design Meltdown</a>);</li>
+  <li>immagini (utilizzando <a href="https://www.flickr.com/">Flickr</a> o <a href="https://www.google.co.uk/imghp">Google Immagini</a>).</li>
+</ul>
+
+<p>Suggeritegli che potrebbe essere necessario creare più di un moodboard se esistono diverse tipologie di audience finale. In questo modo non solo migliorerete la progettazione ma aiuterete il cliente a pensare alle necessità degli utenti finali</p>
+
+<p>Tuttavia non è sufficiente far concentrare il cliente sull’aspetto estetico. E’ necessario coinvolgerli nella struttura del sito.</p>
+
+<h1 id="collaborare-sulla-struttura">Collaborare sulla struttura</h1>
+
+<p>Una delle grandi sfide per un progettista è il bilanciamento delle esigenze degli utenti con gli obiettivi aziendali. La soluzione è quella di dirigere l’attenzione nei posti giusti.</p>
+
+<p>I progetti sono spesso rifiutati dai clienti perché essi si concentrano sugli aspetti sbagliati dell’azienda o sul target errato – o, a volte, perché essi si concentrano su tutto! (Alcuni clienti semplicemente odiano dare priorità.)</p>
+
+<p>Fortunatamente, tre esercizi vi aiuteranno a mettere a fuoco le effettive necessità. Questo vi farà risparmiare un sacco di revisioni perché il cliente avrà già concordato con voi quello che è importante.</p>
+
+<h2 id="progettare-la-copertina-di-un-libro">Progettare la copertina di un libro</h2>
+
+<p>Un libro ha una copertina anteriore, una posteriore e un risvolto interno. La copertina darà l’impressione iniziale, la quarta di copertina fornirà maggiori dettagli ed il risvolto interno andrà ancora più nel dettaglio.</p>
+
+<p style="text-align: center;">
+  <img class="aligncenter size-full wp-image-1155" src="https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2015/01/digital-adaptation-opt.jpg?resize=500%2C422" alt="digital-adaptation-opt" width="500" height="422" srcset="https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2015/01/digital-adaptation-opt.jpg?w=500 500w, https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2015/01/digital-adaptation-opt.jpg?resize=189%2C160 189w, https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2015/01/digital-adaptation-opt.jpg?resize=300%2C253 300w" sizes="(max-width: 500px) 100vw, 500px" data-recalc-dims="1" />Progettare la copertina, la quarta di copertina ed il risvolto interno possono aiutare un cliente a trovare le priorità nel suo messaggio.
+</p>
+
+<p>E’ possibile utilizzare questa sequenza per aiutare i clienti a trovare la priorità nei loro messaggi Chiedete loro di progettare un libro che comunichi i messaggi chiave della loro organizzazione. Cosa apparirà sulla copertina? Cosa volete che sappia di voi la gente? Che cosa dovrebbe apparire sulla quarta di copertina o sul risvolto interno?</p>
+
+<p>Completando questo esercizio, il cliente inizierà a focalizzare i suoi messaggi e voi potrete capire meglio i messaggi principali dell’organizzazione.</p>
+
+<h2 id="lesercizio-dei-punti-utente">L’esercizio dei punti utente</h2>
+
+<p>Avendone la possibilità i clienti riempiranno la propria home page di quante più informazioni possibili. Per insegnare loro perchè è una cattiva idea, solitamente tengo un esercizio “user point”.</p>
+
+<p>Si inizia mostrando loro le home page di Google e di Yahoo. Chiedo poi quale sia più efficace, hanno sempre risposto Google. Spiego che Google ha focalizzato l’attenzione dell’utente su una sola cosa: la casella di ricerca.</p>
+
+<p style="text-align: center;">
+  <img class="aligncenter size-full wp-image-1156" src="https://i0.wp.com/www.zen.pn.it/wp-content/uploads/2015/01/google-ux-example-opt.jpg?resize=500%2C305" alt="google-ux-example-opt" width="500" height="305" srcset="https://i0.wp.com/www.zen.pn.it/wp-content/uploads/2015/01/google-ux-example-opt.jpg?w=500 500w, https://i0.wp.com/www.zen.pn.it/wp-content/uploads/2015/01/google-ux-example-opt.jpg?resize=262%2C160 262w, https://i0.wp.com/www.zen.pn.it/wp-content/uploads/2015/01/google-ux-example-opt.jpg?resize=300%2C183 300w" sizes="(max-width: 500px) 100vw, 500px" data-recalc-dims="1" />L&#8217;home page di Google dimostra l&#8217;importanza di focalizzare l&#8217;attenzione dell&#8217;utente.
+</p>
+
+<p>Continuo parlando della limitata attenzione degli utenti. In questo esercizio, si dovrebbe ricordare che di attenzione da 15 a 20 punti (a seconda di come ti senti generoso).</p>
+
+<p>Ogni elemento che il cliente aggiungerà alla loro home page immaginaria costerà un punto. Se vogliono porre maggiormente l’accento su un elemento (come Google fa con il suo motore di ricerca), allora avrebbero dovuto aggiungere più punti.</p>
+
+<p>Questo esercizio li aiuta a capire i compromessi che un designer deve accettare, sottolinea inoltre quello su cui noi vogliamo che l’utente si focalizzi.</p>
+
+<h2 id="lesercizio-delle-sei-versioni">L’esercizio delle “sei versioni”</h2>
+
+<p>L’esercizio finale che faccio con i clienti li aiuta a comprendere la moltitudine di opzioni disponibili per loro e li incoraggia a prendere un’unica direzione.</p>
+
+<p>L’esercizio é semplice. Chiedete agli interessati di delineare sei diversi approcci alla home page. Ad esempio questo potrebbe essere la bozza di una serie di caselle che rappresentino l’intestazione, news, piè di pagina e così via.</p>
+
+<p style="text-align: center;">
+  <a href="https://i0.wp.com/www.zen.pn.it/wp-content/uploads/2015/01/sketches-large-opt.jpg"><img class="aligncenter size-medium wp-image-1157" src="https://i0.wp.com/www.zen.pn.it/wp-content/uploads/2015/01/sketches-large-opt.jpg?resize=300%2C199" alt="sketches-large-opt" width="300" height="199" srcset="https://i0.wp.com/www.zen.pn.it/wp-content/uploads/2015/01/sketches-large-opt.jpg?resize=300%2C199 300w, https://i0.wp.com/www.zen.pn.it/wp-content/uploads/2015/01/sketches-large-opt.jpg?resize=240%2C160 240w, https://i0.wp.com/www.zen.pn.it/wp-content/uploads/2015/01/sketches-large-opt.jpg?w=1024 1024w" sizes="(max-width: 300px) 100vw, 300px" data-recalc-dims="1" /></a>Questo esercizio li aiuta a considerare le differenti opzioni disponibili.( preview grande )
+</p>
+
+<p>Il cliente ne farà due o tre prima di essere in difficoltà. A quel punto, si potrebbe dare loro dei suggerimenti. Suggerite di considerare come la pagina potrebbe apparire a target diversi O suggerire enfatizzando diverse linee d’azione.</p>
+
+<p>Ciò porterà ad un’interessante discussione, con l’enfasi sul sito web e su come il design potrebbe raggiungere i requisiti del cliente.</p>
+
+<h1 id="sì-ma">Sì, ma…</h1>
+
+<p>Senza dubbio, questo articolo vi ha lasciato con dei dubbi. Collaborare con i clienti è accompagnato da rischi, in particolare il rischio di perdere il controllo o dover gestire dei suggerimenti irrealizzabili. Ma con un’attenta pianificazione è possibile mitigare questi rischi.</p>
+
+<p>Con l’esperienza nel lavoro collaborativo, imparerete ad affrontare questi pericoli. Scoprirete che si hanno meno probabilità di perdere il controllo se si concentra il cliente nell’<strong>individuare i problemi</strong>.</p>
+
+<p>Quando un cliente suggerisce una soluzione, dovrete accettarla o rifiutarla. Sarete bloccati tra la scelta di perdere il controllo o di alienare il cliente. Ma se riuscirete a farlo parlare di un problema che ha percepito, potrete suggerire una soluzione. Questo vi permetterà di tenere il timone.</p>
+
+<p>Potrai anche imparare ad apprezzare la lista dei desideri per uno sviluppo successivo. Queste liste vi aiuteranno a mettere da parte i suggerimenti impraticabili, incoraggiare lo sviluppo continuo ed assicurarvi ulteriore lavoro in futuro.</p>
+
+<p>Anche nella peggiore delle ipotesi, la progettazione collaborativa vi risparmierà ore in riunioni e vi permetterà di avere clienti più felici e coinvolti. Natualmente ha i suoi lati negativi, ma niente di peggio di quelli che state già gestendo.</p>
+
+<p>L’unico modo per imparare a gestire questi pericoli è con l’esperienza. Si. farete degli errori. Ma, con il tempo, vi accorgerete che i vostri progetti diventeranno esperienze più piacevoli, per entrambe le parti.</p>
+
+<p> </p>
+
+<p><em>[Fonte: <a href="http://www.smashingmagazine.com/2014/12/30/designing-with-your-clients/">http://www.smashingmagazine.com/2014/12/30/designing-with-your-clients/</a> ]</em></p>
+
+<p> </p>
+
+<p>Alcune risorse:</p>
+
+<ul>
+  <li><a href="https://boagworld.com/wp-content/uploads/2013/02/waiting-room.pdf">Schema per l’esercizio “Crea il tuo ingresso”</a></li>
+  <li><a href="http://campaignsoftheworld.com/watercrab-what-if-santa-was-an-agency/">What if Santa was an agency?</a></li>
+</ul>
+
+<p> </p>
+
+<p> </p>
+
+<p> </p>
+
+			</div>
+
+			
+						<div id="page-meta" class="t30">
+				<p>
+					<!-- Look the author details up from the site config. -->
+					
+					<!-- Output author details if some exist. -->
+					
+
+				
+				<time class="icon-calendar pr20" datetime="2015-01-12T10:17:58+01:00" itemprop="datePublished"> 2015-01-12</time>
+				
+
+				<span class="icon-archive pr20"> ARTICOLI</span>
+				<br />
+				<span class="pr20"><span class="icon-price-tag pr10"> organizzazione</span> <span class="icon-price-tag pr10"> ufficio</span> <span class="icon-price-tag pr10"> web</span> </span>
+			</p>
+
+			
+			<div id="post-nav" class="row">
+				
+				<div class="small-5 columns"><a class="button small radius prev" href="https://vittore.github.io/2014/12/in-internet-nessuno-sa-che-sei-un-cane-o-un-gatto/">&laquo; In internet nessuno sa che sei un cane (o un gatto).</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-2 columns text-center"><a class="radius button small" href="https://vittore.github.io/archivio/" title="Blog Archivio">Archivio</a></div><!-- /.small-4.columns -->
+				
+				<div class="small-5 columns text-right"><a class="button small radius next" href="https://vittore.github.io/2015/02/una-nota-di-humor-css/">Una nota di humor: CSS &raquo;</a></div><!-- /.small-4.columns -->
+				
+			</div>
+			
+			</div><!--  /.page-meta -->
+
+			
+
+			
+		</article>
+	</div><!-- /.medium-8.columns -->
+
+
+	
+
+
+	
+</div><!-- /.row -->
+
+
+	
+	    <div id="up-to-top" class="row">
+      <div class="small-12 columns" style="text-align: right;">
+        <a class="iconfont" href="#top-of-page">&#xf108;</a>
+      </div><!-- /.small-12.columns -->
+    </div><!-- /.row -->
+
+
+    <footer id="footer-content" class="bg-grau">
+      <div id="footer">
+        <div class="row">
+          <div class="medium-6 large-5 columns">
+            <h5 class="shadow-black">Informazioni su questo sito</h5>
+
+            <p class="shadow-black">
+              Segnalazioni e riflessioni su &quot;cose di tecnologia&quot; di Vittore Zen
+              <a href="https://vittore.github.io/perché-questo-blog/">Altro&nbsp;›</a>
+            </p>
+          </div><!-- /.large-6.columns -->
+
+
+          <div class="small-6 medium-3 large-3 large-offset-1 columns">
+            
+              
+                <h5 class="shadow-black">Servizi</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+
+              <ul class="no-bullet shadow-black">
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io"  title=""></a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io/contatti/"  title="Contatti">Contatti</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io/feed.xml"  title="Subscribe to RSS Feed">RSS</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io/atom.xml"  title="Subscribe to Atom Feed">Atom</a>
+                  </li>
+              
+                
+                  <li >
+                    <a href="https://vittore.github.io/sitemap.xml"  title="Sitemap for Google Webmaster Tools">sitemap.xml</a>
+                  </li>
+              
+              </ul>
+          </div><!-- /.large-4.columns -->
+
+
+          <div class="small-6 medium-3 large-3 columns">
+            
+              
+                <h5 class="shadow-black">Ringraziamenti</h5>
+              
+            
+              
+            
+              
+            
+              
+            
+
+            <ul class="no-bullet shadow-black">
+            
+              
+                <li >
+                  <a href="https://vittore.github.io"  title=""></a>
+                </li>
+            
+              
+                <li class="network-entypo" >
+                  <a href="http://entypo.com/" target="_blank"  title="Icons by Daniel Bruce">Icons by Daniel Bruce</a>
+                </li>
+            
+              
+                <li class="services-newsletter" >
+                  <a href="http://foundation.zurb.com/" target="_blank"  title="Built on Foundation">Built on Foundation</a>
+                </li>
+            
+              
+                <li class="rss-link" >
+                  <a href="http://unsplash.com/" target="_blank"  title="Images by Unsplash">Images by Unsplash</a>
+                </li>
+            
+            </ul>
+          </div><!-- /.large-3.columns -->
+        </div><!-- /.row -->
+
+      </div><!-- /#footer -->
+
+
+      <div id="subfooter">
+        <nav class="row">
+          <section id="subfooter-left" class="small-12 medium-6 columns credits">
+            
+          </section>
+
+          <section id="subfooter-right" class="small-12 medium-6 columns">
+            <ul class="inline-list social-icons">
+            
+              <li><a href="mailto:vittore@zen.pn.it" target="_blank" class="icon-mail" title=""></a></li>
+            
+              <li><a href="https://www.linkedin.com/in/vittorezen/" target="_blank" class="icon-linkedin" title=""></a></li>
+            
+              <li><a href="http://twitter.com/vittore" target="_blank" class="icon-twitter" title=""></a></li>
+            
+              <li><a href="http://www.facebook.com/vittore.zen" target="_blank" class="icon-facebook" title=""></a></li>
+            
+              <li><a href="http://github.com/vittore" target="_blank" class="icon-github" title=""></a></li>
+            
+            </ul>
+          </section>
+        </nav>
+      </div><!-- /#subfooter -->
+    </footer>
+
+	
+
+	
+
+
+<script src="https://vittore.github.io/assets/js/javascript.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
