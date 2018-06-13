@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://www.zen.pn.it/sitemap.xml
+Sitemap: https://www.zen.pn.it/sitemap.xml
