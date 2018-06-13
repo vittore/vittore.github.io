@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="https://www.zen.pn.it/assets/xslt/rss.xslt" ?>
-<?xml-stylesheet type="text/css" href="https://www.zen.pn.it/assets/css/rss.css" ?>
+<?xml-stylesheet type="text/xsl" href="http://www.zen.pn.it/assets/xslt/rss.xslt" ?>
+<?xml-stylesheet type="text/css" href="http://www.zen.pn.it/assets/css/rss.css" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>zen.pn.it - Tecnologia e dintorni</title>
 		<description>Segnalazioni e riflessioni su &amp;quot;cose di tecnologia&amp;quot; di Vittore Zen</description>
-		<link>https://www.zen.pn.it/</link>
-		<atom:link href="https://www.zen.pn.it/feed.xml" rel="self" type="application/rss+xml" />
+		<link>http://www.zen.pn.it/</link>
+		<atom:link href="http://www.zen.pn.it/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
 				<title>GDPR, cookie e siti dinamici</title>
-				<link>https://www.zen.pn.it/2018/06/gdpr-cookie-e-siti-dinamici/</link>
+				<link>http://www.zen.pn.it/2018/06/gdpr-cookie-e-siti-dinamici/</link>
 				<pubDate>Mon, 11 Jun 2018 02:00:00 +0200</pubDate>
 				<description>&lt;p&gt;Mi ritengo con malcelato orgoglio uno dei primi sbarcati sul web  &lt;a href=&quot;https://web.archive.org/web/19980202100719/http://www.dimi.uniud.it:80/~zen/&quot;&gt;https://www.dimi.uniud.it/~zen&lt;/a&gt; (15 agosto 1997) che attraverso una discreta conoscenza delle scienze dell’informazione ha costruito un pezzo del web.
 Ho scritto “scienze dell’informazione” da non confondersi con le scienze della comunicazione: su questa distinzione mi prometto un post sicuramente polemico nel prossimo futuro considerate le invasioni di campo che vivo sulla mia pelle quasi quotidianamente.&lt;/p&gt;
@@ -75,23 +75,23 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 
 &lt;p&gt;E’ chiaro che la mia valutazione è limitata dalla mia visione prettamente tecnica, come scrivevo all’inizio la mia formazione in “scienze dell’informazione” chiede il suo riscatto e non sempre fa i conti con una realtà  dalle tante sfumature.&lt;/p&gt;
 </description>
-				<guid isPermaLink="true">https://www.zen.pn.it/2018/06/gdpr-cookie-e-siti-dinamici/</guid>
+				<guid isPermaLink="true">http://www.zen.pn.it/2018/06/gdpr-cookie-e-siti-dinamici/</guid>
 			</item>
 		
 			<item>
 				<title>Seconda edizione in lavorazione: idee e/o richieste?</title>
-				<link>https://www.zen.pn.it/2018/05/seconda-edizione-in-lavorazione-idee-e-o-richieste/</link>
+				<link>http://www.zen.pn.it/2018/05/seconda-edizione-in-lavorazione-idee-e-o-richieste/</link>
 				<pubDate>Wed, 30 May 2018 00:17:12 +0200</pubDate>
 				<description>&lt;p&gt;L’anno scolastico si avvia alla conclusione e l’estate è alle porte. In questo periodo metterò mano al libretto “&lt;a href=&quot;https://www.amazon.it/Teoria-laboratori-esercizi-MikroTik-RouterOS/dp/1973238845/&quot;&gt;Teoria, laboratori ed esercizi per MikroTik RouterOS&lt;/a&gt;” per essere pronto per l’inizio delle attività a settembre.&lt;/p&gt;
 
 &lt;p&gt;Se ci sono suggerimenti, consigli o altre modifiche che ritenete utili contattatemi via email.&lt;/p&gt;
 </description>
-				<guid isPermaLink="true">https://www.zen.pn.it/2018/05/seconda-edizione-in-lavorazione-idee-e-o-richieste/</guid>
+				<guid isPermaLink="true">http://www.zen.pn.it/2018/05/seconda-edizione-in-lavorazione-idee-e-o-richieste/</guid>
 			</item>
 		
 			<item>
 				<title>Alcune indiscrezioni sulla futura release di posta Gmail</title>
-				<link>https://www.zen.pn.it/2018/04/alcune-indiscrezioni-sulla-futura-release-di-posta-gmail/</link>
+				<link>http://www.zen.pn.it/2018/04/alcune-indiscrezioni-sulla-futura-release-di-posta-gmail/</link>
 				<pubDate>Sun, 22 Apr 2018 10:42:58 +0200</pubDate>
 				<description>&lt;div id=&quot;js_cbf&quot; class=&quot;_5pbx userContent _3576&quot; data-ft=&quot;{&amp;quot;tn&amp;quot;:&amp;quot;K&amp;quot;}&quot;&gt;
   &lt;p&gt;
@@ -118,12 +118,12 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
-				<guid isPermaLink="true">https://www.zen.pn.it/2018/04/alcune-indiscrezioni-sulla-futura-release-di-posta-gmail/</guid>
+				<guid isPermaLink="true">http://www.zen.pn.it/2018/04/alcune-indiscrezioni-sulla-futura-release-di-posta-gmail/</guid>
 			</item>
 		
 			<item>
 				<title>Twitter chiude twitter su OSX</title>
-				<link>https://www.zen.pn.it/2018/03/twitter-chiude-twitter-su-osx/</link>
+				<link>http://www.zen.pn.it/2018/03/twitter-chiude-twitter-su-osx/</link>
 				<pubDate>Fri, 30 Mar 2018 09:24:32 +0200</pubDate>
 				<description>&lt;p&gt;Mi ero perso questa notizia: &lt;a href=&quot;https://techcrunch.com/2018/02/16/twitter-kills-mac-app/&quot;&gt;Twitter is killing its Twitter for Mac desktop client&lt;/a&gt;&lt;/p&gt;
 
@@ -131,12 +131,12 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 
 &lt;p&gt;Una interessante alternativa gratuita è  &lt;a href=&quot;http://tweetenapp.com/&quot;&gt;http://tweetenapp.com/&lt;/a&gt;&lt;/p&gt;
 </description>
-				<guid isPermaLink="true">https://www.zen.pn.it/2018/03/twitter-chiude-twitter-su-osx/</guid>
+				<guid isPermaLink="true">http://www.zen.pn.it/2018/03/twitter-chiude-twitter-su-osx/</guid>
 			</item>
 		
 			<item>
 				<title>Perché il mio sito wordpress è così lento.</title>
-				<link>https://www.zen.pn.it/2018/02/perche-il-mio-sito-wordpress-e-cosi-lento/</link>
+				<link>http://www.zen.pn.it/2018/02/perche-il-mio-sito-wordpress-e-cosi-lento/</link>
 				<pubDate>Thu, 22 Feb 2018 08:56:33 +0100</pubDate>
 				<description>&lt;p&gt;Finalmente ho trovato un articolo tecnico che tratta questo tema.&lt;/p&gt;
 
@@ -187,12 +187,12 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 &lt;div&gt;
 &lt;/div&gt;
 </description>
-				<guid isPermaLink="true">https://www.zen.pn.it/2018/02/perche-il-mio-sito-wordpress-e-cosi-lento/</guid>
+				<guid isPermaLink="true">http://www.zen.pn.it/2018/02/perche-il-mio-sito-wordpress-e-cosi-lento/</guid>
 			</item>
 		
 			<item>
 				<title>GVFS</title>
-				<link>https://www.zen.pn.it/2018/01/gvfs/</link>
+				<link>http://www.zen.pn.it/2018/01/gvfs/</link>
 				<pubDate>Fri, 12 Jan 2018 13:50:37 +0100</pubDate>
 				<description>&lt;p&gt;GVFS è l’acronimo di Git Virtual File System. GVFS virtualizza il file system sotto il repository git in modo che git e tutti gli strumenti vedano quello che sembra essere un normale repository, ma GVFS scarica solo gli oggetti quando sono necessari. GVFS gestisce anche la sparse checkout di git per assicurare che le operazioni git come lo stato, il checkout, ecc., siano il più veloce possibile perché considerano solo i file a cui l’utente ha avuto accesso, non tutti i file nel repository.&lt;/p&gt;
 
@@ -276,12 +276,12 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
   &lt;/tr&gt;
 &lt;/table&gt;
 </description>
-				<guid isPermaLink="true">https://www.zen.pn.it/2018/01/gvfs/</guid>
+				<guid isPermaLink="true">http://www.zen.pn.it/2018/01/gvfs/</guid>
 			</item>
 		
 			<item>
 				<title>Dietro le quinte del web: gli sviluppatori.</title>
-				<link>https://www.zen.pn.it/2017/12/dietro-le-quinte-del-web-gli-sviluppatori/</link>
+				<link>http://www.zen.pn.it/2017/12/dietro-le-quinte-del-web-gli-sviluppatori/</link>
 				<pubDate>Thu, 21 Dec 2017 09:18:02 +0100</pubDate>
 				<description>&lt;p&gt;Quella dello sviluppatore è una delle professioni più richieste in assoluto nel settore digital.&lt;/p&gt;
 
@@ -329,12 +329,12 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
   &lt;li&gt;&lt;a href=&quot;https://www.zerounoweb.it/techtarget/searchdatacenter/programmazione-software-e-l-ora-degli-it-shop-devops/&quot;&gt;Che cosa significa DevOps e perché oggi è un fondamentale della programmazione&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-				<guid isPermaLink="true">https://www.zen.pn.it/2017/12/dietro-le-quinte-del-web-gli-sviluppatori/</guid>
+				<guid isPermaLink="true">http://www.zen.pn.it/2017/12/dietro-le-quinte-del-web-gli-sviluppatori/</guid>
 			</item>
 		
 			<item>
 				<title>Teoria, laboratori ed esercizi per Mikrotik RouterOS</title>
-				<link>https://www.zen.pn.it/2017/11/teoria-laboratori-ed-esercizi-per-mikrotik-routeros/</link>
+				<link>http://www.zen.pn.it/2017/11/teoria-laboratori-ed-esercizi-per-mikrotik-routeros/</link>
 				<pubDate>Mon, 13 Nov 2017 08:28:45 +0100</pubDate>
 				<description>&lt;p&gt;Ecco pronta per voi la versione comprensiva della parte teorica:&lt;/p&gt;
 
@@ -344,12 +344,12 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 
 &lt;p&gt;&lt;a href=&quot;https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/11/copertina_teoria_bassa_risoluzione.jpg&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-2021&quot; src=&quot;https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/11/copertina_teoria_bassa_risoluzione.jpg?resize=400%2C500&quot; alt=&quot;&quot; width=&quot;400&quot; height=&quot;500&quot; srcset=&quot;https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/11/copertina_teoria_bassa_risoluzione.jpg?w=400 400w, https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/11/copertina_teoria_bassa_risoluzione.jpg?resize=128%2C160 128w, https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/11/copertina_teoria_bassa_risoluzione.jpg?resize=240%2C300 240w&quot; sizes=&quot;(max-width: 400px) 100vw, 400px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
-				<guid isPermaLink="true">https://www.zen.pn.it/2017/11/teoria-laboratori-ed-esercizi-per-mikrotik-routeros/</guid>
+				<guid isPermaLink="true">http://www.zen.pn.it/2017/11/teoria-laboratori-ed-esercizi-per-mikrotik-routeros/</guid>
 			</item>
 		
 			<item>
 				<title>E&amp;#8217; iniziata la scrittura della parte teorica</title>
-				<link>https://www.zen.pn.it/2017/10/e-iniziata-la-scrittura-della-parte-teorica/</link>
+				<link>http://www.zen.pn.it/2017/10/e-iniziata-la-scrittura-della-parte-teorica/</link>
 				<pubDate>Mon, 09 Oct 2017 10:23:09 +0200</pubDate>
 				<description>&lt;p&gt;Alcuni amici che hanno avuto modo di prendere tra le mani il mio librettino di laboratori ed esercizi su RouterOS (vedi il post &lt;a href=&quot;https://www.zen.pn.it/2017/08/laboratori-ed-esercizi-per-mikrotik-routeros/&quot;&gt;Laboratori ed esercizi per Mikrotik Router OS&lt;/a&gt;) mi hanno fatto notare come manchi della parte teorica.&lt;/p&gt;
 
@@ -363,12 +363,12 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 
 &lt;p&gt; &lt;/p&gt;
 </description>
-				<guid isPermaLink="true">https://www.zen.pn.it/2017/10/e-iniziata-la-scrittura-della-parte-teorica/</guid>
+				<guid isPermaLink="true">http://www.zen.pn.it/2017/10/e-iniziata-la-scrittura-della-parte-teorica/</guid>
 			</item>
 		
 			<item>
 				<title>Laboratori ed esercizi per MikroTik RouterOS</title>
-				<link>https://www.zen.pn.it/2017/08/laboratori-ed-esercizi-per-mikrotik-routeros/</link>
+				<link>http://www.zen.pn.it/2017/08/laboratori-ed-esercizi-per-mikrotik-routeros/</link>
 				<pubDate>Fri, 01 Sep 2017 01:17:55 +0200</pubDate>
 				<description>&lt;p&gt;Ecco. Ora ho finito. Ecco il mio libro con gli esercizi sul sistema RouterOS della Mikrotik.&lt;/p&gt;
 
@@ -387,7 +387,7 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 
 &lt;p&gt;&lt;a href=&quot;https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/08/coverdaAmazon.png&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-1999&quot; src=&quot;https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/08/coverdaAmazon.png?resize=411%2C510&quot; alt=&quot;&quot; width=&quot;411&quot; height=&quot;510&quot; srcset=&quot;https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/08/coverdaAmazon.png?w=411 411w, https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/08/coverdaAmazon.png?resize=129%2C160 129w, https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/08/coverdaAmazon.png?resize=242%2C300 242w&quot; sizes=&quot;(max-width: 411px) 100vw, 411px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
-				<guid isPermaLink="true">https://www.zen.pn.it/2017/08/laboratori-ed-esercizi-per-mikrotik-routeros/</guid>
+				<guid isPermaLink="true">http://www.zen.pn.it/2017/08/laboratori-ed-esercizi-per-mikrotik-routeros/</guid>
 			</item>
 		
 	</channel>
