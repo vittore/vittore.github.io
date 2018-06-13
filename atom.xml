@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://www.zen.pn.it/</id>
 	<title>zen.pn.it - Tecnologia e dintorni</title>
-	<updated>2018-06-13T19:08:24+02:00</updated>
+	<updated>2018-06-13T19:25:45+02:00</updated>
 
 	<subtitle>Segnalazioni e riflessioni su &amp;quot;cose di tecnologia&amp;quot; di Vittore Zen</subtitle>
 
@@ -93,6 +93,12 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 
 &lt;p&gt;No. Nell’incertezza devi avvisare sempre.&lt;/p&gt;
 
+&lt;p&gt;Ormai i banner dei cookie sono divenuti la nuova forma di spam del web.&lt;/p&gt;
+&lt;blockquote&gt;
+Inoltre, per come è attuata, la Cookie Law finisce per essere un pesante onere burocratico per i gestori di piccoli blog. Questi, se vogliono inserire plugin sociali nei loro siti (elemento ormai indispensabile per poter essere visibili sul web), rischiano pesanti multe in caso di mancato blocco preventivo dei cookie e non corretta gestione degli stessi. Non dimentichiamo, infatti, che anche il solo controllo dei cookie che veicola il sito comporta conoscenze tecniche non banali, e realizzare un sistema di controllo e gestione dei cookie granulare, con possibilità di revoca del consenso già dato, è sicuramente una questione tecnica per la quale occorrono capacità di programmazione avanzate.
+&lt;cite&gt;https://www.valigiablu.it/cookie-law-gdpr/&lt;/cite&gt;
+&lt;/blockquote&gt;
+
 &lt;h2 id=&quot;log-di-sistema&quot;&gt;Log di sistema&lt;/h2&gt;
 
 &lt;p&gt;Idem per i log di sistema. Se ho un sito web ho di sicuro un file di log che mi dice che l’ip tal dei tali ha richiesto quella specifica pagina. Attenzione: per il legislatore l’indirizzo ip è un dato personale e tenere dei log di sistema significa mantenere dei dati personali. Devi avvisare il tuo “cliente”.&lt;/p&gt;
@@ -108,6 +114,8 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 &lt;p&gt;Per me questo è troppo. Per questo ho fatto mia la riflessione che trovate in &lt;a href=&quot;https://www.bodhilinux.com/2018/06/03/forums-closed-due-to-gdpr/&quot;&gt;https://www.bodhilinux.com/2018/06/03/forums-closed-due-to-gdpr/&lt;/a&gt;  e sono passato a questa versione del mio blog. Niente cookie, niente dati personali.&lt;/p&gt;
 
 &lt;p&gt;E’ chiaro che la mia valutazione è limitata dalla mia visione prettamente tecnica, come scrivevo all’inizio la mia formazione in “scienze dell’informazione” chiede il suo riscatto e non sempre fa i conti con una realtà  dalle tante sfumature.&lt;/p&gt;
+
+&lt;p&gt;Ma la domanda iniziale, sotto traccia, rimane: che fine farà il web dinamico? Come cambierà con questi vincoli che minano alla base il funzionamento così come lo abbiamo realizzato noi tecnici dopo il 1999?&lt;/p&gt;
 </content>
 
 			
