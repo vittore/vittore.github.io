@@ -2,9 +2,9 @@
 <?xml-stylesheet type="text/xsl" href="/assets/xslt/atom.xslt" ?>
 <?xml-stylesheet type="text/css" href="/assets/css/atom.css" ?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<id>https://vittore.github.io/</id>
+	<id>https://www.zen.pn.it/</id>
 	<title>zen.pn.it - Tecnologia e dintorni</title>
-	<updated>2018-06-12T22:47:54+02:00</updated>
+	<updated>2018-06-13T18:14:51+02:00</updated>
 
 	<subtitle>Segnalazioni e riflessioni su &amp;quot;cose di tecnologia&amp;quot; di Vittore Zen</subtitle>
 
@@ -23,16 +23,16 @@
 		</author>
 	
 
-	<link href="https://vittore.github.io/atom.xml" rel="self" type="application/rss+xml" />
-	<link href="https://vittore.github.io/" rel="alternate" type="text/html" />
+	<link href="https://www.zen.pn.it/atom.xml" rel="self" type="application/rss+xml" />
+	<link href="https://www.zen.pn.it/" rel="alternate" type="text/html" />
 
 	<generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator>
 
 	
 		<entry>
-			<id>https://vittore.github.io/2018/06/gdpr-cookie-e-siti-dinamici/</id>
+			<id>https://www.zen.pn.it/2018/06/gdpr-cookie-e-siti-dinamici/</id>
 			<title>GDPR, cookie e siti dinamici</title>
-			<link href="https://vittore.github.io/2018/06/gdpr-cookie-e-siti-dinamici/" rel="alternate" type="text/html" title="GDPR, cookie e siti dinamici" />
+			<link href="https://www.zen.pn.it/2018/06/gdpr-cookie-e-siti-dinamici/" rel="alternate" type="text/html" title="GDPR, cookie e siti dinamici" />
 			<updated>2018-06-11T02:00:00+02:00</updated>
 
 			
@@ -46,7 +46,7 @@
 				</author>
 			
 			<summary>Le 'buzz word' di questo momento sono GDPR e cookie, possibilmente condite in salsa legale.</summary>
-			<content type="html" xml:base="https://vittore.github.io/2018/06/gdpr-cookie-e-siti-dinamici/">&lt;p&gt;Mi ritengo con malcelato orgoglio uno dei primi sbarcati sul web  &lt;a href=&quot;https://web.archive.org/web/19980202100719/http://www.dimi.uniud.it:80/~zen/&quot;&gt;https://www.dimi.uniud.it/~zen&lt;/a&gt; (15 agosto 1997) che attraverso una discreta conoscenza delle scienze dell’informazione ha costruito un pezzo del web.
+			<content type="html" xml:base="https://www.zen.pn.it/2018/06/gdpr-cookie-e-siti-dinamici/">&lt;p&gt;Mi ritengo con malcelato orgoglio uno dei primi sbarcati sul web  &lt;a href=&quot;https://web.archive.org/web/19980202100719/http://www.dimi.uniud.it:80/~zen/&quot;&gt;https://www.dimi.uniud.it/~zen&lt;/a&gt; (15 agosto 1997) che attraverso una discreta conoscenza delle scienze dell’informazione ha costruito un pezzo del web.
 Ho scritto “scienze dell’informazione” da non confondersi con le scienze della comunicazione: su questa distinzione mi prometto un post sicuramente polemico nel prossimo futuro considerate le invasioni di campo che vivo sulla mia pelle quasi quotidianamente.&lt;/p&gt;
 
 &lt;p&gt;Come ho scritto in &lt;a href=&quot;/perché-questo-blog/&quot;&gt;/perché-questo-blog/&lt;/a&gt; la nuova versione di &lt;a href=&quot;http://www.zen.pn.it&quot;&gt;www.zen.pn.it&lt;/a&gt; è interamente statica e non utilizza nessun tipo di cookie e non raccoglie nessun tipo di dato personale.&lt;/p&gt;
@@ -121,9 +121,9 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 		</entry>
 	
 		<entry>
-			<id>https://vittore.github.io/2018/05/seconda-edizione-in-lavorazione-idee-e-o-richieste/</id>
+			<id>https://www.zen.pn.it/2018/05/seconda-edizione-in-lavorazione-idee-e-o-richieste/</id>
 			<title>Seconda edizione in lavorazione: idee e/o richieste?</title>
-			<link href="https://vittore.github.io/2018/05/seconda-edizione-in-lavorazione-idee-e-o-richieste/" rel="alternate" type="text/html" title="Seconda edizione in lavorazione: idee e/o richieste?" />
+			<link href="https://www.zen.pn.it/2018/05/seconda-edizione-in-lavorazione-idee-e-o-richieste/" rel="alternate" type="text/html" title="Seconda edizione in lavorazione: idee e/o richieste?" />
 			<updated>2018-05-30T00:17:12+02:00</updated>
 
 			
@@ -137,7 +137,7 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 				</author>
 			
 			<summary></summary>
-			<content type="html" xml:base="https://vittore.github.io/2018/05/seconda-edizione-in-lavorazione-idee-e-o-richieste/">&lt;p&gt;L’anno scolastico si avvia alla conclusione e l’estate è alle porte. In questo periodo metterò mano al libretto “&lt;a href=&quot;https://www.amazon.it/Teoria-laboratori-esercizi-MikroTik-RouterOS/dp/1973238845/&quot;&gt;Teoria, laboratori ed esercizi per MikroTik RouterOS&lt;/a&gt;” per essere pronto per l’inizio delle attività a settembre.&lt;/p&gt;
+			<content type="html" xml:base="https://www.zen.pn.it/2018/05/seconda-edizione-in-lavorazione-idee-e-o-richieste/">&lt;p&gt;L’anno scolastico si avvia alla conclusione e l’estate è alle porte. In questo periodo metterò mano al libretto “&lt;a href=&quot;https://www.amazon.it/Teoria-laboratori-esercizi-MikroTik-RouterOS/dp/1973238845/&quot;&gt;Teoria, laboratori ed esercizi per MikroTik RouterOS&lt;/a&gt;” per essere pronto per l’inizio delle attività a settembre.&lt;/p&gt;
 
 &lt;p&gt;Se ci sono suggerimenti, consigli o altre modifiche che ritenete utili contattatemi via email.&lt;/p&gt;
 </content>
@@ -153,9 +153,9 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 		</entry>
 	
 		<entry>
-			<id>https://vittore.github.io/2018/04/alcune-indiscrezioni-sulla-futura-release-di-posta-gmail/</id>
+			<id>https://www.zen.pn.it/2018/04/alcune-indiscrezioni-sulla-futura-release-di-posta-gmail/</id>
 			<title>Alcune indiscrezioni sulla futura release di posta Gmail</title>
-			<link href="https://vittore.github.io/2018/04/alcune-indiscrezioni-sulla-futura-release-di-posta-gmail/" rel="alternate" type="text/html" title="Alcune indiscrezioni sulla futura release di posta Gmail" />
+			<link href="https://www.zen.pn.it/2018/04/alcune-indiscrezioni-sulla-futura-release-di-posta-gmail/" rel="alternate" type="text/html" title="Alcune indiscrezioni sulla futura release di posta Gmail" />
 			<updated>2018-04-22T10:42:58+02:00</updated>
 
 			
@@ -169,7 +169,7 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 				</author>
 			
 			<summary></summary>
-			<content type="html" xml:base="https://vittore.github.io/2018/04/alcune-indiscrezioni-sulla-futura-release-di-posta-gmail/">&lt;div id=&quot;js_cbf&quot; class=&quot;_5pbx userContent _3576&quot; data-ft=&quot;{&amp;quot;tn&amp;quot;:&amp;quot;K&amp;quot;}&quot;&gt;
+			<content type="html" xml:base="https://www.zen.pn.it/2018/04/alcune-indiscrezioni-sulla-futura-release-di-posta-gmail/">&lt;div id=&quot;js_cbf&quot; class=&quot;_5pbx userContent _3576&quot; data-ft=&quot;{&amp;quot;tn&amp;quot;:&amp;quot;K&amp;quot;}&quot;&gt;
   &lt;p&gt;
     Alcune indiscrezioni sulla futura release di posta Gmail sembrano interessanti ed opportuno conoscerle.
   &lt;/p&gt;
@@ -204,9 +204,9 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 		</entry>
 	
 		<entry>
-			<id>https://vittore.github.io/2018/03/twitter-chiude-twitter-su-osx/</id>
+			<id>https://www.zen.pn.it/2018/03/twitter-chiude-twitter-su-osx/</id>
 			<title>Twitter chiude twitter su OSX</title>
-			<link href="https://vittore.github.io/2018/03/twitter-chiude-twitter-su-osx/" rel="alternate" type="text/html" title="Twitter chiude twitter su OSX" />
+			<link href="https://www.zen.pn.it/2018/03/twitter-chiude-twitter-su-osx/" rel="alternate" type="text/html" title="Twitter chiude twitter su OSX" />
 			<updated>2018-03-30T09:24:32+02:00</updated>
 
 			
@@ -220,7 +220,7 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 				</author>
 			
 			<summary></summary>
-			<content type="html" xml:base="https://vittore.github.io/2018/03/twitter-chiude-twitter-su-osx/">&lt;p&gt;Mi ero perso questa notizia: &lt;a href=&quot;https://techcrunch.com/2018/02/16/twitter-kills-mac-app/&quot;&gt;Twitter is killing its Twitter for Mac desktop client&lt;/a&gt;&lt;/p&gt;
+			<content type="html" xml:base="https://www.zen.pn.it/2018/03/twitter-chiude-twitter-su-osx/">&lt;p&gt;Mi ero perso questa notizia: &lt;a href=&quot;https://techcrunch.com/2018/02/16/twitter-kills-mac-app/&quot;&gt;Twitter is killing its Twitter for Mac desktop client&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;In sintesi: il client twitter nativo per OSX verrà dismesso. Anzi è già dismesso.&lt;/p&gt;
 
@@ -240,9 +240,9 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 		</entry>
 	
 		<entry>
-			<id>https://vittore.github.io/2018/02/perche-il-mio-sito-wordpress-e-cosi-lento/</id>
+			<id>https://www.zen.pn.it/2018/02/perche-il-mio-sito-wordpress-e-cosi-lento/</id>
 			<title>Perché il mio sito wordpress è così lento.</title>
-			<link href="https://vittore.github.io/2018/02/perche-il-mio-sito-wordpress-e-cosi-lento/" rel="alternate" type="text/html" title="Perché il mio sito wordpress è così lento." />
+			<link href="https://www.zen.pn.it/2018/02/perche-il-mio-sito-wordpress-e-cosi-lento/" rel="alternate" type="text/html" title="Perché il mio sito wordpress è così lento." />
 			<updated>2018-02-22T08:56:33+01:00</updated>
 
 			
@@ -256,7 +256,7 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 				</author>
 			
 			<summary></summary>
-			<content type="html" xml:base="https://vittore.github.io/2018/02/perche-il-mio-sito-wordpress-e-cosi-lento/">&lt;p&gt;Finalmente ho trovato un articolo tecnico che tratta questo tema.&lt;/p&gt;
+			<content type="html" xml:base="https://www.zen.pn.it/2018/02/perche-il-mio-sito-wordpress-e-cosi-lento/">&lt;p&gt;Finalmente ho trovato un articolo tecnico che tratta questo tema.&lt;/p&gt;
 
 &lt;p&gt;Link: &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow&quot;&gt;http://www.onlinemediamasters.com/why-is-wordpress-so-slow&lt;/a&gt;&lt;/p&gt;
 
@@ -317,9 +317,9 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 		</entry>
 	
 		<entry>
-			<id>https://vittore.github.io/2018/01/gvfs/</id>
+			<id>https://www.zen.pn.it/2018/01/gvfs/</id>
 			<title>GVFS</title>
-			<link href="https://vittore.github.io/2018/01/gvfs/" rel="alternate" type="text/html" title="GVFS" />
+			<link href="https://www.zen.pn.it/2018/01/gvfs/" rel="alternate" type="text/html" title="GVFS" />
 			<updated>2018-01-12T13:50:37+01:00</updated>
 
 			
@@ -333,7 +333,7 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 				</author>
 			
 			<summary></summary>
-			<content type="html" xml:base="https://vittore.github.io/2018/01/gvfs/">&lt;p&gt;GVFS è l’acronimo di Git Virtual File System. GVFS virtualizza il file system sotto il repository git in modo che git e tutti gli strumenti vedano quello che sembra essere un normale repository, ma GVFS scarica solo gli oggetti quando sono necessari. GVFS gestisce anche la sparse checkout di git per assicurare che le operazioni git come lo stato, il checkout, ecc., siano il più veloce possibile perché considerano solo i file a cui l’utente ha avuto accesso, non tutti i file nel repository.&lt;/p&gt;
+			<content type="html" xml:base="https://www.zen.pn.it/2018/01/gvfs/">&lt;p&gt;GVFS è l’acronimo di Git Virtual File System. GVFS virtualizza il file system sotto il repository git in modo che git e tutti gli strumenti vedano quello che sembra essere un normale repository, ma GVFS scarica solo gli oggetti quando sono necessari. GVFS gestisce anche la sparse checkout di git per assicurare che le operazioni git come lo stato, il checkout, ecc., siano il più veloce possibile perché considerano solo i file a cui l’utente ha avuto accesso, non tutti i file nel repository.&lt;/p&gt;
 
 &lt;p&gt;Incredibile ma vero: creato da Microsoft.&lt;/p&gt;
 
@@ -425,9 +425,9 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 		</entry>
 	
 		<entry>
-			<id>https://vittore.github.io/2017/12/dietro-le-quinte-del-web-gli-sviluppatori/</id>
+			<id>https://www.zen.pn.it/2017/12/dietro-le-quinte-del-web-gli-sviluppatori/</id>
 			<title>Dietro le quinte del web: gli sviluppatori.</title>
-			<link href="https://vittore.github.io/2017/12/dietro-le-quinte-del-web-gli-sviluppatori/" rel="alternate" type="text/html" title="Dietro le quinte del web: gli sviluppatori." />
+			<link href="https://www.zen.pn.it/2017/12/dietro-le-quinte-del-web-gli-sviluppatori/" rel="alternate" type="text/html" title="Dietro le quinte del web: gli sviluppatori." />
 			<updated>2017-12-21T09:18:02+01:00</updated>
 
 			
@@ -441,7 +441,7 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 				</author>
 			
 			<summary></summary>
-			<content type="html" xml:base="https://vittore.github.io/2017/12/dietro-le-quinte-del-web-gli-sviluppatori/">&lt;p&gt;Quella dello sviluppatore è una delle professioni più richieste in assoluto nel settore digital.&lt;/p&gt;
+			<content type="html" xml:base="https://www.zen.pn.it/2017/12/dietro-le-quinte-del-web-gli-sviluppatori/">&lt;p&gt;Quella dello sviluppatore è una delle professioni più richieste in assoluto nel settore digital.&lt;/p&gt;
 
 &lt;p&gt;Il termine “sviluppatore”, tuttavia, è ormai diventato molto generico, in quanto sotto questa dicitura coesistono in realtà compiti e funzioni ben diverse. I developer, infatti, solitamente si specializzano in determinati linguaggi di programmazione e attività, che hanno lo scopo di creare e gestire differenti aspetti di una piattaforma web.&lt;/p&gt;
 
@@ -497,9 +497,9 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 		</entry>
 	
 		<entry>
-			<id>https://vittore.github.io/2017/11/teoria-laboratori-ed-esercizi-per-mikrotik-routeros/</id>
+			<id>https://www.zen.pn.it/2017/11/teoria-laboratori-ed-esercizi-per-mikrotik-routeros/</id>
 			<title>Teoria, laboratori ed esercizi per Mikrotik RouterOS</title>
-			<link href="https://vittore.github.io/2017/11/teoria-laboratori-ed-esercizi-per-mikrotik-routeros/" rel="alternate" type="text/html" title="Teoria, laboratori ed esercizi per Mikrotik RouterOS" />
+			<link href="https://www.zen.pn.it/2017/11/teoria-laboratori-ed-esercizi-per-mikrotik-routeros/" rel="alternate" type="text/html" title="Teoria, laboratori ed esercizi per Mikrotik RouterOS" />
 			<updated>2017-11-13T08:28:45+01:00</updated>
 
 			
@@ -513,7 +513,7 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 				</author>
 			
 			<summary></summary>
-			<content type="html" xml:base="https://vittore.github.io/2017/11/teoria-laboratori-ed-esercizi-per-mikrotik-routeros/">&lt;p&gt;Ecco pronta per voi la versione comprensiva della parte teorica:&lt;/p&gt;
+			<content type="html" xml:base="https://www.zen.pn.it/2017/11/teoria-laboratori-ed-esercizi-per-mikrotik-routeros/">&lt;p&gt;Ecco pronta per voi la versione comprensiva della parte teorica:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://amzn.eu/9Oh3fpn&quot;&gt;http://amzn.eu/9Oh3fpn&lt;/a&gt;&lt;/p&gt;
 
@@ -531,9 +531,9 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 		</entry>
 	
 		<entry>
-			<id>https://vittore.github.io/2017/10/e-iniziata-la-scrittura-della-parte-teorica/</id>
+			<id>https://www.zen.pn.it/2017/10/e-iniziata-la-scrittura-della-parte-teorica/</id>
 			<title>E&amp;#8217; iniziata la scrittura della parte teorica</title>
-			<link href="https://vittore.github.io/2017/10/e-iniziata-la-scrittura-della-parte-teorica/" rel="alternate" type="text/html" title="E&amp;#8217; iniziata la scrittura della parte teorica" />
+			<link href="https://www.zen.pn.it/2017/10/e-iniziata-la-scrittura-della-parte-teorica/" rel="alternate" type="text/html" title="E&amp;#8217; iniziata la scrittura della parte teorica" />
 			<updated>2017-10-09T10:23:09+02:00</updated>
 
 			
@@ -547,7 +547,7 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 				</author>
 			
 			<summary></summary>
-			<content type="html" xml:base="https://vittore.github.io/2017/10/e-iniziata-la-scrittura-della-parte-teorica/">&lt;p&gt;Alcuni amici che hanno avuto modo di prendere tra le mani il mio librettino di laboratori ed esercizi su RouterOS (vedi il post &lt;a href=&quot;https://www.zen.pn.it/2017/08/laboratori-ed-esercizi-per-mikrotik-routeros/&quot;&gt;Laboratori ed esercizi per Mikrotik Router OS&lt;/a&gt;) mi hanno fatto notare come manchi della parte teorica.&lt;/p&gt;
+			<content type="html" xml:base="https://www.zen.pn.it/2017/10/e-iniziata-la-scrittura-della-parte-teorica/">&lt;p&gt;Alcuni amici che hanno avuto modo di prendere tra le mani il mio librettino di laboratori ed esercizi su RouterOS (vedi il post &lt;a href=&quot;https://www.zen.pn.it/2017/08/laboratori-ed-esercizi-per-mikrotik-routeros/&quot;&gt;Laboratori ed esercizi per Mikrotik Router OS&lt;/a&gt;) mi hanno fatto notare come manchi della parte teorica.&lt;/p&gt;
 
 &lt;p&gt;Mi sembra un buon suggerimento. E’ vero che c’è moltissima documentazione in rete e ci sono degli ottimi libri su questo tema ma manca un testo interamente in lingua italiana e pensato per chi è alle prime armi con RouterOS.&lt;/p&gt;
 
@@ -569,9 +569,9 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 		</entry>
 	
 		<entry>
-			<id>https://vittore.github.io/2017/08/laboratori-ed-esercizi-per-mikrotik-routeros/</id>
+			<id>https://www.zen.pn.it/2017/08/laboratori-ed-esercizi-per-mikrotik-routeros/</id>
 			<title>Laboratori ed esercizi per MikroTik RouterOS</title>
-			<link href="https://vittore.github.io/2017/08/laboratori-ed-esercizi-per-mikrotik-routeros/" rel="alternate" type="text/html" title="Laboratori ed esercizi per MikroTik RouterOS" />
+			<link href="https://www.zen.pn.it/2017/08/laboratori-ed-esercizi-per-mikrotik-routeros/" rel="alternate" type="text/html" title="Laboratori ed esercizi per MikroTik RouterOS" />
 			<updated>2017-09-01T01:17:55+02:00</updated>
 
 			
@@ -585,7 +585,7 @@ Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sent
 				</author>
 			
 			<summary></summary>
-			<content type="html" xml:base="https://vittore.github.io/2017/08/laboratori-ed-esercizi-per-mikrotik-routeros/">&lt;p&gt;Ecco. Ora ho finito. Ecco il mio libro con gli esercizi sul sistema RouterOS della Mikrotik.&lt;/p&gt;
+			<content type="html" xml:base="https://www.zen.pn.it/2017/08/laboratori-ed-esercizi-per-mikrotik-routeros/">&lt;p&gt;Ecco. Ora ho finito. Ecco il mio libro con gli esercizi sul sistema RouterOS della Mikrotik.&lt;/p&gt;
 
 &lt;p&gt;Questo libro raccoglie i laboratori e le domande per un corso base su MikroTik RouterOS. L’ordine dei capitoli segue la documentazione proposta nel sito Mikrotik. Ogni laboratorio è focalizzato su uno specifico obiettivo e non mescola concetti non ancora acquisiti. E’ possibile eseguire i laboratori in aula ma anche a casa, in autonomia. In questo caso basta una semplice connessione residenziale ad internet per portare a termine tutti gli esercizi. Le domande che si trovano a fine capitolo spingono lo studente verso gli argomenti più ostici e lo stimola alla consultazione della documentazione ufficiale. Il problema che si trova alla fine di ogni capitolo propone un caso reale con la sua soluzione.&lt;/p&gt;
 

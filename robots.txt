@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://vittore.github.io/sitemap.xml
+Sitemap: https://www.zen.pn.it/sitemap.xml
