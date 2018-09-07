@@ -9,6 +9,32 @@
 		<atom:link href="https://www.zen.pn.it/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Seconda edizione de &quot;Teoria, laboratori ed esercizi per MikroTik RouterOS&quot;</title>
+				<link>https://www.zen.pn.it/2018/09/seconda-edizione-2018/</link>
+				<pubDate>Fri, 07 Sep 2018 02:00:00 +0200</pubDate>
+				<description>&lt;p&gt;Rispetto alla prima edizione:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;sono stati corretti diversi errori;&lt;/li&gt;
+  &lt;li&gt;le risposte alle domande di riepilogo alla fine di ogni capitolo ora sono brevemente motivate;&lt;/li&gt;
+  &lt;li&gt;sono stati inseriti dei brevi riassunti su alcune parti teoriche più ostiche.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Link alla seconda edizione de “Teoria, laboratori ed esercizi per MikroTik RouterOS”:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.it/dp/1983186805/ref=asap_bc?ie=UTF8&quot;&gt;versione cartacea&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.it/dp/B07H4SHHMW&quot;&gt;versione per Kindle&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Note:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Il libro è acquistabile anche utilizzando il Bonus Cultura e il Bonus Carta del Docente.&lt;/li&gt;
+  &lt;li&gt;Il libro è inserito nel programma Amazon Kindle MatchBook che offre ai clienti che acquistano o che hanno acquistato in precedenza un libro stampato da Amazon la possibilità di acquistare la versione Kindle di tale titolo per €0,99.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+				<guid isPermaLink="true">https://www.zen.pn.it/2018/09/seconda-edizione-2018/</guid>
+			</item>
+		
+			<item>
 				<title>GDPR, cookie e siti dinamici</title>
 				<link>https://www.zen.pn.it/2018/06/gdpr-cookie-e-siti-dinamici/</link>
 				<pubDate>Mon, 11 Jun 2018 02:00:00 +0200</pubDate>
@@ -374,30 +400,6 @@ Inoltre, per come è attuata, la Cookie Law finisce per essere un pesante onere 
 &lt;p&gt; &lt;/p&gt;
 </description>
 				<guid isPermaLink="true">https://www.zen.pn.it/2017/10/e-iniziata-la-scrittura-della-parte-teorica/</guid>
-			</item>
-		
-			<item>
-				<title>Laboratori ed esercizi per MikroTik RouterOS</title>
-				<link>https://www.zen.pn.it/2017/08/laboratori-ed-esercizi-per-mikrotik-routeros/</link>
-				<pubDate>Fri, 01 Sep 2017 01:17:55 +0200</pubDate>
-				<description>&lt;p&gt;Ecco. Ora ho finito. Ecco il mio libro con gli esercizi sul sistema RouterOS della Mikrotik.&lt;/p&gt;
-
-&lt;p&gt;Questo libro raccoglie i laboratori e le domande per un corso base su MikroTik RouterOS. L’ordine dei capitoli segue la documentazione proposta nel sito Mikrotik. Ogni laboratorio è focalizzato su uno specifico obiettivo e non mescola concetti non ancora acquisiti. E’ possibile eseguire i laboratori in aula ma anche a casa, in autonomia. In questo caso basta una semplice connessione residenziale ad internet per portare a termine tutti gli esercizi. Le domande che si trovano a fine capitolo spingono lo studente verso gli argomenti più ostici e lo stimola alla consultazione della documentazione ufficiale. Il problema che si trova alla fine di ogni capitolo propone un caso reale con la sua soluzione.&lt;/p&gt;
-
-&lt;p&gt;Link su Amazon:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.it/dp/1521899525/ref=sr_1_1?ie=UTF8&amp;amp;qid=1504185567&amp;amp;sr=8-1&quot;&gt;Laboratori ed esercizi per MikroTik RouterOS (versione cartacea)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.it/dp/B075J3XTSL&quot;&gt;Laboratori ed esercizi per MikroTik RouterOS (versione kindle)&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Estratto del capitolo 4 sul routing: &lt;a href=&quot;http://www.zen.pn.it/wp-content/uploads/2017/08/estrattoCapitolo4Routing.pdf&quot;&gt;estratto del capitolo 4 – routing&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/08/coverdaAmazon.png&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-1999&quot; src=&quot;https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/08/coverdaAmazon.png?resize=411%2C510&quot; alt=&quot;&quot; width=&quot;411&quot; height=&quot;510&quot; srcset=&quot;https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/08/coverdaAmazon.png?w=411 411w, https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/08/coverdaAmazon.png?resize=129%2C160 129w, https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/08/coverdaAmazon.png?resize=242%2C300 242w&quot; sizes=&quot;(max-width: 411px) 100vw, 411px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-</description>
-				<guid isPermaLink="true">https://www.zen.pn.it/2017/08/laboratori-ed-esercizi-per-mikrotik-routeros/</guid>
 			</item>
 		
 	</channel>
