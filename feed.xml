@@ -9,6 +9,24 @@
 		<atom:link href="https://www.zen.pn.it/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Reverse engineering dell'app di Trenitalia</title>
+				<link>https://www.zen.pn.it/2018/09/trenitalia-app-reverse</link>
+				<pubDate>Fri, 07 Sep 2018 02:00:00 +0200</pubDate>
+				<description>&lt;p&gt;Segnalo questo interessante articolo di Jacopo Jannone dove si analizza la struttura dell’app di Trenitalia da poco pubblicata:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.jacopojannone.com/2018/09/24/trenitalia-app-reversed.html&quot;&gt;https://blog.jacopojannone.com/2018/09/24/trenitalia-app-reversed.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Per chi volesse approfondire il tema segnalo alcune interessanti API:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/bluviolin/TrainMonitor/wiki/API-del-sistema-Viaggiatreno&quot;&gt;API del sistema Viaggiatreno&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jacopo-j/TrenitaliaAPI/wiki/API-dell'app-Trenitalia&quot;&gt;API dell’app Trenitalia&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+				<guid isPermaLink="true">https://www.zen.pn.it/2018/09/trenitalia-app-reverse</guid>
+			</item>
+		
+			<item>
 				<title>Seconda edizione de &quot;Teoria, laboratori ed esercizi per MikroTik RouterOS&quot;</title>
 				<link>https://www.zen.pn.it/2018/09/seconda-edizione-2018/</link>
 				<pubDate>Fri, 07 Sep 2018 02:00:00 +0200</pubDate>
@@ -381,25 +399,6 @@ Inoltre, per come è attuata, la Cookie Law finisce per essere un pesante onere 
 &lt;p&gt;&lt;a href=&quot;https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/11/copertina_teoria_bassa_risoluzione.jpg&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-2021&quot; src=&quot;https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/11/copertina_teoria_bassa_risoluzione.jpg?resize=400%2C500&quot; alt=&quot;&quot; width=&quot;400&quot; height=&quot;500&quot; srcset=&quot;https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/11/copertina_teoria_bassa_risoluzione.jpg?w=400 400w, https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/11/copertina_teoria_bassa_risoluzione.jpg?resize=128%2C160 128w, https://i2.wp.com/www.zen.pn.it/wp-content/uploads/2017/11/copertina_teoria_bassa_risoluzione.jpg?resize=240%2C300 240w&quot; sizes=&quot;(max-width: 400px) 100vw, 400px&quot; data-recalc-dims=&quot;1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
 				<guid isPermaLink="true">https://www.zen.pn.it/2017/11/teoria-laboratori-ed-esercizi-per-mikrotik-routeros/</guid>
-			</item>
-		
-			<item>
-				<title>E&amp;#8217; iniziata la scrittura della parte teorica</title>
-				<link>https://www.zen.pn.it/2017/10/e-iniziata-la-scrittura-della-parte-teorica/</link>
-				<pubDate>Mon, 09 Oct 2017 10:23:09 +0200</pubDate>
-				<description>&lt;p&gt;Alcuni amici che hanno avuto modo di prendere tra le mani il mio librettino di laboratori ed esercizi su RouterOS (vedi il post &lt;a href=&quot;https://www.zen.pn.it/2017/08/laboratori-ed-esercizi-per-mikrotik-routeros/&quot;&gt;Laboratori ed esercizi per Mikrotik Router OS&lt;/a&gt;) mi hanno fatto notare come manchi della parte teorica.&lt;/p&gt;
-
-&lt;p&gt;Mi sembra un buon suggerimento. E’ vero che c’è moltissima documentazione in rete e ci sono degli ottimi libri su questo tema ma manca un testo interamente in lingua italiana e pensato per chi è alle prime armi con RouterOS.&lt;/p&gt;
-
-&lt;p&gt;Mi sto dando da fare per questa parte.&lt;/p&gt;
-
-&lt;p&gt;Ecco un estratto della parte teorica: &lt;a href=&quot;http://www.zen.pn.it/wp-content/uploads/2017/10/libroEsempioTeoria.pdf&quot;&gt;DHCP server – estratto&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-</description>
-				<guid isPermaLink="true">https://www.zen.pn.it/2017/10/e-iniziata-la-scrittura-della-parte-teorica/</guid>
 			</item>
 		
 	</channel>
