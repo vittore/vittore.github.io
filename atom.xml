@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://www.zen.pn.it/</id>
 	<title>zen.pn.it - Tecnologia e dintorni</title>
-	<updated>2018-10-03T16:52:46+02:00</updated>
+	<updated>2018-11-13T11:27:09+01:00</updated>
 
 	<subtitle>Segnalazioni e riflessioni su &amp;quot;cose di tecnologia&amp;quot; di Vittore Zen</subtitle>
 
@@ -28,6 +28,53 @@
 
 	<generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator>
 
+	
+		<entry>
+			<id>https://www.zen.pn.it/2018-11/python3-book</id>
+			<title>Python per tutti: esplorare i dati con Python3</title>
+			<link href="https://www.zen.pn.it/2018-11/python3-book" rel="alternate" type="text/html" title="Python per tutti: esplorare i dati con Python3" />
+			<updated>2018-11-11T01:00:00+01:00</updated>
+
+			
+				
+				<author>
+					
+						<name>Vittore Zen</name>
+					
+					
+					
+				</author>
+			
+			<summary></summary>
+			<content type="html" xml:base="https://www.zen.pn.it/2018-11/python3-book">&lt;div align=&quot;center&quot;&gt;
+&lt;a href=&quot;https://www.amazon.it/dp/1730907164&quot;&gt;
+&lt;img src=&quot;https://images-na.ssl-images-amazon.com/images/I/51674U3su4L.jpg&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Questo libro è frutto di un lavoro di piú persone portato avanti per vari mesi.
+Non é ancora perfetto come lo abbiamo immaginato… ed ogni volta che leggiamo le bozze troviamo un typo o un modo per migliorare un paragrafo… ma per ora abbiamo abbiamo raggiunto l’obbiettivo di pubblicarne una versione utilizzabile:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.amazon.it/dp/1730907164&quot;&gt;https://www.amazon.it/dp/1730907164&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Python per tutti è scritto per introdurre gli studenti alla programmazione ed allo sviluppo software attraverso la lente dell’esplorazione dei dati. Potete pensare al linguaggio di programmazione Python come lo strumento per risolvere problemi riguardanti i dati irrisolvibili con fogli di calcolo.&lt;/p&gt;
+
+&lt;p&gt;Python è un linguaggio semplice da utilizzare e padroneggiare liberamente disponibile per Mac OSX, Windows e Linux. Una volta imparato Python, vi sará possibile utilizzarlo nel resto della tua carriera senza la necessità di comprare alcun software.&lt;/p&gt;
+
+&lt;p&gt;Questo libro è liberamente scaricabile in vari formati elettronici accompagnato da materiali di supporto per lo studio nel sito www.py4e.com.&lt;/p&gt;
+
+&lt;p&gt;Il materiale didattico è disponibile con licenza Creative Commons che vi permette di adattarlo al vostro corso di Python.&lt;/p&gt;
+</content>
+
+			
+				<category term="Articoli" />
+			
+			
+				<category term="web" />
+			
+
+			<published>2018-11-11T01:00:00+01:00</published>
+		</entry>
 	
 		<entry>
 			<id>https://www.zen.pn.it/mikrotik_version</id>
@@ -603,78 +650,6 @@ Inoltre, per come è attuata, la Cookie Law finisce per essere un pesante onere 
 			
 
 			<published>2018-01-12T13:50:37+01:00</published>
-		</entry>
-	
-		<entry>
-			<id>https://www.zen.pn.it/2017/12/dietro-le-quinte-del-web-gli-sviluppatori/</id>
-			<title>Dietro le quinte del web: gli sviluppatori.</title>
-			<link href="https://www.zen.pn.it/2017/12/dietro-le-quinte-del-web-gli-sviluppatori/" rel="alternate" type="text/html" title="Dietro le quinte del web: gli sviluppatori." />
-			<updated>2017-12-21T09:18:02+01:00</updated>
-
-			
-				
-				<author>
-					
-						<name>Vittore Zen</name>
-					
-					
-					
-				</author>
-			
-			<summary></summary>
-			<content type="html" xml:base="https://www.zen.pn.it/2017/12/dietro-le-quinte-del-web-gli-sviluppatori/">&lt;p&gt;Quella dello sviluppatore è una delle professioni più richieste in assoluto nel settore digital.&lt;/p&gt;
-
-&lt;p&gt;Il termine “sviluppatore”, tuttavia, è ormai diventato molto generico, in quanto sotto questa dicitura coesistono in realtà compiti e funzioni ben diverse. I developer, infatti, solitamente si specializzano in determinati linguaggi di programmazione e attività, che hanno lo scopo di creare e gestire differenti aspetti di una piattaforma web.&lt;/p&gt;
-
-&lt;p&gt;Si possono identificare in particolare tre tipologie di sviluppatori: Front-end developer, Back-end developer e Full-stack developer. Che cosa differenzia queste tre figure? Vediamo di scoprirne di più.&lt;/p&gt;
-
-&lt;!--more--&gt;
-
-&lt;h2 id=&quot;front-end-developer-competenze-e-compiti&quot;&gt;Front-end developer: competenze e compiti&lt;/h2&gt;
-
-&lt;p&gt;Questo professionista si occupa della parte front-end di un sito Internet, ossia la parte visibile dagli utenti e quella con cui essi interagiscono. Per creare le pagine web, un Front-end developer utilizza essenzialmente tre linguaggi di programmazione: HTML (per creare la struttura e il contenuto), CSS (per dotare la pagina di colori, stile, font e immagini di sfondo) e JavaScript per dare alla pagina maggiore dinamicità e possibilità d’interazione. Di solito un Front-end developer ha competenze anche di user experience, fondamentale per fornire all’utente un’esperienza d’uso del sito semplice e intuitiva.&lt;/p&gt;
-
-&lt;h2 id=&quot;cosa-fa-un-back-end-developer&quot;&gt;Cosa fa un back-end developer?&lt;/h2&gt;
-
-&lt;p&gt;Back-end developer: sono gli uomini e le donne dietro le quinte, quelli che fanno il lavoro sporco. In una squadra di rugby giocherebbero sicuramente in mischia, sotto a prender (e a tirare) botte e a macinare metri. Ma sono anche quelli con le mani buone. Perché ci vuole una certa eleganza, una certa tecnica per scrivere bene, soprattutto quando si tratta di una prosa composta da stringhe di codice e non da semplici parole.&lt;/p&gt;
-
-&lt;p&gt;Jacopo: “Il mio lavoro come sviluppatore back-end coinvolge diverse aree dell’informatica. Non è solo sviluppo puro ma anche attenzione all’architettura, utilizzo di database e di sistemi operativi. Mi occupo poi del deployment (dell’installazione e messa in servizio) delle applicazioni e del loro monitoraggio. È un lavoro abbastanza poliedrico dal punto di vista tecnico.”&lt;/p&gt;
-
-&lt;p&gt;Marco: “Sono uno sviluppatore software, in particolare mi occupo del back-end, quindi di tutto quello che c’è dietro le quinte del software e che non ha un impatto visivo diretto con l’utente finale. Si tratta di integrare servizi di terze parti, di elaborare dati, immagazzinarli, impacchettarli e poi fornirli nel miglior modo possibile al front-end, lo sviluppatore che si occuperà in seguito di presentarli all’utente sotto forma di interfacce grafiche intuitive e funzionali.”&lt;/p&gt;
-
-&lt;p&gt;Jacopo: “Ciò che conta è l’esperienza: più software si scrive, più tipi di strumenti si utilizzano e più si diventa bravi ed efficienti e si evitano gli errori più comuni. Studiando – nel mio caso all’università, che forse è la strada più semplice, più diretta, ma certamente non l’unico percorso formativo che si può intraprendere– ho anche una base teorica che mi permette di andare quasi a colpo sicuro sui problemi già noti e affrontati dall’ingegneria. Questo però, lo ripeto, lo considero un valore aggiunto, non una condizione necessaria, men che meno sufficiente.”&lt;/p&gt;
-
-&lt;p&gt;Marco: “È un lavoro creativo, perché trovare una soluzione a un problema, sempre nuovo, sempre diverso, implica creatività. Alla fine si tratta di scrivere una storia, un racconto utilizzando un particolare tipo di linguaggio: che ha la sua sintassi, il suo lessico, la sua grammatica. E se scrivere è una professione creativa, allora non vedo perché non possa esserlo anche programmare. Loro (gli scrittori) scrivono libri, noi scriviamo codici.”&lt;/p&gt;
-
-&lt;h2 id=&quot;full-stack-developer-di-che-cosa-si-occupa&quot;&gt;Full-stack developer: di che cosa si occupa&lt;/h2&gt;
-
-&lt;p&gt;Veniamo infine alla figura del Full-stack developer, che può essere inteso come uno sviluppatore con competenze sia lato front-end, sia lato back-end. Solitamente uno sviluppatore full-stack ha infatti familiarità sia con i linguaggi HTML, CSS e JavaScript, sia con PHP, Python e gli altri linguaggi di scripting utilizzati per progettare e far funzionare un software, fatto che lo rende in grado di intervenire su diversi aspetti di un sito. È difficile, comunque, che questo professionista si trovi a sviluppare e gestire un sito web completamente da solo: spesso, invece, collabora con Front-end e Back-end developer e tende a concentrarsi su un solo aspetto; anzi, è piuttosto raro trovare figure di full stack “pure”, perché è molto difficile che un solo profilo sia esperto sia di front che di back-end.&lt;/p&gt;
-
-&lt;h2 id=&quot;e-i-devops&quot;&gt;E i DevOps?&lt;/h2&gt;
-
-&lt;p&gt;Innanzitutto la parola è il risultato della fusione tramite contrazione di due termini, development e operations, ed è nata più o meno tre anni fa. Questo può in parte aiutarci a capire il significato di questo approccio, che riguarda sia la figura professionale dello sviluppatore che quella del sistemista, e precisamente tenta di creare dei legami tra queste due personalità, proponendo forme di collaborazione più avanzata e metodologie di sviluppo che evitino il più possibile frizioni tra i due ruoli.&lt;/p&gt;
-
-&lt;p&gt;Uno dei modelli di riferimento del DevOPS è il cosiddetto CALMSS, acronimo di Culture, Automation, Lean, Management and Measurement, Sharing and Sourcing. Ed è proprio questo a definire cosa è il DevOps. Il DevOps, infatti, è un set di pratiche e di cambiamenti culturali supportati da strumenti automatici e processi di Lean Management, che consente di automatizzare il rilascio del software rispetto alla sua catena di produzione, permettendo alle organizzazioni di poter contare su un software e applicazioni di qualità superiore e sicura in modo estremamente più rapido, per accontentare i clienti nel modo migliore e più rapidamente.&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt;Fonti e approfondimenti:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.spindox.it/it/blog/digital-jobs-back-end-developer&quot;&gt;Digital Jobs: back-end developer, dietro le quinte&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://medium.com/coderbyte/a-guide-to-becoming-a-full-stack-developer-in-2017-5c3c08a1600c&quot;&gt;A Guide to Becoming a Full-Stack Developer in 2017&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.randstad.it/candidato/career-lab/archives/professione-sviluppatore-ecco-svelate-le-differenze-tra-front-end-back-end-e-full-stack-developer_777/&quot;&gt;professione sviluppatore: ecco svelate le differenze tra front-end, back-end e full-stack developer&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.zerounoweb.it/software/sviluppo-software/che-cose-la-metodologia-devops-come-applicarla-e-livelli-di-adozione-in-italia-e-nel-mondo/&quot;&gt;Che cos’è la metodologia DevOps: come applicarla e livelli di adozione in Italia e nel mondo&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.zerounoweb.it/techtarget/searchdatacenter/programmazione-software-e-l-ora-degli-it-shop-devops/&quot;&gt;Che cosa significa DevOps e perché oggi è un fondamentale della programmazione&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-
-			
-				<category term="Articoli" />
-			
-			
-
-			<published>2017-12-21T09:18:02+01:00</published>
 		</entry>
 	
 </feed>
