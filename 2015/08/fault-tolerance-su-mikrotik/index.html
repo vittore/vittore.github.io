@@ -314,191 +314,114 @@ Dopo una estate di prove ecco lo script per la fault tolerance su Mikrotik.">
 
 <p>L’unica configurazione necessaria è cambiare la riga <strong>:local wanInterfaces “wan1,wlan1,wan3,3g”;</strong> indicando i nomi delle interfacce che ho usato (le connessioni) nell’ordine che desidero vengano utilizzate.</p>
 
-<p>`<br /></p>
-<h1 id="multi-interfaces-fault-tolerance-with-or-without-dhcp">Multi interfaces fault tolerance (with or without dhcp)<br /></h1>
-<h1 id="vittore-zen-httpwwwzenpnit">Vittore Zen (http://www.zen.pn.it)<br /></h1>
-<p>#<br /></p>
-<h1 id="instructions">Instructions:<br /></h1>
-<h1 id="1-configure-router-as-usual">1. Configure router as usual.<br /></h1>
-<h1 id="2-check-that-when-only-a-single-wan-is-connect-you-must-browse-internet-eg-disconnect-all-wans-connect-wan2-and-check-connection-from-your-client">2. Check that when only a single wan is connect you must browse internet. E.g. disconnect all wans, connect wan2 and check connection from your client.<br /></h1>
-<h1 id="2-set-variable-waninterfaces-in-script-with-all-wans-interface-names-order-is-relevant">2. Set variable wanInterfaces in script with all wans interface names. Order is relevant.<br /></h1>
-<h1 id="3-put-script-in-scheduler-every-1-sec">3. Put script in scheduler every 1 sec.<br /></h1>
-<h1 id="all-done">All done.`</h1>
-
-<p>:local wanInterfaces “wan1,wlan1,wan3,3g”;</p>
-
-<p>### ###</p>
-
-<p>### Don’t modify below ###</p>
-
-<p>### ###</p>
-
-<p>:local PingTarget 8.8.8.8</p>
-
-<p>:local intfinder “”</p>
-
-<p>:local gw “”</p>
-
-<p>:local wanInterfacesArray [:toarray $wanInterfaces];</p>
-
-<p>:local distance “”</p>
-
-<p>:local tag “Created by zen-ft script”</p>
-
-<p>:local mark2</p>
-
-<p>:local i</p>
-
-<p>:local mark</p>
-
-<p>#</p>
-
-<p># function that find interface associated to a route</p>
-
-<p>#</p>
-
-<p>:local getRouteInterface do={</p>
-
-<p>:local intfinder “”</p>
-
-<p>:set $intfinder [:tostr [/ip route get number=$1 value-name=gateway-status]]</p>
-
-<p>:set $intfinder [:pick $intfinder ([:find $intfinder “via”]+5) [:len $intfinder]]</p>
-
-<p>:return $intfinder</p>
-
-<p>}</p>
-
-<p>#</p>
-
-<p># function that replace a value in an array</p>
-
-<p>#</p>
-
-<p>:local replaceValue do={</p>
-
-<p>:local array $1</p>
-
-<p>:local position $2</p>
-
-<p>:local newValue $3</p>
-
-<p>:for i from=0 to=([:len $array]-1) do={</p>
-
-<p>:if ($i=$position) do={</p>
-
-<p>:if ($i=0) do {</p>
-
-<p>:set $newArray {$newValue}</p>
-
-<p>} else {</p>
-
-<p>:set $newArray ($newArray, $newValue)</p>
-
-<p>}</p>
-
-<p>} else {</p>
-
-<p>:if ($i=0) do {</p>
-
-<p>:set $newArray { [:pick $array $i]}</p>
-
-<p>} else {</p>
-
-<p>:set $newArray ($newArray, [:pick $array $i])</p>
-
-<p>}</p>
-
-<p>}</p>
-
-<p>}</p>
-
-<p>:return $newArray</p>
-
-<p>}</p>
-
-<p>#</p>
-
-<p># Check default routes and market routes (if needed)</p>
-
-<p>#</p>
-
-<p>:foreach counter in=[/ip route find dst-address=0.0.0.0/0 disabled=no comment!=$tag] do={</p>
-
-<p>:set $intfinder [$getRouteInterface $counter]</p>
-
-<p>:put (“interface: “.$intfinder)</p>
-
-<p>:set $ftPos [:find $wanInterfacesArray $intfinder]</p>
-
-<p>:if ($ftPos!=-1) do={</p>
-
-<p>:set distance ($ftPos+1)</p>
-
-<p>:put (“distance: “.$distance);</p>
-
-<p>:foreach counter2 in=[/ip route find dst-address=0.0.0.0/0 disabled=no] do={</p>
-
-<p>:set $intfinder2 [$getRouteInterface $counter2]</p>
-
-<p>:if ($intfinder2=$intfinder) do={</p>
-
-<p>:set gw [ /ip route get number=$counter2 value-name=gateway]</p>
-
-<p>/ip route add dst-address=0.0.0.0/0 disabled=no distance=$distance gateway=$gw comment=$tag</p>
-
-<p>/ip route add dst-address=0.0.0.0/0 disabled=no distance=$distance gateway=$gw comment=$tag routing-mark=$intfinder</p>
-
-<p>/ip route remove numbers=$counter2</p>
-
-<p>}</p>
-
-<p>}</p>
-
-<p>}</p>
-
-<p>}</p>
-
-<p>:for i from=0 to=([:len $wanInterfacesArray]-1) do={</p>
-
-<p>:set $mark [:pick $wanInterfacesArray $i]</p>
-
-<p>:put (“mark: “.$mark)</p>
-
-<p>:foreach counter2 in=[/ip route find dst-address=0.0.0.0/0 disabled=no ] do={</p>
-
-<p>:set mark2 [ /ip route get number=$counter2 value-name=routing-mark]</p>
-
-<p>:if ($mark2=$mark) do={</p>
-
-<p>:set $PingResult [ping $PingTarget count=1 routing-table=$mark]</p>
-
-<p>:set gw [ /ip route get number=$counter2 value-name=gateway]</p>
-
-<p>:put (“gw: “.$gw)</p>
-
-<p>:foreach counter3 in=[/ip route find dst-address=0.0.0.0/0 disabled=no gateway=$gw ] do={</p>
-
-<p>:if ($PingResult = 0) do={</p>
-
-<p>:set $distance ($i+1)</p>
-
-<p>} else {</p>
-
-<p>:set $distance (10*($i+1))</p>
-
-<p>}</p>
-
-<p>/ip route set number=$counter3 distance=$distance</p>
-
-<p>}</p>
-
-<p>}</p>
-
-<p>}</p>
-
-<p>}</p>
-
+<div class="highlighter-rouge"><pre class="highlight"><code># Multi interfaces fault tolerance (with or without dhcp)
+# Vittore Zen (http://www.zen.pn.it)
+#
+# Instructions:
+# 1. Configure router as usual.
+# 2. Check that when only a single wan is connect you must browse internet. E.g. disconnect all wans, connect wan2 and check connection from your client.
+# 2. Set variable wanInterfaces in script with all wans interface names. Order is relevant.
+# 3. Put script in scheduler every 1 sec.
+# All done.`
+
+:local wanInterfaces "wan1,wlan1,wan3,3g";
+
+### ###
+### Don't modify below ###
+### ###
+
+:local PingTarget 8.8.8.8
+:local intfinder ""
+:local gw ""
+:local wanInterfacesArray [:toarray $wanInterfaces];
+:local distance ""
+:local tag "Created by zen-ft script"
+:local mark2
+:local i
+:local mark
+
+#
+# function that find interface associated to a route
+#
+
+:local getRouteInterface do={
+:local intfinder ""
+:set $intfinder [:tostr [/ip route get number=$1 value-name=gateway-status]]
+:set $intfinder [:pick $intfinder ([:find $intfinder "via"]+5) [:len $intfinder]]
+:return $intfinder
+}
+
+#
+# function that replace a value in an array
+#
+
+:local replaceValue do={
+:local array $1
+:local position $2
+:local newValue $3
+:for i from=0 to=([:len $array]-1) do={
+:if ($i=$position) do={
+:if ($i=0) do {
+:set $newArray {$newValue}
+} else {
+:set $newArray ($newArray, $newValue)
+}
+} else {
+:if ($i=0) do {
+:set $newArray { [:pick $array $i]}
+} else {
+:set $newArray ($newArray, [:pick $array $i])
+}
+}
+}
+:return $newArray
+}
+
+#
+# Check default routes and market routes (if needed)
+#
+
+:foreach counter in=[/ip route find dst-address=0.0.0.0/0 disabled=no comment!=$tag] do={
+:set $intfinder [$getRouteInterface $counter]
+:put ("interface: ".$intfinder)
+:set $ftPos [:find $wanInterfacesArray $intfinder]
+:if ($ftPos!=-1) do={
+:set distance ($ftPos+1)
+:put ("distance: ".$distance);
+:foreach counter2 in=[/ip route find dst-address=0.0.0.0/0 disabled=no] do={
+:set $intfinder2 [$getRouteInterface $counter2]
+:if ($intfinder2=$intfinder) do={
+:set gw [ /ip route get number=$counter2 value-name=gateway]
+/ip route add dst-address=0.0.0.0/0 disabled=no distance=$distance gateway=$gw comment=$tag
+/ip route add dst-address=0.0.0.0/0 disabled=no distance=$distance gateway=$gw comment=$tag routing-mark=$intfinder
+/ip route remove numbers=$counter2
+}
+}
+}
+}
+
+:for i from=0 to=([:len $wanInterfacesArray]-1) do={
+:set $mark [:pick $wanInterfacesArray $i]
+:put ("mark: ".$mark)
+:foreach counter2 in=[/ip route find dst-address=0.0.0.0/0 disabled=no ] do={
+:set mark2 [ /ip route get number=$counter2 value-name=routing-mark]
+:if ($mark2=$mark) do={
+:set $PingResult [ping $PingTarget count=1 routing-table=$mark]
+:set gw [ /ip route get number=$counter2 value-name=gateway]
+:put ("gw: ".$gw)
+:foreach counter3 in=[/ip route find dst-address=0.0.0.0/0 disabled=no gateway=$gw ] do={
+:if ($PingResult = 0) do={
+:set $distance ($i+1)
+} else {
+:set $distance (10*($i+1))
+}
+/ip route set number=$counter3 distance=$distance
+}
+}
+}
+}
+</code></pre>
+</div>
 <p>Una nota.</p>
 
 <p>Molti script che si trovano in rete usano l’approccio del ping sull’interfaccia (/ping interface=wan3 8.8.8.8). Ma questo non funziona. Come si legge nel manuale RouterOS il parametro interfaccia funziona solo se l’host utilizzato è ipv6. Quindi tutti questi script non funzionano se non in casi particolari.</p>
