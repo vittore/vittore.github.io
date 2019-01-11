@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>mikrotik_version per check_mk</title>
+	<title>Nuovo libro: &quot;Teoria, laboratori ed esercizi per MikroTik RouterOS - Routing&quot;</title>
 
     <link rel="stylesheet" type="text/css" href="https://www.zen.pn.it/assets/css/styles_feeling_responsive.css">
 
@@ -26,20 +26,20 @@
 
 
 	<!-- Search Engine Optimization -->
-	<meta name="description" content="Plugin per tenere aggiornato il mikrotik usando check_mk">
+	<meta name="description" content="E&#39; disponibile da oggi sullo store Amazon il libro «Teoria, laboratori ed esercizi per MikroTik RouterOS - Routing».">
 	
 	
 	
 	
 	
 	
-	<link rel="canonical" href="https://www.zen.pn.it/mikrotik_version">
+	<link rel="canonical" href="https://www.zen.pn.it/2019/10/routing-book">
 
 
 	<!-- Facebook Open Graph -->
-	<meta property="og:title" content="mikrotik_version per check_mk">
-	<meta property="og:description" content="Plugin per tenere aggiornato il mikrotik usando check_mk">
-	<meta property="og:url" content="https://www.zen.pn.it/mikrotik_version">
+	<meta property="og:title" content="Nuovo libro: &quot;Teoria, laboratori ed esercizi per MikroTik RouterOS - Routing&quot;">
+	<meta property="og:description" content="E&#39; disponibile da oggi sullo store Amazon il libro «Teoria, laboratori ed esercizi per MikroTik RouterOS - Routing».">
+	<meta property="og:url" content="https://www.zen.pn.it/2019/10/routing-book">
 	<meta property="og:locale" content="en_EN">
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="zen.pn.it - Tecnologia e dintorni">
@@ -52,8 +52,8 @@
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="vittore">
 	<meta name="twitter:creator" content="vittore">
-	<meta name="twitter:title" content="mikrotik_version per check_mk">
-	<meta name="twitter:description" content="Plugin per tenere aggiornato il mikrotik usando check_mk">
+	<meta name="twitter:title" content="Nuovo libro: &quot;Teoria, laboratori ed esercizi per MikroTik RouterOS - Routing&quot;">
+	<meta name="twitter:description" content="E&#39; disponibile da oggi sullo store Amazon il libro «Teoria, laboratori ed esercizi per MikroTik RouterOS - Routing».">
 	
 	
 
@@ -252,74 +252,45 @@
 
 				<div itemprop="name">
 					
-					<h1>mikrotik_version per check_mk</h1>
+					<h1>Nuovo libro: "Teoria, laboratori ed esercizi per MikroTik RouterOS - Routing"</h1>
 				</div>
 			</header>
 
 
 			
 			<p class="teaser" itemprop="description">
-				Plugin per tenere aggiornato il mikrotik usando check_mk
+				E' disponibile da oggi sullo store Amazon il libro «Teoria, laboratori ed esercizi per MikroTik RouterOS - Routing».
 			</p>
 			
 
 			<div itemprop="articleSection">
-			<p>Plugin per <a href="https://mathias-kettner.com/">check_mk</a> che verifica via SNMP la versione di routerOS e evidenzia se non è aggiornata.</p>
+			<div align="center">
+<a href="https://www.amazon.it/dp/1793296146">
+<img src="/images/cover-libro-2019.png" style="margin: 20px;width:350px" />
+</a>
+</div>
 
-<p>Restituisce:</p>
+<p>E’  scritto per approfondire i
+temi del routing attraverso il sistema RouterOS utilizzato nei
+prodotti Mikrotik.
+Al tempo stesso questo libro vuole essere una
+concreta preparazione per l’esame Mikrotik Certified
+Routing Engineer (MTCRE) e l’occasione per studiare
+il routing avanzato come strumento fondante per la risoluzione di casi reali.</p>
+
+<p>Se volete iniziare ad approfondire temi come routing avanzato, VLAN, OSPF, BGP, MPLS, IPsec,… usando un prodotto Mikrotik allora questo è il libro per voi.</p>
+
+<p>Link a “Teoria, laboratori ed esercizi per MikroTik RouterOS - Routing”:</p>
 <ul>
-  <li>Critical se esiste una versione disponibile (major e medium) versione installata</li>
-  <li>Warning se differisce nella versione minor</li>
-  <li>Ok se la versione installata è l’ultima disponibile sul sito  Mikrotik</li>
+  <li><a href="https://www.amazon.it/dp/1793296146">versione cartacea</a></li>
+  <li><a href="https://www.amazon.it/dp/B07MFYWTL6">versione per Kindle</a></li>
 </ul>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">#!/usr/bin/python</span>
-<span class="c"># -*- encoding: utf-8; py-indent-offset: 4 -*-</span>
-<span class="c">#</span>
-<span class="c"># Vittore Zen - vittore [ @ ] zen.pn.it</span>
-<span class="c"># 2018.09.25</span>
-
-<span class="kn">import</span> <span class="nn">requests</span>
-
-<span class="n">mikrotik_version_default</span> <span class="o">=</span> <span class="s">"6.0.0"</span>
-
-<span class="k">def</span> <span class="nf">inventory_mikrotik_version</span><span class="p">(</span><span class="n">info</span><span class="p">):</span>
-    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">info</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">return</span> <span class="p">[</span> <span class="p">(</span> <span class="bp">None</span><span class="p">,</span> <span class="s">"mikrotik_version_default"</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">info</span> <span class="p">]</span>
-
-<span class="k">def</span> <span class="nf">check_mikrotik_version</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">params</span><span class="p">,</span> <span class="n">info</span><span class="p">):</span>
-    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'https://mikrotikdownload.s3.amazonaws.com/routeros/LATEST.6'</span><span class="p">)</span>
-    <span class="n">latest_with_build</span><span class="o">=</span><span class="n">r</span><span class="o">.</span><span class="n">text</span>
-
-    <span class="n">current</span><span class="o">=</span><span class="n">info</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-
-    <span class="n">latest</span><span class="p">,</span><span class="n">build</span><span class="o">=</span><span class="n">latest_with_build</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">" "</span><span class="p">)</span>
-
-    <span class="n">latest_major</span><span class="p">,</span><span class="n">latest_medium</span><span class="p">,</span><span class="n">latest_minor</span><span class="o">=</span><span class="n">latest</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"."</span><span class="p">)</span>
-    <span class="n">current_major</span><span class="p">,</span><span class="n">current_medium</span><span class="p">,</span><span class="n">current_minor</span><span class="o">=</span><span class="n">current</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"."</span><span class="p">)</span>
-
-    <span class="n">critical</span><span class="o">=</span><span class="n">latest_major</span><span class="o">+</span><span class="s">"."</span><span class="o">+</span><span class="n">latest_medium</span><span class="o">+</span><span class="s">".0"</span>
-
-    <span class="n">infotext</span> <span class="o">=</span> <span class="s">" - current: "</span><span class="o">+</span><span class="n">current</span><span class="o">+</span><span class="s">" avaible: "</span><span class="o">+</span><span class="n">latest</span>
-    <span class="k">if</span> <span class="n">current_major</span><span class="o">&lt;</span><span class="n">latest_major</span><span class="p">:</span>
-     <span class="k">return</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s">"CRIT"</span> <span class="o">+</span> <span class="n">infotext</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">current_medium</span><span class="o">&lt;</span><span class="n">latest_medium</span><span class="p">:</span>
-     <span class="k">return</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s">"CRIT"</span> <span class="o">+</span> <span class="n">infotext</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">current_medium</span> <span class="o">==</span> <span class="n">latest_medium</span> <span class="ow">and</span> <span class="n">current_minor</span><span class="o">&lt;</span><span class="n">latest_minor</span> <span class="p">:</span>
-     <span class="k">return</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s">"WARN"</span> <span class="o">+</span> <span class="n">infotext</span><span class="p">)</span>
-    <span class="k">return</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s">"OK"</span> <span class="o">+</span> <span class="n">infotext</span><span class="p">)</span>
-
-<span class="n">check_info</span><span class="p">[</span><span class="s">'mikrotik_version'</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s">"inventory_function"</span>  <span class="p">:</span> <span class="n">inventory_mikrotik_version</span><span class="p">,</span>
-  <span class="s">"check_function"</span>      <span class="p">:</span> <span class="n">check_mikrotik_version</span><span class="p">,</span>
-  <span class="s">"service_description"</span> <span class="p">:</span> <span class="s">"RouterOS version"</span><span class="p">,</span>
-  <span class="s">"has_perfdata"</span>        <span class="p">:</span> <span class="bp">False</span><span class="p">,</span>
-  <span class="s">"group"</span>               <span class="p">:</span> <span class="s">"mikrotik_version"</span><span class="p">,</span>
-  <span class="s">"snmp_info"</span>             <span class="p">:</span> <span class="p">(</span> <span class="s">".1.3.6.1.4.1.14988.1.1.4.4"</span><span class="p">,</span><span class="s">"0"</span> <span class="p">)</span>
-
-<span class="p">}</span>
-</code></pre>
-</div>
+<p>Note:</p>
+<ul>
+  <li>Il libro è acquistabile anche utilizzando il Bonus Cultura e il Bonus Carta del Docente.</li>
+  <li>Il libro è inserito nel programma Amazon Kindle MatchBook che offre ai clienti che acquistano o che hanno acquistato in precedenza un libro stampato da Amazon la possibilità di acquistare la versione Kindle di tale titolo per €0,99.</li>
+</ul>
 
 			</div>
 
@@ -332,7 +303,7 @@
 					
 
 				
-				<time class="icon-calendar pr20" datetime="2018-10-03T02:00:00+02:00" itemprop="datePublished"> 2018-10-03</time>
+				<time class="icon-calendar pr20" datetime="2018-09-07T02:00:00+02:00" itemprop="datePublished"> 2018-09-07</time>
 				
 
 				<span class="icon-archive pr20"> ARTICOLI</span>
@@ -343,11 +314,11 @@
 			
 			<div id="post-nav" class="row">
 				
-				<div class="small-5 columns"><a class="button small radius prev" href="https://www.zen.pn.it/2019/10/routing-book">&laquo; Nuovo libro: "Teoria, laboratori ed esercizi per MikroTik RouterOS - Routing"</a></div><!-- /.small-4.columns -->
+				<div class="small-5 columns"><a class="button small radius prev" href="https://www.zen.pn.it/2018/09/trenitalia-app-reverse">&laquo; Reverse engineering dell'app di Trenitalia</a></div><!-- /.small-4.columns -->
 				
 				<div class="small-2 columns text-center"><a class="radius button small" href="https://www.zen.pn.it/archivio/" title="Blog Archivio">Archivio</a></div><!-- /.small-4.columns -->
 				
-				<div class="small-5 columns text-right"><a class="button small radius next" href="https://www.zen.pn.it/2018-11/python3-book">Python per tutti: esplorare i dati con Python3 &raquo;</a></div><!-- /.small-4.columns -->
+				<div class="small-5 columns text-right"><a class="button small radius next" href="https://www.zen.pn.it/mikrotik_version">mikrotik_version per check_mk &raquo;</a></div><!-- /.small-4.columns -->
 				
 			</div>
 			
@@ -362,7 +333,7 @@
 			    <script type="text/javascript">
 			        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 			        var disqus_shortname = 'zenpnit'; 
-			        var disqus_identifier = '/mikrotik_version';
+			        var disqus_identifier = '/2019/10/routing-book';
 
 			        /* * * DON'T EDIT BELOW THIS LINE * * */
 			        (function() {
@@ -532,8 +503,8 @@
 
 
 <script>
-    $("#masthead").backstretch("/images/david-hellmann-263348-unsplash.jpg", {fade: 700});
-    $("#masthead-with-text").backstretch("/images/david-hellmann-263348-unsplash.jpg", {fade: 700});
+    $("#masthead").backstretch("/images/routing.jpg", {fade: 700});
+    $("#masthead-with-text").backstretch("/images/routing.jpg", {fade: 700});
 </script>
 
 
