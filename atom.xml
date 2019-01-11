@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://www.zen.pn.it/</id>
 	<title>zen.pn.it - Tecnologia e dintorni</title>
-	<updated>2019-01-11T09:25:31+01:00</updated>
+	<updated>2019-01-11T09:31:07+01:00</updated>
 
 	<subtitle>Segnalazioni e riflessioni su &amp;quot;cose di tecnologia&amp;quot; di Vittore Zen</subtitle>
 
@@ -61,6 +61,8 @@ Routing Engineer (MTCRE) e l’occasione per studiare
 il routing avanzato come strumento fondante per la risoluzione di casi reali.&lt;/p&gt;
 
 &lt;p&gt;Se volete iniziare ad approfondire temi come routing avanzato, VLAN, OSPF, BGP, MPLS, IPsec,… usando un prodotto Mikrotik allora questo è il libro per voi.&lt;/p&gt;
+
+&lt;p&gt;Il sommario è l’indice analitico è disponibile a &lt;a href=&quot;/images/book2-indice.pdf&quot;&gt;questo link&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Link a “Teoria, laboratori ed esercizi per MikroTik RouterOS - Routing”:&lt;/p&gt;
 &lt;ul&gt;
