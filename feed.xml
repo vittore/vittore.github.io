@@ -9,6 +9,41 @@
 		<atom:link href="https://www.zen.pn.it/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Nuovo libro: &quot;Teoria, laboratori ed esercizi per MikroTik RouterOS - Routing&quot;</title>
+				<link>https://www.zen.pn.it/2019/10/routing-book</link>
+				<pubDate>Thu, 10 Jan 2019 01:00:00 +0100</pubDate>
+				<description>&lt;div align=&quot;center&quot;&gt;
+&lt;a href=&quot;https://www.amazon.it/dp/1793296146&quot;&gt;
+&lt;img src=&quot;/images/cover-libro-2019.png&quot; style=&quot;margin: 20px;width:350px&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;E’  scritto per approfondire i
+temi del routing attraverso il sistema RouterOS utilizzato nei
+prodotti Mikrotik.
+Al tempo stesso questo libro vuole essere una
+concreta preparazione per l’esame Mikrotik Certified
+Routing Engineer (MTCRE) e l’occasione per studiare
+il routing avanzato come strumento fondante per la risoluzione di casi reali.&lt;/p&gt;
+
+&lt;p&gt;Se volete iniziare ad approfondire temi come routing avanzato, VLAN, OSPF, BGP, MPLS, IPsec,… usando un prodotto Mikrotik allora questo è il libro per voi.&lt;/p&gt;
+
+&lt;p&gt;Link a “Teoria, laboratori ed esercizi per MikroTik RouterOS - Routing”:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.it/dp/1793296146&quot;&gt;versione cartacea&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.it/dp/B07MFYWTL6&quot;&gt;versione per Kindle&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Note:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Il libro è acquistabile anche utilizzando il Bonus Cultura e il Bonus Carta del Docente.&lt;/li&gt;
+  &lt;li&gt;Il libro è inserito nel programma Amazon Kindle MatchBook che offre ai clienti che acquistano o che hanno acquistato in precedenza un libro stampato da Amazon la possibilità di acquistare la versione Kindle di tale titolo per €0,99.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+				<guid isPermaLink="true">https://www.zen.pn.it/2019/10/routing-book</guid>
+			</item>
+		
+			<item>
 				<title>Python per tutti: esplorare i dati con Python3</title>
 				<link>https://www.zen.pn.it/2018-11/python3-book</link>
 				<pubDate>Sun, 11 Nov 2018 01:00:00 +0100</pubDate>
@@ -96,41 +131,6 @@ Non é ancora perfetto come lo abbiamo immaginato… ed ogni volta che leggiamo 
 &lt;/div&gt;
 </description>
 				<guid isPermaLink="true">https://www.zen.pn.it/mikrotik_version</guid>
-			</item>
-		
-			<item>
-				<title>Nuovo libro: &quot;Teoria, laboratori ed esercizi per MikroTik RouterOS - Routing&quot;</title>
-				<link>https://www.zen.pn.it/2019/10/routing-book</link>
-				<pubDate>Fri, 07 Sep 2018 02:00:00 +0200</pubDate>
-				<description>&lt;div align=&quot;center&quot;&gt;
-&lt;a href=&quot;https://www.amazon.it/dp/1793296146&quot;&gt;
-&lt;img src=&quot;/images/cover-libro-2019.png&quot; style=&quot;margin: 20px;width:350px&quot; /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;p&gt;E’  scritto per approfondire i
-temi del routing attraverso il sistema RouterOS utilizzato nei
-prodotti Mikrotik.
-Al tempo stesso questo libro vuole essere una
-concreta preparazione per l’esame Mikrotik Certified
-Routing Engineer (MTCRE) e l’occasione per studiare
-il routing avanzato come strumento fondante per la risoluzione di casi reali.&lt;/p&gt;
-
-&lt;p&gt;Se volete iniziare ad approfondire temi come routing avanzato, VLAN, OSPF, BGP, MPLS, IPsec,… usando un prodotto Mikrotik allora questo è il libro per voi.&lt;/p&gt;
-
-&lt;p&gt;Link a “Teoria, laboratori ed esercizi per MikroTik RouterOS - Routing”:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.it/dp/1793296146&quot;&gt;versione cartacea&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.it/dp/B07MFYWTL6&quot;&gt;versione per Kindle&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Note:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Il libro è acquistabile anche utilizzando il Bonus Cultura e il Bonus Carta del Docente.&lt;/li&gt;
-  &lt;li&gt;Il libro è inserito nel programma Amazon Kindle MatchBook che offre ai clienti che acquistano o che hanno acquistato in precedenza un libro stampato da Amazon la possibilità di acquistare la versione Kindle di tale titolo per €0,99.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-				<guid isPermaLink="true">https://www.zen.pn.it/2019/10/routing-book</guid>
 			</item>
 		
 			<item>

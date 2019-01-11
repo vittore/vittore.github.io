@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://www.zen.pn.it/</id>
 	<title>zen.pn.it - Tecnologia e dintorni</title>
-	<updated>2019-01-11T09:14:50+01:00</updated>
+	<updated>2019-01-11T09:15:56+01:00</updated>
 
 	<subtitle>Segnalazioni e riflessioni su &amp;quot;cose di tecnologia&amp;quot; di Vittore Zen</subtitle>
 
@@ -28,6 +28,62 @@
 
 	<generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator>
 
+	
+		<entry>
+			<id>https://www.zen.pn.it/2019/10/routing-book</id>
+			<title>Nuovo libro: &quot;Teoria, laboratori ed esercizi per MikroTik RouterOS - Routing&quot;</title>
+			<link href="https://www.zen.pn.it/2019/10/routing-book" rel="alternate" type="text/html" title="Nuovo libro: &quot;Teoria, laboratori ed esercizi per MikroTik RouterOS - Routing&quot;" />
+			<updated>2019-01-10T01:00:00+01:00</updated>
+
+			
+				
+				<author>
+					
+						<name>Vittore Zen</name>
+					
+					
+					
+				</author>
+			
+			<summary>E' disponibile da oggi sullo store Amazon il libro «Teoria, laboratori ed esercizi per MikroTik RouterOS - Routing».</summary>
+			<content type="html" xml:base="https://www.zen.pn.it/2019/10/routing-book">&lt;div align=&quot;center&quot;&gt;
+&lt;a href=&quot;https://www.amazon.it/dp/1793296146&quot;&gt;
+&lt;img src=&quot;/images/cover-libro-2019.png&quot; style=&quot;margin: 20px;width:350px&quot; /&gt;
+&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;E’  scritto per approfondire i
+temi del routing attraverso il sistema RouterOS utilizzato nei
+prodotti Mikrotik.
+Al tempo stesso questo libro vuole essere una
+concreta preparazione per l’esame Mikrotik Certified
+Routing Engineer (MTCRE) e l’occasione per studiare
+il routing avanzato come strumento fondante per la risoluzione di casi reali.&lt;/p&gt;
+
+&lt;p&gt;Se volete iniziare ad approfondire temi come routing avanzato, VLAN, OSPF, BGP, MPLS, IPsec,… usando un prodotto Mikrotik allora questo è il libro per voi.&lt;/p&gt;
+
+&lt;p&gt;Link a “Teoria, laboratori ed esercizi per MikroTik RouterOS - Routing”:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.it/dp/1793296146&quot;&gt;versione cartacea&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.it/dp/B07MFYWTL6&quot;&gt;versione per Kindle&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Note:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Il libro è acquistabile anche utilizzando il Bonus Cultura e il Bonus Carta del Docente.&lt;/li&gt;
+  &lt;li&gt;Il libro è inserito nel programma Amazon Kindle MatchBook che offre ai clienti che acquistano o che hanno acquistato in precedenza un libro stampato da Amazon la possibilità di acquistare la versione Kindle di tale titolo per €0,99.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+
+			
+				<category term="Articoli" />
+			
+			
+				<category term="web" />
+			
+
+			<published>2019-01-10T01:00:00+01:00</published>
+		</entry>
 	
 		<entry>
 			<id>https://www.zen.pn.it/2018-11/python3-book</id>
@@ -159,62 +215,6 @@ Non é ancora perfetto come lo abbiamo immaginato… ed ogni volta che leggiamo 
 			
 
 			<published>2018-10-03T02:00:00+02:00</published>
-		</entry>
-	
-		<entry>
-			<id>https://www.zen.pn.it/2019/10/routing-book</id>
-			<title>Nuovo libro: &quot;Teoria, laboratori ed esercizi per MikroTik RouterOS - Routing&quot;</title>
-			<link href="https://www.zen.pn.it/2019/10/routing-book" rel="alternate" type="text/html" title="Nuovo libro: &quot;Teoria, laboratori ed esercizi per MikroTik RouterOS - Routing&quot;" />
-			<updated>2018-09-07T02:00:00+02:00</updated>
-
-			
-				
-				<author>
-					
-						<name>Vittore Zen</name>
-					
-					
-					
-				</author>
-			
-			<summary>E' disponibile da oggi sullo store Amazon il libro «Teoria, laboratori ed esercizi per MikroTik RouterOS - Routing».</summary>
-			<content type="html" xml:base="https://www.zen.pn.it/2019/10/routing-book">&lt;div align=&quot;center&quot;&gt;
-&lt;a href=&quot;https://www.amazon.it/dp/1793296146&quot;&gt;
-&lt;img src=&quot;/images/cover-libro-2019.png&quot; style=&quot;margin: 20px;width:350px&quot; /&gt;
-&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;p&gt;E’  scritto per approfondire i
-temi del routing attraverso il sistema RouterOS utilizzato nei
-prodotti Mikrotik.
-Al tempo stesso questo libro vuole essere una
-concreta preparazione per l’esame Mikrotik Certified
-Routing Engineer (MTCRE) e l’occasione per studiare
-il routing avanzato come strumento fondante per la risoluzione di casi reali.&lt;/p&gt;
-
-&lt;p&gt;Se volete iniziare ad approfondire temi come routing avanzato, VLAN, OSPF, BGP, MPLS, IPsec,… usando un prodotto Mikrotik allora questo è il libro per voi.&lt;/p&gt;
-
-&lt;p&gt;Link a “Teoria, laboratori ed esercizi per MikroTik RouterOS - Routing”:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.it/dp/1793296146&quot;&gt;versione cartacea&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.it/dp/B07MFYWTL6&quot;&gt;versione per Kindle&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Note:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Il libro è acquistabile anche utilizzando il Bonus Cultura e il Bonus Carta del Docente.&lt;/li&gt;
-  &lt;li&gt;Il libro è inserito nel programma Amazon Kindle MatchBook che offre ai clienti che acquistano o che hanno acquistato in precedenza un libro stampato da Amazon la possibilità di acquistare la versione Kindle di tale titolo per €0,99.&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-
-			
-				<category term="Articoli" />
-			
-			
-				<category term="web" />
-			
-
-			<published>2018-09-07T02:00:00+02:00</published>
 		</entry>
 	
 		<entry>
