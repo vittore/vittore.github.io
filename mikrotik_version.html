@@ -273,6 +273,10 @@
   <li>Ok se la versione installata è l’ultima disponibile sul sito  Mikrotik</li>
 </ul>
 
+<p>Download <a href="/images/mikrotik_version-1.1.1.mkp">mikrotik_version-1.1.1.mkp</a></p>
+
+<p><img src="/images/mt-check.png" style="margin: 20px;" /></p>
+
 <div class="highlighter-rouge"><pre class="highlight"><code><span class="c">#!/usr/bin/python</span>
 <span class="c"># -*- encoding: utf-8; py-indent-offset: 4 -*-</span>
 <span class="c">#</span>
@@ -290,16 +294,18 @@
 <span class="k">def</span> <span class="nf">check_mikrotik_version</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">params</span><span class="p">,</span> <span class="n">info</span><span class="p">):</span>
     <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'https://mikrotikdownload.s3.amazonaws.com/routeros/LATEST.6'</span><span class="p">)</span>
     <span class="n">latest_with_build</span><span class="o">=</span><span class="n">r</span><span class="o">.</span><span class="n">text</span>
-
     <span class="n">current</span><span class="o">=</span><span class="n">info</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
 
     <span class="n">latest</span><span class="p">,</span><span class="n">build</span><span class="o">=</span><span class="n">latest_with_build</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">" "</span><span class="p">)</span>
-
-    <span class="n">latest_major</span><span class="p">,</span><span class="n">latest_medium</span><span class="p">,</span><span class="n">latest_minor</span><span class="o">=</span><span class="n">latest</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"."</span><span class="p">)</span>
     <span class="n">current_major</span><span class="p">,</span><span class="n">current_medium</span><span class="p">,</span><span class="n">current_minor</span><span class="o">=</span><span class="n">current</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"."</span><span class="p">)</span>
 
-    <span class="n">critical</span><span class="o">=</span><span class="n">latest_major</span><span class="o">+</span><span class="s">"."</span><span class="o">+</span><span class="n">latest_medium</span><span class="o">+</span><span class="s">".0"</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">latest</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s">'.'</span><span class="p">)</span><span class="o">==</span><span class="mi">1</span><span class="p">):</span>
+       <span class="n">latest_major</span><span class="p">,</span><span class="n">latest_medium</span><span class="o">=</span><span class="n">latest</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"."</span><span class="p">)</span>
+       <span class="n">latest_minor</span><span class="o">=</span><span class="mi">0</span>
+    <span class="k">else</span><span class="p">:</span>
+       <span class="n">latest_major</span><span class="p">,</span><span class="n">latest_medium</span><span class="p">,</span><span class="n">latest_minor</span><span class="o">=</span><span class="n">latest</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"."</span><span class="p">)</span>
 
+    <span class="n">critical</span><span class="o">=</span><span class="n">latest_major</span><span class="o">+</span><span class="s">"."</span><span class="o">+</span><span class="n">latest_medium</span><span class="o">+</span><span class="s">".0"</span>
     <span class="n">infotext</span> <span class="o">=</span> <span class="s">" - current: "</span><span class="o">+</span><span class="n">current</span><span class="o">+</span><span class="s">" avaible: "</span><span class="o">+</span><span class="n">latest</span>
     <span class="k">if</span> <span class="n">current_major</span><span class="o">&lt;</span><span class="n">latest_major</span><span class="p">:</span>
      <span class="k">return</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s">"CRIT"</span> <span class="o">+</span> <span class="n">infotext</span><span class="p">)</span>
