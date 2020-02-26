@@ -9,9 +9,32 @@
 		<atom:link href="https://www.zen.pn.it/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Flashcard per ripassare le basi di RouterOS</title>
+				<link>https://www.zen.pn.it/2020/02/flashcard-mtcna</link>
+				<pubDate>Thu, 20 Feb 2020 00:00:00 +0000</pubDate>
+				<description>&lt;p&gt;Le flashcard sono un sistema pratico e veloce per rinforzare le conoscenze su un determinato ambito. Data una domanda (posta sul dorso della carta), allo studente è richiesto di produrre una risposta, che verrà poi confrontata con quella registrata (sul retro della carta).&lt;/p&gt;
+
+&lt;p&gt;Potete anche abbinare il semplice uso con il []”Sistema di Leitnet”](https://it.wikipedia.org/wiki/Sistema_Leitner):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/leitner.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nel sistema Leitner, le flashcard a cui viene risposto correttamente sono avanzate al livello successivo nello scomparto riferito alle ripetizioni meno frequenti, mentre quelle a cui si è risposto in modo errato vengono arretrate al primo livello, richiedente più ripetizioni.&lt;/p&gt;
+
+&lt;p&gt;Con gli studenti della &lt;a href=&quot;http://iti.bearzi.it&quot;&gt;classe 4iA dell’ITI Bearzi&lt;/a&gt; abbiamo realizzato alcune flashcard per ripassare gli argomenti dell’esame MTCNA.&lt;/p&gt;
+
+&lt;p&gt;Trovate il pdf pronto per la stampa a &lt;a href=&quot;/images/mikrotik_flashcard.pdf&quot;&gt;questo link&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Buon studio.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;Nota: stampa fronte/retro sul lato corto.&lt;/i&gt;&lt;/p&gt;
+</description>
+				<guid isPermaLink="true">https://www.zen.pn.it/2020/02/flashcard-mtcna</guid>
+			</item>
+		
+			<item>
 				<title>Nuovo libro: &quot;Teoria, laboratori ed esercizi per MikroTik RouterOS - Routing&quot;</title>
 				<link>https://www.zen.pn.it/2019/01/routing-book</link>
-				<pubDate>Thu, 10 Jan 2019 01:00:00 +0100</pubDate>
+				<pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
 				<description>&lt;div align=&quot;center&quot;&gt;
 &lt;a href=&quot;https://www.amazon.it/dp/1793296146&quot;&gt;
 &lt;img src=&quot;/images/cover-libro-2019.png&quot; style=&quot;margin: 20px;width:350px&quot; /&gt;
@@ -48,7 +71,7 @@ il routing avanzato come strumento fondante per la risoluzione di casi reali.&lt
 			<item>
 				<title>Python per tutti: esplorare i dati con Python3</title>
 				<link>https://www.zen.pn.it/2018-11/python3-book</link>
-				<pubDate>Sun, 11 Nov 2018 01:00:00 +0100</pubDate>
+				<pubDate>Sun, 11 Nov 2018 00:00:00 +0000</pubDate>
 				<description>&lt;div align=&quot;center&quot;&gt;
 &lt;a href=&quot;https://www.amazon.it/dp/1730907164&quot;&gt;
 &lt;img src=&quot;https://images-na.ssl-images-amazon.com/images/I/51674U3su4L.jpg&quot; /&gt;
@@ -74,7 +97,7 @@ Non é ancora perfetto come lo abbiamo immaginato… ed ogni volta che leggiamo 
 			<item>
 				<title>mikrotik_version per check_mk</title>
 				<link>https://www.zen.pn.it/mikrotik_version</link>
-				<pubDate>Wed, 03 Oct 2018 02:00:00 +0200</pubDate>
+				<pubDate>Wed, 03 Oct 2018 00:00:00 +0000</pubDate>
 				<description>&lt;p&gt;Plugin per &lt;a href=&quot;https://mathias-kettner.com/&quot;&gt;check_mk&lt;/a&gt; che verifica via SNMP la versione di routerOS e evidenzia se non è aggiornata.&lt;/p&gt;
 
 &lt;p&gt;Restituisce:&lt;/p&gt;
@@ -144,7 +167,7 @@ Non é ancora perfetto come lo abbiamo immaginato… ed ogni volta che leggiamo 
 			<item>
 				<title>Reverse engineering dell'app di Trenitalia</title>
 				<link>https://www.zen.pn.it/2018/09/trenitalia-app-reverse</link>
-				<pubDate>Fri, 07 Sep 2018 02:00:00 +0200</pubDate>
+				<pubDate>Fri, 07 Sep 2018 00:00:00 +0000</pubDate>
 				<description>&lt;p&gt;Segnalo questo interessante articolo di Jacopo Jannone dove si analizza la struttura dell’app di Trenitalia da poco pubblicata:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://blog.jacopojannone.com/2018/09/24/trenitalia-app-reversed.html&quot;&gt;https://blog.jacopojannone.com/2018/09/24/trenitalia-app-reversed.html&lt;/a&gt;&lt;/p&gt;
@@ -162,7 +185,7 @@ Non é ancora perfetto come lo abbiamo immaginato… ed ogni volta che leggiamo 
 			<item>
 				<title>Seconda edizione de &quot;Teoria, laboratori ed esercizi per MikroTik RouterOS&quot;</title>
 				<link>https://www.zen.pn.it/2018/09/seconda-edizione-2018/</link>
-				<pubDate>Fri, 07 Sep 2018 02:00:00 +0200</pubDate>
+				<pubDate>Fri, 07 Sep 2018 00:00:00 +0000</pubDate>
 				<description>&lt;p&gt;Rispetto alla prima edizione:&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;sono stati corretti diversi errori;&lt;/li&gt;
@@ -188,7 +211,7 @@ Non é ancora perfetto come lo abbiamo immaginato… ed ogni volta che leggiamo 
 			<item>
 				<title>GDPR, cookie e siti dinamici</title>
 				<link>https://www.zen.pn.it/2018/06/gdpr-cookie-e-siti-dinamici/</link>
-				<pubDate>Mon, 11 Jun 2018 02:00:00 +0200</pubDate>
+				<pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate>
 				<description>&lt;p&gt;Mi ritengo con malcelato orgoglio uno dei primi sbarcati sul web  &lt;a href=&quot;https://web.archive.org/web/19980202100719/http://www.dimi.uniud.it:80/~zen/&quot;&gt;https://www.dimi.uniud.it/~zen&lt;/a&gt; (15 agosto 1997) che attraverso una discreta conoscenza delle scienze dell’informazione ha costruito un pezzo del web.
 Ho scritto “scienze dell’informazione” da non confondersi con le scienze della comunicazione: su questa distinzione mi prometto un post sicuramente polemico nel prossimo futuro considerate le invasioni di campo che vivo sulla mia pelle quasi quotidianamente.&lt;/p&gt;
 
@@ -268,7 +291,7 @@ Inoltre, per come è attuata, la Cookie Law finisce per essere un pesante onere 
 			<item>
 				<title>Seconda edizione in lavorazione: idee e/o richieste?</title>
 				<link>https://www.zen.pn.it/2018/05/seconda-edizione-in-lavorazione-idee-e-o-richieste/</link>
-				<pubDate>Wed, 30 May 2018 00:17:12 +0200</pubDate>
+				<pubDate>Tue, 29 May 2018 22:17:12 +0000</pubDate>
 				<description>&lt;p&gt;L’anno scolastico si avvia alla conclusione e l’estate è alle porte. In questo periodo metterò mano al libretto “&lt;a href=&quot;https://www.amazon.it/Teoria-laboratori-esercizi-MikroTik-RouterOS/dp/1973238845/&quot;&gt;Teoria, laboratori ed esercizi per MikroTik RouterOS&lt;/a&gt;” per essere pronto per l’inizio delle attività a settembre.&lt;/p&gt;
 
 &lt;p&gt;Se ci sono suggerimenti, consigli o altre modifiche che ritenete utili contattatemi via email.&lt;/p&gt;
@@ -279,7 +302,7 @@ Inoltre, per come è attuata, la Cookie Law finisce per essere un pesante onere 
 			<item>
 				<title>Alcune indiscrezioni sulla futura release di posta Gmail</title>
 				<link>https://www.zen.pn.it/2018/04/alcune-indiscrezioni-sulla-futura-release-di-posta-gmail/</link>
-				<pubDate>Sun, 22 Apr 2018 10:42:58 +0200</pubDate>
+				<pubDate>Sun, 22 Apr 2018 08:42:58 +0000</pubDate>
 				<description>&lt;div id=&quot;js_cbf&quot; class=&quot;_5pbx userContent _3576&quot; data-ft=&quot;{&amp;quot;tn&amp;quot;:&amp;quot;K&amp;quot;}&quot;&gt;
   &lt;p&gt;
     Alcune indiscrezioni sulla futura release di posta Gmail sembrano interessanti ed opportuno conoscerle.
@@ -311,7 +334,7 @@ Inoltre, per come è attuata, la Cookie Law finisce per essere un pesante onere 
 			<item>
 				<title>Twitter chiude twitter su OSX</title>
 				<link>https://www.zen.pn.it/2018/03/twitter-chiude-twitter-su-osx/</link>
-				<pubDate>Fri, 30 Mar 2018 09:24:32 +0200</pubDate>
+				<pubDate>Fri, 30 Mar 2018 07:24:32 +0000</pubDate>
 				<description>&lt;p&gt;Mi ero perso questa notizia: &lt;a href=&quot;https://techcrunch.com/2018/02/16/twitter-kills-mac-app/&quot;&gt;Twitter is killing its Twitter for Mac desktop client&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;In sintesi: il client twitter nativo per OSX verrà dismesso. Anzi è già dismesso.&lt;/p&gt;
@@ -319,62 +342,6 @@ Inoltre, per come è attuata, la Cookie Law finisce per essere un pesante onere 
 &lt;p&gt;Una interessante alternativa gratuita è  &lt;a href=&quot;http://tweetenapp.com/&quot;&gt;http://tweetenapp.com/&lt;/a&gt;&lt;/p&gt;
 </description>
 				<guid isPermaLink="true">https://www.zen.pn.it/2018/03/twitter-chiude-twitter-su-osx/</guid>
-			</item>
-		
-			<item>
-				<title>Perché il mio sito wordpress è così lento.</title>
-				<link>https://www.zen.pn.it/2018/02/perche-il-mio-sito-wordpress-e-cosi-lento/</link>
-				<pubDate>Thu, 22 Feb 2018 08:56:33 +0100</pubDate>
-				<description>&lt;p&gt;Finalmente ho trovato un articolo tecnico che tratta questo tema.&lt;/p&gt;
-
-&lt;p&gt;Link: &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow&quot;&gt;http://www.onlinemediamasters.com/why-is-wordpress-so-slow&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;larticolo-analizza-in-40-punti-gli-aspetti-cruciali&quot;&gt;L’articolo analizza in 40 punti gli aspetti cruciali:&lt;/h2&gt;
-
-&lt;div class=&quot;one-half first&quot;&gt;
-  1. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#pingdom-gtmetrix-page-speed-insights&quot;&gt;Pingdom vs. GTmetrix vs. Page Speed&lt;/a&gt;&lt;br /&gt; 2. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#hosting&quot;&gt;How To Tell If Your Hosting Is Slow&lt;/a&gt;&lt;br /&gt; 3. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#siteground&quot;&gt;200ms Load Time On SiteGround&lt;/a&gt;&lt;br /&gt; 4. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#php7&quot;&gt;PHP7&lt;/a&gt;&lt;br /&gt; 5. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#cache-plugin&quot;&gt;Cache Plugin (WP Rocket)&lt;/a&gt;&lt;br /&gt; 6. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#database-cleanup&quot;&gt;Database Cleanup&lt;/a&gt;&lt;br /&gt; 7. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#cloudflare&quot;&gt;Cloudflare Setup&lt;/a&gt;&lt;br /&gt; 8. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#cloudflare-speed-settings&quot;&gt;Cloudflare Speed Settings&lt;/a&gt;&lt;br /&gt; 9. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#hotlink-protection&quot;&gt;Cloudflare Hotlink Protection&lt;/a&gt;&lt;br /&gt; 10. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#page-rules&quot;&gt;Cloudflare WP-Admin Page Rules&lt;/a&gt;&lt;br /&gt; 11. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#maxcdn&quot;&gt;MaxCDN&lt;/a&gt;&lt;br /&gt; 12. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#whitelist-ips&quot;&gt;Whitelist IPs&lt;/a&gt;&lt;br /&gt; 13. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#lazyload&quot;&gt;Lazyload Videos/Iframes&lt;/a&gt;&lt;br /&gt; 14. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#serve-scaled-images&quot;&gt;Serve Scaled Images&lt;/a&gt;&lt;br /&gt; 15. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#specify-image-dimensions&quot;&gt;Specify Image Dimensions&lt;/a&gt;&lt;br /&gt; 16. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#lossless-image-compression&quot;&gt;Losslessly Compress Images&lt;/a&gt;&lt;br /&gt; 17. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#image-format&quot;&gt;Save Images In Correct Format&lt;/a&gt;&lt;br /&gt; 18. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#wp-disable&quot;&gt;WP Disable&lt;/a&gt;&lt;br /&gt; 19. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#host-google-analytics-locally&quot;&gt;Host Google Analytics Locally&lt;/a&gt;&lt;br /&gt; 20. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#minimize-plugins&quot;&gt;Minimize Plugins&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;one-half&quot;&gt;
-  21. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#high-cpu-plugins&quot;&gt;Avoid High CPU Plugins&lt;/a&gt;&lt;br /&gt; 22. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#plugin-settings&quot;&gt;Disable Unused Plugin Settings&lt;/a&gt;&lt;br /&gt; 23. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#slider-plugin&quot;&gt;Use A Fast Slider Plugin&lt;/a&gt;&lt;br /&gt; 24. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#gallery-plugin&quot;&gt;Use A Fast Gallery Plugin&lt;/a&gt;&lt;br /&gt; 25. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#social-sharing-plugin&quot;&gt;Use A Fast Social Sharing Plugin&lt;/a&gt;&lt;br /&gt; 26. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#accelerated-mobile-pages&quot;&gt;AMP Pages&lt;/a&gt;&lt;br /&gt; 27. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#gravatars&quot;&gt;Optimize Gravatars&lt;/a&gt;&lt;br /&gt; 28. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#google-maps&quot;&gt;Avoid Google Maps&lt;/a&gt;&lt;br /&gt; 29. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#advertisements&quot;&gt;Avoid Advertisements&lt;/a&gt;&lt;br /&gt; 30. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#awstats&quot;&gt;Check AWStats For High CPU&lt;/a&gt;&lt;br /&gt; 31. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#limit-crawlers&quot;&gt;Limit Crawlers/Spiders&lt;/a&gt;&lt;br /&gt; 32. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#defer-parsing-of-javascript&quot;&gt;Defer Parsing Of Javascript&lt;/a&gt;&lt;br /&gt; 33. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#add-expires-headers&quot;&gt;Add Expires Headers&lt;/a&gt;&lt;br /&gt; 34. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#remove-query-strings&quot;&gt;Remove Query Strings&lt;/a&gt;&lt;br /&gt; 35. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#minimize-redirects&quot;&gt;Minimize Redirects&lt;/a&gt;&lt;br /&gt; 36. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#lightweight-theme&quot;&gt;Use A Lightweight Theme&lt;/a&gt;&lt;br /&gt; 37. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#hosting-account&quot;&gt;1 Website Per Hosting Account&lt;/a&gt;&lt;br /&gt; 38. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#update-wordpress&quot;&gt;Keep WordPress Updated&lt;/a&gt;&lt;br /&gt; 39. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#slow-pages&quot;&gt;Find Your Slowest Loading Pages&lt;/a&gt;&lt;br /&gt; 40. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#hire-a-developer&quot;&gt;Hire My WordPress Speed Optimizer&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;h2 id=&quot;di-particolare-interesse&quot;&gt;Di particolare interesse:&lt;/h2&gt;
-
-&lt;div&gt;
-  2. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#hosting&quot;&gt;How To Tell If Your Hosting Is Slow&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-  6. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#database-cleanup&quot;&gt;Database Cleanup&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-  19. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#host-google-analytics-locally&quot;&gt;Host Google Analytics Locally&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-  32. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#defer-parsing-of-javascript&quot;&gt;Defer Parsing Of Javascript&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;h2 id=&quot;devo-capire-meglio-come-agire&quot;&gt;Devo capire meglio come agire:&lt;/h2&gt;
-
-&lt;div&gt;
-  7. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#cloudflare&quot;&gt;Cloudflare Setup&lt;/a&gt;&lt;br /&gt; 8. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#cloudflare-speed-settings&quot;&gt;Cloudflare Speed Settings&lt;/a&gt;&lt;br /&gt; 9. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#hotlink-protection&quot;&gt;Cloudflare Hotlink Protection&lt;/a&gt;&lt;br /&gt; 10. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#page-rules&quot;&gt;Cloudflare WP-Admin Page Rules&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-  34. &lt;a href=&quot;http://www.onlinemediamasters.com/why-is-wordpress-so-slow/#remove-query-strings&quot;&gt;Remove Query Strings&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;div&gt;
-&lt;/div&gt;
-</description>
-				<guid isPermaLink="true">https://www.zen.pn.it/2018/02/perche-il-mio-sito-wordpress-e-cosi-lento/</guid>
 			</item>
 		
 	</channel>
