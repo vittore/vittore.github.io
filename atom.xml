@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://www.zen.pn.it/</id>
 	<title>zen.pn.it - Tecnologia e dintorni</title>
-	<updated>2020-02-26T07:27:36+01:00</updated>
+	<updated>2020-02-26T07:31:31+01:00</updated>
 
 	<subtitle>Segnalazioni e riflessioni su &amp;quot;cose di tecnologia&amp;quot; di Vittore Zen</subtitle>
 
@@ -48,7 +48,7 @@
 			<summary>Le flashcard per ripassare in le basi di Mikrotik RouterOS.</summary>
 			<content type="html" xml:base="https://www.zen.pn.it/2020/02/flashcard-mtcna">&lt;p&gt;Le flashcard sono un sistema pratico e veloce per rinforzare le conoscenze su un determinato ambito. Data una domanda (posta sul dorso della carta), allo studente è richiesto di produrre una risposta, che verrà poi confrontata con quella registrata (sul retro della carta).&lt;/p&gt;
 
-&lt;p&gt;Potete anche abbinare il semplice uso con il []”Sistema di Leitnet”](https://it.wikipedia.org/wiki/Sistema_Leitner):&lt;/p&gt;
+&lt;p&gt;Potete anche abbinare il semplice uso con il &lt;a href=&quot;https://it.wikipedia.org/wiki/Sistema_Leitner&quot;&gt;“Sistema di Leitner”&lt;/a&gt;:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/images/leitner.png&quot; /&gt;&lt;/p&gt;
 
