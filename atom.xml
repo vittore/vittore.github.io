@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://www.zen.pn.it/</id>
 	<title>zen.pn.it - Tecnologia e dintorni</title>
-	<updated>2020-02-26T08:11:58+01:00</updated>
+	<updated>2020-02-27T07:18:30+01:00</updated>
 
 	<subtitle>Segnalazioni e riflessioni su &amp;quot;cose di tecnologia&amp;quot; di Vittore Zen</subtitle>
 
@@ -28,6 +28,40 @@
 
 	<generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator>
 
+	
+		<entry>
+			<id>https://www.zen.pn.it/2020/02/null-byte</id>
+			<title>null-byte how to</title>
+			<link href="https://www.zen.pn.it/2020/02/null-byte" rel="alternate" type="text/html" title="null-byte how to" />
+			<updated>2020-02-27T01:00:00+01:00</updated>
+
+			
+				
+				<author>
+					
+						<name>Vittore Zen</name>
+					
+					
+					
+				</author>
+			
+			<summary>Un interessante blog</summary>
+			<content type="html" xml:base="https://www.zen.pn.it/2020/02/null-byte">&lt;p&gt;Segnalo agli amici impegnati nella sicurezza delle infrastrutture questo interessante blog pieno zeppo di how-to dettagliati e senza pittoresche divagazioni:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://null-byte.wonderhowto.com/&quot;&gt;https://null-byte.wonderhowto.com/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Degna di nota anche la sezione &lt;a href=&quot;https://null-byte.wonderhowto.com/how-to/mr-robot-hacks/&quot;&gt;Mr. Robot Hacks&lt;/a&gt; dedicata a come mettere in atto gli hacking mostrati nella serie televisiva Mr. Robot.&lt;/p&gt;
+</content>
+
+			
+				<category term="Articoli" />
+			
+			
+				<category term="web" />
+			
+
+			<published>2020-02-27T01:00:00+01:00</published>
+		</entry>
 	
 		<entry>
 			<id>https://www.zen.pn.it/2020/02/flashcard-mtcna</id>
@@ -537,42 +571,6 @@ Inoltre, per come è attuata, la Cookie Law finisce per essere un pesante onere 
 			
 
 			<published>2018-04-22T10:42:58+02:00</published>
-		</entry>
-	
-		<entry>
-			<id>https://www.zen.pn.it/2018/03/twitter-chiude-twitter-su-osx/</id>
-			<title>Twitter chiude twitter su OSX</title>
-			<link href="https://www.zen.pn.it/2018/03/twitter-chiude-twitter-su-osx/" rel="alternate" type="text/html" title="Twitter chiude twitter su OSX" />
-			<updated>2018-03-30T09:24:32+02:00</updated>
-
-			
-				
-				<author>
-					
-						<name>Vittore Zen</name>
-					
-					
-					
-				</author>
-			
-			<summary></summary>
-			<content type="html" xml:base="https://www.zen.pn.it/2018/03/twitter-chiude-twitter-su-osx/">&lt;p&gt;Mi ero perso questa notizia: &lt;a href=&quot;https://techcrunch.com/2018/02/16/twitter-kills-mac-app/&quot;&gt;Twitter is killing its Twitter for Mac desktop client&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;In sintesi: il client twitter nativo per OSX verrà dismesso. Anzi è già dismesso.&lt;/p&gt;
-
-&lt;p&gt;Una interessante alternativa gratuita è  &lt;a href=&quot;http://tweetenapp.com/&quot;&gt;http://tweetenapp.com/&lt;/a&gt;&lt;/p&gt;
-</content>
-
-			
-				<category term="Articoli" />
-			
-			
-				<category term="mondo apple" />
-			
-				<category term="web" />
-			
-
-			<published>2018-03-30T09:24:32+02:00</published>
 		</entry>
 	
 </feed>
