@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>null-byte how to</title>
+	<title>pycoro</title>
 
     <link rel="stylesheet" type="text/css" href="https://www.zen.pn.it/assets/css/styles_feeling_responsive.css">
 
@@ -26,20 +26,20 @@
 
 
 	<!-- Search Engine Optimization -->
-	<meta name="description" content="Un interessante blog">
+	<meta name="description" content="Dai dati ufficiali, qualche previsione matematica">
 	
 	
 	
 	
 	
 	
-	<link rel="canonical" href="https://www.zen.pn.it/2020/02/null-byte">
+	<link rel="canonical" href="https://www.zen.pn.it/2020/03/pycoro">
 
 
 	<!-- Facebook Open Graph -->
-	<meta property="og:title" content="null-byte how to">
-	<meta property="og:description" content="Un interessante blog">
-	<meta property="og:url" content="https://www.zen.pn.it/2020/02/null-byte">
+	<meta property="og:title" content="pycoro">
+	<meta property="og:description" content="Dai dati ufficiali, qualche previsione matematica">
+	<meta property="og:url" content="https://www.zen.pn.it/2020/03/pycoro">
 	<meta property="og:locale" content="en_EN">
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="zen.pn.it - Tecnologia e dintorni">
@@ -52,8 +52,8 @@
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="vittore">
 	<meta name="twitter:creator" content="vittore">
-	<meta name="twitter:title" content="null-byte how to">
-	<meta name="twitter:description" content="Un interessante blog">
+	<meta name="twitter:title" content="pycoro">
+	<meta name="twitter:description" content="Dai dati ufficiali, qualche previsione matematica">
 	
 	
 
@@ -252,23 +252,85 @@
 
 				<div itemprop="name">
 					
-					<h1>null-byte how to</h1>
+					<h1>pycoro</h1>
 				</div>
 			</header>
 
 
 			
 			<p class="teaser" itemprop="description">
-				Un interessante blog
+				Dai dati ufficiali, qualche previsione matematica
 			</p>
 			
 
 			<div itemprop="articleSection">
-			<p>Segnalo agli amici impegnati nella sicurezza delle infrastrutture questo interessante blog pieno zeppo di how-to dettagliati e senza pittoresche divagazioni:</p>
+			<p>Senza volere fare previsioni od elaborazioni ufficiali ma solo un esercizio per ripassare alcuni concetti matematici, di seguito trovate il programma Python e i grafici che, partendo dai dati ufficiali sulla diffusione del COVID-19 (<a href="https://github.com/pcm-dpc/COVID-19">https://github.com/pcm-dpc/COVID-19</a>), disegnano i grafici per il Veneto e il Friuli sull’andamento e la previsione per i prossimi due giorni.</p>
 
-<p><a href="https://null-byte.wonderhowto.com/">https://null-byte.wonderhowto.com/</a></p>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">urllib.request</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="kn">from</span> <span class="nn">scipy.interpolate</span> <span class="kn">import</span> <span class="n">UnivariateSpline</span>
 
-<p>Degna di nota anche la sezione <a href="https://null-byte.wonderhowto.com/how-to/mr-robot-hacks/">Mr. Robot Hacks</a> dedicata a come mettere in atto gli hacking mostrati nella serie televisiva Mr. Robot.</p>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+    <span class="n">firstDay</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">24</span><span class="p">)</span>
+
+    <span class="n">url</span> <span class="o">=</span> <span class="s">"https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-json/dpc-covid19-ita-regioni.json"</span>
+    <span class="n">req</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+    <span class="k">with</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">req</span><span class="p">)</span> <span class="k">as</span> <span class="n">response</span><span class="p">:</span>
+        <span class="n">datastore</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+    <span class="k">for</span> <span class="n">regione</span> <span class="ow">in</span> <span class="p">[</span><span class="s">'Veneto'</span><span class="p">,</span><span class="s">'Friuli Venezia Giulia'</span><span class="p">]:</span>
+        <span class="n">xPoints</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">yPoints</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">xMax</span><span class="o">=-</span><span class="mi">1</span>
+        <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">datastore</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="s">'denominazione_regione'</span><span class="p">]</span><span class="o">==</span><span class="n">regione</span><span class="p">:</span>
+                <span class="n">date_time_obj</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s">'data'</span><span class="p">],</span> <span class="s">'</span><span class="si">%</span><span class="s">Y-</span><span class="si">%</span><span class="s">m-</span><span class="si">%</span><span class="s">d </span><span class="si">%</span><span class="s">H:</span><span class="si">%</span><span class="s">M:</span><span class="si">%</span><span class="s">S'</span><span class="p">)</span>
+                <span class="n">delta</span><span class="o">=</span><span class="n">date_time_obj</span><span class="o">-</span><span class="n">firstDay</span>
+                <span class="n">xMax</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">xMax</span><span class="p">,</span> <span class="n">delta</span><span class="o">.</span><span class="n">days</span><span class="p">)</span>
+                <span class="n">xPoints</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">delta</span><span class="o">.</span><span class="n">days</span><span class="p">)</span>
+                <span class="n">yPoints</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s">'totale_casi'</span><span class="p">])</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xPoints</span><span class="p">,</span> <span class="n">yPoints</span><span class="p">,</span> <span class="s">'o'</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s">'data'</span><span class="p">)</span>
+        <span class="n">daysWanted</span><span class="o">=</span><span class="p">[</span><span class="n">xMax</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
+            <span class="n">daysWanted</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">xMax</span><span class="o">+</span><span class="n">i</span><span class="p">)</span>
+
+        <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span>
+            <span class="n">spl</span> <span class="o">=</span> <span class="n">UnivariateSpline</span><span class="p">(</span><span class="n">xPoints</span><span class="p">,</span> <span class="n">yPoints</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="p">)</span>
+            <span class="n">spl</span><span class="o">.</span><span class="n">set_smoothing_factor</span><span class="p">(</span><span class="mf">0.2</span><span class="p">)</span>
+            <span class="n">y</span> <span class="o">=</span> <span class="n">spl</span><span class="p">(</span><span class="n">daysWanted</span><span class="p">)</span>
+            <span class="n">label</span> <span class="o">=</span> <span class="s">"k=</span><span class="si">%</span><span class="s">d"</span> <span class="o">%</span> <span class="n">k</span>
+            <span class="k">print</span><span class="p">(</span><span class="n">label</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">daysWanted</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s">'--'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">regione</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span> <span class="n">loc</span><span class="o">=</span><span class="s">"best"</span> <span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre>
+</div>
+<h3>Veneto</h3>
+<p>Previsione su 2 giorni (il primo valore è il giorno attuale) con <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.UnivariateSpline.html">https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.UnivariateSpline.html</a>:</p>
+
+<p>(dato del 16 marzo 2020)</p>
+
+<ul>
+  <li>k=1 [2472.97444105 2472.97444105 2773.85633249]</li>
+  <li>k=2 [2472.98428357 2472.98428357 2877.80637061]</li>
+  <li>k=3 [2472.9912545  2472.9912545  3173.32368116]</li>
+</ul>
+
+<p><img src="\images\covid-veneto.png" /></p>
+
+<h3>Friuli</h3>
+<ul>
+  <li>k=1 [386.00606735 386.00606735 425.02581638]</li>
+  <li>k=2 [386.00465762 386.00465762 257.56460557]</li>
+  <li>k=3 [386.01289401 386.01289401 383.99145899]</li>
+</ul>
+
+<p><img src="\images\covid-fvg.png" /></p>
 
 			</div>
 
@@ -281,7 +343,7 @@
 					
 
 				
-				<time class="icon-calendar pr20" datetime="2020-02-27T01:00:00+01:00" itemprop="datePublished"> 2020-02-27</time>
+				<time class="icon-calendar pr20" datetime="2020-03-17T01:00:00+01:00" itemprop="datePublished"> 2020-03-17</time>
 				
 
 				<span class="icon-archive pr20"> ARTICOLI</span>
@@ -292,11 +354,11 @@
 			
 			<div id="post-nav" class="row">
 				
-				<div class="small-5 columns"><a class="button small radius prev" href="https://www.zen.pn.it/2020/02/flashcard-mtcna">&laquo; Flashcard per ripassare le basi di RouterOS</a></div><!-- /.small-4.columns -->
+				<div class="small-5 columns"><a class="button small radius prev" href="https://www.zen.pn.it/2020/02/null-byte">&laquo; null-byte how to</a></div><!-- /.small-4.columns -->
 				
 				<div class="small-2 columns text-center"><a class="radius button small" href="https://www.zen.pn.it/archivio/" title="Blog Archivio">Archivio</a></div><!-- /.small-4.columns -->
 				
-				<div class="small-5 columns text-right"><a class="button small radius next" href="https://www.zen.pn.it/2020/03/pycoro">pycoro &raquo;</a></div><!-- /.small-4.columns -->
+				<div class="small-5 columns text-right"></div><!-- /.small-4.columns -->
 				
 			</div>
 			
@@ -311,7 +373,7 @@
 			    <script type="text/javascript">
 			        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
 			        var disqus_shortname = 'zenpnit'; 
-			        var disqus_identifier = '/2020/02/null-byte';
+			        var disqus_identifier = '/2020/03/pycoro';
 
 			        /* * * DON'T EDIT BELOW THIS LINE * * */
 			        (function() {
