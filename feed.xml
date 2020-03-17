@@ -12,7 +12,7 @@
 				<title>pycoro</title>
 				<link>https://www.zen.pn.it/2020/03/pycoro</link>
 				<pubDate>Tue, 17 Mar 2020 00:00:00 +0000</pubDate>
-				<description>&lt;p&gt;&lt;b&gt;Senza volere fare previsioni od elaborazioni ufficiali od ufficiose ma solo un esercizio per ripassare alcuni concetti matematici&lt;/b&gt;, di seguito trovate il programma Python e i grafici che, partendo dai dati ufficiali sulla diffusione del COVID-19 (&lt;a href=&quot;https://github.com/pcm-dpc/COVID-19&quot;&gt;https://github.com/pcm-dpc/COVID-19&lt;/a&gt;), disegnano i grafici per il Veneto e il Friuli sull’andamento e la previsione per i prossimi due giorni dei casi segnalati.&lt;/p&gt;
+				<description>&lt;p&gt;&lt;b&gt;Senza volere fare previsioni od elaborazioni ufficiali od ufficiose ma solo un esercizio per ripassare alcuni concetti matematici&lt;/b&gt;, di seguito trovate il programma Python e i grafici che, partendo dai dati ufficiali sulla diffusione del COVID-19 (&lt;a href=&quot;https://github.com/pcm-dpc/COVID-19&quot;&gt;https://github.com/pcm-dpc/COVID-19&lt;/a&gt;), disegna i grafici per il Veneto e il Friuli sull’andamento e la previsione per i prossimi due giorni dei casi segnalati.&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;urllib.request&lt;/span&gt;
 &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;json&lt;/span&gt;

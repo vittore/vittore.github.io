@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://www.zen.pn.it/</id>
 	<title>zen.pn.it - Tecnologia e dintorni</title>
-	<updated>2020-03-17T08:30:41+01:00</updated>
+	<updated>2020-03-17T08:31:11+01:00</updated>
 
 	<subtitle>Segnalazioni e riflessioni su &amp;quot;cose di tecnologia&amp;quot; di Vittore Zen</subtitle>
 
@@ -46,7 +46,7 @@
 				</author>
 			
 			<summary>Dai dati ufficiali, qualche previsione matematica</summary>
-			<content type="html" xml:base="https://www.zen.pn.it/2020/03/pycoro">&lt;p&gt;&lt;b&gt;Senza volere fare previsioni od elaborazioni ufficiali od ufficiose ma solo un esercizio per ripassare alcuni concetti matematici&lt;/b&gt;, di seguito trovate il programma Python e i grafici che, partendo dai dati ufficiali sulla diffusione del COVID-19 (&lt;a href=&quot;https://github.com/pcm-dpc/COVID-19&quot;&gt;https://github.com/pcm-dpc/COVID-19&lt;/a&gt;), disegnano i grafici per il Veneto e il Friuli sull’andamento e la previsione per i prossimi due giorni dei casi segnalati.&lt;/p&gt;
+			<content type="html" xml:base="https://www.zen.pn.it/2020/03/pycoro">&lt;p&gt;&lt;b&gt;Senza volere fare previsioni od elaborazioni ufficiali od ufficiose ma solo un esercizio per ripassare alcuni concetti matematici&lt;/b&gt;, di seguito trovate il programma Python e i grafici che, partendo dai dati ufficiali sulla diffusione del COVID-19 (&lt;a href=&quot;https://github.com/pcm-dpc/COVID-19&quot;&gt;https://github.com/pcm-dpc/COVID-19&lt;/a&gt;), disegna i grafici per il Veneto e il Friuli sull’andamento e la previsione per i prossimi due giorni dei casi segnalati.&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;urllib.request&lt;/span&gt;
 &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;json&lt;/span&gt;
