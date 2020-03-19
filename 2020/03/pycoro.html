@@ -266,10 +266,12 @@
 			<div itemprop="articleSection">
 			<p><b>Senza volere fare previsioni od elaborazioni ufficiali od ufficiose ma solo un esercizio per ripassare alcuni concetti matematici</b>, di seguito trovate il programma Python e i grafici che, partendo dai dati ufficiali sulla diffusione del COVID-19 (<a href="https://github.com/pcm-dpc/COVID-19">https://github.com/pcm-dpc/COVID-19</a>), disegna i grafici per il Veneto e il Friuli sull’andamento e la previsione per i prossimi due giorni dei casi segnalati.</p>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">urllib.request</span>
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#!/usr/bin/env python3</span>
+<span class="kn">import</span> <span class="nn">urllib.request</span>
 <span class="kn">import</span> <span class="nn">json</span>
 <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
 <span class="kn">from</span> <span class="nn">scipy.interpolate</span> <span class="kn">import</span> <span class="n">UnivariateSpline</span>
+<span class="kn">from</span> <span class="nn">scipy.signal</span> <span class="kn">import</span> <span class="n">savgol_filter</span>
 
 
 <span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
@@ -293,12 +295,14 @@
                 <span class="n">xPoints</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">delta</span><span class="o">.</span><span class="n">days</span><span class="p">)</span>
                 <span class="n">yPoints</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s">'totale_casi'</span><span class="p">])</span>
         <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xPoints</span><span class="p">,</span> <span class="n">yPoints</span><span class="p">,</span> <span class="s">'o'</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s">'data'</span><span class="p">)</span>
+        <span class="n">yhat</span> <span class="o">=</span> <span class="n">savgol_filter</span><span class="p">(</span><span class="n">yPoints</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xPoints</span><span class="p">,</span> <span class="n">yhat</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s">'Savitzky–Golay'</span><span class="p">)</span>
         <span class="n">daysWanted</span><span class="o">=</span><span class="p">[</span><span class="n">xMax</span><span class="p">]</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span>
             <span class="n">daysWanted</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">xMax</span><span class="o">+</span><span class="n">i</span><span class="p">)</span>
 
-        <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span>
-            <span class="n">spl</span> <span class="o">=</span> <span class="n">UnivariateSpline</span><span class="p">(</span><span class="n">xPoints</span><span class="p">,</span> <span class="n">yPoints</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">):</span>
+            <span class="n">spl</span> <span class="o">=</span> <span class="n">UnivariateSpline</span><span class="p">(</span><span class="n">xPoints</span><span class="p">,</span> <span class="n">yhat</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="p">)</span>
             <span class="n">spl</span><span class="o">.</span><span class="n">set_smoothing_factor</span><span class="p">(</span><span class="mf">0.2</span><span class="p">)</span>
             <span class="n">y</span> <span class="o">=</span> <span class="n">spl</span><span class="p">(</span><span class="n">daysWanted</span><span class="p">)</span>
             <span class="n">label</span> <span class="o">=</span> <span class="s">"k=</span><span class="si">%</span><span class="s">d"</span> <span class="o">%</span> <span class="n">k</span>
@@ -308,6 +312,7 @@
         <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">regione</span><span class="p">)</span>
         <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span> <span class="n">loc</span><span class="o">=</span><span class="s">"best"</span> <span class="p">)</span>
         <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
 </code></pre>
 </div>
 <h3>Veneto</h3>
@@ -316,18 +321,18 @@
 <p>(dato del 16 marzo 2020)</p>
 
 <ul>
-  <li>k=1 [2472.97444105 2472.97444105 2773.85633249]</li>
-  <li>k=2 [2472.98428357 2472.98428357 2877.80637061]</li>
-  <li>k=3 [2472.9912545  2472.9912545  3173.32368116]</li>
+  <li>k=1 [3488.4586156  3488.4586156  3833.10323264 4177.74784968 4522.39246673]</li>
+  <li>k=2 [3488.48382602 3488.48382602 3599.4092177  3476.56684754 3119.95671556]</li>
+  <li>k=3 [3488.49804554 3488.49804554 3840.2076378  4197.1652704  4557.67779792]</li>
 </ul>
 
 <p><img src="\images\covid-veneto.png" /></p>
 
 <h3>Friuli</h3>
 <ul>
-  <li>k=1 [386.00606735 386.00606735 425.02581638]</li>
-  <li>k=2 [386.00465762 386.00465762 257.56460557]</li>
-  <li>k=3 [386.01289401 386.01289401 383.99145899]</li>
+  <li>k=1 [567.37167861 567.37167861 638.96818916 710.56469971 782.16121027]</li>
+  <li>k=2 [567.43739257 567.43739257 659.91695235 773.15360946 907.14736392]
+ k=3 [567.44449333 567.44449333 648.19823327 739.01274804 840.95388609]</li>
 </ul>
 
 <p><img src="\images\covid-fvg.png" /></p>
