@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://www.zen.pn.it/</id>
 	<title>zen.pn.it - Tecnologia e dintorni</title>
-	<updated>2020-03-24T19:08:46+01:00</updated>
+	<updated>2020-03-24T20:27:14+01:00</updated>
 
 	<subtitle>Segnalazioni e riflessioni su &amp;quot;cose di tecnologia&amp;quot; di Vittore Zen</subtitle>
 
@@ -165,21 +165,21 @@ Telelavoro e smart working non sono la stessa cosa: tra queste due tipologie di 
 &lt;h3&gt;Veneto&lt;/h3&gt;
 &lt;p&gt;Previsione su 2 giorni (il primo valore è il giorno attuale) con &lt;a href=&quot;https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.UnivariateSpline.html&quot;&gt;https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.UnivariateSpline.html&lt;/a&gt;:&lt;/p&gt;
 
-&lt;p&gt;(dato del 16 marzo 2020)&lt;/p&gt;
+&lt;p&gt;(dato del 23 marzo 2020)&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;k=1 [3488.4586156  3488.4586156  3833.10323264 4177.74784968 4522.39246673]&lt;/li&gt;
-  &lt;li&gt;k=2 [3488.48382602 3488.48382602 3599.4092177  3476.56684754 3119.95671556]&lt;/li&gt;
-  &lt;li&gt;k=3 [3488.49804554 3488.49804554 3840.2076378  4197.1652704  4557.67779792]&lt;/li&gt;
+  &lt;li&gt;k=1 [5965.7057941  5965.7057941  6405.50670116 6845.30760822 7285.10851527]&lt;/li&gt;
+  &lt;li&gt;k=2 [5965.63978126 5965.63978126 6370.41016268 6740.31096795 7075.34219707]&lt;/li&gt;
+  &lt;li&gt;k=3 [5965.61047754 5965.61047754 6355.34720057 6678.63307654 6918.77284436]&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;\images\covid-veneto.png&quot; /&gt;&lt;/p&gt;
 
 &lt;h3&gt;Friuli&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;k=1 [567.37167861 567.37167861 638.96818916 710.56469971 782.16121027]&lt;/li&gt;
-  &lt;li&gt;k=2 [567.43739257 567.43739257 659.91695235 773.15360946 907.14736392]
- k=3 [567.44449333 567.44449333 648.19823327 739.01274804 840.95388609]&lt;/li&gt;
+  &lt;li&gt;k=1 [ 995.34034413  995.34034413 1053.46755687 1111.5947696  1169.72198234]&lt;/li&gt;
+  &lt;li&gt;k=2 [ 995.23966355  995.23966355 1033.61949453 1052.47618057 1051.80972167]&lt;/li&gt;
+  &lt;li&gt;k=3 [ 995.22544223  995.22544223 1027.80489782 1028.63739093  991.24117572]&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src=&quot;\images\covid-fvg.png&quot; /&gt;&lt;/p&gt;
