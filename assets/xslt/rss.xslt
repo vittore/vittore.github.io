@@ -45,9 +45,11 @@
 	<meta property="og:title" content="RSS Feed (Styled)">
 	<meta property="og:description" content="Segnalazioni e riflessioni su &amp;quot;cose di tecnologia&amp;quot; di Vittore Zen">
 	<meta property="og:url" content="https://www.zen.pn.it/assets/xslt/rss.xslt">
-	<meta property="og:locale" content="en_EN">
+	<meta property="og:locale" content="it_IT">
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="zen.pn.it - Tecnologia e dintorni">
+
+
 	
 	<meta property="article:author" content="https://www.facebook.com/vittore.zen">
 
