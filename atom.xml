@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://www.zen.pn.it/</id>
 	<title>zen.pn.it - Tecnologia e dintorni</title>
-	<updated>2020-03-19T20:31:27+01:00</updated>
+	<updated>2020-03-24T08:33:21+01:00</updated>
 
 	<subtitle>Segnalazioni e riflessioni su &amp;quot;cose di tecnologia&amp;quot; di Vittore Zen</subtitle>
 
@@ -28,6 +28,71 @@
 
 	<generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator>
 
+	
+		<entry>
+			<id>https://www.zen.pn.it/2020/03/smartworking</id>
+			<title>Smart working, lettera dalle retrovie.</title>
+			<link href="https://www.zen.pn.it/2020/03/smartworking" rel="alternate" type="text/html" title="Smart working, lettera dalle retrovie." />
+			<updated>2020-03-24T01:00:00+01:00</updated>
+
+			
+				
+				<author>
+					
+						<name>Vittore Zen</name>
+					
+					
+					
+				</author>
+			
+			<summary>Mi sento in dovere di scrivere questo articolo. L’esperienza che stiamo vivendo come “informatici” me lo chiede.</summary>
+			<content type="html" xml:base="https://www.zen.pn.it/2020/03/smartworking">&lt;p&gt;Su wikipedia troviamo scritto: «Informatico è il termine generico per indicare una delle tante figure professionali impiegate nell’informatica in ambito aziendale, industriale e scientifico. » Inutile parlare di progettisti di infrastrutture di rete o cercare di esprimere la complessità della tecnologia.&lt;/p&gt;
+
+&lt;p&gt;In questo momento, un po’ come tutti, anche noi siamo al fronte, nelle retrovie addetti ai rifornimenti: voglio che i miei dipendenti lavorino da casa, voglio entro domani 300 caselle email per tutti i miei studenti ma pagando 5 euro l’anno, voglio la video lezione gratis per tutta la mia scuola,…&lt;/p&gt;
+
+&lt;p&gt;L’essere su questo fronte tecnologico ci permette di osservare da vicino alcune dinamiche e questo articolo vuole essere una piccola riflessione a riguardo.&lt;/p&gt;
+
+&lt;p&gt;E’ doverosa una premessa: non so come si guida una azienda, non  ho fatto corsi di gestione aziendale, inoltre sono un ottimista e mi scuso per eventuali riferimenti assolutamente non voluti.&lt;/p&gt;
+
+&lt;h2 id=&quot;fammi-la-vpn-per-i-dipendenti-e-voglio-un-rapporto-periodico-su-quando-si-collegano---la-fiducia&quot;&gt;Fammi la VPN per i dipendenti e voglio un rapporto periodico su quando si collegano. - &lt;em&gt;La fiducia&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;Si parla di smart working però quello che viene chiesto è di fatto il telelavoro.
+Telelavoro e smart working non sono la stessa cosa: tra queste due tipologie di lavoro ci sono differenze formali ma soprattutto di “filosofia”.&lt;/p&gt;
+
+&lt;p&gt;Per telelavoro, come dice la parola, si intende un lavoro che si svolge a distanza rispetto alla sede centrale: diffusosi negli anni ’70 grazie allo sviluppo delle tecnologie informatiche, i teleworkers lavoravano per lo più da casa o in un luogo specifico decentrato. Con l’Accordo Quadro del 2004, il telelavoro deve seguire normative precise, come un adeguato isolamento dell’attività lavorativa da quella quotidiana e sicurezza, per il dipendente e per le apparecchiature tecnologiche utilizzate. Per quanto riguarda l’orario, il riposo è obbligatorio per 11 ore consecutive ogni 24 con astensione lavorativa dalla mezzanotte alle 5.&lt;/p&gt;
+
+&lt;p&gt;Lo smart working ne segue alcuni punti essenziali: per esempio uguale trattamento economico rispetto agli “insiders”. Ma l’aspetto più evidente che segna il distacco con il  telelavoro è il fatto che non è più obbligatorio legarsi a un luogo fisico fisso in cui lavorare e l’orario è autodeterminato: l’importante è raggiungere l’obiettivo prefissato e il monte ore è gestito dallo smart workers.&lt;/p&gt;
+
+&lt;p&gt;Ecco il punto critico che stiamo notando mentre forniamo le tecnologie che servono per il lavoro da remoto.&lt;/p&gt;
+
+&lt;p&gt;Se non mi fido del mio dipendente alla fine, sotto sotto, gli chiederò di fare telelavoro anche se userò l’hashtag modaiolo #smartworking.&lt;/p&gt;
+
+&lt;p&gt;A mio avviso la differenza sta proprio nella quantità di fiducia che esprimo nei confronti dei dipendenti e nella capacità di definire degli obiettivi per la mia azienda e non solo delle attività.&lt;/p&gt;
+
+&lt;h2 id=&quot;voglio-che-il-dipendente-possa-lavorare-con-il-suo-pc-di-casa-sui-nostri-server-interni---la-sicurezza-e-linvestimento&quot;&gt;Voglio che il dipendente possa lavorare con il suo pc di casa sui nostri server interni. - &lt;em&gt;La sicurezza e l’investimento&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;Prima del COVID-19 c’era il GDPR e già quest’ultimo aveva messo in luce le carenze sugli investimenti sul tema della sicurezza; ora il COVID-19 ha accentuato il problema. La sicurezza dell’informazione richiede investimenti corposi non solo in tecnologie hardware e software ma soprattutto in formazione delle persone. Se i miei operatori non sono stati formati su come funziona un’azione di phishing o quali sono le basi formali di una PEC, come posso metterli in condizione di lavorare serenamente? O meglio come posso essere sereno io, titolare dei dati che compongono il mio core-business, a dare accesso indiscriminato e facile a tali dati?&lt;/p&gt;
+
+&lt;h2 id=&quot;bisogna-che-voi-informatici-siate-presenti-in-sede-se-un-cliente-viene-qui-e-ha-bisogno-che-figura-ci-facciamo----lattenzione-alle-persone-e-leducazione-del-cliente&quot;&gt;Bisogna che voi informatici siate presenti in sede. Se un cliente viene qui e ha bisogno? Che figura ci facciamo?  - &lt;em&gt;L’attenzione alle persone e l’educazione del cliente&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;Quando vado in sala server a mettere mano fisicamente agli apparati significa che c’è un problema. Ritengo che questa affermazione possa essere ampiamente condivisa dagli operatori del settore IT. Spesso la mia attività si gioca tra connessioni VPN multiple e manutenzioni a distanza. Allora in questo periodo particolare. se tutti lavorano da remoto e  se tutto il lavoro che facciamo è remoto perché devo essere fisicamente in sede mettendo a rischio la mia salute e quella delle altre persone?&lt;/p&gt;
+
+&lt;p&gt;La risposta che ricevo in questi casi è legata all’immagine dell’azienda e alle richieste del cliente: il cliente prima di tutto, citando Jack Ma fondatore di Alibaba.&lt;/p&gt;
+
+&lt;p&gt;A mio avviso qui deragliamo. Lavoro in un ambiente cattolico, don Bosco diceva «Da mihi animas, caetera tolle» (Dammi le persone; i beni prendili per te, Gen 14, 21) ma a volte l’attenzione alle persone viene meno.&lt;/p&gt;
+
+&lt;p&gt;Oltre a questo sono convinto che una relazione sana debba passare anche per una forma di “educazione del cliente”, cioè bisogna aiutare le persone che si rivolgono a noi a migliorare la loro qualità di vita, aiutarle a capire che installare la versione pirata della suite completa Adobe per ridimensionare un paio di immagini non è una scelta etica, si può fare meglio, si deve fare meglio. Se vogliamo un mondo migliore bisogna metterci del nostro e non solo enunciare i principi ed invitare gli altri a rispettarli.&lt;/p&gt;
+</content>
+
+			
+				<category term="Articoli" />
+			
+			
+				<category term="web" />
+			
+
+			<published>2020-03-24T01:00:00+01:00</published>
+		</entry>
 	
 		<entry>
 			<id>https://www.zen.pn.it/2020/03/pycoro</id>
@@ -589,38 +654,6 @@ Inoltre, per come è attuata, la Cookie Law finisce per essere un pesante onere 
 			
 
 			<published>2018-06-11T02:00:00+02:00</published>
-		</entry>
-	
-		<entry>
-			<id>https://www.zen.pn.it/2018/05/seconda-edizione-in-lavorazione-idee-e-o-richieste/</id>
-			<title>Seconda edizione in lavorazione: idee e/o richieste?</title>
-			<link href="https://www.zen.pn.it/2018/05/seconda-edizione-in-lavorazione-idee-e-o-richieste/" rel="alternate" type="text/html" title="Seconda edizione in lavorazione: idee e/o richieste?" />
-			<updated>2018-05-30T00:17:12+02:00</updated>
-
-			
-				
-				<author>
-					
-						<name>Vittore Zen</name>
-					
-					
-					
-				</author>
-			
-			<summary></summary>
-			<content type="html" xml:base="https://www.zen.pn.it/2018/05/seconda-edizione-in-lavorazione-idee-e-o-richieste/">&lt;p&gt;L’anno scolastico si avvia alla conclusione e l’estate è alle porte. In questo periodo metterò mano al libretto “&lt;a href=&quot;https://www.amazon.it/Teoria-laboratori-esercizi-MikroTik-RouterOS/dp/1973238845/&quot;&gt;Teoria, laboratori ed esercizi per MikroTik RouterOS&lt;/a&gt;” per essere pronto per l’inizio delle attività a settembre.&lt;/p&gt;
-
-&lt;p&gt;Se ci sono suggerimenti, consigli o altre modifiche che ritenete utili contattatemi via email.&lt;/p&gt;
-</content>
-
-			
-				<category term="Articoli" />
-			
-			
-				<category term="Network" />
-			
-
-			<published>2018-05-30T00:17:12+02:00</published>
 		</entry>
 	
 </feed>
