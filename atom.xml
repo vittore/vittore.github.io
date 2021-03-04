@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://www.zen.pn.it/</id>
 	<title>zen.pn.it - Tecnologia e dintorni</title>
-	<updated>2021-03-03T07:51:45+01:00</updated>
+	<updated>2021-03-04T11:03:40+01:00</updated>
 
 	<subtitle>Segnalazioni e riflessioni su &amp;quot;cose di tecnologia&amp;quot; di Vittore Zen</subtitle>
 
@@ -28,6 +28,58 @@
 
 	<generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator>
 
+	
+		<entry>
+			<id>https://www.zen.pn.it/2021/03/week1</id>
+			<title>The week #1</title>
+			<link href="https://www.zen.pn.it/2021/03/week1" rel="alternate" type="text/html" title="The week #1" />
+			<updated>2021-03-04T11:00:00+01:00</updated>
+
+			
+				
+				<author>
+					
+						<name>Vittore Zen</name>
+					
+					
+					
+				</author>
+			
+			<summary>Proviamoci. Ad un anno dall'ultimo post provo a riprendere la scrittura con questa 'mini rubrica' dei link interessanti.</summary>
+			<content type="html" xml:base="https://www.zen.pn.it/2021/03/week1">&lt;h2 id=&quot;httpwoshubcom&quot;&gt;&lt;a href=&quot;http://woshub.com/&quot;&gt;http://woshub.com/&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Articoli tecnici per Windows Server.&lt;/p&gt;
+
+&lt;p&gt;Alcuni esempi:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://woshub.com/mount-usb-flash-drive-vmware-esxi/&quot;&gt;Accessing USB Flash Drive from VMWare ESXi&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://woshub.com/rds-shadow-how-to-connect-to-a-user-session-in-windows-server-2012-r2/&quot;&gt;Allows RDS administrators to view and interact with the user’s desktop&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://woshub.com/network-sniffer-packet-monitor-pktmon/&quot;&gt;Built-in Packet Sniffer in Windows 10&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;lorawan-con-mikrotik&quot;&gt;&lt;a href=&quot;https://scoop.co.za/blog/post/internet-of-things-mikrotik-lorawan&quot;&gt;LoraWAN con Mikrotik&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Come l’università di Pretoria (Sud Africa) ha iniziato l’esplorazione del protocollo LoraWAN attraverso la misurazione dei dati di una maratona.&lt;/p&gt;
+
+&lt;h2 id=&quot;lorawan-con-arduino&quot;&gt;&lt;a href=&quot;https://www.mobilefish.com/developer/lorawan/lorawan_quickguide_build_lora_node_rfm95_arduino_uno.html&quot;&gt;LoRaWAN con Arduino&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Realizzare un nodo LoRaWAN con Arduino Uno ed un modulo di trasmissione super economico (3 euro).&lt;/p&gt;
+
+&lt;h2 id=&quot;introduzione-a-terraform&quot;&gt;&lt;a href=&quot;https://www.terraform.io/intro/index.html&quot;&gt;Introduzione a Terraform&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Terraform è uno strumento open source che consente di costruire, modificare e aggiornare l’infrastruttura in modo semplice ed efficiente.
+Gli utenti definiscono ed eseguono il provisioning dell’infrastruttura del data center utilizzando un linguaggio di configurazione dichiarativo noto come HashiCorp Configuration Language (HCL) o, facoltativamente, JSON.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;Potete segnalare risorse per “The week” usando
+&lt;a href=&quot;https://twitter.com/messages/compose?recipient_id=14417569&amp;amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-dm-button&quot; data-screen-name=&quot;@vittore&quot; data-show-count=&quot;false&quot;&gt;Message @@vittore&lt;/a&gt;&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+</content>
+
+			
+				<category term="Articoli" />
+			
+			
+				<category term="web" />
+			
+
+			<published>2021-03-04T11:00:00+01:00</published>
+		</entry>
 	
 		<entry>
 			<id>https://www.zen.pn.it/2020/03/smartworking</id>
@@ -553,107 +605,6 @@ Non é ancora perfetto come lo abbiamo immaginato… ed ogni volta che leggiamo 
 			
 
 			<published>2018-09-07T02:00:00+02:00</published>
-		</entry>
-	
-		<entry>
-			<id>https://www.zen.pn.it/2018/06/gdpr-cookie-e-siti-dinamici/</id>
-			<title>GDPR, cookie e siti dinamici</title>
-			<link href="https://www.zen.pn.it/2018/06/gdpr-cookie-e-siti-dinamici/" rel="alternate" type="text/html" title="GDPR, cookie e siti dinamici" />
-			<updated>2018-06-11T02:00:00+02:00</updated>
-
-			
-				
-				<author>
-					
-						<name>Vittore Zen</name>
-					
-					
-					
-				</author>
-			
-			<summary>Le 'buzz word' di questo momento sono GDPR e cookie, possibilmente condite in salsa legale.</summary>
-			<content type="html" xml:base="https://www.zen.pn.it/2018/06/gdpr-cookie-e-siti-dinamici/">&lt;p&gt;Mi ritengo con malcelato orgoglio uno dei primi sbarcati sul web  &lt;a href=&quot;https://web.archive.org/web/19980202100719/http://www.dimi.uniud.it:80/~zen/&quot;&gt;https://www.dimi.uniud.it/~zen&lt;/a&gt; (15 agosto 1997) che attraverso una discreta conoscenza delle scienze dell’informazione ha costruito un pezzo del web.
-Ho scritto “scienze dell’informazione” da non confondersi con le scienze della comunicazione: su questa distinzione mi prometto un post sicuramente polemico nel prossimo futuro considerate le invasioni di campo che vivo sulla mia pelle quasi quotidianamente.&lt;/p&gt;
-
-&lt;p&gt;Come ho scritto in &lt;a href=&quot;/perché-questo-blog/&quot;&gt;/perché-questo-blog/&lt;/a&gt; la nuova versione di &lt;a href=&quot;http://www.zen.pn.it&quot;&gt;www.zen.pn.it&lt;/a&gt; è interamente statica e non utilizza nessun tipo di cookie e non raccoglie nessun tipo di dato personale.&lt;/p&gt;
-
-&lt;p&gt;Ho riflettuto a lungo su prima di questa scelta:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Il mio bel sito wordpress con la sua miriade di plugin che raccolgono chissà quale tipo di dato non è certo gdpr-compliant.&lt;/li&gt;
-  &lt;li&gt;Ho la forza legale ed economica per far fronte ad eventuali divergenze?&lt;/li&gt;
-  &lt;li&gt;No.&lt;/li&gt;
-  &lt;li&gt;Soluzioni?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Semplice: un sito che non usa i cookie e non raccoglie dati; cioè un sito completamente HTML+CSS+JS, senza porzioni server side (che hanno bisogno dei cookie), senza possibilità di inviare post (che richiedono un minimo di trattamento dei dati di chi invia), senza statistiche di accesso,… insomma un sito web vecchio stile. Tecnicamente un sito realizzato usando &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Questo ritorno alle origini mi ha costretto a fare delle riflessioni su come sia cambiato il web in questi anni. Da quando nel lontano 1989 usavo metacrawler per le mie ricerche perché google aveva troppe poche pagine indicizzate, per arrivare fino ai giorni nostri dove il mio ufficio confina con un dipartimento di comunicazione sul cui sito web campeggia la “ricerca di un web marketing strategist”.
-Scusate, sto anticipando il prossimo post. Ritorno al tema tecnico.&lt;/p&gt;
-
-&lt;h2 id=&quot;cookie&quot;&gt;Cookie&lt;/h2&gt;
-
-&lt;p&gt;Il protocollo &lt;em&gt;http&lt;/em&gt; su cui il web si basa è un protocollo &lt;em&gt;senza memoria&lt;/em&gt; (stateless). Stateless significa che ogni richiesta è indipendente da quelle precedenti e si conclude al momento della chiusura della connessione (quando il server comunica che ha finito di servire il documento o premo “stop” nel browser).&lt;/p&gt;
-
-&lt;p&gt;Il server web quindi non ha “memoria” di quanto comunicato precedentemente con un certo client: per questo motivo, per realizzare applicazioni web complesse, sono stati sviluppati meccanismi a livello superiore come i cookies per costruire “sessioni” e permettere al server di recuperare informazioni riguardanti un certo client.&lt;/p&gt;
-
-&lt;p&gt;Senza cookie non ci può essere web dinamico, e-commerce,… in una parola non c’è &lt;em&gt;web statefull&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;I cookie sono una etichetta che viene messa alla mia navigazione, sul mio computer, sul mio browser.
-Ora questa etichettatura è molto rischiosa non in se stessa ma nel momento in cui la uso. Su questo tema vi invito a leggere due articoli:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.internazionale.it/notizie/eli-pariser/2011/07/01/internet-nasconde-censura-filter-bubble&quot;&gt;Quello che internet ci nasconde&lt;/a&gt; di E. Pariser da cui poi ha avuto origine il libro “Il filtro”&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.internazionale.it/reportage/hannes-grassegger/2018/03/21/politica-facebook-cambridge-analytica&quot;&gt;La politica ai tempi di facebook&lt;/a&gt; di  Hannes Grassegger, Mikael Krogerus per Internazionale&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-Chi non ha passato gli ultimi cinque anni su un altro pianeta ha certamente sentito parlare dei big data. Il senso di quest’espressione è che tutto quello che facciamo, sia online sia offline, lascia delle tracce digitali. Ogni acquisto fatto con la carta di credito, ogni ricerca su Google, ogni spostamento che facciamo con il cellulare in tasca, ogni like su Facebook: tutto è conservato da qualche parte.
-
-&lt;cite&gt;La politica ai tempi di Facebook&lt;/cite&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Ecco perché il legislatore ha messo una norma a riguardo: devi avvisare se usi i cookie.&lt;/p&gt;
-
-&lt;p&gt;Giusto. Corretto. Ma… non sarebbe stato saggio scrivere: se usi i cookie funzionali cioè quelli che nascono e muoiono per il funzionamento di un sito dinamico allora non devi avvisare nessuno, nel caso in cui i cookie li usi per identificare e poi usi questi dati allora avvisi il tuo “cliente”?&lt;/p&gt;
-
-&lt;p&gt;No. Nell’incertezza devi avvisare sempre.&lt;/p&gt;
-
-&lt;p&gt;Ormai i banner dei cookie sono divenuti la nuova forma di spam del web.&lt;/p&gt;
-&lt;blockquote&gt;
-Inoltre, per come è attuata, la Cookie Law finisce per essere un pesante onere burocratico per i gestori di piccoli blog. Questi, se vogliono inserire plugin sociali nei loro siti (elemento ormai indispensabile per poter essere visibili sul web), rischiano pesanti multe in caso di mancato blocco preventivo dei cookie e non corretta gestione degli stessi. Non dimentichiamo, infatti, che anche il solo controllo dei cookie che veicola il sito comporta conoscenze tecniche non banali, e realizzare un sistema di controllo e gestione dei cookie granulare, con possibilità di revoca del consenso già dato, è sicuramente una questione tecnica per la quale occorrono capacità di programmazione avanzate.
-&lt;cite&gt;https://www.valigiablu.it/cookie-law-gdpr/&lt;/cite&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;log-di-sistema&quot;&gt;Log di sistema&lt;/h2&gt;
-
-&lt;p&gt;Idem per i log di sistema. Se ho un sito web ho di sicuro un file di log che mi dice che l’ip tal dei tali ha richiesto quella specifica pagina. Attenzione: per il legislatore l’indirizzo ip è un dato personale e tenere dei log di sistema significa mantenere dei dati personali. Devi avvisare il tuo “cliente”.&lt;/p&gt;
-
-&lt;h2 id=&quot;commenti-e-moduli-di-informazione&quot;&gt;Commenti e moduli di informazione&lt;/h2&gt;
-
-&lt;p&gt;Se hai un blog è certo che darai ai tuoi lettori la possibilità di dibattere in pubblico e per mantenere il rapporto civile chiederai di identificarsi. Quindi… raccogli dati. Devi avvisare il tuo “cliente”.&lt;/p&gt;
-
-&lt;p&gt;Se hai un modulo in cui i tuoi clienti chiedono informazioni e raccogli il loro indirizzo email per rispondergli…. Devi avvisare il tuo “cliente”.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Aggiornamento del 16 giugno 2018: attraverso &lt;a href=&quot;https://disqus.com/&quot;&gt;https://disqus.com/&lt;/a&gt; ho potuto aggiungere i commenti al mio blog, di fatto rimandando esternamente ad un servizio terzo la gestione.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;quindi&quot;&gt;Quindi?&lt;/h2&gt;
-
-&lt;p&gt;Per me questo è troppo. Per questo ho fatto mia la riflessione che trovate in &lt;a href=&quot;https://www.bodhilinux.com/2018/06/03/forums-closed-due-to-gdpr/&quot;&gt;https://www.bodhilinux.com/2018/06/03/forums-closed-due-to-gdpr/&lt;/a&gt;  e sono passato a questa versione del mio blog. Niente cookie, niente dati personali.&lt;/p&gt;
-
-&lt;p&gt;E’ chiaro che la mia valutazione è limitata dalla mia visione prettamente tecnica, come scrivevo all’inizio la mia formazione in “scienze dell’informazione” chiede il suo riscatto e non sempre fa i conti con una realtà  dalle tante sfumature.&lt;/p&gt;
-
-&lt;p&gt;Ma la domanda iniziale, sotto traccia, rimane: che fine farà il web dinamico? Come cambierà con questi vincoli che minano alla base il funzionamento così come lo abbiamo realizzato dopo il 1999?&lt;/p&gt;
-</content>
-
-			
-				<category term="Articoli" />
-			
-			
-				<category term="web" />
-			
-
-			<published>2018-06-11T02:00:00+02:00</published>
 		</entry>
 	
 </feed>
