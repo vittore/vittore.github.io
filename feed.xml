@@ -15,18 +15,26 @@
 				<description>&lt;h2 id=&quot;ripassiamo-il-cablaggio&quot;&gt;&lt;a href=&quot;https://www3.diism.unisi.it/~giambene/reti_di_telecomunicazioni_materiale/materiale_didattico/Nuovo_Ordinamento/cablaggio%201.pdf&quot;&gt;Ripassiamo il cablaggio&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Delle vecchie slide trovate in rete per ripassare concetti sempre validi e da non scordare.&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&quot;https://www3.diism.unisi.it/~giambene/reti_di_telecomunicazioni_materiale/materiale_didattico/Nuovo_Ordinamento/cablaggio%201.pdf&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
+
 &lt;h2 id=&quot;php-desktop&quot;&gt;&lt;a href=&quot;https://github.com/cztomczak/phpdesktop&quot;&gt;PHP desktop&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;PHP Desktop è un progetto open source fondato da Czarek Tomczak nel 2012 per fornire un modo per sviluppare applicazioni GUI desktop native utilizzando tecnologie web come PHP, HTML5, JavaScript e SQLite. Pensalo come Electron per PHP. È uno strumento comodo per convertire app Web PHP e strumenti CLI PHP in applicazioni desktop con poco sforzo.&lt;/p&gt;
 
 &lt;p&gt;In un certo senso phpdesktop funge da compilatore da PHP a EXE. Incorpora un browser web, un server web multi-thread e un interprete PHP. Il tutto incorporato in una singola applicazione, una cartella portatile che puoi facilmente distribuire agli utenti finali impacchettandola in un archivio zip o creando un programma di installazione per la tua applicazione. Il server web incorporato è un’edizione personalizzata di Mongoose, un server web utilizzato dalla NASA sulla Stazione Spaziale Internazionale. I browser supportati sono Internet Explorer e Google Chrome tramite Chromium open source. Il pacchetto con Chrome incorporato non ha dipendenze esterne, tutto è incluso nei binari di phpdesktop e funziona immediatamente sul computer di un utente.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/cztomczak/phpdesktop&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;email-header-analyzer&quot;&gt;&lt;a href=&quot;https://mxtoolbox.com/EmailHeaders.aspx&quot;&gt;Email Header Analyzer&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Le intestazioni delle email possono fornire preziose informazioni diagnostiche come ritardi di hop, risultati anti-spam e altro ancora.&lt;/p&gt;
 
 &lt;p&gt;Questo strumento rende le intestazioni delle email leggibili dagli umani analizzandole secondo RFC 822.&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&quot;https://mxtoolbox.com/EmailHeaders.aspx&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
+
 &lt;h2 id=&quot;corso-gratuito-comptia-security&quot;&gt;&lt;a href=&quot;https://hackersacademy.com/courses/comptia-security-plus&quot;&gt;Corso gratuito CompTIA Security+&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;E’ un ampio tutorial con oltre 13 ore di video. Copre tutto ciò di cui hai bisogno per iniziare con la sicurezza informatica. Ed è gratis al 100%!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://hackersacademy.com/courses/comptia-security-plus&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 &lt;p&gt;Potete segnalare risorse per “The week” usando
