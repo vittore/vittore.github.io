@@ -9,6 +9,33 @@
 		<atom:link href="https://www.zen.pn.it/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>The week #2</title>
+				<link>https://www.zen.pn.it/2021/03/week2</link>
+				<pubDate>Thu, 11 Mar 2021 10:00:00 +0000</pubDate>
+				<description>&lt;h2 id=&quot;ripassiamo-il-cablaggio&quot;&gt;&lt;a href=&quot;https://www3.diism.unisi.it/~giambene/reti_di_telecomunicazioni_materiale/materiale_didattico/Nuovo_Ordinamento/cablaggio%201.pdf&quot;&gt;Ripassiamo il cablaggio&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Delle vecchie slide trovate in rete per ripassare concetti sempre validi e da non scordare.&lt;/p&gt;
+
+&lt;h2 id=&quot;php-desktop&quot;&gt;&lt;a href=&quot;https://github.com/cztomczak/phpdesktop&quot;&gt;PHP desktop&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;PHP Desktop è un progetto open source fondato da Czarek Tomczak nel 2012 per fornire un modo per sviluppare applicazioni GUI desktop native utilizzando tecnologie web come PHP, HTML5, JavaScript e SQLite. Pensalo come Electron per PHP. È uno strumento comodo per convertire app Web PHP e strumenti CLI PHP in applicazioni desktop con poco sforzo.&lt;/p&gt;
+
+&lt;p&gt;In un certo senso phpdesktop funge da compilatore da PHP a EXE. Incorpora un browser web, un server web multi-thread e un interprete PHP. Il tutto incorporato in una singola applicazione, una cartella portatile che puoi facilmente distribuire agli utenti finali impacchettandola in un archivio zip o creando un programma di installazione per la tua applicazione. Il server web incorporato è un’edizione personalizzata di Mongoose, un server web utilizzato dalla NASA sulla Stazione Spaziale Internazionale. I browser supportati sono Internet Explorer e Google Chrome tramite Chromium open source. Il pacchetto con Chrome incorporato non ha dipendenze esterne, tutto è incluso nei binari di phpdesktop e funziona immediatamente sul computer di un utente.&lt;/p&gt;
+
+&lt;h2 id=&quot;email-header-analyzer&quot;&gt;&lt;a href=&quot;https://mxtoolbox.com/EmailHeaders.aspx&quot;&gt;Email Header Analyzer&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Le intestazioni delle email possono fornire preziose informazioni diagnostiche come ritardi di hop, risultati anti-spam e altro ancora.&lt;/p&gt;
+
+&lt;p&gt;Questo strumento rende le intestazioni delle email leggibili dagli umani analizzandole secondo RFC 822.&lt;/p&gt;
+
+&lt;h2 id=&quot;corso-gratuito-comptia-security&quot;&gt;&lt;a href=&quot;https://hackersacademy.com/courses/comptia-security-plus&quot;&gt;Corso gratuito CompTIA Security+&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;E’ un ampio tutorial con oltre 13 ore di video. Copre tutto ciò di cui hai bisogno per iniziare con la sicurezza informatica. Ed è gratis al 100%!&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;Potete segnalare risorse per “The week” usando
+&lt;a href=&quot;https://twitter.com/messages/compose?recipient_id=14417569&amp;amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-dm-button&quot; data-screen-name=&quot;@vittore&quot; data-show-count=&quot;false&quot;&gt;Message @@vittore&lt;/a&gt;&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+</description>
+				<guid isPermaLink="true">https://www.zen.pn.it/2021/03/week2</guid>
+			</item>
+		
+			<item>
 				<title>The week #1</title>
 				<link>https://www.zen.pn.it/2021/03/week1</link>
 				<pubDate>Thu, 04 Mar 2021 10:00:00 +0000</pubDate>
@@ -348,32 +375,6 @@ Non é ancora perfetto come lo abbiamo immaginato… ed ogni volta che leggiamo 
 &lt;/ul&gt;
 </description>
 				<guid isPermaLink="true">https://www.zen.pn.it/2018/09/trenitalia-app-reverse</guid>
-			</item>
-		
-			<item>
-				<title>Seconda edizione de &quot;Teoria, laboratori ed esercizi per MikroTik RouterOS&quot;</title>
-				<link>https://www.zen.pn.it/2018/09/seconda-edizione-2018/</link>
-				<pubDate>Fri, 07 Sep 2018 00:00:00 +0000</pubDate>
-				<description>&lt;p&gt;Rispetto alla prima edizione:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;sono stati corretti diversi errori;&lt;/li&gt;
-  &lt;li&gt;le risposte alle domande di riepilogo alla fine di ogni capitolo ora sono brevemente motivate;&lt;/li&gt;
-  &lt;li&gt;sono stati inseriti dei brevi riassunti su alcune parti teoriche più ostiche.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Link alla seconda edizione de “Teoria, laboratori ed esercizi per MikroTik RouterOS”:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.it/dp/1983186805/ref=asap_bc?ie=UTF8&quot;&gt;versione cartacea&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.it/dp/B07H4SHHMW&quot;&gt;versione per Kindle&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Note:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Il libro è acquistabile anche utilizzando il Bonus Cultura e il Bonus Carta del Docente.&lt;/li&gt;
-  &lt;li&gt;Il libro è inserito nel programma Amazon Kindle MatchBook che offre ai clienti che acquistano o che hanno acquistato in precedenza un libro stampato da Amazon la possibilità di acquistare la versione Kindle di tale titolo per €0,99.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-				<guid isPermaLink="true">https://www.zen.pn.it/2018/09/seconda-edizione-2018/</guid>
 			</item>
 		
 	</channel>
