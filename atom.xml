@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://www.zen.pn.it/</id>
 	<title>zen.pn.it - Tecnologia e dintorni</title>
-	<updated>2021-03-12T09:36:54+01:00</updated>
+	<updated>2021-03-12T09:38:56+01:00</updated>
 
 	<subtitle>Segnalazioni e riflessioni su &amp;quot;cose di tecnologia&amp;quot; di Vittore Zen</subtitle>
 
@@ -79,7 +79,7 @@
 				<category term="Articoli" />
 			
 			
-				<category term="web" />
+				<category term="the week" />
 			
 
 			<published>2021-03-11T11:00:00+01:00</published>
@@ -131,7 +131,7 @@ Gli utenti definiscono ed eseguono il provisioning dell’infrastruttura del dat
 				<category term="Articoli" />
 			
 			
-				<category term="web" />
+				<category term="the week" />
 			
 
 			<published>2021-03-04T11:00:00+01:00</published>
