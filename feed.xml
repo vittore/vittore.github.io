@@ -9,10 +9,32 @@
 		<atom:link href="https://www.zen.pn.it/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>The week #3</title>
-				<link>https://www.zen.pn.it/2021/03/week3</link>
-				<pubDate>Thu, 18 Mar 2021 10:00:00 +0000</pubDate>
-				<description>&lt;h2 id=&quot;solid-principles-simplified-with-examples-in-php&quot;&gt;&lt;a href=&quot;https://levelup.gitconnected.com/solid-principles-simplified-php-examples-based-dc6b4f8861f6&quot;&gt;SOLID Principles Simplified with Examples in PHP&lt;/a&gt;&lt;/h2&gt;
+				<title>The week</title>
+				<link>https://www.zen.pn.it/2021/week</link>
+				<pubDate>Thu, 04 Mar 2021 10:00:00 +0000</pubDate>
+				<description>&lt;hr /&gt;
+
+&lt;h1 id=&quot;the-week4&quot;&gt;The week#4&lt;/h1&gt;
+&lt;h2 id=&quot;deepfakelab&quot;&gt;&lt;a href=&quot;https://github.com/iperov/DeepFaceLab&quot;&gt;DeepFakeLab&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Probabilmente non avrete il tempo per realizzare un video deep fake ma comprenderne la logica e le tecnologie è un must-to-do per un informatico.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=z29Oveu56eA&amp;amp;ab_channel=DeepFakeENGITA&quot;&gt;Link al video tutorial in italiano &amp;gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/iperov/DeepFaceLab&quot;&gt;Link al software python &amp;gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;tv-b-gone-kit--universal&quot;&gt;&lt;a href=&quot;https://www.melopero.com/shop/starter-kits/tv-b-gone-kit-universal-v1-2/&quot;&gt;TV-B-Gone Kit – Universal&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;E’ il primo di Aprile, non posso non suggerire questo progetto per smanettoni: spegnete tutti televisori intorno a voi! Compatibile con le più comuni marche di TV, utilissimo per fare scherzi e per riposare un po’ il cervello.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.melopero.com/shop/starter-kits/tv-b-gone-kit-universal-v1-2/&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;flowgorithm&quot;&gt;&lt;a href=&quot;http://www.flowgorithm.org/&quot;&gt;Flowgorithm&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;Utilizzando i diagrammi di flusso, è possibile concentrarsi sui concetti di programmazione piuttosto che su tutte le sfumature di un tipico linguaggio di programmazione. Una volta compresa la logica di programmazione, è facile imparare uno dei principali linguaggi. Flowgorithm può convertire in modo interattivo il tuo diagramma di flusso in oltre 18 linguaggi: C #, C ++, Java, JavaScript, Python, Ruby, Swift, Visual Basic .NET,…&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flowgorithm.org/&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;the-week3&quot;&gt;The week#3&lt;/h1&gt;
+&lt;h2 id=&quot;solid-principles-simplified-with-examples-in-php&quot;&gt;&lt;a href=&quot;https://levelup.gitconnected.com/solid-principles-simplified-php-examples-based-dc6b4f8861f6&quot;&gt;SOLID Principles Simplified with Examples in PHP&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;SOLID è l’acronimo dei primi cinque principi di progettazione orientata agli oggetti (OOD) ed è una serie di linee guida che gli sviluppatori possono utilizzare per creare software in modo semplice da mantenere ed estendere. La comprensione di questi concetti rende lo sviluppatore migliore.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://levelup.gitconnected.com/solid-principles-simplified-php-examples-based-dc6b4f8861f6&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
@@ -30,18 +52,8 @@ Il documento principale individua, tra i 20 controlli normalmente conosciuti com
 
 &lt;p&gt;&lt;a href=&quot;https://www.vice.com/en/article/gy7qm9/how-i-made-imsi-catcher-cheap-amazon-github&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-&lt;p&gt;Potete segnalare risorse per “The week” usando
-&lt;a href=&quot;https://twitter.com/messages/compose?recipient_id=14417569&amp;amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-dm-button&quot; data-screen-name=&quot;@vittore&quot; data-show-count=&quot;false&quot;&gt;Message @@vittore&lt;/a&gt;&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;&lt;/p&gt;
-</description>
-				<guid isPermaLink="true">https://www.zen.pn.it/2021/03/week3</guid>
-			</item>
-		
-			<item>
-				<title>The week #2</title>
-				<link>https://www.zen.pn.it/2021/03/week2</link>
-				<pubDate>Thu, 11 Mar 2021 10:00:00 +0000</pubDate>
-				<description>&lt;h2 id=&quot;ripassiamo-il-cablaggio&quot;&gt;&lt;a href=&quot;https://www3.diism.unisi.it/~giambene/reti_di_telecomunicazioni_materiale/materiale_didattico/Nuovo_Ordinamento/cablaggio%201.pdf&quot;&gt;Ripassiamo il cablaggio&lt;/a&gt;&lt;/h2&gt;
+&lt;h1 id=&quot;the-week2&quot;&gt;The week#2&lt;/h1&gt;
+&lt;h2 id=&quot;ripassiamo-il-cablaggio&quot;&gt;&lt;a href=&quot;https://www3.diism.unisi.it/~giambene/reti_di_telecomunicazioni_materiale/materiale_didattico/Nuovo_Ordinamento/cablaggio%201.pdf&quot;&gt;Ripassiamo il cablaggio&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Delle vecchie slide trovate in rete per ripassare concetti sempre validi e da non scordare.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www3.diism.unisi.it/~giambene/reti_di_telecomunicazioni_materiale/materiale_didattico/Nuovo_Ordinamento/cablaggio%201.pdf&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
@@ -65,18 +77,9 @@ Il documento principale individua, tra i 20 controlli normalmente conosciuti com
 
 &lt;p&gt;&lt;a href=&quot;https://hackersacademy.com/courses/comptia-security-plus&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-&lt;p&gt;Potete segnalare risorse per “The week” usando
-&lt;a href=&quot;https://twitter.com/messages/compose?recipient_id=14417569&amp;amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-dm-button&quot; data-screen-name=&quot;@vittore&quot; data-show-count=&quot;false&quot;&gt;Message @@vittore&lt;/a&gt;&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;&lt;/p&gt;
-</description>
-				<guid isPermaLink="true">https://www.zen.pn.it/2021/03/week2</guid>
-			</item>
-		
-			<item>
-				<title>The week #1</title>
-				<link>https://www.zen.pn.it/2021/03/week1</link>
-				<pubDate>Thu, 04 Mar 2021 10:00:00 +0000</pubDate>
-				<description>&lt;h2 id=&quot;httpwoshubcom&quot;&gt;&lt;a href=&quot;http://woshub.com/&quot;&gt;http://woshub.com/&lt;/a&gt;&lt;/h2&gt;
+&lt;h1 id=&quot;the-week1&quot;&gt;The week#1&lt;/h1&gt;
+
+&lt;h2 id=&quot;httpwoshubcom&quot;&gt;&lt;a href=&quot;http://woshub.com/&quot;&gt;http://woshub.com/&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Articoli tecnici per Windows Server.&lt;/p&gt;
 
 &lt;p&gt;Alcuni esempi:&lt;/p&gt;
@@ -100,7 +103,7 @@ Gli utenti definiscono ed eseguono il provisioning dell’infrastruttura del dat
 &lt;p&gt;Potete segnalare risorse per “The week” usando
 &lt;a href=&quot;https://twitter.com/messages/compose?recipient_id=14417569&amp;amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-dm-button&quot; data-screen-name=&quot;@vittore&quot; data-show-count=&quot;false&quot;&gt;Message @@vittore&lt;/a&gt;&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;&lt;/p&gt;
 </description>
-				<guid isPermaLink="true">https://www.zen.pn.it/2021/03/week1</guid>
+				<guid isPermaLink="true">https://www.zen.pn.it/2021/week</guid>
 			</item>
 		
 			<item>
@@ -394,6 +397,50 @@ Non é ancora perfetto come lo abbiamo immaginato… ed ogni volta che leggiamo 
 &lt;/div&gt;
 </description>
 				<guid isPermaLink="true">https://www.zen.pn.it/mikrotik_version</guid>
+			</item>
+		
+			<item>
+				<title>Reverse engineering dell'app di Trenitalia</title>
+				<link>https://www.zen.pn.it/2018/09/trenitalia-app-reverse</link>
+				<pubDate>Fri, 07 Sep 2018 00:00:00 +0000</pubDate>
+				<description>&lt;p&gt;Segnalo questo interessante articolo di Jacopo Jannone dove si analizza la struttura dell’app di Trenitalia da poco pubblicata:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.jacopojannone.com/2018/09/24/trenitalia-app-reversed.html&quot;&gt;https://blog.jacopojannone.com/2018/09/24/trenitalia-app-reversed.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Per chi volesse approfondire il tema segnalo alcune interessanti API:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/bluviolin/TrainMonitor/wiki/API-del-sistema-Viaggiatreno&quot;&gt;API del sistema Viaggiatreno&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jacopo-j/TrenitaliaAPI/wiki/API-dell'app-Trenitalia&quot;&gt;API dell’app Trenitalia&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+				<guid isPermaLink="true">https://www.zen.pn.it/2018/09/trenitalia-app-reverse</guid>
+			</item>
+		
+			<item>
+				<title>Seconda edizione de &quot;Teoria, laboratori ed esercizi per MikroTik RouterOS&quot;</title>
+				<link>https://www.zen.pn.it/2018/09/seconda-edizione-2018/</link>
+				<pubDate>Fri, 07 Sep 2018 00:00:00 +0000</pubDate>
+				<description>&lt;p&gt;Rispetto alla prima edizione:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;sono stati corretti diversi errori;&lt;/li&gt;
+  &lt;li&gt;le risposte alle domande di riepilogo alla fine di ogni capitolo ora sono brevemente motivate;&lt;/li&gt;
+  &lt;li&gt;sono stati inseriti dei brevi riassunti su alcune parti teoriche più ostiche.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Link alla seconda edizione de “Teoria, laboratori ed esercizi per MikroTik RouterOS”:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.it/dp/1983186805/ref=asap_bc?ie=UTF8&quot;&gt;versione cartacea&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.amazon.it/dp/B07H4SHHMW&quot;&gt;versione per Kindle&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Note:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Il libro è acquistabile anche utilizzando il Bonus Cultura e il Bonus Carta del Docente.&lt;/li&gt;
+  &lt;li&gt;Il libro è inserito nel programma Amazon Kindle MatchBook che offre ai clienti che acquistano o che hanno acquistato in precedenza un libro stampato da Amazon la possibilità di acquistare la versione Kindle di tale titolo per €0,99.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+				<guid isPermaLink="true">https://www.zen.pn.it/2018/09/seconda-edizione-2018/</guid>
 			</item>
 		
 	</channel>
