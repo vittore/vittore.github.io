@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://www.zen.pn.it/</id>
 	<title>zen.pn.it - Tecnologia e dintorni</title>
-	<updated>2021-04-02T13:27:17+02:00</updated>
+	<updated>2021-04-02T13:54:08+02:00</updated>
 
 	<subtitle>Segnalazioni e riflessioni su &amp;quot;cose di tecnologia&amp;quot; di Vittore Zen</subtitle>
 
@@ -135,54 +135,102 @@ Il documento principale individua, tra i 20 controlli normalmente conosciuti com
 &lt;h1 class=&quot;right&quot; id=&quot;the-week2&quot;&gt;The week#2&lt;/h1&gt;
 &lt;hr /&gt;
 
-&lt;h2 id=&quot;ripassiamo-il-cablaggio&quot;&gt;&lt;a href=&quot;https://www3.diism.unisi.it/~giambene/reti_di_telecomunicazioni_materiale/materiale_didattico/Nuovo_Ordinamento/cablaggio%201.pdf&quot;&gt;Ripassiamo il cablaggio&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Delle vecchie slide trovate in rete per ripassare concetti sempre validi e da non scordare.&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;ripassiamo-il-cablaggio&quot;&gt;&lt;a href=&quot;https://www3.diism.unisi.it/~giambene/reti_di_telecomunicazioni_materiale/materiale_didattico/Nuovo_Ordinamento/cablaggio%201.pdf&quot;&gt;Ripassiamo il cablaggio&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/1064214308_0.jpg&quot; alt=&quot;Ripassiamo il cablaggio&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;Delle vecchie slide trovate in rete per ripassare concetti sempre validi e da non scordare.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www3.diism.unisi.it/~giambene/reti_di_telecomunicazioni_materiale/materiale_didattico/Nuovo_Ordinamento/cablaggio%201.pdf&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www3.diism.unisi.it/~giambene/reti_di_telecomunicazioni_materiale/materiale_didattico/Nuovo_Ordinamento/cablaggio%201.pdf&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;php-desktop&quot;&gt;&lt;a href=&quot;https://github.com/cztomczak/phpdesktop&quot;&gt;PHP desktop&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;PHP Desktop è un progetto open source fondato da Czarek Tomczak nel 2012 per fornire un modo per sviluppare applicazioni GUI desktop native utilizzando tecnologie web come PHP, HTML5, JavaScript e SQLite. Pensalo come Electron per PHP. È uno strumento comodo per convertire app Web PHP e strumenti CLI PHP in applicazioni desktop con poco sforzo.&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;php-desktop&quot;&gt;&lt;a href=&quot;https://github.com/cztomczak/phpdesktop&quot;&gt;PHP desktop&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/phpdesktop.jpg&quot; alt=&quot;PHP desktop&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;PHP Desktop è un progetto open source fondato da Czarek Tomczak nel 2012 per fornire un modo per sviluppare applicazioni GUI desktop native utilizzando tecnologie web come PHP, HTML5, JavaScript e SQLite. Pensalo come Electron per PHP. È uno strumento comodo per convertire app Web PHP e strumenti CLI PHP in applicazioni desktop con poco sforzo.&lt;/p&gt;
 
-&lt;p&gt;In un certo senso phpdesktop funge da compilatore da PHP a EXE. Incorpora un browser web, un server web multi-thread e un interprete PHP. Il tutto incorporato in una singola applicazione, una cartella portatile che puoi facilmente distribuire agli utenti finali impacchettandola in un archivio zip o creando un programma di installazione per la tua applicazione. Il server web incorporato è un’edizione personalizzata di Mongoose, un server web utilizzato dalla NASA sulla Stazione Spaziale Internazionale. I browser supportati sono Internet Explorer e Google Chrome tramite Chromium open source. Il pacchetto con Chrome incorporato non ha dipendenze esterne, tutto è incluso nei binari di phpdesktop e funziona immediatamente sul computer di un utente.&lt;/p&gt;
+    &lt;p&gt;In un certo senso phpdesktop funge da compilatore da PHP a EXE. Incorpora un browser web, un server web multi-thread e un interprete PHP. Il tutto incorporato in una singola applicazione, una cartella portatile che puoi facilmente distribuire agli utenti finali impacchettandola in un archivio zip o creando un programma di installazione per la tua applicazione. Il server web incorporato è un’edizione personalizzata di Mongoose, un server web utilizzato dalla NASA sulla Stazione Spaziale Internazionale. I browser supportati sono Internet Explorer e Google Chrome tramite Chromium open source. Il pacchetto con Chrome incorporato non ha dipendenze esterne, tutto è incluso nei binari di phpdesktop e funziona immediatamente sul computer di un utente.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/cztomczak/phpdesktop&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://github.com/cztomczak/phpdesktop&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;email-header-analyzer&quot;&gt;&lt;a href=&quot;https://mxtoolbox.com/EmailHeaders.aspx&quot;&gt;Email Header Analyzer&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Le intestazioni delle email possono fornire preziose informazioni diagnostiche come ritardi di hop, risultati anti-spam e altro ancora.&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;email-header-analyzer&quot;&gt;&lt;a href=&quot;https://mxtoolbox.com/EmailHeaders.aspx&quot;&gt;Email Header Analyzer&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/emailheaders.png&quot; alt=&quot;Email Header Analyzer&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;Le intestazioni delle email possono fornire preziose informazioni diagnostiche come ritardi di hop, risultati anti-spam e altro ancora.&lt;/p&gt;
 
-&lt;p&gt;Questo strumento rende le intestazioni delle email leggibili dagli umani analizzandole secondo RFC 822.&lt;/p&gt;
+    &lt;p&gt;Questo strumento rende le intestazioni delle email leggibili dagli umani analizzandole secondo RFC 822.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://mxtoolbox.com/EmailHeaders.aspx&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://mxtoolbox.com/EmailHeaders.aspx&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;corso-gratuito-comptia-security&quot;&gt;&lt;a href=&quot;https://hackersacademy.com/courses/comptia-security-plus&quot;&gt;Corso gratuito CompTIA Security+&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;E’ un ampio tutorial con oltre 13 ore di video. Copre tutto ciò di cui hai bisogno per iniziare con la sicurezza informatica. Ed è gratis al 100%!&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;corso-gratuito-comptia-security&quot;&gt;&lt;a href=&quot;https://hackersacademy.com/courses/comptia-security-plus&quot;&gt;Corso gratuito CompTIA Security+&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/logosecurityplus.png&quot; alt=&quot;CompTIA Security+&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;E’ un ampio tutorial con oltre 13 ore di video. Copre tutto ciò di cui hai bisogno per iniziare con la sicurezza informatica. Ed è gratis al 100%!&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://hackersacademy.com/courses/comptia-security-plus&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;https://hackersacademy.com/courses/comptia-security-plus&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
 
 &lt;hr /&gt;
 
 &lt;h1 class=&quot;right&quot; id=&quot;the-week1&quot;&gt;The week#1&lt;/h1&gt;
 &lt;hr /&gt;
 
-&lt;h2 id=&quot;httpwoshubcom&quot;&gt;&lt;a href=&quot;http://woshub.com/&quot;&gt;http://woshub.com/&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Articoli tecnici per Windows Server.&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;httpwoshubcom&quot;&gt;&lt;a href=&quot;http://woshub.com/&quot;&gt;http://woshub.com/&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/w2019.jpg&quot; alt=&quot;Windows 2019&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;Articoli tecnici per Windows Server.&lt;/p&gt;
 
-&lt;p&gt;Alcuni esempi:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://woshub.com/mount-usb-flash-drive-vmware-esxi/&quot;&gt;Accessing USB Flash Drive from VMWare ESXi&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://woshub.com/rds-shadow-how-to-connect-to-a-user-session-in-windows-server-2012-r2/&quot;&gt;Allows RDS administrators to view and interact with the user’s desktop&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://woshub.com/network-sniffer-packet-monitor-pktmon/&quot;&gt;Built-in Packet Sniffer in Windows 10&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+    &lt;p&gt;Alcuni esempi:&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://woshub.com/mount-usb-flash-drive-vmware-esxi/&quot;&gt;Accessing USB Flash Drive from VMWare ESXi&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://woshub.com/rds-shadow-how-to-connect-to-a-user-session-in-windows-server-2012-r2/&quot;&gt;Allows RDS administrators to view and interact with the user’s desktop&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://woshub.com/network-sniffer-packet-monitor-pktmon/&quot;&gt;Built-in Packet Sniffer in Windows 10&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;lorawan-con-mikrotik&quot;&gt;&lt;a href=&quot;https://scoop.co.za/blog/post/internet-of-things-mikrotik-lorawan&quot;&gt;LoraWAN con Mikrotik&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Come l’università di Pretoria (Sud Africa) ha iniziato l’esplorazione del protocollo LoraWAN attraverso la misurazione dei dati di una maratona.&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;lorawan-con-mikrotik&quot;&gt;&lt;a href=&quot;https://scoop.co.za/blog/post/internet-of-things-mikrotik-lorawan&quot;&gt;LoraWAN con Mikrotik&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/Figure11-LoRaWAN-race-event-University-of-Pretoria.jpg&quot; alt=&quot;LoraWAN con Mikrotik&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;Come l’università di Pretoria (Sud Africa) ha iniziato l’esplorazione del protocollo LoraWAN attraverso la misurazione dei dati di una maratona.&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;lorawan-con-arduino&quot;&gt;&lt;a href=&quot;https://www.mobilefish.com/developer/lorawan/lorawan_quickguide_build_lora_node_rfm95_arduino_uno.html&quot;&gt;LoRaWAN con Arduino&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Realizzare un nodo LoRaWAN con Arduino Uno ed un modulo di trasmissione super economico (3 euro).&lt;/p&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;lorawan-con-arduino&quot;&gt;&lt;a href=&quot;https://www.mobilefish.com/developer/lorawan/lorawan_quickguide_build_lora_node_rfm95_arduino_uno.html&quot;&gt;LoRaWAN con Arduino&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/sch_1.jpg&quot; alt=&quot;LoRaWAN con Arduino&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;Realizzare un nodo LoRaWAN con Arduino Uno ed un modulo di trasmissione super economico (3 euro).&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
 
-&lt;h2 id=&quot;introduzione-a-terraform&quot;&gt;&lt;a href=&quot;https://www.terraform.io/intro/index.html&quot;&gt;Introduzione a Terraform&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Terraform è uno strumento open source che consente di costruire, modificare e aggiornare l’infrastruttura in modo semplice ed efficiente.
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;introduzione-a-terraform&quot;&gt;&lt;a href=&quot;https://www.terraform.io/intro/index.html&quot;&gt;Introduzione a Terraform&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/terraform.png&quot; alt=&quot;Introduzione a Terraform&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;Terraform è uno strumento open source che consente di costruire, modificare e aggiornare l’infrastruttura in modo semplice ed efficiente.
 Gli utenti definiscono ed eseguono il provisioning dell’infrastruttura del data center utilizzando un linguaggio di configurazione dichiarativo noto come HashiCorp Configuration Language (HCL) o, facoltativamente, JSON.&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
 
 &lt;hr /&gt;
 &lt;p&gt;Potete segnalare risorse per “The week” usando
