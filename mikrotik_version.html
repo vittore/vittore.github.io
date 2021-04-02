@@ -247,7 +247,7 @@
 
 
 	<div class="row t30">
-	<div class="medium-8 columns medium-offset-2 end">
+	<div class="medium-12 columns end">
 		<article itemscope itemtype="http://schema.org/Article">
 			<header>
 				
@@ -279,55 +279,54 @@
 
 <p><img src="/images/mt-check.png" style="margin: 20px;" /></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">#!/usr/bin/python</span>
-<span class="c"># -*- encoding: utf-8; py-indent-offset: 4 -*-</span>
-<span class="c">#</span>
-<span class="c"># Vittore Zen - vittore [ @ ] zen.pn.it</span>
-<span class="c"># 2018.09.25</span>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/usr/bin/python
+# -*- encoding: utf-8; py-indent-offset: 4 -*-
+#
+# Vittore Zen - vittore [ @ ] zen.pn.it
+# 2018.09.25
 
-<span class="kn">import</span> <span class="nn">requests</span>
+import requests
 
-<span class="n">mikrotik_version_default</span> <span class="o">=</span> <span class="s">"6.0.0"</span>
+mikrotik_version_default = "6.0.0"
 
-<span class="k">def</span> <span class="nf">inventory_mikrotik_version</span><span class="p">(</span><span class="n">info</span><span class="p">):</span>
-    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">info</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">return</span> <span class="p">[</span> <span class="p">(</span> <span class="bp">None</span><span class="p">,</span> <span class="s">"mikrotik_version_default"</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">info</span> <span class="p">]</span>
+def inventory_mikrotik_version(info):
+    if len(info) &gt; 0:
+        return [ ( None, "mikrotik_version_default") for x in info ]
 
-<span class="k">def</span> <span class="nf">check_mikrotik_version</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">params</span><span class="p">,</span> <span class="n">info</span><span class="p">):</span>
-    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">'https://mikrotikdownload.s3.amazonaws.com/routeros/LATEST.6'</span><span class="p">)</span>
-    <span class="n">latest_with_build</span><span class="o">=</span><span class="n">r</span><span class="o">.</span><span class="n">text</span>
-    <span class="n">current</span><span class="o">=</span><span class="n">info</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+def check_mikrotik_version(item, params, info):
+    r = requests.get('https://mikrotikdownload.s3.amazonaws.com/routeros/LATEST.6')
+    latest_with_build=r.text
+    current=info[0][0]
 
-    <span class="n">latest</span><span class="p">,</span><span class="n">build</span><span class="o">=</span><span class="n">latest_with_build</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">" "</span><span class="p">)</span>
-    <span class="n">current_major</span><span class="p">,</span><span class="n">current_medium</span><span class="p">,</span><span class="n">current_minor</span><span class="o">=</span><span class="n">current</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"."</span><span class="p">)</span>
+    latest,build=latest_with_build.split(" ")
+    current_major,current_medium,current_minor=current.split(".")
 
-    <span class="k">if</span> <span class="p">(</span><span class="n">latest</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s">'.'</span><span class="p">)</span><span class="o">==</span><span class="mi">1</span><span class="p">):</span>
-       <span class="n">latest_major</span><span class="p">,</span><span class="n">latest_medium</span><span class="o">=</span><span class="n">latest</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"."</span><span class="p">)</span>
-       <span class="n">latest_minor</span><span class="o">=</span><span class="mi">0</span>
-    <span class="k">else</span><span class="p">:</span>
-       <span class="n">latest_major</span><span class="p">,</span><span class="n">latest_medium</span><span class="p">,</span><span class="n">latest_minor</span><span class="o">=</span><span class="n">latest</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s">"."</span><span class="p">)</span>
+    if (latest.count('.')==1):
+       latest_major,latest_medium=latest.split(".")
+       latest_minor=0
+    else:
+       latest_major,latest_medium,latest_minor=latest.split(".")
 
-    <span class="n">critical</span><span class="o">=</span><span class="n">latest_major</span><span class="o">+</span><span class="s">"."</span><span class="o">+</span><span class="n">latest_medium</span><span class="o">+</span><span class="s">".0"</span>
-    <span class="n">infotext</span> <span class="o">=</span> <span class="s">" - current: "</span><span class="o">+</span><span class="n">current</span><span class="o">+</span><span class="s">" avaible: "</span><span class="o">+</span><span class="n">latest</span>
-    <span class="k">if</span> <span class="n">current_major</span><span class="o">&lt;</span><span class="n">latest_major</span><span class="p">:</span>
-     <span class="k">return</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s">"CRIT"</span> <span class="o">+</span> <span class="n">infotext</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">current_medium</span><span class="o">&lt;</span><span class="n">latest_medium</span><span class="p">:</span>
-     <span class="k">return</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s">"CRIT"</span> <span class="o">+</span> <span class="n">infotext</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">current_medium</span> <span class="o">==</span> <span class="n">latest_medium</span> <span class="ow">and</span> <span class="n">current_minor</span><span class="o">&lt;</span><span class="n">latest_minor</span> <span class="p">:</span>
-     <span class="k">return</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s">"WARN"</span> <span class="o">+</span> <span class="n">infotext</span><span class="p">)</span>
-    <span class="k">return</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s">"OK"</span> <span class="o">+</span> <span class="n">infotext</span><span class="p">)</span>
+    critical=latest_major+"."+latest_medium+".0"
+    infotext = " - current: "+current+" avaible: "+latest
+    if current_major&lt;latest_major:
+     return (2, "CRIT" + infotext)
+    if current_medium&lt;latest_medium:
+     return (2, "CRIT" + infotext)
+    if current_medium == latest_medium and current_minor&lt;latest_minor :
+     return (1, "WARN" + infotext)
+    return (0, "OK" + infotext)
 
-<span class="n">check_info</span><span class="p">[</span><span class="s">'mikrotik_version'</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s">"inventory_function"</span>  <span class="p">:</span> <span class="n">inventory_mikrotik_version</span><span class="p">,</span>
-  <span class="s">"check_function"</span>      <span class="p">:</span> <span class="n">check_mikrotik_version</span><span class="p">,</span>
-  <span class="s">"service_description"</span> <span class="p">:</span> <span class="s">"RouterOS version"</span><span class="p">,</span>
-  <span class="s">"has_perfdata"</span>        <span class="p">:</span> <span class="bp">False</span><span class="p">,</span>
-  <span class="s">"group"</span>               <span class="p">:</span> <span class="s">"mikrotik_version"</span><span class="p">,</span>
-  <span class="s">"snmp_info"</span>             <span class="p">:</span> <span class="p">(</span> <span class="s">".1.3.6.1.4.1.14988.1.1.4.4"</span><span class="p">,</span><span class="s">"0"</span> <span class="p">)</span>
+check_info['mikrotik_version'] = {
+  "inventory_function"  : inventory_mikrotik_version,
+  "check_function"      : check_mikrotik_version,
+  "service_description" : "RouterOS version",
+  "has_perfdata"        : False,
+  "group"               : "mikrotik_version",
+  "snmp_info"             : ( ".1.3.6.1.4.1.14988.1.1.4.4","0" )
 
-<span class="p">}</span>
-</code></pre>
-</div>
+}
+</code></pre></div></div>
 
 			</div>
 

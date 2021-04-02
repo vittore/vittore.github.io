@@ -261,7 +261,7 @@ Ovviamente 😉 se avete un sistema operativo Linux… ecco come.">
 
 
 	<div class="row t30">
-	<div class="medium-8 columns medium-offset-2 end">
+	<div class="medium-12 columns end">
 		<article itemscope itemtype="http://schema.org/Article">
 			<header>
 				
@@ -296,13 +296,13 @@ Ovviamente 😉 se avete un sistema operativo Linux… ecco come.">
   </li>
 </ol>
 
-<p><code class="highlighter-rouge">sudo su</code></p>
+<p><code class="language-plaintext highlighter-rouge">sudo su</code></p>
 
 <ol>
   <li>Create il file</li>
 </ol>
 
-<p><code class="highlighter-rouge">vim /usr/share/cups/mime/airprint.types</code></p>
+<p><code class="language-plaintext highlighter-rouge">vim /usr/share/cups/mime/airprint.types</code></p>
 
 <p>e copiateci dentro:</p>
 
@@ -320,7 +320,7 @@ Ovviamente 😉 se avete un sistema operativo Linux… ecco come.">
   <li>Create il file</li>
 </ol>
 
-<p><code class="highlighter-rouge">vim /usr/share/cups/mime/airprint.convs</code></p>
+<p><code class="language-plaintext highlighter-rouge">vim /usr/share/cups/mime/airprint.convs</code></p>
 
 <p>e copiateci dentro:</p>
 
@@ -339,27 +339,27 @@ Ovviamente 😉 se avete un sistema operativo Linux… ecco come.">
   <li>Riavviate CUPS con il comando:</li>
 </ol>
 
-<p><code class="highlighter-rouge">service cups restart</code></p>
+<p><code class="language-plaintext highlighter-rouge">service cups restart</code></p>
 
 <ol>
   <li>Ora non vi resta che generare i servizi avahi che servono. Vi semplifico la vita con uno script:</li>
 </ol>
 
-<p><code class="highlighter-rouge">cd /tmp</code></p>
+<p><code class="language-plaintext highlighter-rouge">cd /tmp</code></p>
 
-<p><code class="highlighter-rouge">apt-get install dos2unix</code></p>
+<p><code class="language-plaintext highlighter-rouge">apt-get install dos2unix</code></p>
 
-<p><code class="highlighter-rouge">wget https://raw.github.com/tjfontaine/airprint-generate/master/airprint-generate.py</code></p>
+<p><code class="language-plaintext highlighter-rouge">wget https://raw.github.com/tjfontaine/airprint-generate/master/airprint-generate.py</code></p>
 
-<p><code class="highlighter-rouge">dos2unix airprint-generate.py /etc/avahi/services/airprint-generate.py</code></p>
+<p><code class="language-plaintext highlighter-rouge">dos2unix airprint-generate.py /etc/avahi/services/airprint-generate.py</code></p>
 
-<p><code class="highlighter-rouge">cd /etc/avahi/services/</code></p>
+<p><code class="language-plaintext highlighter-rouge">cd /etc/avahi/services/</code></p>
 
-<p><code class="highlighter-rouge">chmod a+x airprint-generate.py</code></p>
+<p><code class="language-plaintext highlighter-rouge">chmod a+x airprint-generate.py</code></p>
 
-<p><code class="highlighter-rouge">./airprint-generate.py</code></p>
+<p><code class="language-plaintext highlighter-rouge">./airprint-generate.py</code></p>
 
-<p><code class="highlighter-rouge">service avahi-daemon restart</code></p>
+<p><code class="language-plaintext highlighter-rouge">service avahi-daemon restart</code></p>
 
 <p>Bene. Lavoro finito. Andate sul vostro dispositivo IOS e cercate la stampante… 🙂</p>
 

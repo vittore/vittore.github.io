@@ -247,7 +247,7 @@
 
 
 	<div class="row t30">
-	<div class="medium-8 columns medium-offset-2 end">
+	<div class="medium-12 columns end">
 		<article itemscope itemtype="http://schema.org/Article">
 			<header>
 				
@@ -268,8 +268,8 @@
 			<div itemprop="articleSection">
 			<p><b>Senza volere fare previsioni od elaborazioni ufficiali od ufficiose ma solo un esercizio per ripassare alcuni concetti matematici</b>, di seguito trovate il programma Python e i grafici che, partendo dai dati ufficiali sulla diffusione del COVID-19 (<a href="https://github.com/pcm-dpc/COVID-19">https://github.com/pcm-dpc/COVID-19</a>), disegna i grafici per il Veneto e il Friuli sull’andamento e la previsione per i prossimi due giorni dei casi segnalati.</p>
 
-<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#!/usr/bin/env python3</span>
-<span class="kn">import</span> <span class="nn">urllib.request</span>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#!/usr/bin/env python3
+</span><span class="kn">import</span> <span class="nn">urllib.request</span>
 <span class="kn">import</span> <span class="nn">json</span>
 <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
 <span class="kn">from</span> <span class="nn">scipy.interpolate</span> <span class="kn">import</span> <span class="n">UnivariateSpline</span>
@@ -282,41 +282,40 @@
     <span class="n">firstDay</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2020</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">24</span><span class="p">)</span>
 
     <span class="n">url</span> <span class="o">=</span> <span class="s">"https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-json/dpc-covid19-ita-regioni.json"</span>
-    <span class="n">req</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-    <span class="k">with</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">req</span><span class="p">)</span> <span class="k">as</span> <span class="n">response</span><span class="p">:</span>
-        <span class="n">datastore</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+    <span class="n">req</span> <span class="o">=</span> <span class="n">urllib</span><span class="p">.</span><span class="n">request</span><span class="p">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+    <span class="k">with</span> <span class="n">urllib</span><span class="p">.</span><span class="n">request</span><span class="p">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">req</span><span class="p">)</span> <span class="k">as</span> <span class="n">response</span><span class="p">:</span>
+        <span class="n">datastore</span> <span class="o">=</span> <span class="n">json</span><span class="p">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="n">read</span><span class="p">())</span>
     <span class="k">for</span> <span class="n">regione</span> <span class="ow">in</span> <span class="p">[</span><span class="s">'Veneto'</span><span class="p">,</span><span class="s">'Friuli Venezia Giulia'</span><span class="p">]:</span>
         <span class="n">xPoints</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="n">yPoints</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="n">xMax</span><span class="o">=-</span><span class="mi">1</span>
         <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">datastore</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">data</span><span class="p">[</span><span class="s">'denominazione_regione'</span><span class="p">]</span><span class="o">==</span><span class="n">regione</span><span class="p">:</span>
-                <span class="n">date_time_obj</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s">'data'</span><span class="p">],</span> <span class="s">'</span><span class="si">%</span><span class="s">Y-</span><span class="si">%</span><span class="s">m-</span><span class="si">%</span><span class="s">d </span><span class="si">%</span><span class="s">H:</span><span class="si">%</span><span class="s">M:</span><span class="si">%</span><span class="s">S'</span><span class="p">)</span>
+                <span class="n">date_time_obj</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s">'data'</span><span class="p">],</span> <span class="s">'%Y-%m-%d %H:%M:%S'</span><span class="p">)</span>
                 <span class="n">delta</span><span class="o">=</span><span class="n">date_time_obj</span><span class="o">-</span><span class="n">firstDay</span>
-                <span class="n">xMax</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">xMax</span><span class="p">,</span> <span class="n">delta</span><span class="o">.</span><span class="n">days</span><span class="p">)</span>
-                <span class="n">xPoints</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">delta</span><span class="o">.</span><span class="n">days</span><span class="p">)</span>
-                <span class="n">yPoints</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s">'totale_casi'</span><span class="p">])</span>
-        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xPoints</span><span class="p">,</span> <span class="n">yPoints</span><span class="p">,</span> <span class="s">'o'</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s">'data'</span><span class="p">)</span>
+                <span class="n">xMax</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">xMax</span><span class="p">,</span> <span class="n">delta</span><span class="p">.</span><span class="n">days</span><span class="p">)</span>
+                <span class="n">xPoints</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">delta</span><span class="p">.</span><span class="n">days</span><span class="p">)</span>
+                <span class="n">yPoints</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s">'totale_casi'</span><span class="p">])</span>
+        <span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xPoints</span><span class="p">,</span> <span class="n">yPoints</span><span class="p">,</span> <span class="s">'o'</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s">'data'</span><span class="p">)</span>
         <span class="n">yhat</span> <span class="o">=</span> <span class="n">savgol_filter</span><span class="p">(</span><span class="n">yPoints</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xPoints</span><span class="p">,</span> <span class="n">yhat</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s">'Savitzky–Golay'</span><span class="p">)</span>
+        <span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xPoints</span><span class="p">,</span> <span class="n">yhat</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s">'Savitzky–Golay'</span><span class="p">)</span>
         <span class="n">daysWanted</span><span class="o">=</span><span class="p">[</span><span class="n">xMax</span><span class="p">]</span>
         <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span>
-            <span class="n">daysWanted</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">xMax</span><span class="o">+</span><span class="n">i</span><span class="p">)</span>
+            <span class="n">daysWanted</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">xMax</span><span class="o">+</span><span class="n">i</span><span class="p">)</span>
 
         <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">):</span>
             <span class="n">spl</span> <span class="o">=</span> <span class="n">UnivariateSpline</span><span class="p">(</span><span class="n">xPoints</span><span class="p">,</span> <span class="n">yhat</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="p">)</span>
-            <span class="n">spl</span><span class="o">.</span><span class="n">set_smoothing_factor</span><span class="p">(</span><span class="mf">0.2</span><span class="p">)</span>
+            <span class="n">spl</span><span class="p">.</span><span class="n">set_smoothing_factor</span><span class="p">(</span><span class="mf">0.2</span><span class="p">)</span>
             <span class="n">y</span> <span class="o">=</span> <span class="n">spl</span><span class="p">(</span><span class="n">daysWanted</span><span class="p">)</span>
-            <span class="n">label</span> <span class="o">=</span> <span class="s">"k=</span><span class="si">%</span><span class="s">d"</span> <span class="o">%</span> <span class="n">k</span>
+            <span class="n">label</span> <span class="o">=</span> <span class="s">"k=%d"</span> <span class="o">%</span> <span class="n">k</span>
             <span class="k">print</span><span class="p">(</span><span class="n">label</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
-            <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">daysWanted</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s">'--'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">)</span>
-        <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
-        <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">regione</span><span class="p">)</span>
-        <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span> <span class="n">loc</span><span class="o">=</span><span class="s">"best"</span> <span class="p">)</span>
-        <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+            <span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">daysWanted</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s">'--'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">)</span>
+        <span class="n">plt</span><span class="p">.</span><span class="n">grid</span><span class="p">()</span>
+        <span class="n">plt</span><span class="p">.</span><span class="n">title</span><span class="p">(</span><span class="n">regione</span><span class="p">)</span>
+        <span class="n">plt</span><span class="p">.</span><span class="n">legend</span><span class="p">(</span> <span class="n">loc</span><span class="o">=</span><span class="s">"best"</span> <span class="p">)</span>
+        <span class="n">plt</span><span class="p">.</span><span class="n">show</span><span class="p">()</span>
 
-</code></pre>
-</div>
+</code></pre></div></div>
 <h3>Veneto</h3>
 <p>Previsione su 2 giorni (il primo valore è il giorno attuale) con <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.UnivariateSpline.html">https://docs.scipy.org/doc/scipy/reference/generated/scipy.interpolate.UnivariateSpline.html</a>:</p>
 

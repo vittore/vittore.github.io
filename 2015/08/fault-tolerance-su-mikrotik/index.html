@@ -255,7 +255,7 @@ Dopo una estate di prove ecco lo script per la fault tolerance su Mikrotik.">
 
 
 	<div class="row t30">
-	<div class="medium-8 columns medium-offset-2 end">
+	<div class="medium-12 columns end">
 		<article itemscope itemtype="http://schema.org/Article">
 			<header>
 				
@@ -316,7 +316,7 @@ Dopo una estate di prove ecco lo script per la fault tolerance su Mikrotik.">
 
 <p>L’unica configurazione necessaria è cambiare la riga <strong>:local wanInterfaces “wan1,wlan1,wan3,3g”;</strong> indicando i nomi delle interfacce che ho usato (le connessioni) nell’ordine che desidero vengano utilizzate.</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code># Multi interfaces fault tolerance (with or without dhcp)
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Multi interfaces fault tolerance (with or without dhcp)
 # Vittore Zen (http://www.zen.pn.it)
 #
 # Instructions:
@@ -422,8 +422,7 @@ Dopo una estate di prove ecco lo script per la fault tolerance su Mikrotik.">
 }
 }
 }
-</code></pre>
-</div>
+</code></pre></div></div>
 <p>Una nota.</p>
 
 <p>Molti script che si trovano in rete usano l’approccio del ping sull’interfaccia (/ping interface=wan3 8.8.8.8). Ma questo non funziona. Come si legge nel manuale RouterOS il parametro interfaccia funziona solo se l’host utilizzato è ipv6. Quindi tutti questi script non funzionano se non in casi particolari.</p>
@@ -441,7 +440,7 @@ Dopo una estate di prove ecco lo script per la fault tolerance su Mikrotik.">
 					
 
 				
-				<time class="icon-calendar pr20" datetime="2015-08-29T00:18:53+02:00" itemprop="datePublished"> 2015-08-28</time>
+				<time class="icon-calendar pr20" datetime="2015-08-29T00:18:53+02:00" itemprop="datePublished"> 2015-08-29</time>
 				
 
 				<span class="icon-archive pr20"> ARTICOLI</span>
