@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://www.zen.pn.it/</id>
 	<title>zen.pn.it - Tecnologia e dintorni</title>
-	<updated>2021-04-02T13:54:08+02:00</updated>
+	<updated>2021-04-15T07:27:43+02:00</updated>
 
 	<subtitle>Segnalazioni e riflessioni su &amp;quot;cose di tecnologia&amp;quot; di Vittore Zen</subtitle>
 
@@ -47,6 +47,53 @@
 			
 			<summary>Mini rubrica settimanale dei link interessanti per gli informatici.</summary>
 			<content type="html" xml:base="https://www.zen.pn.it/2021/week">&lt;hr /&gt;
+
+&lt;h1 class=&quot;right&quot; id=&quot;the-week5&quot;&gt;The week#5&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;interplanetary-file-system&quot;&gt;&lt;a href=&quot;https://ipfs.io/&quot;&gt;InterPlanetary File System&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/ipfs.png&quot; alt=&quot;InterPlanetary File System&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;L’InterPlanetary File System (IPFS) è un protocollo di comunicazione e una rete peer-to-peer per l’archiviazione e la condivisione di dati in un file system distribuito. L’IPFS utilizza uno spazio di archiviazione associativo per identificare univocamente ogni file in uno spazio di nomi globale che connette tutti i dispositivi di calcolo.&lt;/p&gt;
+
+    &lt;p&gt;L’obiettivo è avere un web non più basato sulla locazione del contenuto (URL) ma sul contenuto stesso.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://ipfs.io/&quot;&gt;Link ufficiale &amp;gt;&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=5Uj6uR3fp-U&quot;&gt;Video di 9 minuti che ne spiega lo scopo e la tecnologia (in inglese) &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;openvas&quot;&gt;&lt;a href=&quot;https://www.openvas.org/&quot;&gt;openVAS&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/openVAS.jpg&quot; alt=&quot;openVAS&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;OpenVAS - (Open Vulnerability Assessment System) - precedentemente noto come GNessUs, è un fork del famoso security scanner Nessus. Anche questo prodotto rappresenta un must-to-have per ogni rete informatica. Open Source, non semplice da installare, potente in esecuzione.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://www.openvas.org/&quot;&gt;Link ufficiale &amp;gt;&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://cybersecuritymaster.it/wp-content/uploads/2019/07/presentazione-seminario-19lug19.pdf&quot;&gt;Slide di un seminario di presentazione (in italiano) &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;mxtoolboxcom&quot;&gt;&lt;a href=&quot;https://mxtoolbox.com/&quot;&gt;mxtoolbox.com&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/mxtoolbox.png&quot; alt=&quot;https://mxtoolbox.com/&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;mxtoolbox - MX Lookup, Blacklists, DMARC, DNS Lookup,… Una serie di tool online per controllare le configurazioni dei vostri server di posta ma non solo.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://mxtoolbox.com/&quot;&gt;Link ufficiale &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
 
 &lt;h1 class=&quot;right&quot; id=&quot;the-week4&quot;&gt;The week#4&lt;/h1&gt;
 &lt;hr /&gt;
