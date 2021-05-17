@@ -32,6 +32,19 @@
 
   &lt;/div&gt;&lt;/div&gt;
 
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;composer-require-wordpress&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=BBp7lJAAbV0&quot;&gt;composer require wordpress&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/wordpress.png&quot; alt=&quot;composer require wordpress&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;Un  video in italiano su come installare WordPress in modo professionale usando il progetto &lt;a href=&quot;https://github.com/wecodemore/wpstarter&quot;&gt;WP Starter&lt;/a&gt; e il materiale di &lt;a href=&quot;https://wpackagist.org/&quot;&gt;WordPress Packagist&lt;/a&gt;.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=BBp7lJAAbV0&quot;&gt;Link video &amp;gt;&lt;/a&gt;&lt;/p&gt;
+
+  &lt;/div&gt;&lt;/div&gt;
+
 &lt;hr /&gt;
 
 &lt;h1 class=&quot;right&quot; id=&quot;the-week5&quot;&gt;The week#5&lt;/h1&gt;

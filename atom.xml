@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://www.zen.pn.it/</id>
 	<title>zen.pn.it - Tecnologia e dintorni</title>
-	<updated>2021-05-03T16:43:15+02:00</updated>
+	<updated>2021-05-17T07:44:30+02:00</updated>
 
 	<subtitle>Segnalazioni e riflessioni su &amp;quot;cose di tecnologia&amp;quot; di Vittore Zen</subtitle>
 
@@ -63,6 +63,19 @@
     &lt;p&gt;In questo breve articolo si descrive la sua collocazione tra i protocolli di rete, i principali motivi che hanno portato alla sua creazione, le principali novità che introduce e le ripercussioni che potrebbe avere per la sicurezza delle comunicazioni.&lt;/p&gt;
 
     &lt;p&gt;&lt;a href=&quot;https://www.ictsecuritymagazine.com/articoli/quic-un-nuovo-protocollo-internet-e-la-sicurezza-it/&quot;&gt;Link ufficiale &amp;gt;&lt;/a&gt;&lt;/p&gt;
+
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;composer-require-wordpress&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=BBp7lJAAbV0&quot;&gt;composer require wordpress&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/wordpress.png&quot; alt=&quot;composer require wordpress&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;Un  video in italiano su come installare WordPress in modo professionale usando il progetto &lt;a href=&quot;https://github.com/wecodemore/wpstarter&quot;&gt;WP Starter&lt;/a&gt; e il materiale di &lt;a href=&quot;https://wpackagist.org/&quot;&gt;WordPress Packagist&lt;/a&gt;.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=BBp7lJAAbV0&quot;&gt;Link video &amp;gt;&lt;/a&gt;&lt;/p&gt;
 
   &lt;/div&gt;&lt;/div&gt;
 
