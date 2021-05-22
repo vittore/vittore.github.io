@@ -286,6 +286,283 @@ Gli utenti definiscono ed eseguono il provisioning dell’infrastruttura del dat
 			</item>
 		
 			<item>
+				<title>The week</title>
+				<link>https://www.zen.pn.it/2021/week</link>
+				<pubDate>Thu, 04 Mar 2021 11:00:00 +0100</pubDate>
+				<description>&lt;hr /&gt;
+
+&lt;h1 class=&quot;right&quot; id=&quot;the-week6&quot;&gt;The week#6&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;quic-un-nuovo-protocollo-internet-e-la-sicurezza-it&quot;&gt;&lt;a href=&quot;https://www.ictsecuritymagazine.com/articoli/quic-un-nuovo-protocollo-internet-e-la-sicurezza-it/&quot;&gt;QUIC: un nuovo protocollo Internet e la sicurezza IT&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/quic.jpg&quot; alt=&quot;QUIC: un nuovo protocollo Internet e la sicurezza IT&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;E’ possibile che tra non molto cambi buona parte del traffico Internet, a partire da quello generato dai Browser Web. Questo è dovuto al futuro arrivo di un nuovo protocollo di comunicazione chiamato QUIC.&lt;/p&gt;
+
+    &lt;p&gt;In questo breve articolo si descrive la sua collocazione tra i protocolli di rete, i principali motivi che hanno portato alla sua creazione, le principali novità che introduce e le ripercussioni che potrebbe avere per la sicurezza delle comunicazioni.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://www.ictsecuritymagazine.com/articoli/quic-un-nuovo-protocollo-internet-e-la-sicurezza-it/&quot;&gt;Link all’articolo &amp;gt;&lt;/a&gt;&lt;/p&gt;
+
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;composer-require-wordpress&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=BBp7lJAAbV0&quot;&gt;composer require wordpress&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/wordpress.png&quot; alt=&quot;composer require wordpress&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;Un  video in italiano su come installare WordPress in modo professionale usando il progetto &lt;a href=&quot;https://github.com/wecodemore/wpstarter&quot;&gt;WP Starter&lt;/a&gt; e il materiale di &lt;a href=&quot;https://wpackagist.org/&quot;&gt;WordPress Packagist&lt;/a&gt;.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=BBp7lJAAbV0&quot;&gt;Link al video &amp;gt;&lt;/a&gt;&lt;/p&gt;
+
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 class=&quot;right&quot; id=&quot;the-week5&quot;&gt;The week#5&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;interplanetary-file-system&quot;&gt;&lt;a href=&quot;https://ipfs.io/&quot;&gt;InterPlanetary File System&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/ipfs.png&quot; alt=&quot;InterPlanetary File System&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;L’InterPlanetary File System (IPFS) è un protocollo di comunicazione e una rete peer-to-peer per l’archiviazione e la condivisione di dati in un file system distribuito. L’IPFS utilizza uno spazio di archiviazione associativo per identificare univocamente ogni file in uno spazio di nomi globale che connette tutti i dispositivi di calcolo.&lt;/p&gt;
+
+    &lt;p&gt;L’obiettivo è avere un web non più basato sulla locazione del contenuto (URL) ma sul contenuto stesso.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://ipfs.io/&quot;&gt;Link ufficiale &amp;gt;&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=5Uj6uR3fp-U&quot;&gt;Video di 9 minuti che ne spiega lo scopo e la tecnologia (in inglese) &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;openvas&quot;&gt;&lt;a href=&quot;https://www.openvas.org/&quot;&gt;openVAS&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/openVAS.jpg&quot; alt=&quot;openVAS&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;OpenVAS - (Open Vulnerability Assessment System) - precedentemente noto come GNessUs, è un fork del famoso security scanner Nessus. Anche questo prodotto rappresenta un must-to-have per ogni rete informatica. Open Source, non semplice da installare, potente in esecuzione.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://www.openvas.org/&quot;&gt;Link ufficiale &amp;gt;&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://cybersecuritymaster.it/wp-content/uploads/2019/07/presentazione-seminario-19lug19.pdf&quot;&gt;Slide di un seminario di presentazione (in italiano) &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;mxtoolboxcom&quot;&gt;&lt;a href=&quot;https://mxtoolbox.com/&quot;&gt;mxtoolbox.com&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/mxtoolbox.png&quot; alt=&quot;https://mxtoolbox.com/&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;mxtoolbox - MX Lookup, Blacklists, DMARC, DNS Lookup,… Una serie di tool online per controllare le configurazioni dei vostri server di posta ma non solo.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://mxtoolbox.com/&quot;&gt;Link ufficiale &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 class=&quot;right&quot; id=&quot;the-week4&quot;&gt;The week#4&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;deepfacelab&quot;&gt;&lt;a href=&quot;https://github.com/iperov/DeepFaceLab&quot;&gt;DeepFaceLab&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/deepFace.jpg&quot; alt=&quot;DeepFaceLab&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;Probabilmente non avrete il tempo per realizzare un video con DeepFaceLab ma comprenderne la logica e le tecnologie è un must-to-do per un informatico.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=z29Oveu56eA&amp;amp;ab_channel=DeepFakeENGITA&quot;&gt;Link al video tutorial in italiano &amp;gt;&lt;/a&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://github.com/iperov/DeepFaceLab&quot;&gt;Link al software python &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;tv-b-gone-kit--universal&quot;&gt;&lt;a href=&quot;https://www.melopero.com/shop/starter-kits/tv-b-gone-kit-universal-v1-2/&quot;&gt;TV-B-Gone Kit – Universal&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/tvbgone.jpg&quot; alt=&quot;TV-B-Gone Kit – Universal&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;E’ il primo di Aprile, non posso non suggerire questo progetto per smanettoni: spegnete tutti televisori intorno a voi! Compatibile con le più comuni marche di TV, utilissimo per fare scherzi e per riposare un po’ il cervello.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://www.melopero.com/shop/starter-kits/tv-b-gone-kit-universal-v1-2/&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
+
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;flowgorithm&quot;&gt;&lt;a href=&quot;http://www.flowgorithm.org/&quot;&gt;Flowgorithm&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/flowgorithm.jpg&quot; alt=&quot;Flowgorithm&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;Utilizzando i diagrammi di flusso, è possibile concentrarsi sui concetti di programmazione piuttosto che su tutte le sfumature di un tipico linguaggio di programmazione. Una volta compresa la logica di programmazione, è facile imparare uno dei principali linguaggi. Flowgorithm può convertire in modo interattivo il tuo diagramma di flusso in oltre 18 linguaggi: C #, C ++, Java, JavaScript, Python, Ruby, Swift, Visual Basic .NET,…&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;http://www.flowgorithm.org/&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;hr /&gt;
+
+&lt;h1 class=&quot;right&quot; id=&quot;the-week3&quot;&gt;The week#3&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;solid-principles-simplified-with-examples-in-php&quot;&gt;&lt;a href=&quot;https://levelup.gitconnected.com/solid-principles-simplified-php-examples-based-dc6b4f8861f6&quot;&gt;SOLID Principles Simplified with Examples in PHP&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/solid.png&quot; alt=&quot;SOLID Principle&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+
+    &lt;p&gt;SOLID è l’acronimo dei primi cinque principi di progettazione orientata agli oggetti (OOD) ed è una serie di linee guida che gli sviluppatori possono utilizzare per creare software in modo semplice da mantenere ed estendere. La comprensione di questi concetti rende lo sviluppatore migliore.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://levelup.gitconnected.com/solid-principles-simplified-php-examples-based-dc6b4f8861f6&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;la-sapienza---misure-minime-di-sicurezza-ict&quot;&gt;&lt;a href=&quot;https://web.uniroma1.it/infosapienza/misure-minime-di-sicurezza&quot;&gt;La Sapienza - Misure Minime di Sicurezza ICT&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/mm.jpg&quot; alt=&quot;La Sapienza - Misure Minime di Sicurezza ICT&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;Documentazione sulle misure minime applicate all’università la Sapienza.
+Il documento principale individua, tra i 20 controlli normalmente conosciuti come Critical Security Control (CSC), quelli ritenuti indispensabili a garantire il livello minimo sulla base dell’impatto sulla sicurezza dei sistemi.&lt;/p&gt;
+
+    &lt;p&gt;Oltre a questo sono presenti le slide di presentazione.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://web.uniroma1.it/infosapienza/misure-minime-di-sicurezza&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;un-imsi-catcher-low-cost-in-30-minuti&quot;&gt;&lt;a href=&quot;https://www.vice.com/en/article/gy7qm9/how-i-made-imsi-catcher-cheap-amazon-github&quot;&gt;Un IMSI-Catcher low-cost in 30 minuti&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/imsi.png&quot; alt=&quot;Un IMSI-Catcher low-cost in 30 minuti&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;IMSI è l’identificatore univoco assegnato a ciascuna scheda SIM e può essere utilizzato per confermare se qualcuno si trova in una determinata area. Possono anche essere utilizzati come parte di un altro attacco per rilevare il numero di telefono di una persona e reindirizzare i suoi messaggi di testo.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://www.vice.com/en/article/gy7qm9/how-i-made-imsi-catcher-cheap-amazon-github&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 class=&quot;right&quot; id=&quot;the-week2&quot;&gt;The week#2&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;ripassiamo-il-cablaggio&quot;&gt;&lt;a href=&quot;https://www3.diism.unisi.it/~giambene/reti_di_telecomunicazioni_materiale/materiale_didattico/Nuovo_Ordinamento/cablaggio%201.pdf&quot;&gt;Ripassiamo il cablaggio&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/1064214308_0.jpg&quot; alt=&quot;Ripassiamo il cablaggio&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;Delle vecchie slide trovate in rete per ripassare concetti sempre validi e da non scordare.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://www3.diism.unisi.it/~giambene/reti_di_telecomunicazioni_materiale/materiale_didattico/Nuovo_Ordinamento/cablaggio%201.pdf&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;php-desktop&quot;&gt;&lt;a href=&quot;https://github.com/cztomczak/phpdesktop&quot;&gt;PHP desktop&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/phpdesktop.jpg&quot; alt=&quot;PHP desktop&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;PHP Desktop è un progetto open source fondato da Czarek Tomczak nel 2012 per fornire un modo per sviluppare applicazioni GUI desktop native utilizzando tecnologie web come PHP, HTML5, JavaScript e SQLite. Pensalo come Electron per PHP. È uno strumento comodo per convertire app Web PHP e strumenti CLI PHP in applicazioni desktop con poco sforzo.&lt;/p&gt;
+
+    &lt;p&gt;In un certo senso phpdesktop funge da compilatore da PHP a EXE. Incorpora un browser web, un server web multi-thread e un interprete PHP. Il tutto incorporato in una singola applicazione, una cartella portatile che puoi facilmente distribuire agli utenti finali impacchettandola in un archivio zip o creando un programma di installazione per la tua applicazione. Il server web incorporato è un’edizione personalizzata di Mongoose, un server web utilizzato dalla NASA sulla Stazione Spaziale Internazionale. I browser supportati sono Internet Explorer e Google Chrome tramite Chromium open source. Il pacchetto con Chrome incorporato non ha dipendenze esterne, tutto è incluso nei binari di phpdesktop e funziona immediatamente sul computer di un utente.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://github.com/cztomczak/phpdesktop&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;email-header-analyzer&quot;&gt;&lt;a href=&quot;https://mxtoolbox.com/EmailHeaders.aspx&quot;&gt;Email Header Analyzer&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/emailheaders.png&quot; alt=&quot;Email Header Analyzer&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;Le intestazioni delle email possono fornire preziose informazioni diagnostiche come ritardi di hop, risultati anti-spam e altro ancora.&lt;/p&gt;
+
+    &lt;p&gt;Questo strumento rende le intestazioni delle email leggibili dagli umani analizzandole secondo RFC 822.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://mxtoolbox.com/EmailHeaders.aspx&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;corso-gratuito-comptia-security&quot;&gt;&lt;a href=&quot;https://hackersacademy.com/courses/comptia-security-plus&quot;&gt;Corso gratuito CompTIA Security+&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/logosecurityplus.png&quot; alt=&quot;CompTIA Security+&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;E’ un ampio tutorial con oltre 13 ore di video. Copre tutto ciò di cui hai bisogno per iniziare con la sicurezza informatica. Ed è gratis al 100%!&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://hackersacademy.com/courses/comptia-security-plus&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 class=&quot;right&quot; id=&quot;the-week1&quot;&gt;The week#1&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;httpwoshubcom&quot;&gt;&lt;a href=&quot;http://woshub.com/&quot;&gt;http://woshub.com/&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/w2019.jpg&quot; alt=&quot;Windows 2019&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;Articoli tecnici per Windows Server.&lt;/p&gt;
+
+    &lt;p&gt;Alcuni esempi:&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://woshub.com/mount-usb-flash-drive-vmware-esxi/&quot;&gt;Accessing USB Flash Drive from VMWare ESXi&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://woshub.com/rds-shadow-how-to-connect-to-a-user-session-in-windows-server-2012-r2/&quot;&gt;Allows RDS administrators to view and interact with the user’s desktop&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://woshub.com/network-sniffer-packet-monitor-pktmon/&quot;&gt;Built-in Packet Sniffer in Windows 10&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;lorawan-con-mikrotik&quot;&gt;&lt;a href=&quot;https://scoop.co.za/blog/post/internet-of-things-mikrotik-lorawan&quot;&gt;LoraWAN con Mikrotik&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/Figure11-LoRaWAN-race-event-University-of-Pretoria.jpg&quot; alt=&quot;LoraWAN con Mikrotik&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;Come l’università di Pretoria (Sud Africa) ha iniziato l’esplorazione del protocollo LoraWAN attraverso la misurazione dei dati di una maratona.&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;lorawan-con-arduino&quot;&gt;&lt;a href=&quot;https://www.mobilefish.com/developer/lorawan/lorawan_quickguide_build_lora_node_rfm95_arduino_uno.html&quot;&gt;LoRaWAN con Arduino&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/sch_1.jpg&quot; alt=&quot;LoRaWAN con Arduino&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;Realizzare un nodo LoRaWAN con Arduino Uno ed un modulo di trasmissione super economico (3 euro).&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;introduzione-a-terraform&quot;&gt;&lt;a href=&quot;https://www.terraform.io/intro/index.html&quot;&gt;Introduzione a Terraform&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/terraform.png&quot; alt=&quot;Introduzione a Terraform&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;Terraform è uno strumento open source che consente di costruire, modificare e aggiornare l’infrastruttura in modo semplice ed efficiente.
+Gli utenti definiscono ed eseguono il provisioning dell’infrastruttura del data center utilizzando un linguaggio di configurazione dichiarativo noto come HashiCorp Configuration Language (HCL) o, facoltativamente, JSON.&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;Potete segnalare risorse per “The week” usando
+&lt;a href=&quot;https://twitter.com/messages/compose?recipient_id=14417569&amp;amp;ref_src=twsrc%5Etfw&quot; class=&quot;twitter-dm-button&quot; data-screen-name=&quot;@vittore&quot; data-show-count=&quot;false&quot;&gt;Message @@vittore&lt;/a&gt;&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+</description>
+				<guid isPermaLink="true">https://www.zen.pn.it/2021/week</guid>
+			</item>
+		
+			<item>
 				<title>Smart working, lettera dalle retrovie.</title>
 				<link>https://www.zen.pn.it/2020/03/smartworking</link>
 				<pubDate>Tue, 24 Mar 2020 01:00:00 +0100</pubDate>
@@ -592,32 +869,6 @@ check_info['mikrotik_version'] = {
 &lt;/ul&gt;
 </description>
 				<guid isPermaLink="true">https://www.zen.pn.it/2018/09/trenitalia-app-reverse</guid>
-			</item>
-		
-			<item>
-				<title>Seconda edizione de &quot;Teoria, laboratori ed esercizi per MikroTik RouterOS&quot;</title>
-				<link>https://www.zen.pn.it/2018/09/seconda-edizione-2018/</link>
-				<pubDate>Fri, 07 Sep 2018 02:00:00 +0200</pubDate>
-				<description>&lt;p&gt;Rispetto alla prima edizione:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;sono stati corretti diversi errori;&lt;/li&gt;
-  &lt;li&gt;le risposte alle domande di riepilogo alla fine di ogni capitolo ora sono brevemente motivate;&lt;/li&gt;
-  &lt;li&gt;sono stati inseriti dei brevi riassunti su alcune parti teoriche più ostiche.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Link alla seconda edizione de “Teoria, laboratori ed esercizi per MikroTik RouterOS”:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.it/dp/1983186805/ref=asap_bc?ie=UTF8&quot;&gt;versione cartacea&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.amazon.it/dp/B07H4SHHMW&quot;&gt;versione per Kindle&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Note:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Il libro è acquistabile anche utilizzando il Bonus Cultura e il Bonus Carta del Docente.&lt;/li&gt;
-  &lt;li&gt;Il libro è inserito nel programma Amazon Kindle MatchBook che offre ai clienti che acquistano o che hanno acquistato in precedenza un libro stampato da Amazon la possibilità di acquistare la versione Kindle di tale titolo per €0,99.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-				<guid isPermaLink="true">https://www.zen.pn.it/2018/09/seconda-edizione-2018/</guid>
 			</item>
 		
 	</channel>
