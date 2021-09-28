@@ -47,6 +47,129 @@
 				<pubDate>Thu, 04 Mar 2021 11:00:00 +0100</pubDate>
 				<description>&lt;hr /&gt;
 
+&lt;h1 class=&quot;right&quot; id=&quot;the-week9&quot;&gt;The week#9&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;intro-to-dfir-the-divide-and-conquer-process-3-hours&quot;&gt;&lt;a href=&quot;https://dfir-training.basistech.com/courses/intro-to-divide-and-conquer&quot;&gt;Intro to DFIR: The Divide and Conquer Process (3 hours)&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/DFIR.png&quot; alt=&quot;Intro to DFIR&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;Dai creatori di Autopsy un corso gratuito per apprendere un approccio sistematico alle indagini sulle intrusioni.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://dfir-training.basistech.com/courses/intro-to-divide-and-conquer&quot;&gt;Link del corso &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;alternating-case&quot;&gt;&lt;a href=&quot;https://en.toolpage.org/tool/alternatingcase&quot;&gt;Alternating case&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/Aa.png&quot; alt=&quot;alternatingcase&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;Ho alcuni utenti che si ostinano a scrivere email in MAIUSCOLO ignorando le regole della &lt;a href=&quot;http://www.bio.unipd.it/local/internet_docs/netiq.html&quot;&gt;netiquette&lt;/a&gt;. Ora con questa tool posso rIsPoNdErE aDeGuAtAmEnTe AlLe LoRo EmAiL.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://en.toolpage.org/tool/alternatingcase&quot;&gt;Link del tool &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;apereo-foundation&quot;&gt;&lt;a href=&quot;https://www.apereo.org/&quot;&gt;Apereo Foundation&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/apereo.png&quot; alt=&quot;apereo&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;La Fondazione Apereo è una associazione impegnata nel supporto del software open source al servizio dell’istruzione superiore. Le istituzioni membri di Apereo e i partner commerciali servono l’istruzione superiore nei cinque continenti. La comunità di Apereo è realista: si aspetta che l’istruzione superiore continui a fare uso di una “economia mista” di software, infrastrutture e servizi aperti e proprietari per il prossimo futuro.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://www.apereo.org/&quot;&gt;Link dell’associazione &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 class=&quot;right&quot; id=&quot;the-week8&quot;&gt;The week#8&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;json-placeholder&quot;&gt;&lt;a href=&quot;https://jsonplaceholder.typicode.com/&quot;&gt;{JSON} Placeholder&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/JSONPlaceholder-fake-online-api-rest.jpg&quot; alt=&quot;Json Placeholder&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;JSONPlaceholder è un’API REST online gratuita che puoi utilizzare ogni volta che hai bisogno di dati falsi. Può essere in un README su GitHub, per una demo su CodeSandbox, in esempi di codice su Stack Overflow, … o semplicemente per testare le cose localmente.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;&quot;&gt;Link &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;linux-networking-ifconfig-versus-ip&quot;&gt;&lt;a href=&quot;https://www.redhat.com/sysadmin/ifconfig-vs-ip&quot;&gt;Linux networking: ifconfig versus ip&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/ip.jpg&quot; alt=&quot;ip&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;Il comando ifconfig ci ha servito bene, ma ora è il momento di guardare al futuro con il suo sostituto, il comando ip.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://www.redhat.com/sysadmin/ifconfig-vs-ip&quot;&gt;Link all’articolo &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;mikrotik---hairpin-nat&quot;&gt;&lt;a href=&quot;https://web.archive.org/web/20210516105842/https://wiki.mikrotik.com/wiki/Hairpin_NAT&quot;&gt;Mikrotik - hairpin NAT&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/Hairpin_nat_1.png&quot; alt=&quot;nat&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;Se fate NAT con Mikrotik prima o poi avrete questo problema. Un articolo che spiega bene cos’è l’harpin NAT e come risolverlo.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://web.archive.org/web/20210516105842/https://wiki.mikrotik.com/wiki/Hairpin_NAT&quot;&gt;Link all’articolo &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 class=&quot;right&quot; id=&quot;the-week7&quot;&gt;The week#7&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;guacamole&quot;&gt;&lt;a href=&quot;https://guacamole.apache.org/&quot;&gt;guacamole&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;iframe title=&quot;vimeo-player&quot; src=&quot;https://player.vimeo.com/video/116207678?h=34d3bc7d02&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot; style=&quot;margin-left:-40px;&quot;&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;Apache Guacamole è un gateway per desktop remoto senza necessità di installare un client. Supporta protocolli standard come VNC, RDP e SSH.&lt;/p&gt;
+
+    &lt;p&gt;Grazie a HTML5, una volta installato Guacamole su un server, tutto ciò che serve per accedere ai tuoi desktop è un browser web.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://guacamole.apache.org/&quot;&gt;Sito ufficiale del progetto &amp;gt;&lt;/a&gt;
+&lt;a href=&quot;https://github.com/MysticRyuujin/guac-install&quot;&gt;Installazione su debian10 per MS Windows &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;composer-require-wordpress&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=BBp7lJAAbV0&quot;&gt;composer require wordpress&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/wordpress.png&quot; alt=&quot;composer require wordpress&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;Un  video in italiano su come installare WordPress in modo professionale usando il progetto &lt;a href=&quot;https://github.com/wecodemore/wpstarter&quot;&gt;WP Starter&lt;/a&gt; e il materiale di &lt;a href=&quot;https://wpackagist.org/&quot;&gt;WordPress Packagist&lt;/a&gt;.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=BBp7lJAAbV0&quot;&gt;Link al video &amp;gt;&lt;/a&gt;&lt;/p&gt;
+
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
 &lt;h1 class=&quot;right&quot; id=&quot;the-week6&quot;&gt;The week#6&lt;/h1&gt;
 &lt;hr /&gt;
 
@@ -66,7 +189,7 @@
   &lt;/div&gt;&lt;/div&gt;
 
 &lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
-    &lt;h2 id=&quot;composer-require-wordpress&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=BBp7lJAAbV0&quot;&gt;composer require wordpress&lt;/a&gt;&lt;/h2&gt;
+    &lt;h2 id=&quot;composer-require-wordpress-1&quot;&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=BBp7lJAAbV0&quot;&gt;composer require wordpress&lt;/a&gt;&lt;/h2&gt;
   &lt;/div&gt;&lt;/div&gt;
 &lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
     &lt;p&gt;&lt;img src=&quot;/images/week/wordpress.png&quot; alt=&quot;composer require wordpress&quot; /&gt;&lt;/p&gt;
