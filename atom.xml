@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://www.zen.pn.it/</id>
 	<title>zen.pn.it - Tecnologia e dintorni</title>
-	<updated>2021-09-28T08:10:12+02:00</updated>
+	<updated>2021-10-07T19:41:49+02:00</updated>
 
 	<subtitle>Segnalazioni e riflessioni su &amp;quot;cose di tecnologia&amp;quot; di Vittore Zen</subtitle>
 
@@ -99,6 +99,38 @@
 			
 			<summary>Mini rubrica settimanale dei link interessanti per gli informatici.</summary>
 			<content type="html" xml:base="https://www.zen.pn.it/2021/week">&lt;hr /&gt;
+
+&lt;h1 class=&quot;right&quot; id=&quot;the-week10&quot;&gt;The week#10&lt;/h1&gt;
+&lt;hr /&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;diving-into-rfid-protocols-with-flipper-zero&quot;&gt;&lt;a href=&quot;https://blog.flipperzero.one/rfid/&quot;&gt;Diving into RFID Protocols with Flipper Zero&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/Untitled-183831--1-.jpg&quot; alt=&quot;RFID&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;Un articolo molto chiaro sul funzionamento dei dispositivi RFID che segue quello sui &lt;a href=&quot;https://blog.flipperzero.one/infrared/&quot;&gt;dispositivi infrarossi&lt;/a&gt;.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://blog.flipperzero.one/rfid/&quot;&gt;Link all’articolo sui dispositivi RFID &amp;gt;&lt;/a&gt;
+&lt;a href=&quot;https://blog.flipperzero.one/infrared/&quot;&gt;Link all’articolo sui dispositivi ad infrarossi &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;&lt;/div&gt;&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;h2 id=&quot;how-dazn-automates-tests-on-tv-devices&quot;&gt;&lt;a href=&quot;https://medium.com/dazn-tech/how-dazn-automates-tests-on-tv-devices-enter-the-tvlab-c155cefc72c2&quot;&gt;How DAZN automates tests on Tv devices?&lt;/a&gt;&lt;/h2&gt;
+  &lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;medium-3 large-3 columns&quot;&gt;
+    &lt;p&gt;&lt;img src=&quot;/images/week/dazn.png&quot; alt=&quot;RFID&quot; /&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;div class=&quot;medium-9 large-9 columns&quot;&gt;
+    &lt;p&gt;Storia e struttura di come DAZN ha automatizzato i test per la sua piattaforma di streaming video.&lt;/p&gt;
+
+    &lt;p&gt;&lt;a href=&quot;https://medium.com/dazn-tech/how-dazn-automates-tests-on-tv-devices-enter-the-tvlab-c155cefc72c2&quot;&gt;Link all’articolo &amp;gt;&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
 
 &lt;h1 class=&quot;right&quot; id=&quot;the-week9&quot;&gt;The week#9&lt;/h1&gt;
 &lt;hr /&gt;
