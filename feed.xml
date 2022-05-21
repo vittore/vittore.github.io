@@ -9,6 +9,41 @@
 		<atom:link href="https://www.zen.pn.it/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Estate 2022 - compiti per le vacanze</title>
+				<link>https://www.zen.pn.it/2022/compiti-per-le-vacanze</link>
+				<pubDate>Fri, 20 May 2022 12:00:00 +0200</pubDate>
+				<description>&lt;p&gt;Vedere almeno due dei seguenti film:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;The imitation game&lt;/li&gt;
+  &lt;li&gt;Il diritto di contare&lt;/li&gt;
+  &lt;li&gt;A beautiful mind&lt;/li&gt;
+  &lt;li&gt;Gifted – Il dono del talento&lt;/li&gt;
+  &lt;li&gt;Snowden&lt;/li&gt;
+  &lt;li&gt;The social dilemma (neflix)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Leggere almeno uno dei seguenti libri:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Codici &amp;amp; segreti. La storia affascinante dei messaggi cifrati - SINGH Simon&lt;/li&gt;
+  &lt;li&gt;L’enigma dei numeri primi - Marcus Du Sautoy&lt;/li&gt;
+  &lt;li&gt;Flatlandia - Edwin Abbott&lt;/li&gt;
+  &lt;li&gt;Zio Petros e la congettura di Goldbach - Apostolos Doxiadis&lt;/li&gt;
+  &lt;li&gt;L’algoritmo del parcheggio - Furio Honsell&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Leggere almeno uno dei seguenti libri:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Il filtro. Quello che internet ci nasconde - Eli Pariser&lt;/li&gt;
+  &lt;li&gt;Errore di sistema - Edward Snowden&lt;/li&gt;
+  &lt;li&gt;Il mercato del consenso. Come ho creato e poi distrutto Cambridge Analytica - Christopher Wylie&lt;/li&gt;
+  &lt;li&gt;L’arte dell’intrusione - Kevin D. Mitnick&lt;/li&gt;
+  &lt;li&gt;Fuori controllo (romanzo) - Carola Frediani&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+				<guid isPermaLink="true">https://www.zen.pn.it/2022/compiti-per-le-vacanze</guid>
+			</item>
+		
+			<item>
 				<title>Estate 2021 - compiti per le vacanze</title>
 				<link>https://www.zen.pn.it/2021/compiti-per-le-vacanze</link>
 				<pubDate>Thu, 20 May 2021 12:00:00 +0200</pubDate>
@@ -762,24 +797,6 @@ check_info['mikrotik_version'] = {
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
 				<guid isPermaLink="true">https://www.zen.pn.it/mikrotik_version</guid>
-			</item>
-		
-			<item>
-				<title>Reverse engineering dell'app di Trenitalia</title>
-				<link>https://www.zen.pn.it/2018/09/trenitalia-app-reverse</link>
-				<pubDate>Fri, 07 Sep 2018 02:00:00 +0200</pubDate>
-				<description>&lt;p&gt;Segnalo questo interessante articolo di Jacopo Jannone dove si analizza la struttura dell’app di Trenitalia da poco pubblicata:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://blog.jacopojannone.com/2018/09/24/trenitalia-app-reversed.html&quot;&gt;https://blog.jacopojannone.com/2018/09/24/trenitalia-app-reversed.html&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Per chi volesse approfondire il tema segnalo alcune interessanti API:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/bluviolin/TrainMonitor/wiki/API-del-sistema-Viaggiatreno&quot;&gt;API del sistema Viaggiatreno&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/jacopo-j/TrenitaliaAPI/wiki/API-dell'app-Trenitalia&quot;&gt;API dell’app Trenitalia&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-				<guid isPermaLink="true">https://www.zen.pn.it/2018/09/trenitalia-app-reverse</guid>
 			</item>
 		
 	</channel>
