@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<id>https://www.zen.pn.it/</id>
 	<title>zen.pn.it - Tecnologia e dintorni</title>
-	<updated>2022-05-21T10:14:01+02:00</updated>
+	<updated>2022-05-21T10:14:19+02:00</updated>
 
 	<subtitle>Segnalazioni e riflessioni su &amp;quot;cose di tecnologia&amp;quot; di Vittore Zen</subtitle>
 
@@ -28,60 +28,6 @@
 
 	<generator uri="http://jekyllrb.com" version="3.9.0">Jekyll</generator>
 
-	
-		<entry>
-			<id>https://www.zen.pn.it/2022/compiti-per-le-vacanze</id>
-			<title>Estate 2022 - compiti per le vacanze</title>
-			<link href="https://www.zen.pn.it/2022/compiti-per-le-vacanze" rel="alternate" type="text/html" title="Estate 2022 - compiti per le vacanze" />
-			<updated>2022-05-20T12:00:00+02:00</updated>
-
-			
-				
-				<author>
-					
-						<name>Vittore Zen</name>
-					
-					
-					
-				</author>
-			
-			<summary>Laboratorio di sistemi e reti (Bearzi).</summary>
-			<content type="html" xml:base="https://www.zen.pn.it/2022/compiti-per-le-vacanze">&lt;p&gt;Vedere almeno due dei seguenti film:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;The imitation game&lt;/li&gt;
-  &lt;li&gt;Il diritto di contare&lt;/li&gt;
-  &lt;li&gt;A beautiful mind&lt;/li&gt;
-  &lt;li&gt;Gifted – Il dono del talento&lt;/li&gt;
-  &lt;li&gt;Snowden&lt;/li&gt;
-  &lt;li&gt;The social dilemma (neflix)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Leggere almeno uno dei seguenti libri:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Codici &amp;amp; segreti. La storia affascinante dei messaggi cifrati - SINGH Simon&lt;/li&gt;
-  &lt;li&gt;L’enigma dei numeri primi - Marcus Du Sautoy&lt;/li&gt;
-  &lt;li&gt;Flatlandia - Edwin Abbott&lt;/li&gt;
-  &lt;li&gt;Zio Petros e la congettura di Goldbach - Apostolos Doxiadis&lt;/li&gt;
-  &lt;li&gt;L’algoritmo del parcheggio - Furio Honsell&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Leggere almeno uno dei seguenti libri:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Il filtro. Quello che internet ci nasconde - Eli Pariser&lt;/li&gt;
-  &lt;li&gt;Errore di sistema - Edward Snowden&lt;/li&gt;
-  &lt;li&gt;Il mercato del consenso. Come ho creato e poi distrutto Cambridge Analytica - Christopher Wylie&lt;/li&gt;
-  &lt;li&gt;L’arte dell’intrusione - Kevin D. Mitnick&lt;/li&gt;
-  &lt;li&gt;Fuori controllo (romanzo) - Carola Frediani&lt;/li&gt;
-&lt;/ul&gt;
-</content>
-
-			
-				<category term="Articoli" />
-			
-			
-
-			<published>2022-05-20T12:00:00+02:00</published>
-		</entry>
 	
 		<entry>
 			<id>https://www.zen.pn.it/2021/compiti-per-le-vacanze</id>
@@ -1024,6 +970,45 @@ check_info['mikrotik_version'] = {
 			
 
 			<published>2018-10-03T02:00:00+02:00</published>
+		</entry>
+	
+		<entry>
+			<id>https://www.zen.pn.it/2018/09/trenitalia-app-reverse</id>
+			<title>Reverse engineering dell'app di Trenitalia</title>
+			<link href="https://www.zen.pn.it/2018/09/trenitalia-app-reverse" rel="alternate" type="text/html" title="Reverse engineering dell'app di Trenitalia" />
+			<updated>2018-09-07T02:00:00+02:00</updated>
+
+			
+				
+				<author>
+					
+						<name>Vittore Zen</name>
+					
+					
+					
+				</author>
+			
+			<summary>Trenitalia ha da poco rilasciato la nuova versione della sua app per iOS e Android. Una sbirciata a come è fatta non può mancare.</summary>
+			<content type="html" xml:base="https://www.zen.pn.it/2018/09/trenitalia-app-reverse">&lt;p&gt;Segnalo questo interessante articolo di Jacopo Jannone dove si analizza la struttura dell’app di Trenitalia da poco pubblicata:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://blog.jacopojannone.com/2018/09/24/trenitalia-app-reversed.html&quot;&gt;https://blog.jacopojannone.com/2018/09/24/trenitalia-app-reversed.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Per chi volesse approfondire il tema segnalo alcune interessanti API:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/bluviolin/TrainMonitor/wiki/API-del-sistema-Viaggiatreno&quot;&gt;API del sistema Viaggiatreno&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jacopo-j/TrenitaliaAPI/wiki/API-dell'app-Trenitalia&quot;&gt;API dell’app Trenitalia&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+
+			
+				<category term="Articoli" />
+			
+			
+				<category term="web" />
+			
+
+			<published>2018-09-07T02:00:00+02:00</published>
 		</entry>
 	
 </feed>
